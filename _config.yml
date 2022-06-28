@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Andreas Küpfer"
 title_separator          : "-"
 name                     : &name "Andreas Küpfer"
-description              : &description "PhD Candidate at TU Darmstadt holding a Data Science Master (University of Mannheim)"
+description              : &description "PhD Candidate at TU Darmstadt holding a Master degree in Data Science (University of Mannheim)"
 url                      : https://andreaskuepfer.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "andreaskuepfer/andreaskuepfer.github.io"
@@ -82,10 +82,9 @@ analytics:
 author:
   name             : "Andreas Küpfer"
   avatar           : "profile.jpeg"
-  bio              : "PhD Candidate at TU Darmstadt holding a Data Science Master (University of Mannheim)"
-  location         : "Frankfurt am Main, Germany"
+  bio              : "PhD Candidate at Technical University of Darmstadt holding a Master degree in Data Science (University of Mannheim)"
   employer         : "Technical University of Darmstadt"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    :
   email            : "andreas.kuepfer@tu-darmstadt.de"
   uri              :
   bitbucket        :
