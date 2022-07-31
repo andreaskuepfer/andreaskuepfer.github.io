@@ -14,7 +14,7 @@
   <div class="col-md-6">
     {{ if $page.Params.email_form }}
 
-    {{ $post_action := "" }}
+    {{ $post_action := "https://formspree.io/f/xoqbaegw" }}
     {{ if eq $page.Params.email_form 1 }}
     {{ $post_action = "netlify" }}
     {{ else }}
