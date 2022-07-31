@@ -77,6 +77,6 @@ email: ""
 #- Visitors
 ---
 
-I do enjoy working with all forms of political texts (e.g. social media, speeches, or press releases) having the goal to deepen the understanding of them. In the course of my Master's thesis I developed a framework to estimate legislator-level salience and position estimates based on political text using Transformers. Starting in Fall 2022 I will teach a postgraduate seminar at TU Darmstadt providing an introduction to quantitative methods in R for political scientists. My substantial interests focus on political communication and intra-party heterogeneity.
+I enjoy analyzing all forms of political communication (e.g., social media, speeches, or press releases) with both, state-of-the-art machine learning models and traditional approaches to answer substantial research questions in political science. In the course of my Master's thesis I developed a framework to estimate legislator-level salience and position estimates based on political text using Transformers. Starting in Fall 2022 I will teach a postgraduate seminar at TU Darmstadt providing an introduction to quantitative methods in R for political scientists. My substantial interests focus on political communication and intra-party heterogeneity.
 
 You can reach out via [Twitter](https://www.twitter.com/ankuepfer) or by sending a [mail](mailto:andreas.kuepfer@tu-darmstadt.de).
