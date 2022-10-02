@@ -21,7 +21,7 @@ publication: "*Andreas Küpfer, Jochen Müller and Christian Stecker, n.d. &quot
 interjections. Evidence from the German Bundestag, 1979-2021&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
-abstract: (Dis)agreement and salience are key components of explanations in political science. Several approaches such as expert surveys and quantitative text analysis provide useful measures of these concepts. We show that further measures can be gained from an often overlooked part of debates: non-verbal (e.g. applause, laughter) or verbal (short statements) acts of members of parliament. The frequency, intensity and directions of these acts paint a fine-grained picture of salience, conflict and polarization of political issues and cycles in coalition mood, inter-party relations and elections. ‘In our proof of concept’, we explore this potential of using a novel corpus of all debates of the German Bundestag between 1949 and 2021.
+abstract: "(Dis)agreement and salience are key components of explanations in political science. Several approaches such as expert surveys and quantitative text analysis provide useful measures of these concepts. We show that further measures can be gained from an often overlooked part of debates: non-verbal (e.g. applause, laughter) or verbal (short statements) acts of members of parliament. The frequency, intensity and directions of these acts paint a fine-grained picture of salience, conflict and polarization of political issues and cycles in coalition mood, inter-party relations and elections. ‘In our proof of concept’, we explore this potential of using a novel corpus of all debates of the German Bundestag between 1949 and 2021."
 
 # Summary. An optional shortened abstract.
 summary: 
