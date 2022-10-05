@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Exploring (dis)agreement and salience with applause and interjections</title>
+    <meta charset="utf-8" />
+    <script src="dvpw_files/header-attrs/header-attrs.js"></script>
+    <link href="dvpw_files/remark-css/default.css" rel="stylesheet" />
+    <script src="dvpw_files/kePrint/kePrint.js"></script>
+    <link href="dvpw_files/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mtheme2.css" type="text/css" />
+    <link rel="stylesheet" href="fonts_mtheme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Exploring (dis)agreement and salience with applause and interjections
+]
+.subtitle[
+## Evidence from the German Bundestag, 1972-2021
+]
+.author[
+### <table class="authors">
+<tbody>
+<tr>
+<td>
+Andreas Küpfer
+</td>
+<td>
+Jochen Müller
+</td>
+<td>
+Christian Stecker
+</td>
+</tr>
+<tr>
+<td>
+.font75[TU Darmstadt]
+</td>
+<td>
+.font75[Universität Greifswald]
+</td>
+<td>
+.font75[TU Darmstadt]
+</td>
+</tr>
+</tbody>
+</table>
+<table class="contact">
+<tbody>
+<tr>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> <a href="mailto:andreas.kuepfer@tu-darmstadt.de"><code>andreas.kuepfer@tu-darmstadt.de</code></a>
+</td>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> <a href="mailto:jochen.mueller@hu-berlin.de"><code>jochen.mueller@hu-berlin.de</code></a>
+</td>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> <a href="mailto:christian.stecker@tu-darmstadt.de"><code>christian.stecker@tu-darmstadt.de</code></a>
+</td>
+</tr>
+<tr>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> <a href="https://twitter.com/ankuepfer"><code>@ankuepfer</code></a>
+</td>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> <a href="https://twitter.com/JocMuel"><code>@JocMuel</code></a>
+</td>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> <a href="https://twitter.com/pluggedchris"><code>@pluggedchris</code></a>
+</td>
+</tr>
+<tr>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"/></svg> <a href="https://andreaskuepfer.github.io"><code>andreaskuepfer.github.io</code></a>
+</td>
+<td>
+</td>
+<td>
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"/></svg> <a href="https://chrstecker.de/"><code>chrstecker.de</code></a>
+</td>
+</tr>
+</tbody>
+</table>
+]
+.date[
+### Zweijahrestagung der DVPW-Themengruppe:<br /><i>Vergleichende Parlamentarismusforschung</i><br />Bremen 6./7.10.2022
+]
+
+---
+
+
+&lt;!-- pagedown::chrome_print(rmarkdown::render(input = "rmd/EPSA_presentation.Rmd", output_file = "epsa.html"), "rmd/EPSA_presentation/epsa_presentation.pdf") --&gt;
+
+&lt;!-- Setup chunks --&gt;
+
+
+
+
+
+# Applaus und Zwischenrufe in Parlamenten
+
+&lt;img src="applaus.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Applaus und Zwischenrufe in Parlamenten
+
+&lt;img src="applaus2.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Applaus und Zwischenrufe in Parlamenten
+
+&lt;img src="zwischenruf.jpeg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Messung von Salienz und Zustimmung/Ablehnung
+
+## Aktuelle Forschung
+
+* Salienz und Zustimmung/Ablehnung sind unersetzliche Bestandteile zur Erklärung von politischen Ereignissen
+* Verschiedene Möglichkeiten zur Messung:
+  * Expert surveys wie CHES .cyan[.font70[(Polk et al. 2017)]]
+  * Quantitative und qualitative Inhaltsanalysen von politischen Texten wie MARPOR .cyan[.font70[(Volkens et al. 2014)]]
+  * Aktuellere Methoden zur Textanalyse (z.B. Machine Learning)
+
+---
+
+# Messung von Salienz und Zustimmung/Ablehnung
+
+## Aktuelle Forschung
+
+* Salienz und Zustimmung/Ablehnung sind unersetzliche Bestandteile zur Erklärung von politischen Ereignissen
+* Verschiedene Möglichkeiten zur Messung:
+  * Expert surveys wie CHES .cyan[.font70[(Polk et al. 2017)]]
+  * Quantitative und qualitative Inhaltsanalysen von politischen Texten wie MARPOR .cyan[.font70[(Volkens et al. 2014)]]
+  * Aktuellere Methoden zur Textanalyse (z.B. Machine Learning)
+
+## Nachteile
+
+* Fehlende Information zu (Partei-)Dynamiken innerhalb kleinerer Zeitintervalle
+* Einfluss von *External Shocks* kann nur sehr begrenzt gemessen werden
+
+---
+
+# Applaus und Zwischenrufe als Grundlage
+
+* Innerhalb von Debatten durchgängig auf Parteiebene messbar
+* *External Shocks* können durch Muster abgebildet werden
+
+---
+
+# Applaus und Zwischenrufe als Grundlage
+
+* Innerhalb von Debatten durchgängig auf Parteiebene messbar
+* *External Shocks* können durch Muster abgebildet werden
+
+## Theoretische Erwartung: 
+
+* Zustimmung signalisiert durch Applaus und Zwischenrufe stellt eine informative Quelle für das Analysieren von Parteiinteraktionen dar
+* Zeitabhängige Anreize beeinflussen das Auftreten von Applaus und Zwischenrufen (vor allem zwischen Regierung und Opposition)
+
+---
+
+# Applaus und Zwischenrufe im Bundestag
+
+1.  "Beate Müller-Gemmeke [BÜNDNIS 90/DIE GRÜNEN]: Genau!"
+2.  "Beifall bei der SPD und dem BÜNDNIS 90/DIE GRÜNEN"
+3.  "Heiterkeit bei Abgeordneten der CDU/CSU"
+4.  "Beifall bei BÜNDNIS 90/DIE GRÜNEN und Zurufe von der AfD"
+
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Typ &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Anzahl &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Beifall &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 865073 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Zwischenruf &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 235591 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Zustimmung &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 52329 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Heiterkeit &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 47592 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Lachen &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 35245 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Widerspruch &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 31708 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Unruhe &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 10280 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 2in; "&gt; Glocke &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2in; "&gt; 2627 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Daten &amp; Methoden
+
+## Herkunft und Data Wrangling
+
+* Daten basieren auf *GermaParl* .cyan[.font70[(Blätte 2020)]]
+* Extraktion auf Basis von `RegEx`-Befehlen eingebettet in einer rule-based matching Architektur
+
+## Messung Datenqualität
+
+* Parteiassoziation von Zwischenrufen und Applaus stellt Basis zur systematischen Analyse
+
+`$$Datenqualität_{lp} = \frac{Gesamtzahl_{lp}}{Anzahl\;mit\;Parteiassoziation_{lp}}$$`
+
+* Unzureichende Datenqualität bis zur 6. Legislaturperiode (1972) (Durchschnitt 0.35)
+* Ab der 7. Legislaturperiode durchschnittlich 0.73
+
+---
+
+class: inverse, mline, center, middle
+# Explorative Analyse
+
+---
+
+# Historischer Überblick seit 1972
+
+&lt;img src="dvpw_files/figure-html/history_overview-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Historischer Überblick seit 1972: Pariah Parties
+
+&lt;style&gt;
+.circle {
+    background-color: none;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    width: 150px !important;
+    height: 150px !important;
+    position: absolute;
+    top: 520px;
+    left: 170px;
+}
+&lt;/style&gt;
+&lt;span class="circle"&gt;&lt;/span&gt;
+&lt;img src="dvpw_files/figure-html/history_overview_pariah-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Historischer Überblick seit 1972: CDU/CSU 1976
+
+&lt;style&gt;
+.circle1 {
+    background-color: none;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    width: 125px !important;
+    height: 125px !important;
+    position: absolute;
+    top: 305px;
+    left: 640px;
+}
+&lt;/style&gt;
+&lt;span class="circle1"&gt;&lt;/span&gt;
+&lt;img src="dvpw_files/figure-html/history_overview_cdu-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Historischer Überblick seit 1972: Einzug der AfD
+
+&lt;style&gt;
+.circle2 {
+    background-color: none;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    width: 120px !important;
+    height: 120px !important;
+    position: absolute;
+    top: 240px;
+    left: 520px;
+}
+.circle3 {
+    background-color: none;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    width: 120px !important;
+    height: 120px !important;
+    position: absolute;
+    top: 530px;
+    left: 510px;
+}
+.circle4 {
+    background-color: none;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    width: 150px !important;
+    height: 150px !important;
+    position: absolute;
+    top: 455px;
+    left: 1040px;
+}
+&lt;/style&gt;
+&lt;span class="circle2"&gt;&lt;/span&gt;
+&lt;span class="circle3"&gt;&lt;/span&gt;
+&lt;span class="circle4"&gt;&lt;/span&gt;
+
+&lt;img src="dvpw_files/figure-html/history_overview_afd-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Applaus pro Partei nach Sender/Empfänger
+
+&lt;img src="dvpw_files/figure-html/history_overview_parties_applause-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Zwischenrufe pro Partei nach Sender/Empfänger
+
+&lt;img src="dvpw_files/figure-html/history_overview_parties_interjections-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Verschiedene Regierungskonstellationen
+
+&lt;img src="dvpw_files/figure-html/government_applause_heatmap-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Korrelation mit namentlichen Abstimmungen (RCV)
+
+&lt;img src="dvpw_files/figure-html/voting_probability-1.png" style="display: block; margin: auto;" /&gt;
+
+* Reden mit Bezug zu einer namentlichen Abstimmung erhalten deutlich mehr Applaus als ohne RCV
+* Geringerer, jedoch unerwarteterweise entgegengesetzer Effekt bei Zwischenrufen sichtbar
+
+---
+
+# Methodische Grenzen und nächste Schritte
+
+## Limitations
+
+* Methode erfasst ausschließlich Themen, die im Bundestag debattiert werden
+* Parteidruck und strategische Anreize aufgrund des dualistischen Systems sind omnipräsent
+* Variierende Datenqualität je nach Legislaturperiode
+
+## Ausblick
+
+* Analyse von zu einer Rede assoziierten Themen als Werkzeug zur Salienzbestimmung
+* Erkennung von Zustimmung und Ablehnung in Zwischenrufen
+
+---
+
+class: inverse, center, middle,title-slide
+
+# Vielen Dank!
+
+## Wir freuen uns auf Ihr Feedback.
+
+### &lt;table class="authors"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Andreas Küpfer
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+.font80[TU Darmstadt]
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="contact"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> &lt;a href="mailto:andreas.kuepfer@tu-darmstadt.de"&gt;&lt;code&gt;andreas.kuepfer@tu-darmstadt.de&lt;/code&gt;&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"/></svg> &lt;a href="https://andreaskuepfer.github.io"&gt;&lt;code&gt;andreaskuepfer.github.io&lt;/code&gt;&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> &lt;a href="https://twitter.com/ankuepfer"&gt;&lt;code&gt;@ankuepfer&lt;/code&gt;&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo1 {
+  background-image: url('TU_Darmstadt_Logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1em;
+  right: 8em;
+  width: 148px;
+  height: 80px;
+  z-index: 0;
+}
+.logo2 {
+  background-image: url('Signet2018.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 148px;
+  height: 80px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    '.title-slide'
+  )
+  .forEach(el => {
+    el.innerHTML += '<span class="logo1"></span>';
+    el.innerHTML += '<span class="logo2"></span>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

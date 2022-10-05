@@ -1,0 +1,36 @@
+<style>
+.logo1 {
+  background-image: url('TU_Darmstadt_Logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1em;
+  right: 8em;
+  width: 148px;
+  height: 80px;
+  z-index: 0;
+}
+.logo2 {
+  background-image: url('Signet2018.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 148px;
+  height: 80px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    '.title-slide'
+  )
+  .forEach(el => {
+    el.innerHTML += '<span class="logo1"></span>';
+    el.innerHTML += '<span class="logo2"></span>';
+  });
+</script>
