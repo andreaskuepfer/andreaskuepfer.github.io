@@ -1,14 +1,14 @@
 :root {
-  --mzes-white: #FFFFFF;
-  --mzes-cyan: #007696;
-  --mzes-gold: #d1a354;
-  --mzes-cyan-light: #D1E6EC;
-  --mzes-gold-light: #d9d4cd;
+  --TU-white: #FFFFFF;
+  --TU-blue: #5D85C3;
+  --TU-gold: #F8BA3C;
+  --TU-blue-light: #009CDA;
+  --TU-gold-light: #FFE43C;
 }
 
 .remark-slide-content {
-  background-color: var(--mzes-white);
-  border-top: 80px solid var(--mzes-white);
+  background-color: var(--TU-white);
+  border-top: 80px solid var(--TU-white);
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5;
@@ -16,21 +16,21 @@
 }
 
 .title-slide .inverse .remark-slide-content {
-  background-color: var(--mzes-white);
+  background-color: var(--TU-white);
 }
 
 .inverse {
-  background-color: var(--mzes-white);
+  background-color: var(--TU-white);
   text-shadow: none;
 }
 
 /* Removes colored bar from top of the slide resulting in a clear slide */
 .clear{
-  border-top: 0px solid var(--mzes-white);
+  border-top: 0px solid var(--TU-white);
 }
 
 .clear .inverse {
-  border-top: 0px solid var(--mzes-white);
+  border-top: 0px solid var(--TU-white);
 }
 
 .clear .remark-slide-number {
@@ -75,20 +75,20 @@
 
 .remark-slide-number .progress-bar {
   height: 100%;
-  background-color: var(--mzes-gold);
+  background-color: var(--TU-gold);
 }
 
 h1 {
   font-weight: normal;
   margin-top: -95px;
   margin-left: -00px;
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
 }
 
 h2, h3, h4 {
   padding-top: -15px;
   padding-bottom: 00px;
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
   text-shadow: none;
   font-weight: 400;
   text-align: left;
@@ -117,19 +117,19 @@ h2, h3, h4 {
 }
 
 .left-column h2, .left-column h3, .left-column h4 {
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
 }
 
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
 }
 
 .title-slide {
-  background-color: var(--mzes-white);
+  background-color: var(--TU-white);
 }
 
 .title-slide h1 {
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
   font-size: 40px;
   text-shadow: none;
   font-weight: 400;
@@ -140,7 +140,7 @@ h2, h3, h4 {
 .title-slide h2 {
   margin-top: -25px;
   padding-bottom: -20px;
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
   text-shadow: none;
   font-weight: 300;
   font-size: 24px;
@@ -157,15 +157,15 @@ h2, h3, h4 {
 }
 
 .inverse h1, .inverse h2, .inverse h3 {
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
 }
 
 hr, h1::after {
   content: '';
   display: block;
   border: none;
-  background-color: var(--mzes-gold-light);
-  color: var(--mzes-gold-light);
+  background-color: var(--TU-gold-light);
+  color: var(--TU-gold-light);
   height: 2px;
   margin-left: -48px;
   margin-right: -48px;
@@ -176,8 +176,8 @@ hr, .mline h1::after {
   content: '';
   display: block;
   border: none;
-  background-color: var(--mzes-gold-light);
-  color: var(--mzes-gold-light);
+  background-color: var(--TU-gold-light);
+  color: var(--TU-gold-light);
   height: 2px;
 }
 
@@ -194,8 +194,8 @@ hr, .title-slide h2::after {
   content: '';
   display: block;
   border: none;
-  background-color: var(--mzes-gold);
-  color: var(--mzes-gold);
+  background-color: var(--TU-gold);
+  color: var(--TU-gold);
   height: 2px;
 }
 
@@ -222,7 +222,7 @@ hr, .title-slide h2::after {
 .remark-inline-code {
   /* background: #F5F5F5; /* lighter */
   /* background: #e7e8e2; /* darker */
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
   border-radius: 3px;
   padding: 4px;
 }
@@ -372,7 +372,7 @@ hr, .title-slide h2::after {
 }
 
 .mjx-chtml {
-  color: var(--mzes-gold);
+  color: var(--TU-gold);
 }
 
 table, tbody, tr, th, td{
@@ -416,20 +416,20 @@ table.contact td, table.contact th {
 }
 
 a, a > code {
- color: var(--mzes-cyan);
+ color: var(--TU-blue);
  text-decoration: none;
 }
 
 .cyan {
-  color: var(--mzes-cyan);
+  color: var(--TU-blue);
 }
 
 .gold {
-  color: var(--mzes-gold);
+  color: var(--TU-gold);
 }
 
 blockquote {
-  border-left: solid 5px var(--mzes-cyan-light);
+  border-left: solid 5px var(--TU-blue-light);
   padding-left: 1em;
   font-size: 75%;
 }
