@@ -1,5 +1,5 @@
 ---
-title: "Exploring (dis)agreement and salience with applause and interjections. Evidence from the German Bundestag, 1979-2021 (Conference Paper, 2022)"
+title: "Exploring (dis)agreement and salience with applause and interjections. Evidence from the German Bundestag, 1972-2021 (Conference Paper, 2022)"
 authors:
 - admin
 - Jochen Müller
