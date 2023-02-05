@@ -2,13 +2,13 @@
 name = "Classic"
 
 # Optional Google font URL
-google_fonts = "Lato:400,700|Open+Sans|Roboto+Mono"
+google_fonts = "Lora"
 
 # Font families
-heading_font = "Lato"
-body_font = "Open Sans"
-nav_font = "Lato"
-mono_font = "Roboto Mono"
+heading_font = "Lora"
+body_font = "Lora"
+nav_font = "Lora"
+mono_font = "Lora"
 
 # Font size
 font_size = "20"
