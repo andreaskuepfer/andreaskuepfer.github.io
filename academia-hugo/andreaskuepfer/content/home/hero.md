@@ -48,7 +48,7 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 ### Recent Updates
 
-**03/2023**  &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Multimodal Alignment @ [Connected_Politics Lab at UCD](https://www.ucd.ie/connected_politics/)
+**03/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Multimodal Alignment @ [Connected_Politics Lab at UCD](https://www.ucd.ie/connected_politics/)
 
 **03/2023** &mdash; Giving a guest lecture in Data Analysis via the [Brückenprogramm of TU Darmstadt/National University of Kyiv-Mohyla Academy](https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/michele_knodt/news_details_88256.en.jsp)
 
