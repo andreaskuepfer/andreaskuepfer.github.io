@@ -55,7 +55,7 @@ time_format = "3:04 PM"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "andreas.kuepfer@tu-darmstadt.de"
 phone = "+49 (0)6151 1657354"
-address = "S4|23 202, 64293 Darmstadt, Landwehrstraße 50A; Post/Mail: Dolivostraße 15"
+address = "S3|12 515 Residenzschloss 1 64283 Darmstadt"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
@@ -88,8 +88,8 @@ contact_links = [
 #   3: OpenStreetMap (Mapbox)
 map = 2
 map_api_key = "AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-latitude = "49.877599860246406"
-longitude = "8.642263642610024"
+latitude = "49.872912"
+longitude =  "8.655226"
 zoom = 15
 
 ############################
