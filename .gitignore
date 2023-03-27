@@ -206,3 +206,5 @@ academia-hugo/.DS_Store
 js/
 img/
 site.webmanifest
+
+.hugo_build.lock

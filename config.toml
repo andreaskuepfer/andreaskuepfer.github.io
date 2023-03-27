@@ -26,8 +26,8 @@ disqusShortname = ""
 ############################
 
 # Name of Academia theme folder in `themes/`.
-theme = "academia-hugo"
-
+theme = ["hugo-embed-pdf-shortcode", "academia-hugo"]
+enableInlineShortcodes = true
 # Get last modified date for content from Git?
 enableGitInfo = true
 
