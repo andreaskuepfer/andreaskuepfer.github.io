@@ -13,4 +13,4 @@ weight = 100
 
 +++
 
-{{< embed-pdf url="static/cv/kuepfer_andreas_cv.pdf" >}}
+{{< embed-pdf url="cv/kuepfer_andreas_cv.pdf" >}}
