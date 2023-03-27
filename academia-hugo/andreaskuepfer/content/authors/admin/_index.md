@@ -61,7 +61,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/andreaskuepfer
- - icon: cv
+- icon: cv
   icon_pack: ai
   link: cv/kuepfer_andreas_cv.pdf
 
