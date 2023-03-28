@@ -55,7 +55,8 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 **02/2023** &mdash; Holding a 2-Day workshop on [**Getting started with Python: A how-to guide for social scientists**](https://www.mzes.uni-mannheim.de/socialsciencedatalab/page/events/) together with [Ruben Bach](https://www.mzes.uni-mannheim.de/d7/de/profiles/ruben-l-bach) @ MZES Social Science Data Lab in Mannheim
 
 <details>
- <summary>Older News</summary>
+ <summary>News Archive</summary>
+ 
  **10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) @ TU Darmstadt
 
 **10/2022** &mdash; Presenting joint work with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/) about [applause and interjections pattern in the German Bundestag](https://andreaskuepfer.github.io/publication/interjections/) @ DVPW meeting for comparative parliamentarism research in Bremen
