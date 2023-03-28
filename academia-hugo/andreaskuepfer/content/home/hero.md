@@ -48,7 +48,7 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 ### Recent News
 
-<div style="word-wrap: break-word; width: 80%; text-align: center;">
+<div style="word-wrap: break-word; width: 80%; padding-left: 2em;">
 
 **03/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Multimodal Alignment @ [Connected_Politics Lab at UCD](https://www.ucd.ie/connected_politics/)
 
@@ -61,7 +61,7 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 <details>
  <summary>News Archive</summary>
  
-<div style=" word-wrap: break-word; width: 80%; text-align: center;""> 
+<div style="word-wrap: break-word; width: 80%; padding-left: 2em;""> 
 
 **10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) @ TU Darmstadt
 
