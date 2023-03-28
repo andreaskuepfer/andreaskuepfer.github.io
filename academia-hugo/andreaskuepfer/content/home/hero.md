@@ -48,9 +48,6 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 ### Recent News
 
-div {
-  
-}
 <div style=" word-wrap: break-word; width: 80%;">
 **03/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Multimodal Alignment @ [Connected_Politics Lab at UCD](https://www.ucd.ie/connected_politics/)
 
