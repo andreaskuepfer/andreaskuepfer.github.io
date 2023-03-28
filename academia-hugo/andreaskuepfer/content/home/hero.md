@@ -48,16 +48,22 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 ### Recent News
 
+div {
+  
+}
+<div style=" word-wrap: break-word; width: 80%;">
 **03/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Multimodal Alignment @ [Connected_Politics Lab at UCD](https://www.ucd.ie/connected_politics/)
 
 **03/2023** &mdash; Giving a guest lecture in Data Analysis via the [Brückenprogramm of TU Darmstadt/National University of Kyiv-Mohyla Academy](https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/michele_knodt/news_details_88256.en.jsp)
 
 **02/2023** &mdash; Holding a 2-Day workshop on [**Getting started with Python: A how-to guide for social scientists**](https://www.mzes.uni-mannheim.de/socialsciencedatalab/page/events/) together with [Ruben Bach](https://www.mzes.uni-mannheim.de/d7/de/profiles/ruben-l-bach) @ MZES Social Science Data Lab in Mannheim
+</div>
 
 <details>
  <summary>News Archive</summary>
  
- **10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) @ TU Darmstadt
+<div style=" word-wrap: break-word; width: 80%;"> 
+**10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) @ TU Darmstadt
 
 **10/2022** &mdash; Presenting joint work with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/) about [applause and interjections pattern in the German Bundestag](https://andreaskuepfer.github.io/publication/interjections/) @ DVPW meeting for comparative parliamentarism research in Bremen
 
@@ -66,4 +72,5 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 **05/2022** &mdash; MZES SSDL blog post and input talk about the [**Collection, Management, and Analysis of Twitter Data**](https://andreaskuepfer.github.io/publication/twitter_api/)
 
 **05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) @ Technical University of Darmstadt and co-supervised by [Christian Arnold](http://christianarnold.org/) @ Cardiff University
+</div>
 </details>
