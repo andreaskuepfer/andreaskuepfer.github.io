@@ -48,12 +48,15 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 ### Latest News
 
+<!--
 <form>
   <div style="width: 60%;display: inline-block; box-sizing: border-box;">
-  
-<div style="word-wrap: break-word; width: 90%; padding-left: 1em;">
+-->
+<div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
 **07/2023** &mdash; I am presenting our paper about **multimodal alignment** as well as joint work analyzing **What we can and cannot learn from responses to legislative speeches** (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) @ the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
+
+**05/2023** &mdash; I am presenting my paper **Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
 **05/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about **Making the Most of Multimodal Data** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
@@ -68,7 +71,7 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
-<div style="word-wrap: break-word; width: 90%; padding-left: 1em;"> 
+<div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
 
 **10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) @ TU Darmstadt
 
@@ -82,7 +85,8 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 </div>
 </details>
-
+<!--
   </div><div style="width: 40%;display: inline-block; box-sizing: border-box; vertical-align: top;">
   <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/ankuepfer?ref_src=twsrc%5Etfw">Tweets by ankuepfer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
 </form>
+-->

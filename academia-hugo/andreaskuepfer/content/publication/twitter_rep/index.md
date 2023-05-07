@@ -1,14 +1,12 @@
 ---
-title: "What we can and cannot learn from responses to legislative speeches. Evidence from the German Bundestag, 1949-2021 (Conference Paper, 2022)"
+title: "Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter (Conference Paper, 2023)"
 authors:
 - admin
-- Jochen Müller
-- Christian Stecker
-date: "2022-09-30T00:00:00Z"
+date: "2023-05-12T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2022-09-30T00:00:00Z"
+publishDate: "2023-05-12T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -17,19 +15,18 @@ publishDate: "2022-09-30T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Küpfer, Jochen Müller and Christian Stecker, n.d. &quot;Exploring (dis)agreement and salience with applause and
-interjections. Evidence from the German Bundestag, 1979-2021&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Andreas Küpfer, n.d. &quot;Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
-abstract: "(Dis)agreement and salience are key components of explanations in political science. Several approaches such as expert surveys and quantitative text analysis provide useful measures of these concepts. We show that further measures can be gained from an often overlooked part of debates: non-verbal (e.g. applause, laughter) or verbal (short statements) acts of members of parliament. The frequency, intensity and directions of these acts paint a fine-grained picture of salience, conflict and polarization of political issues and cycles in coalition mood, inter-party relations and elections. ‘In our proof of concept’, we explore this potential of using a novel corpus of all debates of the German Bundestag between 1949 and 2021."
+abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: 
 
 tags:
-- Speeches
+- Twitter
+- Replication
 - text-as-data
-- Interjections
 featured: true
 
 # links:

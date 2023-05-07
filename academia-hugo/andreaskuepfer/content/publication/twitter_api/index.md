@@ -64,4 +64,4 @@ projects: []
 # slides: slides
 ---
 
-Supplementary files can be added here, including [slides and code](https://github.com/SocialScienceDataLab/twitter-api-bert-method).
+[Slides and code](https://github.com/SocialScienceDataLab/twitter-api-bert-method).
