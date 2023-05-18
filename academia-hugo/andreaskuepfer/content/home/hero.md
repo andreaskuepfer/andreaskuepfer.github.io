@@ -56,7 +56,7 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 **07/2023** &mdash; I am presenting our paper about **multimodal alignment** as well as joint work analyzing **What we can and cannot learn from responses to legislative speeches** (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) @ the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
-**06/2023** &mdash; I am presenting our paper about **multimodal alignment** @ [EPSA](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
+**06/2023** &mdash; I am presenting our paper about **multimodal alignment** @ [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
 
 **05/2023** &mdash; I am presenting my paper **Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
