@@ -75,6 +75,6 @@ email: ""
 #- Visitors
 ---
 
-I analyze political communication, including social media, speeches, and press releases, using a combination of machine learning models and traditional methods to address substantial questions in Political Science and advance methodological research. In the course of my Master thesis I developed a framework to estimate legislator-level salience and position estimates based on political text using Transformers. Additionally, I teach different postgraduate courses at TU Darmstadt on quantitative methods using R. My substantial interests focus on political communication and intra-party heterogeneity.
+My work is centered around the analysis of multimodal political communication, encompassing various channels such as speeches, political advertisements and social media. To address significant questions in Political Science, I employ a combination of (multimodal) deep learning models and traditional methods, contributing to both substantial and methodological research. In addition, I am passionate about teaching and imparting knowledge to others. As a research associate at TU Darmstadt, I instruct various postgraduate courses focused on quantitative methods with a focus on text-driven methods. Substantively, my interests primarily lie in the areas of political communication and intra-party heterogeneity, which I believe are critical for understanding the complexities of modern political structures and discourse.
 
-I'm happy to connect with you via [Twitter](https://www.twitter.com/ankuepfer) or by sending me a [mail](mailto:andreas.kuepfer@tu-darmstadt.de).
+I'm happy to connect with you either via [Twitter](https://www.twitter.com/ankuepfer) or by [email](mailto:andreas.kuepfer@tu-darmstadt.de).
