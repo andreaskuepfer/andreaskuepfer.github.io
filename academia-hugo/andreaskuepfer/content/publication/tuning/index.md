@@ -1,30 +1,30 @@
 ---
-title: "The Role of Hyperparameters in Machine Learning Models and How to Tune Them (Working Paper, 2022)"
+title: "The Role of Hyperparameters in Machine Learning Models and How to Tune Them (Forthcoming, Political Science Research and Methods)"
 authors:
 - Christian Arnold
 - Luka Biedebach
 - admin
 - Marcel Neunhoeffer
-date: "2022-07-30T00:00:00Z"
+date: "2023-07-05T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2022-07-30T00:00:00Z"
+publishDate: "2022-07-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
-publication_types: ["1"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Christian Arnold, Luka Biedebach, Andreas Küpfer, and Marcel Neunhoeffer, n.d. &quot;The Role of Hyperparameters in Machine Learning Models and How to Tune Them&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Christian Arnold, Luka Biedebach, Andreas Küpfer, and Marcel Neunhoeffer, Forthcoming &quot;The Role of Hyperparameters in Machine Learning Models and How to Tune Them&quot; <i>Political Science Research and Methods (PSRM)</i>.*"
 publication_short: 
 
-abstract: 
+abstract: "Hyperparameters critically influence how well machine learning models perform on unseen, out-of-sample data. Systematically comparing the performance of different hyperparameter settings will often go a long way in building confidence about a model’s performance. However, analyzing 64 machine learning related manuscripts published in three leading political science journals (APSR, PA, and PSRM) between 2016 and 2021, we find that only 13 publications (20.31%) report the hyperparameters and also how they tuned them in either the paper or the appendix. We illustrate the dangers of cursory attention to model and tuning transparency in comparing machine learning models’ capability to predict electoral violence from tweets. The tuning of hyperparameters and their documentation should become a standard component of robustness checks for machine learning models."
 
 # Summary. An optional shortened abstract.
-summary: 
+summary: "Hyperparameters critically influence how well machine learning models perform on unseen, out-of-sample data. Systematically comparing the performance of different hyperparameter settings will often go a long way in building confidence about a model’s performance. However, analyzing 64 machine learning related manuscripts published in three leading political science journals (APSR, PA, and PSRM) between 2016 and 2021, we find that only 13 publications (20.31%) report the hyperparameters and also how they tuned them in either the paper or the appendix. We illustrate the dangers of cursory attention to model and tuning transparency in comparing machine learning models’ capability to predict electoral violence from tweets. The tuning of hyperparameters and their documentation should become a standard component of robustness checks for machine learning models."
 
 tags:
 - Machine Learning
@@ -35,7 +35,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: "papers/PSRM___Using_Machine_Learning-11.pdf"
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''
