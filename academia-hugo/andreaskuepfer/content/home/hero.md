@@ -54,7 +54,7 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
-**07/2023** &mdash; Our paper, [The role of hyperparameters in machine learning models and how to tune them](https://andreaskuepfer.github.io/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods (PSRM)
+**07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreaskuepfer.github.io/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods (PSRM)
 
 **07/2023** &mdash; I am presenting our paper about **multimodal alignment** as well as joint work analyzing **What we can and cannot learn from responses to legislative speeches** (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) @ the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
