@@ -31,9 +31,9 @@ interests:
 - Data Science
 - Text-as-data
 - Machine Learning
-- Social Media Communication
+- Multimodal Data Analysis
 - Political Communication
-- Intra-Party Heterogeneity
+- Parliaments
 
 education:
   courses:
@@ -58,6 +58,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/ankuepfer
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=0vFsJu0AAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/andreaskuepfer
@@ -75,6 +78,6 @@ email: ""
 #- Visitors
 ---
 
-My work is centered around the analysis of multimodal political communication, encompassing various channels such as speeches, political advertisements and social media. To address significant questions in Political Science, I employ a combination of (multimodal) deep learning models and traditional methods, contributing to both substantial and methodological research. In addition, I am passionate about teaching and imparting knowledge to others. As a research associate at TU Darmstadt, I instruct various postgraduate courses focused on quantitative methods with a focus on text-driven methods. Substantively, my interests primarily lie in the areas of political communication and intra-party heterogeneity, which I believe are critical for understanding the complexities of modern political structures and discourse.
+My work is centered around the analysis of multimodal political communication, encompassing various channels such as speeches, political advertisements and social media. To address significant questions in Political Science, I employ a combination of (multimodal) deep learning models and traditional methods, contributing to both substantial and methodological research. In addition, I am passionate about teaching and imparting knowledge to others. As a research associate at TU Darmstadt, I instruct various postgraduate courses focused on quantitative methods with a focus on text-driven methods. Substantively, my interests primarily lie in the areas of political communication and legislative studies, which I believe are critical for understanding the complexities of modern political structures and discourse.
 
 I'm happy to connect with you either via [Twitter](https://www.twitter.com/ankuepfer) or by [email](mailto:andreas.kuepfer@tu-darmstadt.de).

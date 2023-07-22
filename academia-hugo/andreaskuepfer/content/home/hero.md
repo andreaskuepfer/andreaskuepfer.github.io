@@ -54,6 +54,8 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**07/2023** &mdash; Our paper, [The role of hyperparameters in machine learning models and how to tune them](https://andreaskuepfer.github.io/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods (PSRM)
+
 **07/2023** &mdash; I am presenting our paper about **multimodal alignment** as well as joint work analyzing **What we can and cannot learn from responses to legislative speeches** (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) @ the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
 **06/2023** &mdash; I am presenting our paper about **multimodal alignment** @ [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
@@ -62,16 +64,16 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
 
 **05/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about **Making the Most of Multimodal Data** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
-**04/2023** &mdash; Spring 2023 Semester: Teaching Quantitative Text Analysis in R (Postgraduate seminar) @ TU Darmstadt
-
-**03/2023** &mdash; Giving a guest lecture in Data Analysis via the [Brückenprogramm of TU Darmstadt/National University of Kyiv-Mohyla Academy](https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/michele_knodt/news_details_88256.en.jsp)
-
 </div>
 
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**04/2023** &mdash; Spring 2023 Semester: Teaching Quantitative Text Analysis in R (Postgraduate seminar) @ TU Darmstadt
+
+**03/2023** &mdash; Giving a guest lecture in Data Analysis via the [Brückenprogramm of TU Darmstadt/National University of Kyiv-Mohyla Academy](https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/michele_knodt/news_details_88256.en.jsp)
 
 **02/2023** &mdash; Holding a 2-Day workshop on [**Getting started with Python: A how-to guide for social scientists**](https://www.mzes.uni-mannheim.de/socialsciencedatalab/page/events/) together with [Ruben Bach](https://www.mzes.uni-mannheim.de/d7/de/profiles/ruben-l-bach) @ MZES Social Science Data Lab in Mannheim
 
