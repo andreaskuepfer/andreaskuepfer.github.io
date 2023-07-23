@@ -2,6 +2,7 @@
 title: "BERT and Explainable AI (Blog Post, 2023)"
 authors:
 - admin
+- Cosima Meyer
 date: "2023-03-28T00:00:00Z"
 doi: ""
 
