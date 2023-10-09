@@ -58,8 +58,8 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/ankuepfer
-- icon: cloud
-  icon_pack: fab
+- icon: bluesky
+  icon_pack: custom
   link: https://bsky.app/profile/ankuepfer.bsky.social
 - icon: google-scholar
   icon_pack: ai
