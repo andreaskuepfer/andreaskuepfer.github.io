@@ -1,5 +1,5 @@
 ---
-title: "Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter (Conference Paper, 2023)"
+title: "Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies (Working Paper, 2023)"
 authors:
 - admin
 date: "2023-05-12T00:00:00Z"
@@ -15,7 +15,7 @@ publishDate: "2023-03-12T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Küpfer, n.d. &quot;Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Andreas Küpfer, n.d. &quot;Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies&quot; <i>Under Review</i>.*"
 publication_short: 
 
 abstract: ""

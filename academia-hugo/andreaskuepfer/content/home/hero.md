@@ -44,7 +44,7 @@ hero_media = ""
 +++
 ## Welcome to my website!
 
-I am a Ph.D. candidate and Research Associate at the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a> (since 05/2022) working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. As a team member of the [Social Science Data Lab Blog](https://www.mzes.uni-mannheim.de/socialsciencedatalab/) based at the [Mannheim Center for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/), I do both, supporting the organization and implementation of workshops as well as contributing blog posts and input talks.
+I am a Ph.D. candidate and Research Associate at the Institute for Political Science (<a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>) working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science.
 
 ### Latest News
 
@@ -53,6 +53,8 @@ I am a Ph.D. candidate and Research Associate at the <a href="https://www.politi
   <div style="width: 60%;display: inline-block; box-sizing: border-box;">
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
+
+**11/2023** &mdash; At the [Annual Conference of the International Association for the Study of German Politics](https://www.iasgp.org/cfp-iasgp-2023-annual-conference-shocks-to-the-german-system-german-politics-in-2023/) in Mannheim I will present our Multimodal Paper with [Christian Arnold](http://christianarnold.org/)
 
 **10/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about **Making the Most of Multimodal Data** @ [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
 
