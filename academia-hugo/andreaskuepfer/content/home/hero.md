@@ -42,9 +42,9 @@ hero_media = ""
   label = "Contact me"
 
 +++
-## Welcome to my website!
+## Welcome!
 
-I am a Ph.D. candidate and Research Associate at the Institute for Political Science (<a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>) working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My work is centered around the analysis of multimodal political communication, encompassing various channels such as parliamentary speeches, political advertisements and social media.
+I am a Ph.D. candidate and Research Associate at the Institute for Political Science of the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a> working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My work is centered around the analysis of multimodal political communication, encompassing various channels such as parliamentary speeches, political advertisements and social media.
 
 ### Latest News
 

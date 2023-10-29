@@ -13,7 +13,7 @@ weight = 100
 
 +++
 - Spring 2023: Quantitative Text Analysis in R (Postgraduate seminar, Technical University of Darmstadt)
-- Fall 2022: Introduction to Quantitative Methods in R (Postgraduate seminar, Technical University of Darmstadt)
+- Fall 2022 & Fall 2023: Introduction to Quantitative Methods in R (Postgraduate seminar, Technical University of Darmstadt)
 - Spring 2017: IT Security and Operating Systems (Undergraduate tutorial, University of Applied Sciences Karlsruhe)
 - Fall 2016: Programming II (Undergraduate tutorial, University of Applied Sciences Karlsruhe)
 - Spring 2016: Introduction to Business Informatics (Undergraduate tutorial, University of Applied Sciences Karlsruhe)
