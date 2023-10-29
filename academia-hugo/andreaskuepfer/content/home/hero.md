@@ -56,15 +56,13 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **11/2023** &mdash; At the [Annual Conference of the International Association for the Study of German Politics](https://www.iasgp.org/cfp-iasgp-2023-annual-conference-shocks-to-the-german-system-german-politics-in-2023/) in Mannheim I will present our Multimodal Paper with [Christian Arnold](http://christianarnold.org/)
 
-**10/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about **Making the Most of Multimodal Data** @ [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
+**10/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Making the Most of Multimodal Data at the [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
 
 **07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreaskuepfer.github.io/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods (PSRM)
 
-**07/2023** &mdash; I am presenting our paper about **multimodal alignment** as well as joint work analyzing **What we can and cannot learn from responses to legislative speeches** (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) @ the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
+**07/2023** &mdash; I am presenting our paper about multimodal alignment as well as joint work analyzing What we can and cannot learn from responses to legislative speeches (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) at the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
-**06/2023** &mdash; I am presenting our paper about **multimodal alignment** @ [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
-
-**05/2023** &mdash; I am presenting my paper **Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
+**06/2023** &mdash; I am presenting our paper about multimodal alignment at the [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
 
 </div>
 
@@ -72,6 +70,8 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**05/2023** &mdash; I am presenting my paper Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
 **05/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about **Making the Most of Multimodal Data** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
