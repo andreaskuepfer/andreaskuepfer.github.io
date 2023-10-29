@@ -9,8 +9,8 @@
   weight = 10
 
 [[main]]
-  name = "Publications"
-  url = "#publications"
+  name = "Research"
+  url = "#research"
   weight = 40
 
 [[main]]
@@ -21,11 +21,11 @@
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
+  weight = 70
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
   name = "CV"
   url = "cv/kuepfer_andreas_cv.pdf"
-  weight = 70
+  weight = 60

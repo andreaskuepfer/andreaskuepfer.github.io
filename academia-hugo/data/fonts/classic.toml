@@ -2,13 +2,13 @@
 name = "Classic"
 
 # Optional Google font URL
-google_fonts = "Lora"
+google_fonts = "Libre+Franklin"
 
 # Font families
-heading_font = "Lora"
-body_font = "Lora"
-nav_font = "Lora"
-mono_font = "Lora"
+heading_font = "Libre+Franklin"
+body_font = "Libre+Franklin"
+nav_font = "Libre+Franklin"
+mono_font = "Libre+Franklin"
 
 # Font size
 font_size = "20"
