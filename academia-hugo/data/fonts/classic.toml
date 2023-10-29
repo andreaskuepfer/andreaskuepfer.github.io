@@ -12,4 +12,4 @@ mono_font = "Libre+Franklin"
 
 # Font size
 font_size = "18"
-font_size_small = "12"
+font_size_small = "14"

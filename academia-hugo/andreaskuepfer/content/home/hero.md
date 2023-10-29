@@ -44,7 +44,7 @@ hero_media = ""
 +++
 ## Welcome to my website!
 
-I am a Ph.D. candidate and Research Associate at the Institute for Political Science (<a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>) working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science.
+I am a Ph.D. candidate and Research Associate at the Institute for Political Science (<a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>) working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My work is centered around the analysis of multimodal political communication, encompassing various channels such as parliamentary speeches, political advertisements and social media.
 
 ### Latest News
 
@@ -73,23 +73,23 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **05/2023** &mdash; I am presenting my paper Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
-**05/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about **Making the Most of Multimodal Data** @ [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
+**05/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Making the Most of Multimodal Data at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
-**04/2023** &mdash; Spring 2023 Semester: Teaching Quantitative Text Analysis in R (Postgraduate seminar) @ TU Darmstadt
+**04/2023** &mdash; Spring 2023 Semester: Teaching Quantitative Text Analysis in R (Postgraduate seminar) at TU Darmstadt
 
 **03/2023** &mdash; Giving a guest lecture in Data Analysis via the [Brückenprogramm of TU Darmstadt/National University of Kyiv-Mohyla Academy](https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/michele_knodt/news_details_88256.en.jsp)
 
-**02/2023** &mdash; Holding a 2-Day workshop on [**Getting started with Python: A how-to guide for social scientists**](https://www.mzes.uni-mannheim.de/socialsciencedatalab/page/events/) together with [Ruben Bach](https://www.mzes.uni-mannheim.de/d7/de/profiles/ruben-l-bach) @ MZES Social Science Data Lab in Mannheim
+**02/2023** &mdash; Holding a 2-Day workshop on [Getting started with Python: A how-to guide for social scientists](https://www.mzes.uni-mannheim.de/socialsciencedatalab/page/events/) together with [Ruben Bach](https://www.mzes.uni-mannheim.de/d7/de/profiles/ruben-l-bach) at the MZES Social Science Data Lab in Mannheim
 
-**10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) @ TU Darmstadt
+**10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) at TU Darmstadt
 
-**10/2022** &mdash; Presenting joint work with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/) about [applause and interjections pattern in the German Bundestag](https://andreaskuepfer.github.io/publication/interjections/) @ DVPW meeting for comparative parliamentarism research in Bremen
+**10/2022** &mdash; Presenting joint work with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/) about [applause and interjections pattern in the German Bundestag](https://andreaskuepfer.github.io/publication/interjections/) at the DVPW meeting for comparative parliamentarism research in Bremen
 
-**06/2022** &mdash; Presenting joint work with [Denis Cohen](https://denis-cohen.github.io/) about estimating legislator-level issue salience and issue positions from political text @ PolMeth Europe 2022 in Hamburg as well as @ EPSA 2022 in Prague
+**06/2022** &mdash; Presenting joint work with [Denis Cohen](https://denis-cohen.github.io/) about estimating legislator-level issue salience and issue positions from political text @ PolMeth Europe 2022 in Hamburg as well as at EPSA 2022 in Prague
 
-**05/2022** &mdash; MZES SSDL blog post and input talk about the [**Collection, Management, and Analysis of Twitter Data**](https://andreaskuepfer.github.io/publication/twitter_api/)
+**05/2022** &mdash; MZES SSDL blog post and input talk about the [Collection, Management, and Analysis of Twitter Data](https://andreaskuepfer.github.io/publication/twitter_api/)
 
-**05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) @ Technical University of Darmstadt and co-supervised by [Christian Arnold](http://christianarnold.org/) @ Cardiff University
+**05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) at Technical University of Darmstadt and co-supervised by [Christian Arnold](http://christianarnold.org/) at Cardiff University
 
 </div>
 </details>
