@@ -56,7 +56,7 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **04/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
 
-**11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of our methods at our [MethodPark](https://sites.google.com/view/methodpark)
+**11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of these methods at our [MethodPark](https://sites.google.com/view/methodpark)
 
 **11/2023** &mdash; At the [Annual Conference of the International Association for the Study of German Politics](https://www.iasgp.org/cfp-iasgp-2023-annual-conference-shocks-to-the-german-system-german-politics-in-2023/) in Mannheim I will present our Multimodal Paper with [Christian Arnold](http://christianarnold.org/)
 
