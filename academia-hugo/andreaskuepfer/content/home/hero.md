@@ -54,6 +54,10 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**04/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
+
+**11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of our methods at our [https://sites.google.com/view/methodpark](MethodPark).
+
 **11/2023** &mdash; At the [Annual Conference of the International Association for the Study of German Politics](https://www.iasgp.org/cfp-iasgp-2023-annual-conference-shocks-to-the-german-system-german-politics-in-2023/) in Mannheim I will present our Multimodal Paper with [Christian Arnold](http://christianarnold.org/)
 
 **10/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Making the Most of Multimodal Data at the [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
@@ -62,14 +66,14 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **07/2023** &mdash; I am presenting our paper about multimodal alignment as well as joint work analyzing What we can and cannot learn from responses to legislative speeches (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) at the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
-**06/2023** &mdash; I am presenting our paper about multimodal alignment at the [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
-
 </div>
 
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**06/2023** &mdash; I am presenting our paper about multimodal alignment at the [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
 
 **05/2023** &mdash; I am presenting my paper Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
