@@ -54,7 +54,7 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
-**01/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming ECPR Summer School on Parliaments from August 17, 2024, to August 29, 2024, in Frankfurt. Detailed Infos on the [ECPR Website](https://ecpr.eu/Events/265)
+**08/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming ECPR Summer School on Parliaments from August 17, 2024, to August 29, 2024, in Frankfurt. Detailed Infos on the [ECPR Website](https://ecpr.eu/Events/265)
 
 **04/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
 
