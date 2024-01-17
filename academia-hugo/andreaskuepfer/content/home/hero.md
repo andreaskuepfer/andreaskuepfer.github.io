@@ -54,6 +54,8 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**01/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming ECPR Summer School on Parliaments from August 17, 2024, to August 29, 2024, in Frankfurt. Detailed Infos on the [ECPR Website](https://ecpr.eu/Events/265)
+
 **04/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
 
 **11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of these methods at our [MethodPark](https://sites.google.com/view/methodpark)
@@ -64,14 +66,14 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreaskuepfer.github.io/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods (PSRM)
 
-**07/2023** &mdash; I am presenting our paper about multimodal alignment as well as joint work analyzing What we can and cannot learn from responses to legislative speeches (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) at the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
-
 </div>
 
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**07/2023** &mdash; I am presenting our paper about multimodal alignment as well as joint work analyzing What we can and cannot learn from responses to legislative speeches (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) at the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
 **06/2023** &mdash; I am presenting our paper about multimodal alignment at the [European Political Science Association 13th Annual Conference](https://virtual.oxfordabstracts.com/#/event/3738/submission/1477) in Glasgow
 
