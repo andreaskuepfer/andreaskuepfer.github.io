@@ -3,7 +3,7 @@ title: "How Alignment Helps Make the Most of Multimodal Data (Working Paper, 202
 authors:
 - Christian Arnold
 - admin
-date: "2023-05-12T00:00:00Z"
+date: "2023-03-12T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
