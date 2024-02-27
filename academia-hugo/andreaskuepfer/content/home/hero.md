@@ -54,9 +54,13 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
-**08/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming [ECPR Summer School on Parliaments](https://ecpr.eu/Events/265) from August 17, 2024, to August 29, 2024, in Frankfurt
+**02/2024** &mdash; My paper, [Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies](https://andreaskuepfer.github.io/papers/PA_Kuepfer_Twitter_Replication.pdf) has been accepted by Political Analysis (PA)
 
-**04/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
+**02/2024** &mdash; I am excited to dive deeper into the analysis of multimodal political communication as part of a research stay in February/March 2024 at University of Birmingham (School of Government/AI in Government) hosted by [Slava Jankin](https://sjankin.com/)
+
+**01/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming [ECPR Summer School on Parliaments](https://ecpr.eu/Events/265) from August 17, 2024, to August 29, 2024, in Frankfurt
+
+**01/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
 
 **11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of these methods at our [MethodPark](https://sites.google.com/view/methodpark)
 
