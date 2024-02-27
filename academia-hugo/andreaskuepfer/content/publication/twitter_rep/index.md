@@ -32,7 +32,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: PA_Kuepfer_Twitter_Replication.pdf
+url_pdf: "papers/PA_Kuepfer_Twitter_Replication.pdf"
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''
