@@ -50,7 +50,6 @@
   </div>
   <div class="col-md-6">
     <ul class="fa-ul" itemscope>
-      {{ if and site.Params.email (not $page.Params.email_form) }}
       <li>
         <i class="fa-li fas fa-envelope mt-2" aria-hidden="true"></i>
         <span id="person-email" itemprop="email">
@@ -58,7 +57,6 @@
             href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>{{ else }}{{ site.Params.email }}{{ end -}}
         </span>
       </li>
-      {{ end }}
 
       {{ with site.Params.phone }}
       <li>

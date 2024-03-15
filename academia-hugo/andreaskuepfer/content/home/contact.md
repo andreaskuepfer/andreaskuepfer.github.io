@@ -9,7 +9,7 @@ title = "Contact"
 subtitle = "Connect with me"
 
 # Automatically link email and phone?
-autolink = false
+autolink = true
 
 # Email form provider
 #   0: Disable email form
