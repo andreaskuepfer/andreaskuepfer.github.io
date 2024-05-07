@@ -12,6 +12,7 @@ subtitle = ""
 weight = 100
 
 +++
+- Spring 2024: Analysis and Comparison of Political Systems (Undergraduate proseminar, Technical University of Darmstadt)
 - Spring 2023: Quantitative Text Analysis in R (Postgraduate seminar, Technical University of Darmstadt)
 - Fall 2022 & Fall 2023: Introduction to Quantitative Methods in R (Postgraduate seminar, Technical University of Darmstadt)
 - Spring 2017: IT Security and Operating Systems (Undergraduate tutorial, University of Applied Sciences Karlsruhe)

@@ -55,6 +55,8 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**05/2024** &mdash; On May 8th at 3pm CET, I'm presenting our paper on How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) at the [Text-as-Data Reading Group](http://tada.cool/) Spring 2024 Speaker Series.
+
 **05/2024** &mdash; [Christian Arnold](http://christianarnold.org/) and I have a new working paper: Structuring Quantitative Image Analysis with Metric Depth. We're presenting it at the upcoming 6th Annual COMPTEXT Conference (May 2-4, 2024) in Amsterdam
 
 **02/2024** &mdash; My paper, [Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies](https://andreaskuepfer.github.io/papers/PA_Kuepfer_Twitter_Replication.pdf) has been accepted at Political Analysis
@@ -63,14 +65,14 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **01/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming [ECPR Summer School on Parliaments](https://ecpr.eu/Events/265) from August 17, 2024, to August 29, 2024, in Frankfurt
 
-**01/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
-
 </div>
-
+<!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**01/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
 
 **11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of these methods at our [MethodPark](https://sites.google.com/view/methodpark)
 
@@ -104,8 +106,10 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 
 **05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) at Technical University of Darmstadt and co-supervised by [Christian Arnold](http://christianarnold.org/) at Cardiff University
 
+
 </div>
 </details>
+-->
 <!--
   </div><div style="width: 40%;display: inline-block; box-sizing: border-box; vertical-align: top;">
   <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/ankuepfer?ref_src=twsrc%5Etfw">Tweets by ankuepfer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
