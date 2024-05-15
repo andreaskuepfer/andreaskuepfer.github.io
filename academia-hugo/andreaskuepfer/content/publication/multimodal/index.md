@@ -19,7 +19,7 @@ publication_types: ["1"]
 publication: "*Christian Arnold and Andreas Küpfer, n.d. &quot;How Alignment Helps Make the Most of Multimodal Data&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
-abstract: ""
+abstract: "When studying political communication, combining the information from text, audio, and video signals promises to reflect the richness of human communication more comprehensively than confining it to individual modalities alone. However, when modeling such multimodal data, its heterogeneity, connectedness, and interaction are challenging to address. We argue that aligning the respective modalities can be an essential step in entirely using the potential of multimodal data because it informs the model with human understanding. Exploring aligned modalities unlocks promising analytical leverage. First, it allows us to make the most of information in the data, which inter alia opens the door to better quality predictions. Second, it is possible to answer research questions that span multiple modalities with cross-modal queries. Finally, alignment addresses concerns about model interpretability. We illustrate the utility of this approach by analyzing how German MPs address members of the far-right AfD in their speeches, and predicting the tone of video advertising in the context of the 2020 US presidential race. Our paper offers important insights to all keen to analyze multimodal data effectively."
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -34,7 +34,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: https://arxiv.org/abs/2405.08454
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''

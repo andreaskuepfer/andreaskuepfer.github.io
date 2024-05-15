@@ -55,6 +55,8 @@ I am a Ph.D. candidate and Research Associate at the Institute for Political Sci
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**05/2024** &mdash; Find the preprint of our working paper How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2405.08454).
+
 **05/2024** &mdash; On May 8th at 3pm CET, I'm presenting our paper on How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) at the [Text-as-Data Reading Group](http://tada.cool/) Spring 2024 Speaker Series.
 
 **05/2024** &mdash; [Christian Arnold](http://christianarnold.org/) and I have a new working paper: Structuring Quantitative Image Analysis with Metric Depth. We're presenting it at the upcoming 6th Annual COMPTEXT Conference (May 2-4, 2024) in Amsterdam
