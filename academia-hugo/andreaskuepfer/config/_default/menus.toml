@@ -28,4 +28,5 @@
 [[main]]
   name = "CV"
   url = "cv/kuepfer_andreas_cv.pdf"
+  target="_blank"
   weight = 60
