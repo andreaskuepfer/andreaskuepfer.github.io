@@ -21,6 +21,20 @@
 {{ if and $featured (not .Params.image.preview_only) }}
 {{ $image := $featured.Fill (printf "680x500 q90 %s" $anchor) }}
 <div class="container split-header">
+    <div class="{{$ctnr}} py-3">
+      <h1 itemprop="name">{{ $title }}</h1>
+
+      {{ with $page.Params.subtitle }}
+      <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
+      {{end}}
+
+      {{ if not .IsNode }}
+      {{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}
+      {{ partial "page_links_div.html" $page }}
+      {{end}}
+      {{end}}
+    </div>
+  </div>
   <div class="row justify-content-center">
     <div class="col-lg-8">
         <img class="img-fluid w-100" src="{{ $image.RelPermalink }}" itemprop="image" alt="">
@@ -45,18 +59,4 @@
     {{ if $page.IsNode }}
     {{ $ctnr = "universal-wrapper" }}
     {{end}}
-    <div class="{{$ctnr}} py-3">
-      <h1 itemprop="name">{{ $title }}</h1>
-
-      {{ with $page.Params.subtitle }}
-      <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
-      {{end}}
-
-      {{ if not .IsNode }}
-      {{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}
-      {{ partial "page_links_div.html" $page }}
-      {{end}}
-      {{end}}
-    </div>
-  </div>
 </div>
