@@ -23,6 +23,11 @@
 <div class="container split-header">
   <div class="row justify-content-center">
     <div class="col-lg-8">
+        <img class="img-fluid w-100" src="{{ $image.RelPermalink }}" itemprop="image" alt="">
+        {{ with $.Params.image.caption }}<span
+          class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+    </div>
+    <div class="col-lg-8">
       <h1 itemprop="name">{{ $title }}</h1>
 
       {{ with $page.Params.subtitle }}
@@ -52,11 +57,6 @@
       {{ partial "page_links_div.html" $page }}
       {{end}}
       {{end}}
-    </div>
-    <div class="col-lg-8">
-        <img class="img-fluid w-100" src="{{ $image.RelPermalink }}" itemprop="image" alt="">
-        {{ with $.Params.image.caption }}<span
-          class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
     </div>
   </div>
 </div>
