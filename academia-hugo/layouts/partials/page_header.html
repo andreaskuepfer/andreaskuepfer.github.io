@@ -19,7 +19,7 @@
 
 {{/* Featured image */}}
 {{ if and $featured (not .Params.image.preview_only) }}
-{{ $image := $featured.Fill (printf "680x500 q90 %s" $anchor) }}
+{{ $image := $featured.Fill (printf "580x400 q100 %s" $anchor) }}
 <div class="container split-header">
   <div class="row justify-content-center">
     <div class="col-lg-8">
