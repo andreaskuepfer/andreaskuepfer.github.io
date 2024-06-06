@@ -6,7 +6,7 @@ authors:
 - admin
 - Marcel Neunhoeffer
 date: "2023-07-05T00:00:00Z"
-doi: ""
+doi: "10.1017/psrm.2023.61"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2022-07-01T00:00:00Z"
@@ -34,6 +34,7 @@ featured: true
 
 # links:
 # - name: ""
+doi: "10.1017/psrm.2023.61"
 external_url: "https://doi.org/10.1017/psrm.2023.61"
 url_pdf: "papers/PSRM___Using_Machine_Learning-11.pdf"
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'

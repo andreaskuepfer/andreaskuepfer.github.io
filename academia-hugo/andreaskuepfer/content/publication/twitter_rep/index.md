@@ -3,7 +3,7 @@ title: "Nonrandom Tweet Mortality and Data Access Restrictions: Compromising the
 authors:
 - admin
 date: "2024-02-06T00:00:00Z"
-doi: ""
+doi: "10.1017/pan.2024.7"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2024-02-06T00:00:00Z"
@@ -31,7 +31,7 @@ featured: true
 
 # links:
 # - name: ""
-external_url: "https://doi.org/10.1017/pan.2024.7"
+doi: "10.1017/pan.2024.7"
 url_pdf: "papers/PA_Kuepfer_Twitter_Replication.pdf"
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
