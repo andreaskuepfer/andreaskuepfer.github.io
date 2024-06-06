@@ -48,7 +48,7 @@ url_pdf: "papers/PSRM___Using_Machine_Learning-11.pdf"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: "Figure 1: Example with polynomial regression. Data X ~ N(0, 1). Data generating process: , with . Regression Line for Bivariate OLS Model in Blue. Regression Curve for Polynomial Regression with λ = 3 in Teal."
   focal_point: ""
   preview_only: false
 
