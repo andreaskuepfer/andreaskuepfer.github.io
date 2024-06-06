@@ -49,7 +49,7 @@ url_dataset: 'https://doi.org/10.7910/DVN/HLJW1Q'
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: "Figure 1: Example with polynomial regression. Data X ~ N(0, 1). Data generating process: , with . Regression Line for Bivariate OLS Model in Blue. Regression Curve for Polynomial Regression with λ = 3 in Teal."
-  focal_point: ""
+  focal_point: "Smart"
   preview_only: false
 
 # Associated Projects (optional).

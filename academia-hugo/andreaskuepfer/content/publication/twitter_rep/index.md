@@ -45,7 +45,7 @@ url_dataset: 'https://doi.org/10.24433/CO.1624743.v3'
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: "Figure 6: Comparison of regression model coefficients based on the original, recrawled, and resampled dataset with their 95% confidence intervals. The resampled regression model is a simulation based on rebalanced party and gender ratios following the original dataset distributions."
-  focal_point: ""
+  focal_point: "Smart"
   preview_only: false
 
 # Associated Projects (optional).
