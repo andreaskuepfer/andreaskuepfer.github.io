@@ -1,7 +1,7 @@
 ---
 # Display name
 name: Andreas Küpfer
-avatar_image: "user-full.png"
+avatar_image: "user-full-2.png"
 # Username (this should match the folder name)
 authors:
 - admin
@@ -22,7 +22,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: ""
+bio: "I am a PhD candidate at the Technical University of Darmstadt, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a M.Sc. in Data Science. My work is centered around analyzing multimodal political communication, encompassing various channels such as parliamentary speeches, political advertisements, and social media."
 
 # Should the user's education and interests be displayed?
 display_education: true
