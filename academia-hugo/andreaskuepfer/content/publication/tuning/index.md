@@ -34,7 +34,7 @@ featured: true
 
 # links:
 # - name: ""
-url: "https://doi.org/10.1017/psrm.2023.61"
+external_url: "https://doi.org/10.1017/psrm.2023.61"
 url_pdf: "papers/PSRM___Using_Machine_Learning-11.pdf"
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
