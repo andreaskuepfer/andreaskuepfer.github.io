@@ -55,6 +55,8 @@ I am a PhD candidate and Research Associate at the Institute for Political Scien
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**06/2024** &mdash; I am attending the [Video Research Institute](https://cla.purdue.edu/communication/ccse/video-research-institute/) at Purdue University (June 24-29) (hosted by [Bryce Dietrich](http://www.brycejdietrich.com/index.html)).
+
 **05/2024** &mdash; Find the preprint of our working paper How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2405.08454).
 
 **05/2024** &mdash; On May 8th at 3pm CET, I'm presenting our paper on How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) at the [Text-as-Data Reading Group](http://tada.cool/) Spring 2024 Speaker Series.
@@ -65,14 +67,14 @@ I am a PhD candidate and Research Associate at the Institute for Political Scien
 
 **02/2024** &mdash; I am excited to dive deeper into the analysis of multimodal political communication as part of a research stay in February/March 2024 at University of Birmingham (School of Government/AI in Government) hosted by [Slava Jankin](https://sjankin.com/)
 
-**01/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming [ECPR Summer School on Parliaments](https://ecpr.eu/Events/265) from August 17, 2024, to August 29, 2024, in Frankfurt
-
 </div>
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**01/2024** &mdash; With [Jan Berz](https://www.jan-berz.de/), [Christian Stecker](https://chrstecker.de/), and [Thomas Zittel](https://www.fb03.uni-frankfurt.de/42421522/tzittel), I'm co-directing the upcoming [ECPR Summer School on Parliaments](https://ecpr.eu/Events/265) from August 17, 2024, to August 29, 2024, in Frankfurt
 
 **01/2024** &mdash; We're presenting our paper How Alignment Helps Make the Most of Multimodal Data at the [81st MPSA conference 2024](https://www.mpsanet.org/conference/) in Chicago
 
