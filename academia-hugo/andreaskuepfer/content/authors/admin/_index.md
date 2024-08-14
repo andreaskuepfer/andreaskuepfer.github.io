@@ -28,16 +28,14 @@ bio: "I am a PhD candidate at the Technical University of Darmstadt, working at 
 display_education: true
 
 interests:
-- Data Science
-- Text-as-data
-- Machine Learning
-- Multimodal Data Analysis
+- Legislative Debates
 - Political Communication
-- Parliaments
+- Multimodal Data
+- NLP
 
 education:
   courses:
-  - course: Ph.D. Student and Research Associate
+  - course: PhD Student
     institution: Technical University of Darmstadt
     year: Ongoing
   - course: M.Sc. in Data Science
@@ -80,6 +78,6 @@ email: ""
 
 Welcome! I'm a PhD candidate at the Institute for Political Science of the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My work is centered around analyzing multimodal political communication, encompassing various channels such as parliamentary speeches, political advertisements, and social media.
 
-To address significant questions in Political Science, I employ a combination of (multimodal) deep learning models and traditional methods, contributing to both substantial and methodological research. In addition, I am passionate about teaching and imparting knowledge to others. I instruct various postgraduate courses focused on quantitative methods with a focus on Computational Social Science. Substantively, my interests primarily lie in the area of legislative debates, which I believe is critical for understanding the complexities of modern political structures. I'm part of the organizational team of the [Social Science Data Lab Blog](https://www.mzes.uni-mannheim.de/socialsciencedatalab/) ([Mannheim Center for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/)).
+To address significant questions in Political Science, I employ a combination of (multimodal) deep learning models and traditional methods, contributing to both substantial and methodological research. In addition, I'm passionate about teaching and imparting knowledge to others. I instruct various postgraduate courses focused on quantitative methods with a focus on Computational Social Science. Substantively, my interests primarily lie in the area of legislative debates, which I believe are critical for understanding the complexities of modern political structures. I'm part of the organizational team of the [Social Science Data Lab](https://www.mzes.uni-mannheim.de/socialsciencedatalab/) ([Mannheim Center for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/)).
 
 I'm happy to connect with you either via [Twitter](https://www.twitter.com/ankuepfer) or by [email](mailto:andreas.kuepfer@tu-darmstadt.de).

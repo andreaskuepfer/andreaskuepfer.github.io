@@ -34,13 +34,9 @@ hero_media = ""
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-[btn]
-  url = "#about"
-  label = "About my research"
-  
-[btn_alt]
-  url = "#contact"
-  label = "Contact me"
+#[btn]
+#  url = "#about"
+#  label = "About my research"
 
 +++
 
@@ -51,6 +47,10 @@ hero_media = ""
   <div style="width: 60%;display: inline-block; box-sizing: border-box;">
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
+
+**09/2024** &mdash; We're presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 120th APSA in Philadelphia (September 5-8).
+
+**08/2024** &mdash; Our project with  [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) has been accepted by the German Research Foundation (DFG)! For the next three years, we’re studying non-verbal political communication, using aligned multimodal speech data (text/audio/video) to explore MPs' communication in legislative debates beyond words alone.
 
 **07/2024** &mdash; I am presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 14th Annual Conference of the European Political Science Association in Cologne (July 4-6).
 
