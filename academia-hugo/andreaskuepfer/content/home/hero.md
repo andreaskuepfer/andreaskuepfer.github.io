@@ -40,8 +40,11 @@ hero_media = ""
 
 +++
 
-### Latest News
-
+<div class="col-12 section-heading text-center">
+<h1>
+Latest News
+</h1>
+</div>
 <!--
 <form>
   <div style="width: 60%;display: inline-block; box-sizing: border-box;">
