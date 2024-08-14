@@ -3,7 +3,7 @@
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 10  # Order that this section will appear.
+weight = 11  # Order that this section will appear.
 
 title = "Academia"
 keywords = ["Andreas Kupfer", "Andreas Küpfer", "Andreas Kuepfer"]
@@ -43,9 +43,6 @@ hero_media = ""
   label = "Contact me"
 
 +++
-## Welcome!
-
-I am a PhD candidate and Research Associate at the Institute for Political Science of the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My work is centered around analyzing multimodal political communication, encompassing various channels such as parliamentary speeches, political advertisements, and social media.
 
 ### Latest News
 
