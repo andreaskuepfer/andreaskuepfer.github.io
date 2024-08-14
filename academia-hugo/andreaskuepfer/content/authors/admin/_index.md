@@ -35,7 +35,7 @@ interests:
 
 education:
   courses:
-  - course: PhD Student
+  - course: PhD Candidate
     institution: Technical University of Darmstadt
     year: Ongoing
   - course: M.Sc. in Data Science
