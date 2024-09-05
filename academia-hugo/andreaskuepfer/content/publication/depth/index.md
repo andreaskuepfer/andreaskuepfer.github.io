@@ -32,7 +32,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: https://arxiv.org/abs/2409.00216
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''
