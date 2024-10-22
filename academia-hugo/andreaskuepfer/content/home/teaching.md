@@ -12,6 +12,7 @@ subtitle = ""
 weight = 100
 
 +++
+- Fall 2024: Machine Learning for Social Scientists (PhD graduate school course, MZES (with Ruben Bach))
 - Spring 2024: Analysis and Comparison of Political Systems (Undergraduate proseminar, Technical University of Darmstadt)
 - Spring 2023: Quantitative Text Analysis in R (Postgraduate seminar, Technical University of Darmstadt)
 - Fall 2022 & Fall 2023: Introduction to Quantitative Methods in R (Postgraduate seminar, Technical University of Darmstadt)
