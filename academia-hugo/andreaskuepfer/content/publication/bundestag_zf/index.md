@@ -1,5 +1,5 @@
 ---
-title: "The Temporal Dimension of Parliamentary Dialogue: When are MPs Seeking and Avoiding Discourse Strategically? (Working Paper, 2024)"
+title: "The Temporal Dimension of Parliamentary Dialogue: When are MPs Seeking and Avoiding Discourse Strategically? (R&R, 2024)"
 authors:
 - Elias Koch
 - admin

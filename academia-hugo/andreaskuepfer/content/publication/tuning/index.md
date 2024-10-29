@@ -1,5 +1,5 @@
 ---
-title: "The Role of Hyperparameters in Machine Learning Models and How to Tune Them (Forthcoming, Political Science Research and Methods)"
+title: "The Role of Hyperparameters in Machine Learning Models and How to Tune Them (2024, Political Science Research and Methods)"
 authors:
 - Christian Arnold
 - Luka Biedebach
