@@ -51,6 +51,8 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
+
 **10/2024** &mdash; My six-month research stay at the [Mannheim Centre for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/d7/de/profiles/andreas-kuepfer) (Data and Methods Unit) started. I presented our project on object prominence for image-as-data (w/ [Christian Arnold](http://christianarnold.org/)), and I'll co-teach a course on Machine Learning for Social Scientists for PhD Students.
 
 **09/2024** &mdash; Find the preprint of our working paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2409.00216).
@@ -59,17 +61,19 @@ Latest News
 
 **08/2024** &mdash; Our project with  [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) has been accepted by the German Research Foundation (DFG)! For the next three years, we’re studying non-verbal political communication, using aligned multimodal speech data (text/audio/video) to explore MPs' communication in legislative debates beyond words alone.
 
-**07/2024** &mdash; I am presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 14th Annual Conference of the European Political Science Association in Cologne (July 4-6).
-
-**06/2024** &mdash; I am attending the [Video Research Institute](https://cla.purdue.edu/communication/ccse/video-research-institute/) at Purdue University (June 24-29) (hosted by [Bryce Dietrich](http://www.brycejdietrich.com/index.html)).
-
-**05/2024** &mdash; Find the preprint of our working paper How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2405.08454).
 </div>
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**07/2024** &mdash; I am presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 14th Annual Conference of the European Political Science Association in Cologne (July 4-6).
+
+
+**06/2024** &mdash; I am attending the [Video Research Institute](https://cla.purdue.edu/communication/ccse/video-research-institute/) at Purdue University (June 24-29) (hosted by [Bryce Dietrich](http://www.brycejdietrich.com/index.html)).
+
+**05/2024** &mdash; Find the preprint of our working paper How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2405.08454).
 
 **05/2024** &mdash; On May 8th at 3pm CET, I'm presenting our paper on How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) at the [Text-as-Data Reading Group](http://tada.cool/) Spring 2024 Speaker Series.
 
