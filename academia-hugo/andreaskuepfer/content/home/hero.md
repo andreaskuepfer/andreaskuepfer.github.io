@@ -51,7 +51,7 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
-**12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
+**12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
 
 **10/2024** &mdash; My six-month research stay at the [Mannheim Centre for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/d7/de/profiles/andreas-kuepfer) (Data and Methods Unit) started. I presented our project on object prominence for image-as-data (w/ [Christian Arnold](http://christianarnold.org/)), and I'll co-teach a course on Machine Learning for Social Scientists for PhD Students.
 
