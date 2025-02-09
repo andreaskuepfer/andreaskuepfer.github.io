@@ -51,7 +51,7 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
-**02/2025** &mdash; Our paper (/w [Elias Koch](https://elias-koch.com/)), *The Politics of Seeking and Avoiding Discourse in Parliament* has been accepted at the *European Journal of Political Research*.
+**02/2025** &mdash; Our paper (w/ [Elias Koch](https://elias-koch.com/)), *The Politics of Seeking and Avoiding Discourse in Parliament* has been accepted at the *European Journal of Political Research*.
 
 **12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
 

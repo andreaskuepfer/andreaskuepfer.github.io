@@ -1,5 +1,5 @@
 ---
-title: "The Politics of Seeking and Avoiding Discourse in Parliament? (2025, Accepted at European Journal of Political Research)"
+title: "The Politics of Seeking and Avoiding Discourse in Parliament (2025, Accepted at European Journal of Political Research)"
 authors:
 - Elias Koch
 - admin
