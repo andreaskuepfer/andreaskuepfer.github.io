@@ -1,5 +1,5 @@
 ---
-title: "Nonrandom Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies (Forthcoming, Political Analysis)"
+title: "Nonrandom Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies (2024, Political Analysis)"
 authors:
 - admin
 date: "2024-02-06T00:00:00Z"

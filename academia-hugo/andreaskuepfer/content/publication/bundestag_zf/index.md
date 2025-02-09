@@ -1,9 +1,9 @@
 ---
-title: "The Temporal Dimension of Parliamentary Dialogue: When are MPs Seeking and Avoiding Discourse Strategically? (R&R, 2024)"
+title: "The Politics of Seeking and Avoiding Discourse in Parliament? (2025, Accepted at European Journal of Political Research)"
 authors:
 - Elias Koch
 - admin
-date: "2023-02-28T00:00:00Z"
+date: "2025-02-09T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -16,17 +16,19 @@ publishDate: "2023-02-28T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Elias Koch and Andreas Küpfer, n.d. &quot;The Temporal Dimension of Parliamentary Dialogue: When are MPs Seeking and Avoiding Discourse Strategically?&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Elias Koch and Andreas Küpfer, n.d. &quot;The Politics of Seeking and Avoiding Discourse in Parliament&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
-abstract: ""
+abstract: "When do politicians actually debate each other in parliament, and when do they avoid discourse? While existing research has shown MPs to unilaterally leverage the dialogical nature of legislative debates to their advantage, the circumstances facilitating actual discursive interaction have so far received less attention. We introduce a new framework to study the emergence of discourse in political debates. Applying this framework, we expect ideological differences and government-opposition dynamics to shape politicians’ choices about seeking or avoiding discourse. To test these hypotheses, we draw on an original dataset comprising all attempted and successful interventions (Zwischenfragen) — extraordinary, voluntary discursive exchanges between speakers and MPs in the audience — in the German Bundestag (1990-2020). Using a pipeline solely developed for this study, we analyse 14,595 automatically annotated intervention attempts and find that MPs separated by diverging preferences seek discourse with one another more often than their ideologically aligned counterparts. At the same time, these exact attempts do less frequently result in discursive interactions. When considering government-opposition dynamics in this process, we observe very similar patterns: Attempts to initiate discourse are particularly common among opposition MPs facing government speakers, and we find tentative evidence suggesting that government actors are most likely to avoid these invitations to discursive interaction. Our findings have important implications for our understanding of elite behaviour in public environments."
 
 # Summary. An optional shortened abstract.
 summary: 
 
 tags:
-- parliamentary debates
-- electoral cycle
+- discourse
+- elite behaviour
+- legislative debates
+- interventions
 - text-as-data
 featured: true
 
