@@ -51,6 +51,8 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**02/2025** &mdash; Our paper (/w [Elias Koch](https://elias-koch.com/)), *The Politics of Seeking and Avoiding Discourse in Parliament* has been accepted at the *European Journal of Political Research*.
+
 **12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
 
 **10/2024** &mdash; My six-month research stay at the [Mannheim Centre for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/d7/de/profiles/andreas-kuepfer) (Data and Methods Unit) started. I presented our project on object prominence for image-as-data (w/ [Christian Arnold](http://christianarnold.org/)), and I'll co-teach a course on Machine Learning for Social Scientists for PhD Students.
@@ -59,14 +61,14 @@ Latest News
 
 **09/2024** &mdash; We're presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 120th APSA in Philadelphia (September 5-8).
 
-**08/2024** &mdash; Our project with  [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) has been accepted by the German Research Foundation (DFG)! For the next three years, we’re studying non-verbal political communication, using aligned multimodal speech data (text/audio/video) to explore MPs' communication in legislative debates beyond words alone.
-
 </div>
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**08/2024** &mdash; Our project with  [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) has been accepted by the German Research Foundation (DFG)! For the next three years, we’re studying non-verbal political communication, using aligned multimodal speech data (text/audio/video) to explore MPs' communication in legislative debates beyond words alone.
 
 **07/2024** &mdash; I am presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 14th Annual Conference of the European Political Science Association in Cologne (July 4-6).
 
