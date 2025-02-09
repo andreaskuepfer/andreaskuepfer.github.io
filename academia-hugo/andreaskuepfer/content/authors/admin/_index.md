@@ -30,7 +30,7 @@ display_education: true
 interests:
 - Legislative Debates
 - Political Communication
-- Multimodal Data
+- Multimodal Data (Text, Video, Audio)
 - Machine Learning
 
 education:
