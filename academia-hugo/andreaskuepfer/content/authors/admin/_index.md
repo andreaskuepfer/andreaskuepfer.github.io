@@ -54,7 +54,7 @@ social:
   icon_pack: fas
   link: '#contact'
 - icon: bluesky
-  icon_pack: fas
+  icon_pack: fab
   link: https://bsky.app/profile/ankuepfer.bsky.social
 - icon: twitter
   icon_pack: fab
