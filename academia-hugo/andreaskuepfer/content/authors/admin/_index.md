@@ -65,9 +65,6 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/andreaskuepfer
-- icon: cv
-  icon_pack: ai
-  link: cv/kuepfer_andreas_cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
