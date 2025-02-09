@@ -26,7 +26,7 @@
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 70
+  weight = 60
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -34,4 +34,4 @@
   name = "CV"
   url = "cv/kuepfer_andreas_cv.pdf"
   target="_blank"
-  weight = 60
+  weight = 70
