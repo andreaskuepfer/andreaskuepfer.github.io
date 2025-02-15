@@ -1740,6 +1740,8 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     if (pdfjsFilePath) {
       //PDFWorkerUtil.fallbackWorkerSrc = pdfjsFilePath.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
       const url = new URL(pdfjsFilePath, window.location.origin);
+      console.log('first')
+      console.log(url)
       PDFWorkerUtil.fallbackWorkerSrc = url.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
@@ -1757,6 +1759,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     return base.origin === other.origin;
   };
   PDFWorkerUtil.createCDNWrapper = function (url) {
+    console.log(url)
     const wrapper = `importScripts("${url}");`;
     return URL.createObjectURL(new Blob([wrapper]));
   };
