@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 90  # Order that this section will appear.
 
 
-title = "Research"
+title = "Journal Articles"
 subtitle = ""
 
 [content]
@@ -28,8 +28,8 @@ subtitle = ""
   [content.filters]
     tag = ""
     category = ""
-    publication_type = ""
-    exclude_featured = false
+    publication_type = "3"
+    exclude_featured = true
   
 [design]
   # Toggle between the various page layout types.

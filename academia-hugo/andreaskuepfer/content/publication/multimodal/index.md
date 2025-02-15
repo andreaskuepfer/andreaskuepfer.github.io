@@ -13,7 +13,7 @@ publishDate: "2023-03-12T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
-publication_types: ["1"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: "*Christian Arnold and Andreas Küpfer, n.d. &quot;How Alignment Helps Make the Most of Multimodal Data&quot; <i>Manuscript in preparation</i>.*"
@@ -25,10 +25,11 @@ abstract: "When studying political communication, combining the information from
 summary: 
 
 tags:
-- Multimodal
-- audio
-- video
-- text
+- multimodal data
+- text-as-data
+- images-as-data
+- deep learning
+- alignment
 featured: true
 
 # links:
