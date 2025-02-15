@@ -1,5 +1,5 @@
 ---
-title: "The Role of Hyperparameters in Machine Learning Models and How to Tune Them (2024, Political Science Research and Methods)"
+title: "The Role of Hyperparameters in Machine Learning Models and How to Tune Them"
 authors:
 - Christian Arnold
 - Luka Biedebach
@@ -7,6 +7,7 @@ authors:
 - Marcel Neunhoeffer
 date: "2023-07-05T00:00:00Z"
 doi: "10.1017/psrm.2023.61"
+journal: "Political Science Research and Methods 2024"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2022-07-01T00:00:00Z"
@@ -49,7 +50,7 @@ url_code: 'https://doi.org/10.7910/DVN/HLJW1Q'
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: "Figure 1: Example with polynomial regression. Data X ~ N(0, 1). Data generating process: , with . Regression Line for Bivariate OLS Model in Blue. Regression Curve for Polynomial Regression with λ = 3 in Teal."
-  focal_point: "Smart"
+  focal_point: ""
   preview_only: false
 
 # Associated Projects (optional).
