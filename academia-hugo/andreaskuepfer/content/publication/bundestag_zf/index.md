@@ -1,10 +1,11 @@
 ---
-title: "The Politics of Seeking and Avoiding Discourse in Parliament (2025, Accepted at European Journal of Political Research)"
+title: "The Politics of Seeking and Avoiding Discourse in Parliament"
 authors:
 - Elias Koch
 - admin
 date: "2025-02-09T00:00:00Z"
 doi: ""
+journal: "Accepted at the European Journal of Political Research 2025"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-02-28T00:00:00Z"
