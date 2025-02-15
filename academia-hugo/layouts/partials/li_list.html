@@ -19,7 +19,7 @@
 {{ end }}
 
 <div class="view-list-item col-lg-10 mx-auto" itemscope itemtype="http://schema.org/{{$microdata_type}}">
-  <span itemprop="name">{{ $item.Title }}</span>
+  <a href="{{ $item.Params.url_pdf }}" itemprop="url"><span itemprop="name">{{ $item.Title }}</span></a>
 
   {{ if eq $item.Type "talk" }}
   <div class="article-metadata">
