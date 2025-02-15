@@ -37,11 +37,6 @@
         {{ if $item.Params.Journal }}
         <div class="article-metadata" itemprop="articleBody">{{ $item.Params.Journal }}</div>
         {{ end }}
-        {{ with $summary }}
-        <div class="article-style" itemprop="articleBody">
-          {{ . | truncate 1000 }}
-        </div>
-        {{ end }}
 
         <div class="stream-meta article-metadata">
 
