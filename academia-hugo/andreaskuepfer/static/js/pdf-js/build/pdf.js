@@ -1740,11 +1740,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     if (pdfjsFilePath) {
       //PDFWorkerUtil.fallbackWorkerSrc = pdfjsFilePath.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
       const url = new URL(pdfjsFilePath, window.location.origin);
-      console.log('first')
-      console.log(url)
-      const url_mod = url.href + "/"
-      console.log(url_mod.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2"))
-      PDFWorkerUtil.fallbackWorkerSrc = url_mod.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
+      PDFWorkerUtil.fallbackWorkerSrc = url.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
   PDFWorkerUtil.isSameOrigin = function (baseUrl, otherUrl) {
@@ -1761,8 +1757,10 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     return base.origin === other.origin;
   };
   PDFWorkerUtil.createCDNWrapper = function (url) {
-    console.log(url)
-    const wrapper = `importScripts("${url}");`;
+    // Ensure there's a `/` between the domain and path if missing
+    const fixedUrl = url.replace(/([^:/])\/?(js\/)/, "$1/$2");
+    console.log(fixedUrl); // Debugging output
+    const wrapper = `importScripts("${fixedUrl}");`;
     return URL.createObjectURL(new Blob([wrapper]));
   };
 }
