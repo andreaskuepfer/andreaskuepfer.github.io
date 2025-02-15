@@ -1,13 +1,12 @@
 +++
-# A Featured Publications section created with the Featured Content widget.
-# This section displays publications from `content/publication/` which have
-# `featured = true` in their front matter.
+# A Recent Publications section created with the Pages widget.
+# This section displays recent blog posts from `content/publication/`.
 
-widget = "featured"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 95  # Order that this section will appear.
-draft = true # false it if you want a featured section
+weight = 90  # Order that this section will appear.
+
 
 title = "Working Papers"
 subtitle = ""
@@ -18,6 +17,9 @@ subtitle = ""
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 0
+  
+  # Choose how many pages you would like to offset by
+  offset = 0
 
   # Page order. Descending (desc) or ascending (asc) date.
   order = "desc"
@@ -26,7 +28,8 @@ subtitle = ""
   [content.filters]
     tag = ""
     category = ""
-    publication_type = "3"
+    publication_type = "5"
+    exclude_featured = false
   
 [design]
   # Toggle between the various page layout types.
@@ -34,19 +37,19 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 3
+  view = 1
   
 [design.background]
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.
   #   Choose a light or dark text color by setting `text_color_light`.
   #   Any HTML color name or Hex value is valid.
-  
+    
   # Background color.
   # color = "navy"
   
   # Background gradient.
-  # gradient_start = "DeepSkyBlue"
+  gradient_start = "DeepSkyBlue"
   # gradient_end = "SkyBlue"
   
   # Background image.
