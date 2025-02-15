@@ -1739,7 +1739,9 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     const pdfjsFilePath = document?.currentScript?.src;
     if (pdfjsFilePath) {
       const url = new URL(pdfjsFilePath, window.location.origin);
-      PDFWorkerUtil.fallbackWorkerSrc = url.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
+      const fixedUrl = str(url.href).replace(/([^:/])\/?(js\/)/, "$1/$2");
+      console.log(fixedUrl); // Debugging output
+      PDFWorkerUtil.fallbackWorkerSrc = fixedUrl.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
   PDFWorkerUtil.isSameOrigin = function (baseUrl, otherUrl) {
@@ -1756,10 +1758,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     return base.origin === other.origin;
   };
   PDFWorkerUtil.createCDNWrapper = function (url) {
-    // Ensure there's a `/` between the domain and path if missing
-    const fixedUrl = str(url).replace(/([^:/])\/?(js\/)/, "$1/$2");
-    console.log(fixedUrl); // Debugging output
-    const wrapper = `importScripts("${fixedUrl}");`;
+    const wrapper = `importScripts("${url}");`;
     return URL.createObjectURL(new Blob([wrapper]));
   };
 }
