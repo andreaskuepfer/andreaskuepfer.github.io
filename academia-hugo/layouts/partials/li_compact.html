@@ -32,14 +32,14 @@
       <div class="media-body">
 
         <h3 class="article-title mb-0 mt-0" itemprop="name">
-          <a href="{{ $item.RelPermalink }}" itemprop="url">{{ $item.Title }}</a>
+          {{ $item.Title }}
         </h3>
         {{ if $item.Params.Journal }}
         <div class="article-metadata" itemprop="articleBody">{{ $item.Params.Journal }}</div>
         {{ end }}
         {{ with $summary }}
         <div class="article-style" itemprop="articleBody">
-          {{ . | truncate 135 }}
+          {{ . | truncate 500 }}
         </div>
         {{ end }}
 
