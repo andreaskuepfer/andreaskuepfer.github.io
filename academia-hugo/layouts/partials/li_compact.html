@@ -82,7 +82,7 @@
       <div class="ml-3">
         {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
         {{ with $resource }}
-        {{ $image := .Resize "500x" }}
+        {{ $image := .Resize "x500" }}
           <img src="{{ $image.RelPermalink }}" itemprop="image">
         {{end}}
       </div>
