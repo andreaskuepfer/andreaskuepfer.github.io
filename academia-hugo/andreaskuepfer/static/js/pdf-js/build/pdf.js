@@ -1738,7 +1738,9 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
   } else if (typeof document === "object") {
     const pdfjsFilePath = document?.currentScript?.src;
     if (pdfjsFilePath) {
-      PDFWorkerUtil.fallbackWorkerSrc = pdfjsFilePath.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
+      //PDFWorkerUtil.fallbackWorkerSrc = pdfjsFilePath.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
+      const url = new URL(pdfjsFilePath, window.location.origin);
+      PDFWorkerUtil.fallbackWorkerSrc = url.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
   PDFWorkerUtil.isSameOrigin = function (baseUrl, otherUrl) {
