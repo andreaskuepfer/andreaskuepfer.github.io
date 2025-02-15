@@ -1739,7 +1739,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     const pdfjsFilePath = document?.currentScript?.src;
     if (pdfjsFilePath) {
       const url = new URL(pdfjsFilePath, window.location.origin);
-      const fixedUrl = str(url.href).replace(/([^:/])\/?(js\/)/, "$1/$2");
+      const fixedUrl = url.href.replace(/([^:/])\/?(js\/)/, "$1/$2");
       console.log(fixedUrl); // Debugging output
       PDFWorkerUtil.fallbackWorkerSrc = fixedUrl.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
