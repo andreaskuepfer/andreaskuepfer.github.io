@@ -35,7 +35,7 @@
   translation: Preprint
 
 - id: btn_pdf
-  translation: PDF
+  translation: Link
 
 - id: btn_cite
   translation: Cite
@@ -47,7 +47,7 @@
   translation: Video
 
 - id: btn_code
-  translation: Code
+  translation: Code & Data
 
 - id: btn_dataset
   translation: Dataset
