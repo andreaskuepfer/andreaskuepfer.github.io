@@ -1742,9 +1742,9 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
       const url = new URL(pdfjsFilePath, window.location.origin);
       console.log('first')
       console.log(url)
-      url = url + "/"
-      console.log(url.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2"))
-      PDFWorkerUtil.fallbackWorkerSrc = url.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
+      url_mod = url.href + "/"
+      console.log(url_mod.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2"))
+      PDFWorkerUtil.fallbackWorkerSrc = url_mod.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
   PDFWorkerUtil.isSameOrigin = function (baseUrl, otherUrl) {
