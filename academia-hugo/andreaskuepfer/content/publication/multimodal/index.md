@@ -1,5 +1,5 @@
 ---
-title: "Alignment Helps Make the Most of Multimodal Data (R&R, 2024)"
+title: "Alignment Helps Make the Most of Multimodal Data (Revise & Resubmit)"
 authors:
 - Christian Arnold
 - admin

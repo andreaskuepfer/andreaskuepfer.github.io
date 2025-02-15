@@ -1,5 +1,5 @@
 ---
-title: "What we can and cannot learn from responses to legislative speeches. Evidence from the German Bundestag, 1949-2021 (Under Review, 2024)"
+title: "What we can and cannot learn from responses to legislative speeches. Evidence from the German Bundestag, 1949-2021 (Under Review)"
 authors:
 - admin
 - Jochen Müller

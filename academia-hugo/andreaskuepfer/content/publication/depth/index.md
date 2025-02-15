@@ -1,5 +1,5 @@
 ---
-title: "Structuring Quantitative Image Analysis with Metric Depth (Working Paper, 2024)"
+title: "Structuring Quantitative Image Analysis with Metric Depth"
 authors:
 - Christian Arnold
 - admin

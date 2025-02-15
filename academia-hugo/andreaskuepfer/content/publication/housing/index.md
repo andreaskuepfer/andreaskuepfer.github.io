@@ -1,5 +1,5 @@
 ---
-title: "The housing crisis on social media: Housing markets and the subnational diversification of policy supply (Working Paper, 2022)"
+title: "The housing crisis on social media: Housing markets and the subnational diversification of policy supply"
 authors:
 - Denis Cohen
 - admin
