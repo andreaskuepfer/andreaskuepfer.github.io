@@ -3,7 +3,6 @@ title: "Nonrandom Tweet Mortality and Data Access Restrictions: Compromising the
 authors:
 - admin
 date: "2024-02-06T00:00:00Z"
-doi: "10.1017/pan.2024.7"
 journal: "Political Analysis 2024"
 
 # Schedule page publish date (NOT publication's date).

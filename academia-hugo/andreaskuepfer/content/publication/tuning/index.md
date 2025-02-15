@@ -6,7 +6,6 @@ authors:
 - admin
 - Marcel Neunhoeffer
 date: "2023-07-05T00:00:00Z"
-doi: "10.1017/psrm.2023.61"
 journal: "Political Science Research and Methods 2024"
 
 # Schedule page publish date (NOT publication's date).

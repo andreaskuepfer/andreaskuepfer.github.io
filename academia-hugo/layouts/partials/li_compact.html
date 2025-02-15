@@ -79,9 +79,7 @@
         {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
         {{ with $resource }}
         {{ $image := .Resize "500x" }}
-        <a href="{{ $item.RelPermalink }}">
           <img src="{{ $image.RelPermalink }}" itemprop="image">
-        </a>
         {{end}}
       </div>
     </div>
