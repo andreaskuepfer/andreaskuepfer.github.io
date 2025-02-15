@@ -32,9 +32,11 @@
       <div class="media-body">
 
         <h3 class="article-title mb-0 mt-0" itemprop="name">
-          {{ $item.Title }}
+          <a href="{{ $item.Params.url_pdf }}" itemprop="url">{{ $item.Title }}</a>
         </h3>
-        
+        {{ if $item.Params.Journal }}
+          <div class="article-metadata" itemprop="articleBody">{{ $item.Params.Journal }}</div>
+          {{ end }}
         <div class="stream-meta article-metadata">
 
           {{ if eq $item.Type "talk" }}
@@ -62,9 +64,6 @@
           </div>
           {{ else if not $show_authors_only }}
           {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
-          {{ end }}
-          {{ if $item.Params.Journal }}
-          <div class="article-metadata" itemprop="articleBody">{{ $item.Params.Journal }}</div>
           {{ end }}
         </div>
 
