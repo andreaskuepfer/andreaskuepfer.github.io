@@ -1758,7 +1758,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
   };
   PDFWorkerUtil.createCDNWrapper = function (url) {
     // Ensure there's a `/` between the domain and path if missing
-    const fixedUrl = url.replace(/([^:/])\/?(js\/)/, "$1/$2");
+    const fixedUrl = str(url).replace(/([^:/])\/?(js\/)/, "$1/$2");
     console.log(fixedUrl); // Debugging output
     const wrapper = `importScripts("${fixedUrl}");`;
     return URL.createObjectURL(new Blob([wrapper]));
