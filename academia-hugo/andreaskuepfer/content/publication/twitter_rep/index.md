@@ -33,9 +33,9 @@ featured: true
 # links:
 # - name: ""
 doi: "10.1017/pan.2024.7"
-url_pdf: "papers/PA_Kuepfer_Twitter_Replication.pdf"
+url_pdf: "https://doi.org/10.1017/pan.2024.7"
 url_code: 'https://doi.org/10.24433/CO.1624743.v3'
-url_dataset: 'https://doi.org/10.24433/CO.1624743.v3'
+#url_dataset: 'https://doi.org/10.24433/CO.1624743.v3'
 # url_poster: ''
 # url_project: ''
 # url_slides: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/blob/main/slides-twitter-api-bert-method.pdf'

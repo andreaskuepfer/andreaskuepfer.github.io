@@ -34,11 +34,11 @@ featured: true
 
 # links:
 # - name: ""
-doi: "10.1017/psrm.2023.61"
+# doi: "10.1017/psrm.2023.61"
 external_url: "https://doi.org/10.1017/psrm.2023.61"
-url_pdf: "papers/PSRM___Using_Machine_Learning-11.pdf"
+url_pdf: "https://doi.org/10.1017/psrm.2023.61"
 url_code: 'https://doi.org/10.7910/DVN/HLJW1Q'
-url_dataset: 'https://doi.org/10.7910/DVN/HLJW1Q'
+# url_dataset: 'https://doi.org/10.7910/DVN/HLJW1Q'
 # url_poster: ''
 # url_project: ''
 # url_slides: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/blob/main/slides-twitter-api-bert-method.pdf'
