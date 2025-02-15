@@ -32,7 +32,7 @@
       <div class="media-body">
 
         <h3 class="article-title mb-0 mt-0" itemprop="name">
-        {{ if $item.Params.Journal }}
+        {{ if $item.Params.url_pdf }}
             <a href="{{ $item.Params.url_pdf }}" itemprop="url"><span itemprop="name">{{ $item.Title }}</span></a>
         {{ else }}
             <span itemprop="name">{{ $item.Title }}</span>
