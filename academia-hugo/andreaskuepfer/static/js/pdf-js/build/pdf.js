@@ -1756,8 +1756,8 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     return base.origin === other.origin;
   };
   PDFWorkerUtil.createCDNWrapper = function (url) {
-    const url = url.replace(/([^:/])\/?(js\/)/, "$1/$2");
-    const wrapper = `importScripts("${url}");`;
+    const url_fixed = url.replace(/([^:/])\/?(js\/)/, "$1/$2");
+    const wrapper = `importScripts("${url_fixed}");`;
     return URL.createObjectURL(new Blob([wrapper]));
   };
 }
