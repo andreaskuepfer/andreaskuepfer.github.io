@@ -1739,7 +1739,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     const pdfjsFilePath = document?.currentScript?.src;
     if (pdfjsFilePath) {
       const url = new URL(pdfjsFilePath, window.location.origin);
-      PDFWorkerUtil.fallbackWorkerSrc = url.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
+      PDFWorkerUtil.fallbackWorkerSrc = url.href.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
   PDFWorkerUtil.isSameOrigin = function (baseUrl, otherUrl) {
