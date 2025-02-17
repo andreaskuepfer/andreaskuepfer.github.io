@@ -1739,8 +1739,6 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     const pdfjsFilePath = document?.currentScript?.src;
     if (pdfjsFilePath) {
       const url = new URL(pdfjsFilePath, window.location.origin);
-      const fixedUrl = url.href.replace(/([^:/])\/?(js\/)/, "$1/$2");
-      console.log(fixedUrl); // Debugging output
       PDFWorkerUtil.fallbackWorkerSrc = fixedUrl.replace(/(\.(?:min\.)?js)(\?.*)?$/i, ".worker$1$2");
     }
   }
@@ -1758,6 +1756,7 @@ exports.PDFWorkerUtil = PDFWorkerUtil;
     return base.origin === other.origin;
   };
   PDFWorkerUtil.createCDNWrapper = function (url) {
+    const url = url.replace(/([^:/])\/?(js\/)/, "$1/$2");
     const wrapper = `importScripts("${url}");`;
     return URL.createObjectURL(new Blob([wrapper]));
   };
