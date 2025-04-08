@@ -5,7 +5,7 @@ authors:
 - admin
 date: "2025-02-09T00:00:00Z"
 doi: ""
-journal: "Accepted at the European Journal of Political Research 2025"
+journal: "European Journal of Political Research 2025"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-02-28T00:00:00Z"
@@ -36,8 +36,9 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
-# url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
+external_url: "https://doi.org/10.1111/1475-6765.70013"
+url_pdf: "https://doi.org/10.1111/1475-6765.70013"
+url_code: 'https://doi.org/10.7910/DVN/8K9NAN'
 # url_dataset: ''
 # url_poster: ''
 # url_project: ''
@@ -48,7 +49,7 @@ featured: true
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: "Figure 1: Interest in seeking dialogue among inviting and invited MPs associated with varying levels of ideological differences."
   focal_point: ""
   preview_only: false
 
