@@ -1,5 +1,5 @@
 ---
-title: "What we can and cannot learn from responses to legislative speeches. Evidence from the German Bundestag, 1949-2021 (Under Review)"
+title: "Applause and interjections as tools of party competition: Evidence from 70 years of debates in the German Bundestag (Revise & Resubmit)"
 authors:
 - admin
 - Jochen Müller
