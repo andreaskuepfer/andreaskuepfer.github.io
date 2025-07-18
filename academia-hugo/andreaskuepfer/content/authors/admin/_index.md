@@ -22,7 +22,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "I am a PhD candidate at the Technical University of Darmstadt, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a M.Sc. in Data Science. My research focuses on (multimodal) political communication, combining machine learning models with traditional methods to address substantive questions related to party competition and political behaviour."
+bio: "I am a PhD candidate at the Technical University of Darmstadt, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a M.Sc. in Data Science. My research focuses on (multimodal) political communication, combining machine learning models with traditional methods to address substantive questions related to party competition and political behaviour. My work has been published in <i>European Journal of Political Research</i>, <i>Political Analysis</i>, and <i>Political Science Research an Methods</i>."
 
 # Should the user's education and interests be displayed?
 display_education: true
@@ -74,6 +74,6 @@ email: ""
 #- Visitors
 ---
 
-Welcome! I'm a Ph.D. candidate at the Institute for Political Science of the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My research focuses on (multimodal) political communication, combining machine learning models with traditional methods to address substantive questions related to party competition and political behaviour.
+Welcome! I'm a Ph.D. candidate at the Institute for Political Science of the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>, working at the intersection of Data Science and Political Science. Before that, I graduated from the University of Mannheim with a Master degree in Data Science. My research focuses on (multimodal) political communication, combining machine learning models with traditional methods to address substantive questions related to party competition and political behaviour. My work has been published in <i>European Journal of Political Research</i>, <i>Political Analysis</i>, and <i>Political Science Research an Methods</i>.
 
 I'm happy to connect with you either via [Bluesky](https://bsky.app/profile/ankuepfer.bsky.social) or by [email](mailto:andreas.kuepfer@tu-darmstadt.de).
