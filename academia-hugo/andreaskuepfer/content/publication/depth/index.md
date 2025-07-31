@@ -1,5 +1,5 @@
 ---
-title: "Structuring Quantitative Image Analysis with Metric Depth"
+title: "Structuring Quantitative Image Analysis with Object Prominence (Under Review)"
 authors:
 - Christian Arnold
 - admin
