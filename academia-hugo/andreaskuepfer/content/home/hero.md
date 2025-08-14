@@ -51,6 +51,8 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**07/2025** &mdash; Our study at the EJPR, [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) (w/  [Elias Koch](https://elias-koch.com/)) was featured at the [European Public Policy Blog of the LSE European Institute](https://blogs.lse.ac.uk/europpblog/2025/07/16/when-do-politicians-engage-in-discourse-and-when-do-they-avoid-it/).
+
 **04/2025** &mdash; We're presenting our working paper (w/ [Christian Arnold](https://www.linkedin.com/in/christian-arnold-8b306681/) and [Christine Sheldon](https://christinesheldon.co.uk/)) on *Polarization in Bi-Directional Political Communication: Analysing the Language of Abgeordnetenwatch Questions and Answers* at the 75th Poitical Science Association Conference in Birmingham from 14-16 Apr 2025 and at the 7th annual COMPTEXT Conference 2025 in Vienna from 24-26 April 2025. Additionally, we're going to present another working paper (w/  [Christian Arnold](https://www.linkedin.com/in/christian-arnold-8b306681/)  and [Oliver Rittmann](https://oliver-rittmann.com/)) on *Identifying Meaningful Visual Content in Social Media Images* at COMPTEXT.
 
 **04/2025** &mdash; Our paper (w/ [Elias Koch](https://elias-koch.com/)), [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) is out as EarlyView at the *European Journal of Political Research* (EJPR).
@@ -59,14 +61,14 @@ Latest News
 
 **10/2024** &mdash; My six-month research stay at the [Mannheim Centre for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/d7/de/profiles/andreas-kuepfer) (Data and Methods Unit) started. I presented our project on object prominence for image-as-data (w/ [Christian Arnold](http://christianarnold.org/)), and I'll co-teach a course on Machine Learning for Social Scientists for PhD Students.
 
-**09/2024** &mdash; Find the preprint of our working paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2409.00216).
-
 </div>
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**09/2024** &mdash; Find the preprint of our working paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2409.00216).
 
 **02/2025** &mdash; Our paper (w/ [Elias Koch](https://elias-koch.com/)), *The Politics of Seeking and Avoiding Discourse in Parliament* has been accepted at the *European Journal of Political Research*.
 
