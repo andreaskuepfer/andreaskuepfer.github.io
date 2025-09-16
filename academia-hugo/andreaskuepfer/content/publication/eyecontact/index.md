@@ -1,5 +1,5 @@
 ---
-title: "Striving for Confrontation? Opposition Status, Gender, and the Far Right"
+title: "Striving for Confrontation? Opposition Status, Gender, and the Far Right (Under Review)"
 authors:
 - admin
 date: "2025-07-01T00:00:00Z"
