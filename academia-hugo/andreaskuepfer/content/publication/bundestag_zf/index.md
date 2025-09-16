@@ -5,7 +5,7 @@ authors:
 - admin
 date: "2025-02-09T00:00:00Z"
 doi: ""
-journal: "European Journal of Political Research 2025"
+journal: "European Journal of Political Research (2025)"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-02-28T00:00:00Z"

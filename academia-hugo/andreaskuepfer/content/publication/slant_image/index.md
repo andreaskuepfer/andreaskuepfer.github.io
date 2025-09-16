@@ -1,42 +1,40 @@
 ---
-title: "The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments"
+title: "Measuring Media Slant through Image Analysis"
 authors:
+- Christian Arnold
 - admin
-- Jochen Müller
-- Christian Stecker
-date: "2025-09-11T00:00:00Z"
+- Oliver Rittmann
+- Michelle Torres
+date: "2025-09-01T00:00:00Z"
 doi: ""
-journal: "West European Politics (2025)"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-09-11T00:00:00Z"
+publishDate: "2025-09-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
-publication_types: ["2"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Küpfer, Jochen Müller and Christian Stecker, n.d. &quot;The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments&quot; <i>Manuscript in preparation</i>.*"
+publication: ""
 publication_short: 
+
+abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: 
 
 tags:
-- Party Competition
-- Parliamentary Speeches
-- text-as-data
-- Applause
+
 featured: true
 
 # links:
 # - name: ""
 #   url: ""
-external_url: "https://doi.org/10.1080/01402382.2025.2549149"
-url_pdf: "https://doi.org/10.1080/01402382.2025.2549149"
-url_code: 'https://doi.org/10.7910/DVN/V5XRC3'
+# url_pdf: http://arxiv.org/pdf/1512.04133v1
+# url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''
 # url_project: ''
@@ -47,7 +45,7 @@ url_code: 'https://doi.org/10.7910/DVN/V5XRC3'
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: "Figure 3: Heatmap of predicted applause per 1000 words based on a Poisson regression model."
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
   preview_only: false
 

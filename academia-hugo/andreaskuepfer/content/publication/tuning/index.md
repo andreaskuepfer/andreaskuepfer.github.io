@@ -6,7 +6,7 @@ authors:
 - admin
 - Marcel Neunhoeffer
 date: "2023-07-05T00:00:00Z"
-journal: "Political Science Research and Methods 2024"
+journal: "Political Science Research and Methods (2024)"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2022-07-01T00:00:00Z"
