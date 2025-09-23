@@ -70,3 +70,6 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[params]
+  customCSS = ["css/custom.css"]

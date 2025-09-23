@@ -158,3 +158,6 @@ sharing = true
     api_key = ""
     index_name = ""
     show_logo = false
+
+[params]
+  customCSS = ["css/custom.css"]

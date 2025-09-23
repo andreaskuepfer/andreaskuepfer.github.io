@@ -1,0 +1,14 @@
+/* Change header background */
+.navbar {
+  background-color: #003366 !important;
+}
+
+/* Change link text color */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Change link hover color */
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
