@@ -51,6 +51,8 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**11/2025** &mdash; We uploaded our working paper with [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/), "A Pipeline for Extracting Data from Videos of Complex Political Events", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/nxjr6_v1)!
+
 **10/2025** &mdash; Our recent article at [WEP](https://doi.org/10.1080/01402382.2025.2549149) was featured in the German newspaper [Frankfurter Allgemeine Sonntagszeitung](https://www.faz.net/aktuell/politik/inland/studie-wer-applaudiert-im-bundestag-wem-accg-110714837.html).
 
 **09/2025** &mdash; New article published at West European Politics! [The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments](https://doi.org/10.1080/01402382.2025.2549149) (w/  [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) studies how applause during parliamentary debates reflects different aspects of party competition.
