@@ -1,5 +1,5 @@
 ---
-title: "Polarization in Bi-Directional Political Communication: Analysing the Language of Abgeordnetenwatch Questions and Answers"
+title: "When Words Divide: MPs as Polarisation Entrepreneurs on the Digital Civic Platform abgeordnetenwatch.de"
 authors:
 - Christian Arnold
 - admin
