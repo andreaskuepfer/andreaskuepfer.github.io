@@ -1,5 +1,5 @@
 ---
-title: "Extracting Image, Voice, and Text Data from Complex Local Public Meetings"
+title: "A Pipeline for Extracting Data from Videos of Complex Political Events (Under Review)"
 authors:
 - Mirya Holman
 - admin
