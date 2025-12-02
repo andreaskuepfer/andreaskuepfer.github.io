@@ -38,7 +38,7 @@ education:
   courses:
   - course: Political Science PhD Candidate
     institution: University of Mannheim
-    year: (Expected Defence in January 2026)
+    year: Expected Defence in January 2026
   - course: M.Sc. in Data Science
     institution: University of Mannheim
     year: 2022
