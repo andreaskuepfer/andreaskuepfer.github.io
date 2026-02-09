@@ -51,6 +51,10 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
+
+**01/2026** &mdash; I'm on a research visit at the Centre for AI and Government (University of Birmingham) until 10/2026!
+
 **11/2025** &mdash; We uploaded our working paper with [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/), "A Pipeline for Extracting Data from Videos of Complex Political Events", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/nxjr6_v1)!
 
 **10/2025** &mdash; Our recent article at [WEP](https://doi.org/10.1080/01402382.2025.2549149) was featured in the German newspaper [Frankfurter Allgemeine Sonntagszeitung](https://www.faz.net/aktuell/politik/inland/studie-wer-applaudiert-im-bundestag-wem-accg-110714837.html).
