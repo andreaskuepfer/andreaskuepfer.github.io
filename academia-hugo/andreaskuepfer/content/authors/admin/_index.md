@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Andreas Küpfer
+name: Dr. Andreas Küpfer
 avatar_image: "user-full-2.jpg"
 # Username (this should match the folder name)
 authors:
