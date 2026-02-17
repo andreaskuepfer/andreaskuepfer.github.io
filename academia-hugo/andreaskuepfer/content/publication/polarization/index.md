@@ -1,9 +1,9 @@
 ---
 title: "When Words Divide: MPs as Polarisation Entrepreneurs on the Digital Civic Platform abgeordnetenwatch.de"
 authors:
-- Christian Arnold
-- admin
 - Christine Sheldon
+- admin
+- Christian Arnold
 date: "2025-06-01T00:00:00Z"
 doi: ""
 
