@@ -1,0 +1,239 @@
+/*-- scss:defaults --*/
+
+// ── Google Fonts ─────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,600;1,400&family=Fira+Code:wght@400&display=swap');
+
+// ── Palette ──────────────────────────────────────────────
+$navy:        #1d3557;
+$navy-light:  #457b9d;
+$red:         #c0392b;
+$slate:       #4a6580;
+$cream:       #f8f9fa;
+$offwhite:    #f1f3f5;
+$text:        #212529;
+$muted:       #6c757d;
+$border:      #dee2e6;
+
+// ── Core ─────────────────────────────────────────────────
+$body-bg:             #ffffff;
+$body-color:          $text;
+$link-color:          $navy-light;
+$link-color-hover:    $navy;
+$selection-bg:        #ccd9ea;
+
+// ── Fonts ────────────────────────────────────────────────
+$font-family-sans-serif:       'Inter', system-ui, -apple-system, sans-serif;
+$font-family-monospace:        'Fira Code', 'Courier New', monospace;
+$presentation-font-size-root:  32px;
+
+// ── Headings ─────────────────────────────────────────────
+$presentation-heading-font:         'Lora', Georgia, serif;
+$presentation-heading-color:        $navy;
+$presentation-heading-font-weight:  600;
+$presentation-heading-line-height:  1.25;
+$presentation-h1-font-size:         1.8em;
+$presentation-h2-font-size:         1.25em;
+$presentation-h3-font-size:         1.05em;
+
+// ── Code ─────────────────────────────────────────────────
+$code-block-bg:           $offwhite;
+$code-block-border-color: $border;
+$code-block-font-size:    0.72em;
+
+
+/*-- scss:rules --*/
+
+// ── Slide title (h2) ─────────────────────────────────────
+.reveal .slides section > h2 {
+  border-bottom: 2px solid $border;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.65em;
+  font-size: 1.2em;
+  letter-spacing: -0.01em;
+}
+
+// ── Section divider slides ───────────────────────────────
+.reveal .slide.section-slide {
+  background-color: $navy;
+}
+
+.reveal .slide.section-slide h2 {
+  color: #ffffff;
+  border-bottom: none;
+  font-size: 1.6em;
+}
+
+// ── Title slide ──────────────────────────────────────────
+#title-slide {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+#title-slide .title {
+  font-size: 1.55em;
+  font-family: 'Lora', Georgia, serif;
+  color: $navy;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-left: 5px solid $red;
+  padding-left: 0.45em;
+  margin-bottom: 0.4em;
+  line-height: 1.2;
+}
+
+#title-slide .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75em;
+  font-weight: 400;
+  font-style: italic;
+  color: $slate;
+  margin-top: 0;
+  padding-left: 0.75em;
+}
+
+#title-slide .quarto-title-authors {
+  margin-top: 2.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#title-slide .quarto-title-author {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+#title-slide .quarto-title-author-name {
+  font-size: 0.72em;
+  font-weight: 500;
+  color: $text;
+}
+
+#title-slide .quarto-title-affiliation {
+  font-size: 0.58em;
+  font-weight: 300;
+  color: $muted;
+  font-style: italic;
+}
+
+#title-slide .date {
+  display: none;
+}
+
+// ── Body text ────────────────────────────────────────────
+.reveal .slides {
+  font-weight: 300;
+}
+
+.reveal strong {
+  font-weight: 600;
+  color: $navy;
+}
+
+.reveal em {
+  font-style: italic;
+  color: $slate;
+}
+
+// ── Lists ────────────────────────────────────────────────
+.reveal ul,
+.reveal ol {
+  margin-left: 0.4em;
+  line-height: 1.55;
+}
+
+.reveal ul li,
+.reveal ol li {
+  margin-bottom: 0.35em;
+  padding-left: 0.2em;
+}
+
+.reveal ul li::marker {
+  color: $red;
+}
+
+.reveal ol li::marker {
+  color: $navy;
+  font-weight: 600;
+}
+
+// ── Nested lists ─────────────────────────────────────────
+.reveal ul ul,
+.reveal ol ul {
+  font-size: 0.88em;
+  margin-top: 0.15em;
+}
+
+// ── Inline code ──────────────────────────────────────────
+.reveal code:not(pre code) {
+  background-color: $offwhite;
+  border: 1px solid $border;
+  border-radius: 3px;
+  padding: 0.08em 0.32em;
+  font-size: 0.82em;
+  color: $navy;
+  font-family: 'Fira Code', monospace;
+}
+
+// ── Figures ──────────────────────────────────────────────
+.reveal figure {
+  margin: 0 auto;
+}
+
+.reveal figure figcaption {
+  font-size: 0.6em;
+  color: $muted;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.3em;
+}
+
+// ── Two-column layouts ───────────────────────────────────
+.reveal .columns {
+  gap: 1.5em;
+  align-items: flex-start;
+}
+
+// ── Footer ───────────────────────────────────────────────
+.reveal .footer {
+  font-size: 0.42em !important;
+  color: $muted;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+// ── Progress bar ─────────────────────────────────────────
+.reveal .progress {
+  height: 3px;
+}
+
+.reveal .progress span {
+  background-color: $red !important;
+}
+
+// ── Blockquote ───────────────────────────────────────────
+.reveal blockquote {
+  border-left: 4px solid $navy-light;
+  padding-left: 1em;
+  color: $slate;
+  font-style: italic;
+  background: none;
+  box-shadow: none;
+  width: 92%;
+}
+
+// ── Standout / dark slide ────────────────────────────────
+.reveal .slide[data-background-color="#1d3557"] h2,
+.reveal .slide[data-background-color="#1d3557"] p,
+.reveal .slide[data-background-color="#1d3557"] li {
+  color: #ffffff;
+}
+
+// ── Appendix label styling ───────────────────────────────
+.reveal .slide .appendix-label {
+  font-size: 0.65em;
+  color: $muted;
+  font-style: italic;
+}
