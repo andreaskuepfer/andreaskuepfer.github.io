@@ -85,39 +85,31 @@ Guardian, May 29, 2024
 
 . . .
 
-> **Our goal:** <br> Develop an method to measure media slant based on the visual reporting of media outlets on specific events.
+## This Study
 
-
-## What We Do and What We Find
-
-**We propose a two-step, unsupervised framework for scaling images:**
-
-1. Encode images with **Vision Transformers (ViT**) → analyse pairwise image similarity
-2. Recover latent positions with **Additive-Multiplicative Effects** (AME) network models
-
-. . .
+> **Our goal:** <br> Develop a method to **measure media slant** based on the **visual reporting** of media outlets on specific events.
 
 <br>
 
-**Key findings** (Gaza War, 10 outlets, Oct 2023--Oct 2024):
-
-- Far-right outlets (Fox News, Breitbart) cluster visually; Al Jazeera English occupies the opposite pole
-- The latent dimension separates *political-elite framing* from *on-the-ground depictions of suffering*
+1. **We develope a two-step, unsupervised framework for scaling images**
+2. **Application:** Visual reporting on the Gaza war, 10 outlets, Oct 2023--Oct 2024
+  - Evidence for media slant in visual reporting, particularly for right-wing media
 
 
 # Framework
 
-
-## Framework: Three Steps
+## Framework: Two Steps
 
 > **Core assumption:** News outlets that are close to each other in the latent space will, on average, use more similar news imagery.
 
-1. Encode each image with a pre-trained **Vision Transformer (ViT)**
-   <br> → extract the `[CLS]` token embedding (512 dims)
-2. Compute pairwise **cosine similarities** across all image dyads
-3. Estimate variation of the Additive-Multiplicative Effects (AME) network model to recover latent positions of
-<br> (a) **media outlets** based on the news imagery used by them and 
-<br> (b) **images** themselves
+1. **Measurement of image similarity**
+    - Encode each image with a pre-trained **Vision Transformer (ViT)**
+    <br> → extract the `[CLS]` token embedding (512 dims)
+    <br> → compute pairwise **cosine similarities** across all image dyads
+2. **Statistical model to analyse image similarity**
+    - Additive-Multiplicative Effects (AME) network model to recover latent positions of
+    <br> (a) **media outlets** based on the news imagery used by them and 
+    <br> (b) **images** themselves
 
 
 ## Step 2: The AME Model
@@ -137,31 +129,6 @@ $$\textcolor{lightgray}{\mathrm{atanh}\!\left(\textcolor{teal}{\mathrm{sim}(\vec
 
 
 $\textcolor{teal}{\mathrm{sim}(\vec{E}_i, \vec{E}_j)}$ is the **cosine similarity** between the ViT embeddings of images $i$ and $j$.
-
-
-## Step 2: The AME Model
-
-Additive-multiplicative effects *(Hoff 2005, 2021)* — outlet level:
-
-$$\textcolor{lightgray}{\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right)} = \textcolor{blue}{\mu} + \textcolor{lightgray}{\alpha_{O_i} + \alpha_{O_j}} + \textcolor{lightgray}{\vec{S}_{O_i}^\top \vec{S}_{O_j}} + \textcolor{lightgray}{\epsilon_{ij}}$$
-
-<br>
-
-[$\mu$]{style="color: blue"} is the **global baseline** similarity of news imagery across outlet pairs.
-
-
-## Step 2: The AME Model
-
-Additive-multiplicative effects *(Hoff 2005, 2021)* — outlet level:
-
-$$\textcolor{lightgray}{\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right)} = \textcolor{lightgray}{\mu} + \textcolor{orange}{\alpha_{O_i} + \alpha_{O_j}} + \textcolor{lightgray}{\vec{S}_{O_i}^\top \vec{S}_{O_j}} + \textcolor{lightgray}{\epsilon_{ij}}$$
-
-<br>
-
-[$\alpha_{O_i}$]{style="color: orange"}: Random effects for outlet $O$ that posted image $i$.
-
-
-[$\alpha_{O_j}$]{style="color: orange"}: Random effects for outlet $O$ that posted image $j$.
 
 
 ## Step 2: The AME Model
@@ -190,23 +157,16 @@ $$\textcolor{lightgray}{\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)
 
 Assign a position directly to each images rather than outlets:
 
-$$\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right) = \textcolor{blue}{\mu} + \textcolor{red}{\vec{S}_i^\top \vec{S}_j} + \epsilon_{ij}, \quad \epsilon_{ij} \sim \mathcal{N}(0,\sigma^2)$$
+$$\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right) = \mu + \textcolor{red}{\vec{S}_i^\top \vec{S}_j} + \epsilon_{ij}, \quad \epsilon_{ij} \sim \mathcal{N}(0,\sigma^2)$$
 
 <br>
 
-. . .
-
-[$\mu$]{style="color: blue"} **Global intercept**: Average baseline similarity across all image pairs
-
-. . .
-
 [$\vec{S}_i$]{style="color: red"} **Latent scale position of image $i$**
 
-. . .
+<br>
 
 - Estimated in a **Bayesian** framework
 - No labelled data required
-- **Out-of-sample projection** scales the approach to millions of images
 
 
 # Case Study: Gaza War, 2023--2024
@@ -218,8 +178,7 @@ $$\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right) = \textcolor{b
 **Corpus**
 
 - Around 17,000 photographs
-- October 2023 -- October 2024
-- 10 cross-national news outlets:
+- 10 news outlets, mostly US:
   - *US:* ABC, CBS, CNN, Fox News, Breitbart, NBC, Time
   - *Intl.:* Al Jazeera English, Irish Times, ABC (AUS)
 - Source: NewsAPI + top article image
@@ -278,34 +237,6 @@ plot_posterior_z(z_draws_aligned_img,
                  cex = 1,
                  xlim = c(-0.15, 0.15),
                  empty = F)
-
-```
-
-## Image-Level: What Is on the Scale?
-
-```{r image-level-1, height = 6, width = 9, cache=T}
-
-source(here("Code/oli/text_image_scaling/x_presentation/code/02_image-dist-source.R"))
-
-par(family = "serif",
-    mar = c(5, 0, 0, 0) + 0.1)
-
-hist(images$z_mean, 
-     breaks = 50,
-     prob = T,
-     xlim = c(-1,1.2),
-     main = "",
-     font.main = 1,
-     yaxt = "n",
-     xaxt = "n",
-     xlab = "Latent Image Coordinates",
-     ylab = "",
-     border = cividis(8, 0)[7],
-     col = cividis(8, 0)[7])
-axis(1,
-     at = c(round(min(images$z_mean), 2), 
-            seq(-0.25, 0.5, 0.25), 
-            round(max(images$z_mean), 2)))
 
 ```
 
@@ -416,289 +347,48 @@ add_image(img_name = img_hi7, x_center = 1.1, y_center = 2.25, num = 6, num_righ
 
 ```
 
-
-## Dynamic Visual Slant: Stable Sorting, Parallel Dynamics
-
-```{r img-time-1, width = 14, height = 8, cache=T}
-source(here("Code/oli/text_image_scaling/x_presentation/code/03_image-time.R"))
-
-par(mar = c(5, 4, 1, 2) + 0.1)
-
-plot(x = image_data$date,
-     y = image_data$z_mean_comb,
-     col = "grey80",
-     las = 1,
-     xlab = "Date (October 7, 2023 to September 1, 2024)",
-     ylab = "Latent Position",
-     type = "n",
-     xlim = c(lubridate::ymd("2023-09-01"), 
-              lubridate::ymd("2024-09-01")),
-     ylim = c(-0.3, 0.3),
-     xaxt = "n")
-
-axis(1,
-     at = as.Date(c("2023-10-07", 
-                    "2023-11-01",
-                    "2023-12-01",
-                    "2024-1-01",
-                    "2024-2-01",
-                    "2024-3-01",
-                    "2024-4-01",
-                    "2024-5-01",
-                    "2024-6-01",
-                    "2024-7-01",
-                    "2024-8-01",
-                    "2024-9-01")),
-     labels = c("Oct. 7,\n2023", 
-                "Nov. 1,\n2023",
-                "Dec. 1,\n2023",
-                "Jan. 1,\n2024",
-                "Feb. 1,\n2024",
-                "Mar. 1,\n2024",
-                "Apr. 1,\n2024",
-                "May 1,\n2024",
-                "Jun. 1,\n2024",
-                "Jul. 1,\n2024",
-                "Aug. 1,\n2024",
-                "Sep. 1,\n2024"),
-     las = 1,
-     padj = 0.3,
-     cex.axis = 0.75)
-
-grid()
-abline(h=0)
-clip(x1 = lubridate::ymd("2023-01-07"),
-     x2 = lubridate::ymd("2024-09-01"),
-     y1 = -100,
-     y2 = 100)
+# Conclusion
 
 
+## Conclusion and Future Directions
 
-```
+**Contribution:**
 
-## Dynamic Visual Slant: Stable Sorting, Parallel Dynamics
+- Scalable framework for recovering latent positions from visual corpora
+  - Method to measure visual slant in news media
 
-```{r img-time-2, width = 14, height = 8, cache=T}
+. . .
 
-par(mar = c(5, 4, 1, 2) + 0.1)
+**Findings on Gaza War coverage:**
 
-plot(x = image_data$date,
-     y = image_data$z_mean_comb,
-     col = "grey80",
-     las = 1,
-     xlab = "Date (October 7, 2023 to September 1, 2024)",
-     ylab = "Latent Position",
-     type = "n",
-     xlim = c(lubridate::ymd("2023-09-01"), 
-              lubridate::ymd("2024-09-01")),
-     ylim = c(-0.3, 0.3),
-     xaxt = "n")
+- Far-right outlets share a distinctive visual repertoire; Al Jazeera diverges sharply
+- Scale captures a substantively meaningful dimension: elite framing vs. humanitarian suffering
 
-axis(1,
-     at = as.Date(c("2023-10-07", 
-                    "2023-11-01",
-                    "2023-12-01",
-                    "2024-1-01",
-                    "2024-2-01",
-                    "2024-3-01",
-                    "2024-4-01",
-                    "2024-5-01",
-                    "2024-6-01",
-                    "2024-7-01",
-                    "2024-8-01",
-                    "2024-9-01")),
-     labels = c("Oct. 7,\n2023", 
-                "Nov. 1,\n2023",
-                "Dec. 1,\n2023",
-                "Jan. 1,\n2024",
-                "Feb. 1,\n2024",
-                "Mar. 1,\n2024",
-                "Apr. 1,\n2024",
-                "May 1,\n2024",
-                "Jun. 1,\n2024",
-                "Jul. 1,\n2024",
-                "Aug. 1,\n2024",
-                "Sep. 1,\n2024"),
-     las = 1,
-     padj = 0.3,
-     cex.axis = 0.75)
+. . .
 
-grid()
-abline(h=0)
-clip(x1 = lubridate::ymd("2023-01-07"),
-     x2 = lubridate::ymd("2024-09-01"),
-     y1 = -100,
-     y2 = 100)
+**Future directions:**
 
-loess_span <- 0.25
-
-# Fox News
-add_loess(image_data = image_data[image_data$source == "Fox News",],
-          col_ci = viridis(5, 0.4)[2],
-          col_line = viridis(5)[2],
-          outlet_label = "Fox News",
-          label_yshift = -0.01,
-          loess_span = loess_span)
+- *Multimodal scaling:* integrate text and image in a shared embedding space
 
 
-```
+## {background-color="#1d3557"}
 
-## Dynamic Visual Slant: Stable Sorting, Parallel Dynamics
+::: {style="color: white; text-align: center; margin-top: 20%;"}
 
-```{r img-time-3, width = 14, height = 8, cache=T}
+Measuring Media Slant through Image Analysis
 
-par(mar = c(5, 4, 1, 2) + 0.1)
+<br>
 
-plot(x = image_data$date,
-     y = image_data$z_mean_comb,
-     col = "grey80",
-     las = 1,
-     xlab = "Date (October 7, 2023 to September 1, 2024)",
-     ylab = "Latent Position",
-     type = "n",
-     xlim = c(lubridate::ymd("2023-09-01"), 
-              lubridate::ymd("2024-09-01")),
-     ylim = c(-0.3, 0.3),
-     xaxt = "n")
+<br>
 
-axis(1,
-     at = as.Date(c("2023-10-07", 
-                    "2023-11-01",
-                    "2023-12-01",
-                    "2024-1-01",
-                    "2024-2-01",
-                    "2024-3-01",
-                    "2024-4-01",
-                    "2024-5-01",
-                    "2024-6-01",
-                    "2024-7-01",
-                    "2024-8-01",
-                    "2024-9-01")),
-     labels = c("Oct. 7,\n2023", 
-                "Nov. 1,\n2023",
-                "Dec. 1,\n2023",
-                "Jan. 1,\n2024",
-                "Feb. 1,\n2024",
-                "Mar. 1,\n2024",
-                "Apr. 1,\n2024",
-                "May 1,\n2024",
-                "Jun. 1,\n2024",
-                "Jul. 1,\n2024",
-                "Aug. 1,\n2024",
-                "Sep. 1,\n2024"),
-     las = 1,
-     padj = 0.3,
-     cex.axis = 0.75)
+Christian Arnold · Andreas Küpfer · Oliver Rittmann · Michelle Torres
 
-grid()
-abline(h=0)
-clip(x1 = lubridate::ymd("2023-01-07"),
-     x2 = lubridate::ymd("2024-09-01"),
-     y1 = -100,
-     y2 = 100)
-
-loess_span <- 0.25
+:::
 
 
-# Fox News
-add_loess(image_data = image_data[image_data$source == "Fox News",],
-          col_ci = viridis(5, 0.4)[2],
-          col_line = viridis(5)[2],
-          outlet_label = "Fox News",
-          label_yshift = -0.01,
-          loess_span = loess_span)
+# Appendix {visibility="uncounted"}
 
-# Breitbart
-add_loess(image_data = image_data[image_data$source == "Breitbart News",],
-          col_ci = viridis(5, 0.4)[3],
-          col_line = viridis(5)[3],
-          outlet_label = "Breitbart News",
-          label_yshift = +0.005,
-          loess_span = loess_span)
-
-```
-
-## Dynamic Visual Slant: Stable Sorting, Parallel Dynamics
-
-```{r img-time-4, width = 14, height = 8, cache=T}
-
-par(mar = c(5, 4, 1, 2) + 0.1)
-
-plot(x = image_data$date,
-     y = image_data$z_mean_comb,
-     col = "grey80",
-     las = 1,
-     xlab = "Date (October 7, 2023 to September 1, 2024)",
-     ylab = "Latent Position",
-     type = "n",
-     xlim = c(lubridate::ymd("2023-09-01"), 
-              lubridate::ymd("2024-09-01")),
-     ylim = c(-0.3, 0.3),
-     xaxt = "n")
-
-axis(1,
-     at = as.Date(c("2023-10-07", 
-                    "2023-11-01",
-                    "2023-12-01",
-                    "2024-1-01",
-                    "2024-2-01",
-                    "2024-3-01",
-                    "2024-4-01",
-                    "2024-5-01",
-                    "2024-6-01",
-                    "2024-7-01",
-                    "2024-8-01",
-                    "2024-9-01")),
-     labels = c("Oct. 7,\n2023", 
-                "Nov. 1,\n2023",
-                "Dec. 1,\n2023",
-                "Jan. 1,\n2024",
-                "Feb. 1,\n2024",
-                "Mar. 1,\n2024",
-                "Apr. 1,\n2024",
-                "May 1,\n2024",
-                "Jun. 1,\n2024",
-                "Jul. 1,\n2024",
-                "Aug. 1,\n2024",
-                "Sep. 1,\n2024"),
-     las = 1,
-     padj = 0.3,
-     cex.axis = 0.75)
-
-grid()
-abline(h=0)
-clip(x1 = lubridate::ymd("2023-01-07"),
-     x2 = lubridate::ymd("2024-09-01"),
-     y1 = -100,
-     y2 = 100)
-
-loess_span <- 0.25
-# Al Jazeera
-add_loess(image_data = image_data[image_data$source == "Al Jazeera English",],
-          col_ci = viridis(5, 0.4)[1],
-          col_line = viridis(5)[1],
-          outlet_label = "Al Jazeera\nEnglish",
-          label_yshift = -0.02,
-          loess_span = loess_span)
-
-# Fox News
-add_loess(image_data = image_data[image_data$source == "Fox News",],
-          col_ci = viridis(5, 0.4)[2],
-          col_line = viridis(5)[2],
-          outlet_label = "Fox News",
-          label_yshift = -0.01,
-          loess_span = loess_span)
-
-# Breitbart
-add_loess(image_data = image_data[image_data$source == "Breitbart News",],
-          col_ci = viridis(5, 0.4)[3],
-          col_line = viridis(5)[3],
-          outlet_label = "Breitbart News",
-          label_yshift = +0.005,
-          loess_span = loess_span)
-```
-
-## Dynamic Visual Slant: Stable Sorting, Parallel Dynamics
+## Appendix: Dynamic Visual Slant: Stable Sorting, Parallel Dynamics
 
 ```{r img-time-5, width = 14, height = 8, cache=T}
 
@@ -785,44 +475,6 @@ add_loess(image_data = image_data[image_data$source == "CNN",],
           loess_span = loess_span)
 ```
 
-
-# Conclusion
-
-
-## Conclusion and Future Directions
-
-**Contribution:**
-
-- First unsupervised, scalable framework for recovering latent positions from visual corpora
-- Extends the quantitative toolkit of political science from text to images
-
-. . .
-
-**Findings on Gaza War coverage:**
-
-- Far-right outlets share a distinctive visual repertoire; Al Jazeera diverges sharply
-- Scale captures a substantively meaningful dimension: elite framing vs. humanitarian suffering
-
-**Future directions:**
-
-- *Multimodal scaling:* integrate text and image in a shared embedding space
-- Analyze over time dynamics
-
-
-## {background-color="#1d3557"}
-
-::: {style="color: white; text-align: center; margin-top: 30%;"}
-**Measuring Media Slant through Image Analysis**
-
-<br>
-
-Christian Arnold · Andreas Küpfer · Oliver Rittmann · Michelle Torres
-:::
-
-
-# Appendix {visibility="uncounted"}
-
-
 ## Appendix: Images per Outlet {visibility="uncounted"}
 
 ![](figures/fig_descriptive_n_images.png){width=100%}
@@ -831,3 +483,27 @@ Christian Arnold · Andreas Küpfer · Oliver Rittmann · Michelle Torres
 ## Appendix: Images per Outlet over Time {visibility="uncounted"}
 
 ![](figures/fig_descriptive_n_images_time.png){width=90%}
+
+## Appendix: Step 2: The AME Model
+
+Additive-multiplicative effects *(Hoff 2005, 2021)* — outlet level:
+
+$$\textcolor{lightgray}{\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right)} = \textcolor{blue}{\mu} + \textcolor{lightgray}{\alpha_{O_i} + \alpha_{O_j}} + \textcolor{lightgray}{\vec{S}_{O_i}^\top \vec{S}_{O_j}} + \textcolor{lightgray}{\epsilon_{ij}}$$
+
+<br>
+
+[$\mu$]{style="color: blue"} is the **global baseline** similarity of news imagery across outlet pairs.
+
+
+## Appendix: Step 2: The AME Model
+
+Additive-multiplicative effects *(Hoff 2005, 2021)* — outlet level:
+
+$$\textcolor{lightgray}{\mathrm{atanh}\!\left(\mathrm{sim}(\vec{E}_i, \vec{E}_j)\right)} = \textcolor{lightgray}{\mu} + \textcolor{orange}{\alpha_{O_i} + \alpha_{O_j}} + \textcolor{lightgray}{\vec{S}_{O_i}^\top \vec{S}_{O_j}} + \textcolor{lightgray}{\epsilon_{ij}}$$
+
+<br>
+
+[$\alpha_{O_i}$]{style="color: orange"}: Random effects for outlet $O$ that posted image $i$.
+
+
+[$\alpha_{O_j}$]{style="color: orange"}: Random effects for outlet $O$ that posted image $j$.
