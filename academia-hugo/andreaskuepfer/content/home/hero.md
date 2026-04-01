@@ -51,6 +51,8 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
+**04/2026** &mdash;  I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://chrisguarnold.github.io/).
+
 **01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
 
 **01/2026** &mdash; I'm on a research visit at the Centre for AI and Government (University of Birmingham) until 10/2026!
@@ -60,15 +62,14 @@ Latest News
 **10/2025** &mdash; Our recent article at [WEP](https://doi.org/10.1080/01402382.2025.2549149) was featured in the German newspaper [Frankfurter Allgemeine Sonntagszeitung](https://www.faz.net/aktuell/politik/inland/studie-wer-applaudiert-im-bundestag-wem-accg-110714837.html).
 
 **09/2025** &mdash; New article published at West European Politics! [The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments](https://doi.org/10.1080/01402382.2025.2549149) (w/  [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) studies how applause during parliamentary debates reflects different aspects of party competition.
-
-**07/2025** &mdash; Our study at the EJPR, [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) (w/  [Elias Koch](https://elias-koch.com/)) was featured at the [European Public Policy Blog of the LSE European Institute](https://blogs.lse.ac.uk/europpblog/2025/07/16/when-do-politicians-engage-in-discourse-and-when-do-they-avoid-it/).
-
 </div>
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+
+**07/2025** &mdash; Our study at the EJPR, [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) (w/  [Elias Koch](https://elias-koch.com/)) was featured at the [European Public Policy Blog of the LSE European Institute](https://blogs.lse.ac.uk/europpblog/2025/07/16/when-do-politicians-engage-in-discourse-and-when-do-they-avoid-it/).
 
 **04/2025** &mdash; We're presenting our working paper (w/ [Christian Arnold](https://www.linkedin.com/in/christian-arnold-8b306681/) and [Christine Sheldon](https://christinesheldon.co.uk/)) on *Polarization in Bi-Directional Political Communication: Analysing the Language of Abgeordnetenwatch Questions and Answers* at the 75th Poitical Science Association Conference in Birmingham from 14-16 Apr 2025 and at the 7th annual COMPTEXT Conference 2025 in Vienna from 24-26 April 2025. Additionally, we're going to present another working paper (w/  [Christian Arnold](https://www.linkedin.com/in/christian-arnold-8b306681/)  and [Oliver Rittmann](https://oliver-rittmann.com/)) on *Identifying Meaningful Visual Content in Social Media Images* at COMPTEXT.
 
