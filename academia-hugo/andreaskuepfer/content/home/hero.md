@@ -51,7 +51,7 @@ Latest News
 -->
 <div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
 
-**04/2026** &mdash;  I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://chrisguarnold.github.io/).
+**04/2026** &mdash; I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://chrisguarnold.github.io/).
 
 **01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
 
