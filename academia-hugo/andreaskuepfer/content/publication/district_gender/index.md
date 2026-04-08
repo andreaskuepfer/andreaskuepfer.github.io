@@ -39,7 +39,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://doi.org/10.31235/osf.io/nxjr6_v1
+url_pdf: https://doi.org/10.31235/osf.io/nxjr6_v2
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''
