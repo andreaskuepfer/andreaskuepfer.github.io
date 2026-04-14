@@ -1,12 +1,13 @@
 ---
-title: "Gaze and Power: Opposition Status, Gender, and the Far Right (Under Review)"
+title: "Introducing Workflow Management to Computational Social Science"
 authors:
 - admin
-date: "2025-07-01T00:00:00Z"
+- Christian Arnold
+date: "2025-04-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-07-01T00:00:00Z"
+publishDate: "2025-06-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
