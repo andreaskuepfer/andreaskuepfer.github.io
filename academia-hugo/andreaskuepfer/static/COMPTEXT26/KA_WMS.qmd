@@ -20,7 +20,7 @@ format:
     width: 1280
     height: 720
     margin: 0.08
-    fontsize: 22px
+    fontsize: 26px
     html-math-method: plain
 execute:
   echo: false
@@ -30,15 +30,15 @@ execute:
 ::: {.column width="50%"}
 
 ![](figures/benoit_AJPS.png){hight=90%}
-(Benoit et al., 2026)
+*(Benoit et al., 2026)*
 :::
 ::: {.column width="50%"}
 ![](figures/legislatoR_BJPS.png){width=100%}
-(Göbel and Munzert, 2018)
+*(Göbel and Munzert, 2018)*
 
 ![](figures/hanny_journalofcss.png){width=100%}
 
-(Hanny et al., 2025)
+*(Hanny et al., 2025)*
 :::
 :::
 
@@ -60,50 +60,62 @@ But replication infrastructure has not kept pace: mostly still a collection of s
 ## Six Infrastructure Issues in Current Practice
 
 ```{=html}
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em; font-size: 0.78em;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em; font-size: 1em;">
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Automation</div>
     <div style="margin-top: 0.15em;">Scripts executed by hand, in mental order</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Stale outputs; execution errors go undetected</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Stale outputs; execution errors go undetected</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Scalability</div>
     <div style="margin-top: 0.15em;">Code designed to fit a laptop</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Computationally intensive questions stay unanswered</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Computationally intensive questions stay unanswered</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Portability</div>
     <div style="margin-top: 0.15em;">Hardcoded paths, undeclared dependencies</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Code that works on one machine breaks silently on another</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Code that works on one machine breaks silently on another</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Readability</div>
     <div style="margin-top: 0.15em;">Scripts written for one-time use</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Replication is nominal; reuse is impossible</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Replication is nominal; reuse is impossible</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Technical Documentation</div>
     <div style="margin-top: 0.15em;">No automatic logging</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Results cannot be traced to conditions of production</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Results cannot be traced to conditions of production</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Analytical Documentation</div>
     <div style="margin-top: 0.15em;">Decisions undocumented in code</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Researcher degrees of freedom remain invisible</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Researcher degrees of freedom remain invisible</div>
   </div>
 
 </div>
 ```
 
-::: {.fragment style="margin-top: 0.8em; font-size: 0.85em; color: #555; border-top: 1px solid #ddd; padding-top: 0.5em;"}
-Together, these failures prevent what King (1995) demands: sufficient information for a third party to understand, evaluate, and extend the work.
+::: {.fragment style="margin-top: 0.8em; border-top: 1px solid #ddd; padding-top: 0.5em;"}
+Together, these issues prevent what *King (1995)* demands: sufficient information for a third party to understand, evaluate, and extend the work.
 :::
+
+---
+
+## {background-color="#1a1a2e" .center}
+
+```{=html}
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
+  <div style="font-size:2.8em;font-weight:700;">Workflow Management Systems</div>
+  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
+  <div style="font-size:1.5em;color:#aac4e0;">A structural solution to an infrastructure problem</div>
+</div>
+```
 
 ---
 
@@ -114,31 +126,36 @@ A WMS represents a pipeline as an explicit **DAG**: each step declares its **inp
 :::
 
 ::: {.fragment .columns}
-::: {.column width="35%"}
+::: {.column width="40%"}
 **Why Snakemake?**
 
 - Python-based DSL (low barrier for CSS researchers)
-- Fastest end-to-end execution among WMS benchmarks (Larsonneur et al., 2018)
-- 75% of public Snakemake repos have less than 23 rules (Pohl et al., 2024)
+- Fastest end-to-end execution among WMS benchmarks *(Larsonneur et al., 2018)*
+- 75% of public Snakemake repos have less than 23 rules *(Pohl et al., 2024)*
 :::
 
-::: {.fragment .column width="65%"}
-```{.python code-line-numbers="1-15"}
+::: {.fragment .column width="60%"}
+```{.python code-line-numbers="1-22"}
     ...
-        json=SPEECHES / "{parliament}" / "{filename}" / "features" / "{base}_{segment}_depth.json",
+        json=SPEECHES / "{parliament}" / "{filename}" / "features" /
+          "{base}_{segment}_depth.json",
     script: "scripts/generate_video_feature_depth.py"
 
 rule generate_video_feature_faces:
     input:
-        video=SPEECHES / "{parliament}" / "{filename}" / "videos" / "{base}_{segment}.mp4",
-        depth_json=SPEECHES / "{parliament}" / "{filename}" / "features" / "{base}_{segment}_depth.json",
+        video=SPEECHES / "{parliament}" / "{filename}" / "videos" /
+          "{base}_{segment}.mp4",
+        depth_json=SPEECHES / "{parliament}" / "{filename}" / "features" /
+          "{base}_{segment}_depth.json",
     output:
-        json=SPEECHES / "{parliament}" / "{filename}" / "features" / "{base}_{segment}_faces.json",
+        json=SPEECHES / "{parliament}" / "{filename}" / "features" /
+          "{base}_{segment}_faces.json",
     script: "scripts/generate_video_feature_faces.py"
 
 rule generate_video_feature_headpose:
     input:
-        faces_json=SPEECHES / "{parliament}" / "{filename}" / "features" / "{base}_{segment}_faces.json",
+        faces_json=SPEECHES / "{parliament}" / "{filename}" / "features" /
+          "{base}_{segment}_faces.json",
     ...
 ```
 
@@ -147,11 +164,23 @@ rule generate_video_feature_headpose:
 
 ---
 
-## Framework: From Six Properties to Full Replication (Adapted from Mölder et al., 2021)
+## Framework: From Six Properties to Full Replication<br>(Adapted from *Mölder et al. (2021)*)
 
 ::: {style="text-align: center;"}
 ![](figures/fig2.png){width=100% .nostretch}
 :::
+
+---
+
+## {background-color="#1a1a2e" .center}
+
+```{=html}
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
+  <div style="font-size:2.8em;font-weight:700;">How WMS Addresses the Six Issues</div>
+  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
+  <div style="font-size:1.5em;color:#aac4e0;">Reproducibility | Adaptability | Transparency</div>
+</div>
+```
 
 ---
 
@@ -174,14 +203,13 @@ rule generate_video_feature_headpose:
 :::
 :::
 
-::: {.fragment style="margin-top: 1em;"}
+::: {.fragment style="margin-top: 1em; font-size: 30px"}
 ::: {.callout-warning}
-## The two most common causes of replication failure (Eubank 2016)
-1. Wrong execution order
-2. Environment/version inconsistency
+## The two most common causes of replication failure *(Eubank 2016)*
+Wrong execution order & Environment/version inconsistency
 :::
 
-Snakemake resolves both issues structurally, not through researcher discipline. Without additional documentation effort, a Snakemake project automatically satisfies the REP framework (Stodden et al., 2016).
+Snakemake resolves both issues structurally, not through researcher discipline. Without additional documentation effort, a Snakemake project automatically satisfies the REP framework *(Stodden et al., 2016)*.
 :::
 
 ---
@@ -197,10 +225,9 @@ With Snakemake, the same workflow definition runs on different environments with
 - Google Cloud
 - AWS, Azure
 
-::: {.fragment}
-**What this enables**
+::: {.fragment style="font-size: 30px"}
 
-| Without WMS | With WMS |
+| Without WMSS | With WMS |
 |---|---|
 | Prototype locally, manually port to HPC | Same file, one config |
 | Ad-hoc Virtual Machine deployment | Portable, parallelised, reproducible |
@@ -230,6 +257,18 @@ With Snakemake, the same workflow definition runs on different environments with
 - Running an alternative specification = changing one config value; both remain auditable
 :::
 :::
+
+---
+
+## {background-color="#1a1a2e" .center}
+
+```{=html}
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
+  <div style="font-size:2.8em;font-weight:700;">Snakemake in Practice</div>
+  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
+  <div style="font-size:1.5em;color:#aac4e0;">30,000 hours of parliamentary video across 17 German parliaments</div>
+</div>
+```
 
 ---
 
@@ -293,7 +332,7 @@ WMS are an implicit implementation of the replication framework the discipline h
 - **Technical Documentation** creates a provenance record automatically
 - **Analytical Documentation** makes the garden of forking paths visible and auditable
 
-Together, they fulfil what King (1995) demanded: sufficient information for a third party to understand, evaluate, and extend the work.
+Together, they fulfil what *King (1995)* demanded: sufficient information for a third party to understand, evaluate, and extend the work.
 
 ---
 
@@ -302,7 +341,7 @@ Together, they fulfil what King (1995) demanded: sufficient information for a th
 ```{=html}
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white; gap: 1.2em;">
 
-  <div style="font-size: 2em; font-weight: 700; letter-spacing: 0.03em;">Thank You</div>
+  <div style="font-size: 2em; font-weight: 700; letter-spacing: 0.03em;">Introducing Workflow Management to Computational Social Science</div>
 
   <div style="width: 60px; height: 3px; background: #2a7ab5; border-radius: 2px;"></div>
 

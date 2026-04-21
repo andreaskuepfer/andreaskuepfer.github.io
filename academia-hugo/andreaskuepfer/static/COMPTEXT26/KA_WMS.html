@@ -97,7 +97,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="KA_WMS_files/libs/revealjs/dist/theme/quarto-506179ebb6173cb1332e4599822d0acb.css">
+  <link rel="stylesheet" href="KA_WMS_files/libs/revealjs/dist/theme/quarto-4282e288f6e942c1ad334803fde0c02f.css">
   <link href="KA_WMS_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="KA_WMS_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="KA_WMS_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -222,11 +222,11 @@ Christian Arnold
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="figures/benoit_AJPS.png" data-hight="90%"> (Benoit et al., 2026)</p>
+<p><img data-src="figures/benoit_AJPS.png" data-hight="90%"> <em>(Benoit et al., 2026)</em></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="figures/legislatoR_BJPS.png" style="width:100.0%"> (Göbel and Munzert, 2018)</p>
+<p><img data-src="figures/legislatoR_BJPS.png" style="width:100.0%"> <em>(Göbel and Munzert, 2018)</em></p>
 <p><img data-src="figures/hanny_journalofcss.png" style="width:100.0%"></p>
-<p>(Hanny et al., 2025)</p>
+<p><em>(Hanny et al., 2025)</em></p>
 </div></div>
 </section>
 <section id="the-replication-crisis-is-an-infrastructure-crisis" class="slide level2">
@@ -243,47 +243,55 @@ Christian Arnold
 </section>
 <section id="six-infrastructure-issues-in-current-practice" class="slide level2">
 <h2>Six Infrastructure Issues in Current Practice</h2>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em; font-size: 0.78em;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em; font-size: 1em;">
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Automation</div>
     <div style="margin-top: 0.15em;">Scripts executed by hand, in mental order</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Stale outputs; execution errors go undetected</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Stale outputs; execution errors go undetected</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Scalability</div>
     <div style="margin-top: 0.15em;">Code designed to fit a laptop</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Computationally intensive questions stay unanswered</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Computationally intensive questions stay unanswered</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Portability</div>
     <div style="margin-top: 0.15em;">Hardcoded paths, undeclared dependencies</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Code that works on one machine breaks silently on another</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Code that works on one machine breaks silently on another</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Readability</div>
     <div style="margin-top: 0.15em;">Scripts written for one-time use</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Replication is nominal; reuse is impossible</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Replication is nominal; reuse is impossible</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Technical Documentation</div>
     <div style="margin-top: 0.15em;">No automatic logging</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Results cannot be traced to conditions of production</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Results cannot be traced to conditions of production</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Analytical Documentation</div>
     <div style="margin-top: 0.15em;">Decisions undocumented in code</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: 0.9em;">→ Researcher degrees of freedom remain invisible</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Researcher degrees of freedom remain invisible</div>
   </div>
 
 </div>
-<div class="fragment" style="margin-top: 0.8em; font-size: 0.85em; color: #555; border-top: 1px solid #ddd; padding-top: 0.5em;">
-<p>Together, these failures prevent what King (1995) demands: sufficient information for a third party to understand, evaluate, and extend the work.</p>
+<div class="fragment" style="margin-top: 0.8em; border-top: 1px solid #ddd; padding-top: 0.5em;">
+<p>Together, these issues prevent what <em>King (1995)</em> demands: sufficient information for a third party to understand, evaluate, and extend the work.</p>
+</div>
+</section>
+<section id="section" class="slide level2 center" data-background-color="#1a1a2e">
+<h2></h2>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
+  <div style="font-size:2.8em;font-weight:700;">Workflow Management Systems</div>
+  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
+  <div style="font-size:1.5em;color:#aac4e0;">A structural solution to an infrastructure problem</div>
 </div>
 </section>
 <section id="workflow-management-systems-wms-offer-a-structural-solution" class="slide level2">
@@ -292,36 +300,49 @@ Christian Arnold
 <p>A WMS represents a pipeline as an explicit <strong>DAG</strong>: each step declares its <strong>inputs</strong> and <strong>outputs</strong> while the system enforces order, detects stale outputs, and manages environments automatically.</p>
 </div>
 <div class="fragment columns">
-<div class="column" style="width:35%;">
+<div class="column" style="width:40%;">
 <p><strong>Why Snakemake?</strong></p>
 <ul>
 <li>Python-based DSL (low barrier for CSS researchers)</li>
-<li>Fastest end-to-end execution among WMS benchmarks (Larsonneur et al., 2018)</li>
-<li>75% of public Snakemake repos have less than 23 rules (Pohl et al., 2024)</li>
+<li>Fastest end-to-end execution among WMS benchmarks <em>(Larsonneur et al., 2018)</em></li>
+<li>75% of public Snakemake repos have less than 23 rules <em>(Pohl et al., 2024)</em></li>
 </ul>
-</div><div class="fragment column" style="width:65%;">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers="1-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a>    ...</span>
-<span id="cb1-2"><a href=""></a>        json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{base}</span><span class="st">_</span><span class="sc">{segment}</span><span class="st">_depth.json"</span>,</span>
-<span id="cb1-3"><a href=""></a>    script: <span class="st">"scripts/generate_video_feature_depth.py"</span></span>
-<span id="cb1-4"><a href=""></a></span>
-<span id="cb1-5"><a href=""></a>rule generate_video_feature_faces:</span>
-<span id="cb1-6"><a href=""></a>    <span class="bu">input</span>:</span>
-<span id="cb1-7"><a href=""></a>        video<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"videos"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{base}</span><span class="st">_</span><span class="sc">{segment}</span><span class="st">.mp4"</span>,</span>
-<span id="cb1-8"><a href=""></a>        depth_json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{base}</span><span class="st">_</span><span class="sc">{segment}</span><span class="st">_depth.json"</span>,</span>
-<span id="cb1-9"><a href=""></a>    output:</span>
-<span id="cb1-10"><a href=""></a>        json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{base}</span><span class="st">_</span><span class="sc">{segment}</span><span class="st">_faces.json"</span>,</span>
-<span id="cb1-11"><a href=""></a>    script: <span class="st">"scripts/generate_video_feature_faces.py"</span></span>
-<span id="cb1-12"><a href=""></a></span>
-<span id="cb1-13"><a href=""></a>rule generate_video_feature_headpose:</span>
-<span id="cb1-14"><a href=""></a>    <span class="bu">input</span>:</span>
-<span id="cb1-15"><a href=""></a>        faces_json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{base}</span><span class="st">_</span><span class="sc">{segment}</span><span class="st">_faces.json"</span>,</span>
-<span id="cb1-16"><a href=""></a>    ...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="fragment column" style="width:60%;">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers="1-22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a>    ...</span>
+<span id="cb1-2"><a href=""></a>        json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span></span>
+<span id="cb1-3"><a href=""></a>          <span class="co">"{base}_{segment}_depth.json"</span>,</span>
+<span id="cb1-4"><a href=""></a>    script: <span class="st">"scripts/generate_video_feature_depth.py"</span></span>
+<span id="cb1-5"><a href=""></a></span>
+<span id="cb1-6"><a href=""></a>rule generate_video_feature_faces:</span>
+<span id="cb1-7"><a href=""></a>    <span class="bu">input</span>:</span>
+<span id="cb1-8"><a href=""></a>        video<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"videos"</span> <span class="op">/</span></span>
+<span id="cb1-9"><a href=""></a>          <span class="co">"{base}_{segment}.mp4"</span>,</span>
+<span id="cb1-10"><a href=""></a>        depth_json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span></span>
+<span id="cb1-11"><a href=""></a>          <span class="co">"{base}_{segment}_depth.json"</span>,</span>
+<span id="cb1-12"><a href=""></a>    output:</span>
+<span id="cb1-13"><a href=""></a>        json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span></span>
+<span id="cb1-14"><a href=""></a>          <span class="co">"{base}_{segment}_faces.json"</span>,</span>
+<span id="cb1-15"><a href=""></a>    script: <span class="st">"scripts/generate_video_feature_faces.py"</span></span>
+<span id="cb1-16"><a href=""></a></span>
+<span id="cb1-17"><a href=""></a>rule generate_video_feature_headpose:</span>
+<span id="cb1-18"><a href=""></a>    <span class="bu">input</span>:</span>
+<span id="cb1-19"><a href=""></a>        faces_json<span class="op">=</span>SPEECHES <span class="op">/</span> <span class="st">"</span><span class="sc">{parliament}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"</span><span class="sc">{filename}</span><span class="st">"</span> <span class="op">/</span> <span class="st">"features"</span> <span class="op">/</span></span>
+<span id="cb1-20"><a href=""></a>          <span class="co">"{base}_{segment}_faces.json"</span>,</span>
+<span id="cb1-21"><a href=""></a>    ...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section id="framework-from-six-properties-to-full-replication-adapted-from-mölder-et-al.-2021" class="slide level2">
-<h2>Framework: From Six Properties to Full Replication (Adapted from Mölder et al., 2021)</h2>
+<h2>Framework: From Six Properties to Full Replication<br>(Adapted from <em>Mölder et al.&nbsp;(2021)</em>)</h2>
 <div style="text-align: center;">
 <p><img data-src="figures/fig2.png" class="" style="width:100.0%"></p>
+</div>
+</section>
+<section id="section-1" class="slide level2 center" data-background-color="#1a1a2e">
+<h2></h2>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
+  <div style="font-size:2.8em;font-weight:700;">How WMS Addresses the Six Issues</div>
+  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
+  <div style="font-size:1.5em;color:#aac4e0;">Reproducibility | Adaptability | Transparency</div>
 </div>
 </section>
 <section id="reproducibility-automation-portability-in-practice" class="slide level2">
@@ -342,24 +363,21 @@ Christian Arnold
 <li>Hardcoded paths replaced by Snakemake’s wildcard system</li>
 </ul>
 </div></div>
-<div class="fragment" style="margin-top: 1em;">
+<div class="fragment" style="margin-top: 1em; font-size: 30px">
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>The two most common causes of replication failure (Eubank 2016)</strong></p>
+<p><strong>The two most common causes of replication failure <em>(Eubank 2016)</em></strong></p>
 </div>
 <div class="callout-content">
-<ol type="1">
-<li>Wrong execution order</li>
-<li>Environment/version inconsistency</li>
-</ol>
+<p>Wrong execution order &amp; Environment/version inconsistency</p>
 </div>
 </div>
 </div>
-<p>Snakemake resolves both issues structurally, not through researcher discipline. Without additional documentation effort, a Snakemake project automatically satisfies the REP framework (Stodden et al., 2016).</p>
+<p>Snakemake resolves both issues structurally, not through researcher discipline. Without additional documentation effort, a Snakemake project automatically satisfies the REP framework <em>(Stodden et al., 2016)</em>.</p>
 </div>
 </section>
 <section id="adaptability-scale-without-porting" class="slide level2">
@@ -372,8 +390,7 @@ Christian Arnold
 <li>Google Cloud</li>
 <li>AWS, Azure</li>
 </ul>
-<div class="fragment">
-<p><strong>What this enables</strong></p>
+<div class="fragment" style="font-size: 30px">
 <table class="caption-top">
 <colgroup>
 <col style="width: 50%">
@@ -381,7 +398,7 @@ Christian Arnold
 </colgroup>
 <thead>
 <tr class="header">
-<th>Without WMS</th>
+<th>Without WMSS</th>
 <th>With WMS</th>
 </tr>
 </thead>
@@ -421,6 +438,14 @@ Christian Arnold
 <li>Running an alternative specification = changing one config value; both remain auditable</li>
 </ul>
 </div></div>
+</section>
+<section id="section-2" class="slide level2 center" data-background-color="#1a1a2e">
+<h2></h2>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
+  <div style="font-size:2.8em;font-weight:700;">Snakemake in Practice</div>
+  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
+  <div style="font-size:1.5em;color:#aac4e0;">30,000 hours of parliamentary video across 17 German parliaments</div>
+</div>
 </section>
 <section id="application-a-snakemake-pipeline-for-30000-hours-of-parliamentary-video" class="slide level2">
 <h2>Application: A Snakemake Pipeline for 30,000 Hours of Parliamentary Video</h2>
@@ -470,13 +495,13 @@ Christian Arnold
 <li><strong>Technical Documentation</strong> creates a provenance record automatically</li>
 <li><strong>Analytical Documentation</strong> makes the garden of forking paths visible and auditable</li>
 </ul>
-<p>Together, they fulfil what King (1995) demanded: sufficient information for a third party to understand, evaluate, and extend the work.</p>
+<p>Together, they fulfil what <em>King (1995)</em> demanded: sufficient information for a third party to understand, evaluate, and extend the work.</p>
 </section>
-<section id="section" class="slide level2 center" data-background-color="#1a1a2e">
+<section id="section-3" class="slide level2 center" data-background-color="#1a1a2e">
 <h2></h2>
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white; gap: 1.2em;">
 
-  <div style="font-size: 2em; font-weight: 700; letter-spacing: 0.03em;">Thank You</div>
+  <div style="font-size: 2em; font-weight: 700; letter-spacing: 0.03em;">Introducing Workflow Management to Computational Social Science</div>
 
   <div style="width: 60px; height: 3px; background: #2a7ab5; border-radius: 2px;"></div>
 

@@ -16,20 +16,23 @@ $presentation-heading-font-weight: 600;
 
 .reveal {
   font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 26px !important;
 }
 
-.reveal h1, .reveal h2 {
+.reveal h1 {
+  font-size: 1.6em;
   border-bottom: 2px solid #2a7ab5;
   padding-bottom: 0.2em;
   margin-bottom: 0.6em;
 }
 
-.reveal h1 {
-  font-size: 1.6em;
-}
-
 .reveal h2 {
   font-size: 1.3em;
+  background-color: #1a1a2e;
+  color: #e8f0f8 !important;
+  padding: 0.25em 0.5em;
+  margin-bottom: 0.6em;
+  border-bottom: none;
 }
 
 /* Tighter bullet spacing */
@@ -62,7 +65,7 @@ $presentation-heading-font-weight: 600;
 }
 
 .reveal table th {
-  background-color: #1a1a2e;
+  background-color: #2a7ab5;
   color: white;
   padding: 6px 10px;
   text-align: left;
