@@ -101,10 +101,6 @@ But replication infrastructure has not kept pace: mostly still a collection of s
 </div>
 ```
 
-::: {.fragment style="margin-top: 0.8em; border-top: 1px solid #ddd; padding-top: 0.5em;"}
-Together, these issues prevent what *King (1995)* demands: sufficient information for a third party to understand, evaluate, and extend the work.
-:::
-
 ---
 
 ## {background-color="#1a1a2e" .center}
@@ -225,9 +221,9 @@ With Snakemake, the same workflow definition runs on different environments with
 - Google Cloud
 - AWS, Azure
 
-::: {.fragment style="font-size: 30px"}
+::: {.fragment style="font-size: 30px; margin-top: 1em"}
 
-| Without WMSS | With WMS |
+| Without WMS | With WMS |
 |---|---|
 | Prototype locally, manually port to HPC | Same file, one config |
 | Ad-hoc Virtual Machine deployment | Portable, parallelised, reproducible |
