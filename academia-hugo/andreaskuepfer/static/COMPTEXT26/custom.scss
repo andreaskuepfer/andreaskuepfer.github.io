@@ -1,0 +1,132 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+$font-family-monospace: "Fira Code", "Source Code Pro", monospace;
+$presentation-font-size-root: 22px;
+
+$body-color: #2c2c2c;
+$link-color: #2a7ab5;
+$selection-bg: #2a7ab5;
+
+$presentation-heading-font: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+$presentation-heading-color: #1a1a2e;
+$presentation-heading-font-weight: 600;
+
+/*-- scss:rules --*/
+
+.reveal {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+}
+
+.reveal h1, .reveal h2 {
+  border-bottom: 2px solid #2a7ab5;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.6em;
+}
+
+.reveal h1 {
+  font-size: 1.6em;
+}
+
+.reveal h2 {
+  font-size: 1.3em;
+}
+
+/* Tighter bullet spacing */
+.reveal ul, .reveal ol {
+  margin-top: 0.3em;
+  line-height: 1.5;
+}
+
+.reveal ul li, .reveal ol li {
+  margin-bottom: 0.2em;
+}
+
+/* Code blocks */
+.reveal pre {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Callout adjustments */
+.reveal .callout {
+  font-size: 0.85em;
+  margin-top: 0.5em;
+}
+
+/* Table styling */
+.reveal table {
+  font-size: 0.82em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reveal table th {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.reveal table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.reveal table tr:nth-child(even) td {
+  background-color: #f5f7fa;
+}
+
+/* Footer */
+.reveal .footer {
+  font-size: 0.6em;
+  color: #888;
+}
+
+/* Hide footer on title slide and last slide */
+.reveal:has(#title-slide.present) > .footer {
+  display: none !important;
+}
+
+.reveal:has(section.present[data-background-color="#1a1a2e"]) > .footer {
+  display: none !important;
+}
+
+/* Slide number */
+.reveal .slide-number {
+  font-size: 0.7em;
+  color: #aaa;
+  background: transparent;
+}
+
+/* Title slide */
+#title-slide {
+  text-align: left;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#title-slide .title   { order: 1; text-align: left; }
+#title-slide .quarto-title-authors { order: 2; display: flex !important; flex-direction: row !important; justify-content: flex-start !important; gap: 3em; }
+#title-slide .subtitle { order: 3; text-align: left; font-size: 0.9em; color: #555; margin-top: 0.8em; }
+#title-slide .date    { order: 4; text-align: left; }
+
+#title-slide .quarto-title-author-name,
+#title-slide .quarto-title-affiliation {
+  text-align: left;
+}
+
+/* Fragment fade-in */
+.reveal .fragment {
+  transition: opacity 0.3s ease;
+}
+
+/* Center class helper */
+.center {
+  text-align: center;
+}
+
+/* Columns gap */
+.reveal .columns {
+  gap: 2em;
+}
