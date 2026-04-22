@@ -1,0 +1,562 @@
+[
+  {
+    "objectID": "index.html#some-examples-for-complex-data-sources",
+    "href": "index.html#some-examples-for-complex-data-sources",
+    "title": "",
+    "section": "Some Examples for Complex Data Sources",
+    "text": "Some Examples for Complex Data Sources\n\n\n\n\nTV News BroadcastTagesschau (ARD)\n\n\n\n\n\nParliamentary DebateGerman Bundestag\n\n\n\n\n\nSocial Media VideoTikTok campaign content\n\n\n\n\n\nLocal GovernmentUS school board meeting\n\n\n\n\n\nJudiciary ProceedingsFlorida supreme court\n\n\n\n\n\n…and much more:\n\n\nNewspaper archives Social media posts Satellite imagery Retweet networks Parliamentary speech corpora Protest event photographs Administrative records Party manifestos"
+  },
+  {
+    "objectID": "index.html#complex-methods-in-computational-social-science",
+    "href": "index.html#complex-methods-in-computational-social-science",
+    "title": "",
+    "section": "Complex Methods in Computational Social Science",
+    "text": "Complex Methods in Computational Social Science\n\n\n\nNatural Language Processing\n\n\nLarge-scale text classification · Topic modelling · Sentiment analysis · Named entity recognition · LLM-based annotation\n\n\n\n\nComputer Vision and Audio\n\n\nImage and video classification · Object detection · Automatic speech recognition · Speaker diarisation · Emotion detection\n\n\n\n\nNetwork Analysis\n\n\nLarge-scale graph processing · Community detection · Diffusion modelling · Temporal network dynamics\n\n\n\n\nCausal Inference at Scale\n\n\nBootstrapped estimators · Simulation studies · Power analyses · Matching on large observational datasets\n\n\n\n\nAgent-Based Modelling\n\n\nLarge population simulations · Sensitivity analyses\n\n\n\n\nRelevant to All Methods\n\n\nHyperparameter optimisation · Cross-validation at scale · Bootstrapping · Monte Carlo simulation · Ensemble methods"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "",
+    "section": "",
+    "text": "Social Media\n\n\n\n\n\nTV Broadcasts\n\n\n\n\n\nParliamentary Debates\n\n\n\n\n\nNews Archives\n\n\n\n\n\nPolitical Meetings\n\n\n\n\n\nCourt Meetings\n\n\n\n\n···"
+  },
+  {
+    "objectID": "index.html#workshop-at-a-glance",
+    "href": "index.html#workshop-at-a-glance",
+    "title": "",
+    "section": "Workshop at a Glance",
+    "text": "Workshop at a Glance\n\n\n\n\n\n\n\n\n\n\nBlock\nTopic\n\n\n\n\n\nBlock 1\nWhy HPC? Motivation and big picture\n💬 Explore/Discussion\n\n\nBlock 2\nHPC architecture: nodes, cores, memory\n\n\n\nBlock 3\nConnecting and navigating an HPC cluster\n✏️ Hands-on Exercise\n\n\nBreak\n\n\n\n\nBlock 4\nJob schedulers: writing and submitting jobs\n✏️ Hands-on Exercise\n\n\nBlock 5\nMonitoring, debugging and best practices\n✏️ Hands-on Exercise\n\n\nBlock 6\nWorkflow managers and outlook\n🎬 Live Demo\n\n\n\n\n\n  \n\nWorkshop Materialgithub.com/andreaskuepfer/css-introduction-hpc"
+  },
+  {
+    "objectID": "index.html#what-you-will-take-away",
+    "href": "index.html#what-you-will-take-away",
+    "title": "",
+    "section": "What You Will Take Away",
+    "text": "What You Will Take Away\n\n\nConceptual understanding\n\nWhy desktop computing hits a wall\nCPU vs. GPU: what they’re good for\nWhat an HPC cluster actually looks like\n\n\nPractical skills\n\nConnect to a remote cluster via SSH\nNavigate Linux filesystems\nWrite, submit, and monitor batch jobs (SLURM)\n\n\nResearch workflow thinking\n\nStructure reproducible pipelines\nUnderstand resource trade-offs\nKnow when (and when not) to use HPC\n\n\n\nNo prior HPC experience needed: Basic familiarity with R or Python and the terminal is helpful but not required."
+  },
+  {
+    "objectID": "index.html#the-desktop-computing-wall",
+    "href": "index.html#the-desktop-computing-wall",
+    "title": "",
+    "section": "The Desktop Computing Wall",
+    "text": "The Desktop Computing Wall\n\n\nYou’ve hit the wall when…\n\nYour script has been running for 3 days and you need results tomorrow\nLoading the full dataset exhausts your RAM\nTraining 100 model variants would take days sequentially\nYour laptop fan sounds afraid\n\n\nThe typical research laptop: 8-16 GB RAM · 8-16 CPU cores · no GPU · shared with your browser, RStudio, Zoom, and Spotify\n\n\nCommon CSS bottlenecks\n\n\n\nTask\nBottleneck\n\n\n\n\nLarge corpus NLP\nRAM + CPU\n\n\nTransformer fine-tuning\nGPU memory\n\n\nImage + text fusion (CLIP-style)\nGPU memory\n\n\nAudio / video transcription at scale\nCPU + GPU\n\n\nWeb scraping + parsing\nI/O + CPU"
+  },
+  {
+    "objectID": "index.html#what-is-high-performance-computing",
+    "href": "index.html#what-is-high-performance-computing",
+    "title": "",
+    "section": "What Is High-Performance Computing?",
+    "text": "What Is High-Performance Computing?\n\n\nHPC = many computers working together, managed as a shared infrastructure\n\nCluster: a collection of nodes connected by a fast network\nNode: one individual computer (server) in the cluster\nJob: a unit of computation you submit for execution\nScheduler: the software that allocates resources and queues jobs\n\n\nThink of HPC like a printing service: you submit a job, it gets queued, a machine picks it up, and you collect the result, but you don’t sit at the printer.\n\n\n╔══════════════════════╗\n║   Login / Head Node  ║  ← you SSH here\n╠══════════════════════╣\n║   Job Scheduler      ║  ← SLURM\n╠══════════════════════╣\n║  Compute  Compute    ║\n║  Node 1   Node 2     ║\n║  Node 3   Node 4 ... ║\n╠══════════════════════╣\n║   Shared Storage     ║\n╚══════════════════════╝"
+  },
+  {
+    "objectID": "index.html#cpu-vs.-gpu-the-core-distinction",
+    "href": "index.html#cpu-vs.-gpu-the-core-distinction",
+    "title": "",
+    "section": "CPU vs. GPU: The Core Distinction",
+    "text": "CPU vs. GPU: The Core Distinction\n\n\nCPU — Central Processing Unit\n\nA few powerful cores (4–128)\nExcellent at sequential, complex tasks\nBest for: data wrangling, statistical models\n\n\nGPU — Graphics Processing Unit\n\nThousands of small cores\nExcellent at massively parallel tasks (same operation on many values)\nOriginally designed for graphics rendering\nBest for: deep learning, transformer models, large matrix operations\n\n\n\nUse CPU for: lm(), tidytext, web scraping, simulation, most basic ML in scikit-learn\n\n\nUse GPU for: BERT fine-tuning, image classification, large language models, torch/tensorflow training"
+  },
+  {
+    "objectID": "index.html#when-to-use-hpc-in-css-research",
+    "href": "index.html#when-to-use-hpc-in-css-research",
+    "title": "",
+    "section": "When to Use HPC in CSS Research",
+    "text": "When to Use HPC in CSS Research\n\n\nGood candidates for HPC\n\nProcessing millions of documents (corpora, social media archives, audiovisual data)\nFine-tuning or running large language models (BERT, GPT-class)\nBootstrapping / permutation tests with many iterations\nGrid search over model hyperparameters\nAgent-based simulations at scale\nLarge network analysis (graphs with millions of nodes)\n\n\nMight not need HPC\n\nAnalysis fits in laptop RAM (&lt; ~8 GB data)\nSingle model run completes in &lt; 4 hour\nHighly interactive / exploratory analysis\nOutput depends on human review at each step\n\n\nRule of thumb: If you wish you could run your script 10× faster or with 10× more data HPC is worth exploring."
+  },
+  {
+    "objectID": "index.html#hpc-access-across-institutions",
+    "href": "index.html#hpc-access-across-institutions",
+    "title": "",
+    "section": "HPC Access Across Institutions",
+    "text": "HPC Access Across Institutions\n\n[ Placeholder — insert poll / audience results here ]\n\n\nDoes your institution offer HPC services?\n\n\ne.g. Mentimeter · Slido · show of hands"
+  },
+  {
+    "objectID": "index.html#anatomy-of-an-hpc-cluster",
+    "href": "index.html#anatomy-of-an-hpc-cluster",
+    "title": "",
+    "section": "Anatomy of an HPC Cluster",
+    "text": "Anatomy of an HPC Cluster\n                    You (SSH)\n                        │\n                ┌───────▼────────┐\n                │  Login Node    │  — where you land, write code, submit jobs\n                │  (head node)   │    DO NOT run heavy computation here\n                └───────┬────────┘\n          ┌─────────────┼────────────┐\n          │             │            │\n  ┌───────▼──────┐  ┌───▼──────┐  ┌──▼───────┐\n  │ Compute Node │  │ GPU Node │  │ Fat Node │\n  │ 32cores/128GB│  │ 8× A100  │  │ 2TB RAM  │\n  └──────────────┘  └──────────┘  └──────────┘\n          │             │             │\n          └─────────────┼─────────────┘\n                ┌───────▼────────┐\n                │  Shared Storage│  — /home, /scratch, /project\n                │  (e.g., NFS)   │\n                └────────────────┘"
+  },
+  {
+    "objectID": "index.html#node-types-when-to-use-them",
+    "href": "index.html#node-types-when-to-use-them",
+    "title": "",
+    "section": "Node Types & When to Use Them",
+    "text": "Node Types & When to Use Them\n\n\n\n\n\n\n\n\nNode Type\nTypical Resources\nBest For\n\n\n\n\nStandard compute\n32–128 cores, 256 GB RAM\nParallel R/Python jobs, NLP preprocessing\n\n\nHigh-memory\n32–64 cores, 1–4 TB RAM\nVery large datasets loaded into RAM\n\n\nGPU\n4–8 GPUs (A100/H100), 40–80 GB VRAM each\nModel training, inference at scale\n\n\nLogin / head\nshared, limited\nFile editing, job submission only\n\n\n\n\nNever run heavy computation on the login node: You share these resources it with all other users."
+  },
+  {
+    "objectID": "index.html#storage-on-hpc-systems",
+    "href": "index.html#storage-on-hpc-systems",
+    "title": "",
+    "section": "Storage on HPC Systems",
+    "text": "Storage on HPC Systems\n\n\nMost clusters have multiple storage tiers:\n\n\n\n\n\n\n\n\nPath\nPurpose\nNotes\n\n\n\n\n/home/&lt;username&gt;\nPersonal files, scripts\nSmall quota (20-50 GB), backed up\n\n\n/scratch/&lt;username&gt;\nTemporary job I/O\nLarge (10-20 TB), not backed up, purged regularly\n\n\n/project/&lt;groupname&gt;\nShared team data\nLarger quota (1-5 TB), longer retention\n\n\n\n\nBest practices\n\nStore scripts and results → /home\nWrite job output → /scratch\nKeep large raw data → /project or /scratch\nCopy results off the cluster after jobs finish\nNever rely on /scratch long-term\n\n\nScratch files are not backuped and often auto-deleted after 30-90 days."
+  },
+  {
+    "objectID": "index.html#software-on-hpc-environment-modules",
+    "href": "index.html#software-on-hpc-environment-modules",
+    "title": "",
+    "section": "Software on HPC: Environment Modules",
+    "text": "Software on HPC: Environment Modules\nHPC clusters use a module system to manage software versions:\n# See what software is available\nmodule avail\n\n# Load a specific module\nmodule load R/4.3.1\nmodule load python/3.11\nmodule load cuda/12.1\n\n# See what you have loaded\nmodule list\n\n# Unload/reset\nmodule unload R/4.3.1\nmodule purge\n\nModules are optional: You can install and manage your own software (e.g. via Conda or pip) without ever loading a module. In practice, modules are mainly useful for system-level dependencies like CUDA drivers or MPI that are hard to install yourself."
+  },
+  {
+    "objectID": "index.html#conda-virtual-environments",
+    "href": "index.html#conda-virtual-environments",
+    "title": "",
+    "section": "Conda & Virtual Environments",
+    "text": "Conda & Virtual Environments\nFor Python (and increasingly R), the package managers Conda or venv are preferred for reproducibility:\n# Create a project environment\nconda create -n css-project python=3.11\n\n# Activate it\nconda activate css-project\n\n# Install packages\nconda install -c conda-forge transformers torch pandas\n\n# Export for reproducibility\nconda env export &gt; environment.yml\n\n# Re-create from file\nconda env create -f environment.yml"
+  },
+  {
+    "objectID": "index.html#connecting-via-ssh",
+    "href": "index.html#connecting-via-ssh",
+    "title": "",
+    "section": "Connecting via SSH",
+    "text": "Connecting via SSH\nSSH (Secure Shell) is how you talk to a remote HPC cluster:\n# Basic connection (sometimes with 2FA)\nssh username@lcluster15.hrz.tu-darmstadt.de\n\n# With a specific identity file (SSH key)\nssh -i ~/.ssh/id_ed25519 &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de\n\n\nWhere to open SSH:\n\nmacOS: open Terminal (built-in, no install needed)\nWindows: open PowerShell or Command Prompt (sometimes MobaXterm) (OpenSSH module is built into Windows 11, same commands as Mac)\n\nNormal first time setup:\n\nGenerate a key pair: ssh-keygen -t ed25519\nCopy public key to cluster: ssh-copy-id username@cluster\nOptionally add to ~/.ssh/config for a shorter login command\n\n\n~/.ssh/config shortcut:\nHost lichtenberg\n    HostName lcluster15.hrz.tu-darmstadt.de\n    User &lt;username&gt;\n    IdentityFile ~/.ssh/id_ed25519\nThen just: ssh lichtenberg\n\nWindows note: key files live in C:\\Users\\&lt;User&gt;\\.ssh\\, use the same path syntax in config. No extra software is needed."
+  },
+  {
+    "objectID": "index.html#essential-linux-commands",
+    "href": "index.html#essential-linux-commands",
+    "title": "",
+    "section": "Essential Linux Commands",
+    "text": "Essential Linux Commands\n\n\nNavigation\npwd          # Where am I?\nls -lh       # List files (human-readable)\ncd /scratch  # Change directory\ncd ~         # Go home\n\nmkdir results       # Create directory\ncp file1 file2      # Copy\nmv file1 dir/       # Move / rename\nrm file1            # Delete (no undo!)\nrm -r dir/          # Delete directory (no undo!)\n\nViewing and editing files\ncat file.txt         # Print file\nless file.txt        # Page through file (q to quit)\nhead -n 20 file.txt  # First 20 lines\ntail -n 20 file.txt  # Last 20 lines\nnano script.R        # Simple text editor\n\nnano: navigate with arrow keys · search with Ctrl+W · exit with Ctrl+X (confirm save with Y)\n\nPermissions and disk\nchmod +x script.sh   # Make executable\ndu -sh *             # Disk use per item\ndf -h                # Free disk space"
+  },
+  {
+    "objectID": "index.html#transferring-files",
+    "href": "index.html#transferring-files",
+    "title": "",
+    "section": "Transferring Files",
+    "text": "Transferring Files\n\n\nscp: secure copy (simple)\n# Upload file to cluster\nscp data.csv &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/data/\n# Download result from cluster\nscp &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/results/out.csv .\n# Upload entire folder\nscp -r project/ &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/\n\n\nrsync: smarter sync (only transfers what changed)\n# Upload, skip unchanged files\nrsync -avz project/ &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/project/\n# Download results folder\nrsync -avz &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/results/ ./results/\n# Dry run (see what would happen)\nrsync -avzn project/ &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/project/\n\n\nFileZilla: alternative with user interface\n\nA free, cross-platform SFTP client: drag and drop files between your local device and the cluster."
+  },
+  {
+    "objectID": "index.html#keeping-sessions-alive-tmux",
+    "href": "index.html#keeping-sessions-alive-tmux",
+    "title": "",
+    "section": "Keeping Sessions Alive: tmux",
+    "text": "Keeping Sessions Alive: tmux\nSSH connections drop. Use tmux to keep work running:\n# Start a named session\ntmux new -s mywork\n\n# Detach from session (keeps running!)\nCtrl+b  then  d\n\n# Re-attach later\ntmux attach -t mywork\n\n# List active sessions\ntmux ls\n\n# Kill session\ntmux kill-session -t mywork\n\nWorkflow: SSH into cluster &gt; start tmux session &gt; do work &gt; detach &gt; close laptop &gt; reconnect anytime &gt; re-attach"
+  },
+  {
+    "objectID": "index.html#the-file-you-will-work-with",
+    "href": "index.html#the-file-you-will-work-with",
+    "title": "",
+    "section": "The File You Will Work With",
+    "text": "The File You Will Work With\n\n pres_debate_obama_romney.mp4"
+  },
+  {
+    "objectID": "index.html#exercise-connecting-uploading-first-script",
+    "href": "index.html#exercise-connecting-uploading-first-script",
+    "title": "",
+    "section": "Exercise: Connecting, Uploading & First Script",
+    "text": "Exercise: Connecting, Uploading & First Script\n\n\nTask 1: Log in & explore\n\nBefore login: download your private key (see credentials sheet)\nmacOS: open Terminal  |  Windows: open PowerShell\n\nssh -i &lt;local/path/to/key&gt; \\\n&lt;username&gt;@lcluster&lt;node ID&gt;.hrz.tu-darmstadt.de\n\npwd && ls -lh          # Where are you?\ndf -h ~                # Home quota\nmodule avail           # Available software\nmodule load python/3.11\nmodule list\n\nWhat is your home directory path?\nHow much quota do you have in your /home?\n\n\nTask 2: Get the provided pres_debate_obama_romney.mp4\nOption 1: Download mp4 from cloud (see credentials sheet)\nFrom your local machine (Terminal or PowerShell):\n# via scp\nscp pres_debate_obama_romney.mp4 \\\n-i &lt;local/path/to/key&gt; \\ \n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/\n\n# or via rsync\nrsync -avz pres_debate_obama_romney.mp4 \\ \n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/\nVerify on the cluster: ls -lh ~/pres_debate_obama_romney.mp4\nOption 2:\nCopy on the cluster:\ncp ../pres_debate_obama_romney.mp4 ."
+  },
+  {
+    "objectID": "index.html#what-is-a-job-scheduler",
+    "href": "index.html#what-is-a-job-scheduler",
+    "title": "",
+    "section": "What Is a Job Scheduler?",
+    "text": "What Is a Job Scheduler?\n\n\nA job scheduler (also called a workload manager) is the traffic controller of an HPC cluster:\n\nAccepts job submissions from many users\nDecides when and where to run each job based on requested resources and priority\nMonitors jobs, handles failures, writes output logs\nEnsures fair sharing of cluster resources\n\nThe most common scheduler: SLURM (Simple Linux Utility for Resource Management)\n\nUser A submits job (4 cores, 1h)\nUser B submits job (32 cores, 8h)\nUser C submits job (8 cores, 2h)\n         │\n         ▼\n    ┌─────────┐\n    │  SLURM  │  Queue and schedule\n    └─────────┘\n         │\n    ┌────┴──────────────────────────────┐\n    │ Node 1          Node 2            │\n    │ (User A, User C)(User B)          │\n    └───────────────────────────────────┘"
+  },
+  {
+    "objectID": "index.html#anatomy-of-a-slurm-job-script",
+    "href": "index.html#anatomy-of-a-slurm-job-script",
+    "title": "",
+    "section": "Anatomy of a SLURM Job Script",
+    "text": "Anatomy of a SLURM Job Script\n#!/bin/bash\n#SBATCH --job-name=sentiment_analysis     # Job name (shows in queue)\n#SBATCH --output=logs/job_%j.out          # Standard output (%j = job ID)\n#SBATCH --error=logs/job_%j.err           # Standard error\n#SBATCH --time=02:00:00                   # Wall time limit (HH:MM:SS)\n#SBATCH --nodes=1                         # Number of nodes\n#SBATCH --ntasks=1                        # Number of tasks (processes)\n#SBATCH --cpus-per-task=8                 # CPU cores per task\n#SBATCH --mem=32G                         # Memory per node\n#SBATCH --partition=standard              # Which partition/queue\n\n# ─── Setup ────────────────────────────────────────────────────────────────────\nmodule load R/4.3.1\n\n# ─── Run ──────────────────────────────────────────────────────────────────────\nRscript analysis/sentiment_analysis.R \\\n  --input  data/corpus.rds \\\n  --output results/sentiment_scores.csv"
+  },
+  {
+    "objectID": "index.html#key-slurm-parameters-explained",
+    "href": "index.html#key-slurm-parameters-explained",
+    "title": "",
+    "section": "Key SLURM Parameters Explained",
+    "text": "Key SLURM Parameters Explained\n\n\n\n\n\n\n\n\n#SBATCH flag\nWhat it controls\nExample\n\n\n\n\n--time\nMaximum run time. Job is killed if exceeded.\n--time=04:30:00\n\n\n--mem\nRAM for the whole job. Request more than needed.\n--mem=64G\n\n\n--cpus-per-task\nCPU cores. Match to your parallelism plan.\n--cpus-per-task=16\n\n\n--partition\nQueue with specific hardware/limits.\n--partition=gpu\n\n\n--gres\nGeneric resources, e.g. GPUs.\n--gres=gpu:1\n\n\n--array\nRun same script with different inputs.\n--array=1-100\n\n\n--mail-type\nEmail notifications.\n--mail-type=END,FAIL,ALL\n\n\n…\n…\n…\n\n\n\n\nAlways request slightly more resources than you think you need (10–20% headroom). Jobs are killed hard when they exceed limits."
+  },
+  {
+    "objectID": "index.html#your-first-slurm-workflow",
+    "href": "index.html#your-first-slurm-workflow",
+    "title": "",
+    "section": "Your First SLURM Workflow",
+    "text": "Your First SLURM Workflow\n\n\n1. Python script (see transcription.py)\nimport whisperx, os\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\n# ...\n\n# Transcribe\nmodel = whisperx.load_model(\"large-v2\", device, ...)\nresult = model.transcribe(audio, batch_size=32)\n\n# Align and diarize\n# ...\n\n2. Job script (run_transcription.sh, you’ll get this file)\n#!/bin/bash\n#SBATCH --job-name=whisperx_transcription\n#SBATCH --account=kurs00100\n#SBATCH --partition=kurs00100\n#SBATCH --reservation=kurs00100\n#SBATCH --time=0-00:05:00\n#SBATCH --nodes=1\n# ...\n\nconda activate /home/kurse/kurs00100/env_whisperx\n\npython transcription.py\n\n\n3. Submit\nsbatch run_transcription.sh"
+  },
+  {
+    "objectID": "index.html#job-arrays-run-many-jobs-at-once",
+    "href": "index.html#job-arrays-run-many-jobs-at-once",
+    "title": "",
+    "section": "Job Arrays: Run Many Jobs at Once",
+    "text": "Job Arrays: Run Many Jobs at Once\nJob arrays let you submit one script that scales to many inputs:\n#!/bin/bash\n#SBATCH --job-name=whisperx_transcription\n#SBATCH --array=1-20           # &lt;-- one task per input\n#SBATCH --account=kurs00100\n#SBATCH --partition=kurs00100\n#SBATCH --reservation=kurs00100\n#SBATCH --time=0-00:05:00\n# ...\n\nsource /home/kurse/kurs00100/miniforge3/etc/profile.d/conda.sh\nconda activate /home/kurse/kurs00100/env_whisperx\n\npython transcription.py \\\n  --config configs/config_${SLURM_ARRAY_TASK_ID}.yml\n\nUse case: Run transcription for each of 20 videos. Pre-generate 20 config files, submit one array job."
+  },
+  {
+    "objectID": "index.html#exercise-cpu-vs.-gpu-submitting-slurm-jobs",
+    "href": "index.html#exercise-cpu-vs.-gpu-submitting-slurm-jobs",
+    "title": "",
+    "section": "Exercise: CPU vs. GPU — Submitting SLURM Jobs",
+    "text": "Exercise: CPU vs. GPU — Submitting SLURM Jobs\n\n\nTask 1 — Submit the CPU job first\nTake transcribe.sh and turn it into transcribe_cpu.sh:\n#!/bin/bash\n#SBATCH --job-name=transcribe_cpu\n#SBATCH --output=logs/transcribe_cpu_%j.out\n#SBATCH --error=logs/transcribe_cpu_%j.err\n#SBATCH --time=02:00:00\n#SBATCH --cpus-per-task=8\n#SBATCH --mem=32G\n#SBATCH --partition=standard\n\nmodule load python/3.11\nmkdir -p results logs\n\npython transcribe.py speech.mp4 cpu \\\n  &gt; results/transcript_cpu.txt\necho \"Done!\"\nSubmit: sbatch transcribe_cpu.sh\nNote the job ID. Watch it start — then wait ~3 minutes before moving on.\n\nTask 2 — Submit the GPU job\nCreate transcribe_gpu.sh — same script, but:\n\nChange --partition to gpu\nAdd --gres=gpu:1\nSet --time to 00:15:00\nLoad cuda/12.1 in addition to python/3.11\nPass cuda instead of cpu to the Python script\n\npython transcribe.py speech.mp4 cuda \\\n  &gt; results/transcript_gpu.txt\nSubmit: sbatch transcribe_gpu.sh\nTask 3 — Cancel the CPU job\nAfter ~3 minutes, check the log and then cancel:\n# How far has it got?\ntail logs/transcribe_cpu_&lt;jobid&gt;.out\n\n# Cancel — it would take hours to finish\nscancel &lt;cpu_jobid&gt;\n\nWatch squeue --me: the CPU job disappears, the GPU job keeps running. This is the CPU vs. GPU contrast in real time."
+  },
+  {
+    "objectID": "index.html#monitoring-your-jobs",
+    "href": "index.html#monitoring-your-jobs",
+    "title": "",
+    "section": "Monitoring Your Jobs",
+    "text": "Monitoring Your Jobs\n# Show your jobs in the queue\nsqueue\n\n# Detailed info about a specific job\nscontrol show job 123456\n\n# Job accounting (after it finishes)\nsacct -j 123456 --format=JobID,State,Elapsed,MaxRSS,MaxVMSize\n\n# Cancel a job\nscancel 123456\n\n# Cancel all your jobs\nscancel --me\nReading squeue output:\n\n\n\n\n\n\n\n\n\n\n\n\n\nJOBID\nPARTITION\nNAME\nUSER\nST\nTIME\nNODES\nNODELIST\n\n\n\n\n123456\nstandard\nmultimodal_video\ncomptext\nR\n0:45\n1\nnode042\n\n\n123457\nstandard\nemotion_cls\ncomptext\nPD\n0:00\n1\n(Priority)\n\n\n\nR = Running · PD = Pending · CG = Completing · F = Failed"
+  },
+  {
+    "objectID": "index.html#common-failure-modes-fixes",
+    "href": "index.html#common-failure-modes-fixes",
+    "title": "",
+    "section": "Common Failure Modes & Fixes",
+    "text": "Common Failure Modes & Fixes\n\n\nJob killed: OUT_OF_MEMORY\n# Check how much memory was used\nsacct -j 123456 --format=MaxRSS\n\n# Fix: increase --mem in job script\n#SBATCH --mem=64G   # was 32G\nJob killed: TIMEOUT\n# Fix: increase --time\n#SBATCH --time=08:00:00\n\n# Or: checkpoint your work\n# Save intermediate results so\n# you can restart from last point\n\nJob stuck PENDING\n# Why is it waiting?\nsqueue -o \"%i %j %r\"\n# Common reasons:\n#  Priority    — in queue, just waiting\n#  Resources   — asked for too much\n#  QOSMaxJobsPerUser — hit job limit\nScript errors\n# Check the output/error logs\ncat logs/job_123456.out\ncat logs/job_123456.err\n\n# Tail live output\ntail -f logs/job_123456.out"
+  },
+  {
+    "objectID": "index.html#best-practices-for-hpc-jobs",
+    "href": "index.html#best-practices-for-hpc-jobs",
+    "title": "",
+    "section": "Best Practices for HPC Jobs",
+    "text": "Best Practices for HPC Jobs\n\n\nResource requests\n\nStart with a small test run\nRequest 10–20% more than measured\nUse sacct to profile real usage\nPrefer many short jobs over few huge ones\n\nCode hygiene\n\nSet seeds for reproducibility\nSave intermediate results (checkpoints)\nFor productive jobs: Don’t use hardcode paths; use config files instead\nLog start time, end time, key parameters\n\n\nCluster etiquette\n\nDon’t compute on the login node\nDon’t request 10× what you need\nClean up /scratch after jobs finish\nTest locally on small data first\nRead the cluster documentation"
+  },
+  {
+    "objectID": "index.html#project-directory-structure",
+    "href": "index.html#project-directory-structure",
+    "title": "",
+    "section": "Project Directory Structure",
+    "text": "Project Directory Structure\nA clean layout makes HPC workflows much smoother:\nmy-project/\n├── data/\n│   ├── raw/          ← original data, never modified\n│   └── processed/    ← cleaned, ready for analysis\n├── analysis/\n│   ├── 01_preprocess.R\n│   ├── 02_model.R\n│   └── 03_visualise.R\n├── jobs/\n│   ├── preprocess.sh\n│   ├── model.sh\n│   └── model_array.sh\n├── results/\n│   ├── models/\n│   └── figures/\n├── logs/             ← SLURM output/error files\n└── README.md\n\nTip: keep jobs and scripts separate. Scripts contain the logic; job files handle resource requests and environment setup."
+  },
+  {
+    "objectID": "index.html#exercise-monitoring-comparing-cpu-vs.-gpu",
+    "href": "index.html#exercise-monitoring-comparing-cpu-vs.-gpu",
+    "title": "",
+    "section": "Exercise: Monitoring & Comparing CPU vs. GPU",
+    "text": "Exercise: Monitoring & Comparing CPU vs. GPU\n\n\nTask 1 — Watch the GPU job run\n# Live queue (refreshes every 5s)\nwatch -n 5 squeue --me\n\n# Which node is the GPU job on?\nscontrol show job &lt;gpu_jobid&gt; | grep \" NodeList\"\n\n# Follow the GPU output as it streams in\ntail -f logs/transcribe_gpu_&lt;jobid&gt;.out\n\nDoes the GPU job start immediately or wait in queue?\nHow quickly do transcript lines appear?\n\nTask 2 — Read the partial CPU log\nThe CPU job was cancelled mid-run. What did it manage to produce?\n# Partial output before cancellation\ncat logs/transcribe_cpu_&lt;jobid&gt;.out\n\n# Error log (should be empty — it was cancelled, not crashed)\ncat logs/transcribe_cpu_&lt;jobid&gt;.err\n\nHow many seconds of audio had it processed before you cancelled?\nHow long had it been running?\n\n\nTask 3 — Compare with sacct\nOnce the GPU job finishes:\nsacct -j &lt;cpu_jobid&gt;,&lt;gpu_jobid&gt; \\\n  --format=JobName,Partition,State,Elapsed,MaxRSS\nFill in this table from your results:\n\n\n\n\nCPU\nGPU\n\n\n\n\nState\nCANCELLED\nCOMPLETED\n\n\nElapsed\n\n\n\n\nMaxRSS\n\n\n\n\n\n\nThe CPU job was cancelled after ~3 min having processed only a fraction of the audio. The GPU job finished the whole file — how long did it take? Extrapolate: how long would the CPU job have needed in total?\n\nTask 4 — Download the transcript\n# From your local machine\nscp &lt;username&gt;@cluster:~/results/transcript_gpu.txt .\nOpen it — does large-v2 produce clean output?"
+  },
+  {
+    "objectID": "index.html#the-pipeline-problem",
+    "href": "index.html#the-pipeline-problem",
+    "title": "",
+    "section": "The Pipeline Problem",
+    "text": "The Pipeline Problem\n\nHow to download, cut, track speakers, transcribe, extract gaze, extract pitch, … of more than 30,000 hours of video recordings of speeches?\n\n\n\n\nPotential issues:\n\nEach step depends on the last\nAny step can fail\nSteps can run in parallel\nYou need to scale to hundreds of files\n\npreprocess.sh → tokenise.sh → embed.sh → analyse.sh\n     │                                        │\n     └── fail: restart manually? ─────────────┘\n     └── which outputs are up to date?\n     └── 100 files × 4 steps = 400 jobs?\n\nWhat you actually want:\n\nDeclare what depends on what\nRe-run only what changed or failed\nParallelise independent steps automatically\nHave a single command to run the whole pipeline"
+  },
+  {
+    "objectID": "index.html#introducing-snakemake",
+    "href": "index.html#introducing-snakemake",
+    "title": "",
+    "section": "Introducing Snakemake",
+    "text": "Introducing Snakemake\nSnakemake is a Python-based workflow manager. Each rule declares what it needs (input) and what it produces (output) — Snakemake figures out the order and parallelism automatically.\n\n\n# From a real parliamentary speech pipeline\n\nrule generate_audio_feature_transcription:\n    \"\"\"Word-level transcript + speaker diarization.\"\"\"\n    input:\n        video = \"speeches/{parliament}/{filename}/\"\n                \"videos/{base}_{segment}.mp4\"\n    output:\n        json  = \"speeches/{parliament}/{filename}/\"\n                \"features/{base}_{segment}_transcription.json\"\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"audio_env\"\n    script: \"scripts/generate_audio_feature_transcription.py\"\n\nrule generate_text_feature_sentiment:\n    \"\"\"Sentence-level sentiment (german-sentiment-bert).\"\"\"\n    input:\n        transcription = rules \\\n            .generate_audio_feature_transcription.output.json\n    output:\n        json = \"speeches/{parliament}/{filename}/\"\n               \"features/{base}_{segment}_sentiment.json\"\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"text_env\"\n    script: \"scripts/generate_text_feature_sentiment.py\"\n\nWhy rules beat shell scripts:\n\nEach rule is self-documenting — inputs and outputs are explicit\nSnakemake tracks what’s done: re-runs only failed or outdated steps\nWildcards ({parliament}, {filename}, {segment}) fan out across all videos automatically\nresources map directly to SLURM flags via a profile\nconda: pins the exact software environment per rule\n\n\nOne command runs everything:\nsnakemake --executor slurm \\\n  --jobs 64 --rerun-incomplete\nSnakemake submits each rule as a separate SLURM job and respects the dependency graph."
+  },
+  {
+    "objectID": "index.html#example-dag-of-an-actual-project",
+    "href": "index.html#example-dag-of-an-actual-project",
+    "title": "",
+    "section": "Example: DAG of an Actual Project",
+    "text": "Example: DAG of an Actual Project\n\n\n\n\n+ −"
+  },
+  {
+    "objectID": "index.html#example-rules-dependencies",
+    "href": "index.html#example-rules-dependencies",
+    "title": "",
+    "section": "Example: Rules & Dependencies",
+    "text": "Example: Rules & Dependencies\n\n\nrule fix_metadata:\n    \"\"\"Re-mux video to fix container metadata.\"\"\"\n    input:  rules.download_video.output\n    output: \"fixed_videos/{parliament}/{filename}\"\n    shell:\n        \"ffmpeg -y -i {input} -c copy \"\n        \"-map 0:v -map 0:a {output}\"\n\nrule partition_video:\n    \"\"\"Split into overlapping audio windows.\"\"\"\n    input:  rules.fix_metadata.output\n    output: directory(\"partitioned/{parliament}/\"\n                      \"{filename}/parts\")\n    params:\n        segment_length = config[\"partition_duration\"],\n        step           = config[\"partition_step\"]\n    script: \"scripts/rolling_partition.py\"\n\nrule identify_speeches:\n    \"\"\"Diarize all partitions (GPU, batch per video).\"\"\"\n    input:\n        parts   = rules.partition_video.output,\n        walltime = rules \\\n            .store_walltime_identify_speeches_txt.output\n    output:\n        rttm = directory(\"partitioned/{parliament}/\"\n                         \"{filename}/speeches/rttm\")\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    script: \"scripts/identify_speeches_batch.py\"\n\nDependency chain:\ndownload_video\n      │\nfix_metadata          ← ffmpeg re-mux\n      │\npartition_video       ← rolling window\n      │\nstore_walltime_...    ← compute SLURM time\n      │\nidentify_speeches     ← GPU diarization\n      │\naggregate_parts       ← merge across windows\n      │\nidentify_cutpoints    ← locate speech boundaries\n      │\nsegment_into_speeches ← checkpoint: per-speech .mp4\n      │\n  ┌───┴────────────────────┐\ntranscription           depth / faces / headpose\nsentiment / populism    speaker embeddings\npitch\n  └───────────────┬────────┘\n                 all\n\nsnakemake --rulegraph | dot -Tpng -o rulegraph.png"
+  },
+  {
+    "objectID": "index.html#why-snakemake-changes-everything",
+    "href": "index.html#why-snakemake-changes-everything",
+    "title": "",
+    "section": "Why Snakemake Changes Everything",
+    "text": "Why Snakemake Changes Everything\n\n\n\nIncremental builds — only re-run rules whose inputs changed or failed\nAutomatic parallelism — independent rules run concurrently\nSLURM integration — each rule becomes a separate SLURM job via --executor slurm\nReproducibility — the Snakefile is the documentation of your pipeline\nError recovery — resume from the last successful rule with --rerun-incomplete\nPortability — the same Snakefile runs locally or on any HPC cluster\n\n\nsnakemake --executor slurm --jobs 50 submits your whole pipeline to the cluster — no manual job scripting needed per step.\n\n\nPipeline as a DAG\n   speech.mp4  speech.mp4  speech.mp4\n   (merkel)    (macron)    (scholz)\n       │           │           │\n  transcribe  transcribe  transcribe   ← GPU jobs\n       │           │           │\n     align       align       align     ← CPU jobs\n       └───────────┴───────────┘\n                   │\n              merge_corpus\n                   │\n               analyse\n                   │\n               figures"
+  },
+  {
+    "objectID": "index.html#snakemake-slurm-the-full-picture",
+    "href": "index.html#snakemake-slurm-the-full-picture",
+    "title": "",
+    "section": "Snakemake + SLURM: The Full Picture",
+    "text": "Snakemake + SLURM: The Full Picture\n\n\nSLURM profile (~/.config/snakemake/slurm/config.yaml):\nexecutor: slurm\njobs: 64 # max concurrent SLURM jobs\nlatency-wait: 120\nrerun-incomplete: True\nuse-conda: True\n\ndefault-resources:\n  slurm_account: \"my-project\"\n  slurm_partition: \"gpu-a100\"\n  mem_mb: 65536\n  runtime: 10 # fallback wall time (minutes)\n  cpus_per_task: 16\n  slurm_extra: \"--gres=gpu:1\"\n\nresources:\n  gpu_job: 32\n\nPer-rule resource overrides:\nrule generate_audio_feature_transcription:\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1          # one GPU slot from the pool\n    conda:  \"audio_env\"\n    script: \"scripts/generate_audio_feature_transcription.py\"\n\nrule generate_text_feature_populism:\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"text_env\"\n    script: \"scripts/generate_text_feature_populism.py\"\n\n\nSubmit:\nsnakemake -n                    # dry run\nsnakemake --profile profile/    # run on cluster\nsnakemake --profile profile/ \\\n          --rerun-incomplete     # resume after failure"
+  },
+  {
+    "objectID": "index.html#learning-path-resources",
+    "href": "index.html#learning-path-resources",
+    "title": "",
+    "section": "Learning Path & Resources",
+    "text": "Learning Path & Resources\n\n\nNext steps\n\nGet access to your institution’s cluster (IT/research computing helpdesk)\nProfile one of your existing scripts on HPC\nIncrementally migrate a real project\n\nEssential reads\n\nSLURM documentation\nThe Carpentries: HPC Intro\nSnakemake docs\n\n\nReference card\n# Connect\nssh user@cluster\n\n# Submit job\nsbatch myjob.sh\n\n# Check queue\nsqueue --me\n\n# Cancel job\nscancel &lt;jobid&gt;\n\n# Job stats\nsacct -j &lt;jobid&gt;\n\n# Load module\nmodule load R/4.3.1\n\n# Sync files\nrsync -avz project/ cluster:~/project/"
+  },
+  {
+    "objectID": "index.html#workshop-summary",
+    "href": "index.html#workshop-summary",
+    "title": "",
+    "section": "Workshop Summary",
+    "text": "Workshop Summary\n\n\nYou now know how to…\n\nDistinguish CPU vs. GPU workloads\nCescribe the anatomy of an HPC cluster\nConnect to a remote cluster via SSH\nNavigate a Linux filesystem\nWrite a SLURM job script\nSubmit, monitor, and cancel jobs\nUse job arrays for parallel batch runs\nStructure a project for HPC workflows\nUnderstand what workflow managers solve\n\n\n\nThe big idea\nHPC is infrastructure: The same R and Python code you write today can scale to cluster size with relatively small changes.\n\n\nQuestions?\nThis is the space for immediate questions!"
+  },
+  {
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
+    "title": "",
+    "section": "",
+    "text": "menti.com/al4phv55giz5"
+  },
+  {
+    "objectID": "index.html#exercise-find-your-hpc",
+    "href": "index.html#exercise-find-your-hpc",
+    "title": "",
+    "section": "Exercise: Find Your HPC",
+    "text": "Exercise: Find Your HPC\n\nTask (5 min): Search for HPC resources you might have access to — at your institution, nationally, or regionally. Note down what you find and how easy it seems to get access.\n\n\n\n\nInstitutional\n\n\nDoes your university or research institute run its own cluster? Check your IT or research computing website.\n\n\n\n\nNational\n\n\nMany countries have national HPC centres open to researchers — e.g. ARCHER2 (UK), NRIS (Norway), NCI (Australia), ACCESS (USA), TGCC/IDRIS (France), KISTI (South Korea).\n\n\n\n\nRegional / Consortium\n\n\nRegional alliances may offer shared resources — e.g. de.NBI / NFDI (Germany), SNIC (Sweden), PRACE / EuroHPC (Europe).\n\n\n\n\nDiscussion: What did you find? Have you already used any of these? What stopped you so far?"
+  },
+  {
+    "objectID": "index.html#exercise-1-find-your-hpc",
+    "href": "index.html#exercise-1-find-your-hpc",
+    "title": "",
+    "section": "Exercise 1: Find Your HPC",
+    "text": "Exercise 1: Find Your HPC\n\nTask (5-10 min): Search for HPC resources you might have access to. This can be at your institution, but also regionallx, or nationally. Note down what you find and how easy it seems to get access.\n\n\n\n\nInstitutional\n\n\nDoes your university or research institute run its own cluster? Check your IT or research computing website.\n\n\n\n\nRegional / Consortium\n\n\nRegional alliances may offer shared resources — e.g. de.NBI / NFDI (Germany), SNIC (Sweden), PRACE / EuroHPC (Europe).\n\n\n\n\nNational\n\n\nMany countries have national HPC centres open to researchers — e.g. ARCHER2 (UK), NRIS (Norway), NCI (Australia), ACCESS (USA), TGCC/IDRIS (France), KISTI (South Korea).\n\n\n\n\nDiscussion: What did you find? Have you already used any of these? What stopped you so far?"
+  },
+  {
+    "objectID": "index.html#this-is-what-it-looks-like-in-practice",
+    "href": "index.html#this-is-what-it-looks-like-in-practice",
+    "title": "",
+    "section": "This Is What It Looks Like in Practice",
+    "text": "This Is What It Looks Like in Practice\n\n\nLogged in into TU Darmstadt’s Lichtenberg cluster: jobs running, pending, and a Snakemake workflow directory"
+  },
+  {
+    "objectID": "index.html#conda-and-virtual-environments",
+    "href": "index.html#conda-and-virtual-environments",
+    "title": "",
+    "section": "Conda and Virtual Environments",
+    "text": "Conda and Virtual Environments\nFor Python (and increasingly R), the package managers Conda or venv are preferred for reproducibility:\n# Create a project environment\nconda create -n css-project python=3.11\n\n# Activate it\nconda activate css-project\n\n# Install packages\nconda install -c conda-forge transformers torch pandas\n\n# or: create from envrionment file\nconda env create -f environment.yml\n\n# (Optional) Export for reproducibility\nconda env export &gt; environment.yml"
+  },
+  {
+    "objectID": "index.html#exercise-connecting-and-uploading-12",
+    "href": "index.html#exercise-connecting-and-uploading-12",
+    "title": "",
+    "section": "Exercise: Connecting and Uploading (1/2)",
+    "text": "Exercise: Connecting and Uploading (1/2)\n\n\nTask 1: Log in & explore\n\nBefore login: download your private key (see credentials sheet)\nmacOS: open Terminal  |  Windows: open PowerShell\n\nssh -i &lt;local/path/to/key&gt; \\\n&lt;username&gt;@lcluster&lt;node ID&gt;.hrz.tu-darmstadt.de\n\npwd && ls -lh          # Where are you?\ndf -h ~                # Home quota\nmodule avail           # Available software\nmodule load python/3.11\nmodule list\n\nWhat is your home directory path?\nHow much quota do you have in your /home?\n\n\nTask 2: Get the provided pres_debate_obama_romney.mp4\nOption 1: Download mp4 from cloud (see credentials sheet)\nFrom your local machine:\n# via scp\nscp pres_debate_obama_romney.mp4 \\\n-i &lt;local/path/to/key&gt; \\ \n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/\n\n# or via rsync\nrsync -avz pres_debate_obama_romney.mp4 \\ \n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/\nVerify on the cluster: ls -lh ~/pres_debate_obama_romney.mp4\nOption 2:\nCopy directly within the cluster:\ncp ../pres_debate_obama_romney.mp4 ."
+  },
+  {
+    "objectID": "index.html#exercise-connecting-and-uploading-22",
+    "href": "index.html#exercise-connecting-and-uploading-22",
+    "title": "",
+    "section": "Exercise: Connecting and Uploading (2/2)",
+    "text": "Exercise: Connecting and Uploading (2/2)\nTask 3: Write a plain bash script\nIntegrate the provided transcription.py:\nimport os\nimport whisperx\nfrom whisperx.diarize import DiarizationPipeline\nfrom tqdm import tqdm\nimport torch\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\ncompute_type = \"float16\" if device == \"cuda\" else \"int8\"\nlanguage = \"en\"\n\n# Output directory\nresults_dir = \"results\"\nos.makedirs(results_dir, exist_ok=True)\nbase_name = os.path.splitext(os.path.basename(video_file))[0]\n\n# 1. Transcribe\nprint(\"Loading model...\", flush = True)\nmodel = whisperx.load_model(\"large-v2\", device, compute_type=compute_type, language=language)\n# ...\nCreate transcribe.sh, a plain bash script that:\n\nStarts with #!/bin/bash\nRuns: python transcription.py\n\n\nRun it: bash transcription.sh -&gt; What happens?"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "",
+    "section": "",
+    "text": "menti.com/al4phv55giz5"
+  },
+  {
+    "objectID": "index.html#exercise-running-scripts-22",
+    "href": "index.html#exercise-running-scripts-22",
+    "title": "",
+    "section": "Exercise: Running Scripts (2/2)",
+    "text": "Exercise: Running Scripts (2/2)\nTask 3: Write a plain bash script\nIntegrate the provided transcription.py:\nimport os\nimport whisperx\nfrom whisperx.diarize import DiarizationPipeline\nfrom tqdm import tqdm\nimport torch\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\ncompute_type = \"float16\" if device == \"cuda\" else \"int8\"\nlanguage = \"en\"\n\n# Output directory\nresults_dir = \"results\"\nos.makedirs(results_dir, exist_ok=True)\nbase_name = os.path.splitext(os.path.basename(video_file))[0]\n\n# 1. Transcribe\nprint(\"Loading model...\", flush = True)\nmodel = whisperx.load_model(\"large-v2\", device, compute_type=compute_type, language=language)\n# ...\nCreate transcribe.sh, a plain bash script that:\n\nStarts with #!/bin/bash\nRuns: python transcription.py\n\n\nRun it: bash transcription.sh -&gt; What happens?"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "",
+    "section": "",
+    "text": "How can we analyze rich, complex data and apply computationally demanding methods at scale?\n\n\n\n\nHigh-Performance Computing\n\n\n\n\n\nLichtenberg II · TU Darmstadt"
+  },
+  {
+    "objectID": "index.html#anatomy-of-a-slurm-job-script-example",
+    "href": "index.html#anatomy-of-a-slurm-job-script-example",
+    "title": "",
+    "section": "Anatomy of a SLURM Job Script (Example)",
+    "text": "Anatomy of a SLURM Job Script (Example)\n#!/bin/bash\n#SBATCH --job-name=sentiment_analysis     # Job name (shows in queue)\n#SBATCH --output=logs/job_%j.out          # Standard output (%j = job ID)\n#SBATCH --error=logs/job_%j.err           # Standard error\n#SBATCH --time=02:00:00                   # Wall time limit (HH:MM:SS)\n#SBATCH --nodes=1                         # Number of nodes\n#SBATCH --ntasks=1                        # Number of tasks (processes)\n#SBATCH --cpus-per-task=8                 # CPU cores per task\n#SBATCH --mem=32G                         # Memory per node\n#SBATCH --partition=standard              # Which partition/queue\n\n# Setup\nmodule load R/4.3.1\n\n# Run\nRscript analysis/sentiment_analysis.R \\\n  --input  data/corpus.rds \\\n  --output results/sentiment_scores.csv"
+  },
+  {
+    "objectID": "index.html#exercise-2-connecting-and-uploading-12",
+    "href": "index.html#exercise-2-connecting-and-uploading-12",
+    "title": "",
+    "section": "Exercise 2: Connecting and Uploading (1/2)",
+    "text": "Exercise 2: Connecting and Uploading (1/2)\n\n\nTask 1: Log in & explore\n\nBefore login: download your private key (see credentials sheet)\nmacOS: open Terminal  |  Windows: open PowerShell\n\nssh -i &lt;local/path/to/key&gt; \\\n&lt;username&gt;@lcluster&lt;node ID&gt;.hrz.tu-darmstadt.de\n\npwd && ls -lh          # Where are you?\ndf -h ~                # Home quota\nmodule avail           # Available software\nmodule load python/3.11\nmodule list\n\nWhat is your home directory path?\nHow much quota do you have in your /home?\n\n\nTask 2: Get the provided pres_debate_obama_romney.mp4\nOption 1: Download mp4 from cloud (see credentials sheet)\nFrom your local machine:\n# via scp\nscp pres_debate_obama_romney.mp4 \\\n-i &lt;local/path/to/key&gt; \\ \n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/\n\n# or via rsync\nrsync -avz pres_debate_obama_romney.mp4 \\ \n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/\nVerify on the cluster: ls -lh ~/pres_debate_obama_romney.mp4\nOption 2:\nCopy directly within the cluster:\ncp ../pres_debate_obama_romney.mp4 ."
+  },
+  {
+    "objectID": "index.html#exercise-2-running-scripts-22",
+    "href": "index.html#exercise-2-running-scripts-22",
+    "title": "",
+    "section": "Exercise 2: Running Scripts (2/2)",
+    "text": "Exercise 2: Running Scripts (2/2)\nTask 3: Write a plain bash script\nIntegrate the provided transcription.py:\nimport os\nimport whisperx\nfrom whisperx.diarize import DiarizationPipeline\nfrom tqdm import tqdm\nimport torch\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\ncompute_type = \"float16\" if device == \"cuda\" else \"int8\"\nlanguage = \"en\"\n\n# Output directory\nresults_dir = \"results\"\nos.makedirs(results_dir, exist_ok=True)\nbase_name = os.path.splitext(os.path.basename(video_file))[0]\n\n# 1. Transcribe\nprint(\"Loading model...\", flush = True)\nmodel = whisperx.load_model(\"large-v2\", device, compute_type=compute_type, language=language)\n# ...\nCreate transcribe.sh, a plain bash script that:\n\nStarts with #!/bin/bash\nRuns: python transcription.py\n\n\nRun it: bash transcription.sh -&gt; What happens?"
+  },
+  {
+    "objectID": "index.html#exercise-3-cpu-vs.-gpu-and-submitting-slurm-jobs",
+    "href": "index.html#exercise-3-cpu-vs.-gpu-and-submitting-slurm-jobs",
+    "title": "",
+    "section": "Exercise 3: CPU vs. GPU and Submitting SLURM Jobs",
+    "text": "Exercise 3: CPU vs. GPU and Submitting SLURM Jobs\n\n\nTask 1 — Submit the CPU job first\nTake run_transcription.sh and submit it via sbatch:\nsbatch run_transcription.sh\n\nNote the job ID\nWatch it start with squeue\nCheck details with scontrol show job &lt;job_id&gt;\nJob is running? Look for job logs in your home folder and open them\n\n\nTask 2 — Submit the GPU job\nCreate transcribe_gpu.sh — same script, but:\n\nChange --partition to gpu\nAdd --gres=gpu:1\nSet --time to 00:15:00\nLoad cuda/12.1 in addition to python/3.11\nPass cuda instead of cpu to the Python script\n\npython transcribe.py speech.mp4 cuda \\\n  &gt; results/transcript_gpu.txt\nSubmit: sbatch transcribe_gpu.sh\nTask 3 — Cancel the CPU job\nAfter ~3 minutes, check the log and then cancel:\n# How far has it got?\ntail logs/transcribe_cpu_&lt;jobid&gt;.out\n\n# Cancel — it would take hours to finish\nscancel &lt;cpu_jobid&gt;\n\nWatch squeue --me: the CPU job disappears, the GPU job keeps running. This is the CPU vs. GPU contrast in real time."
+  },
+  {
+    "objectID": "index.html#exercise-1-5-10-minutes-find-your-hpc",
+    "href": "index.html#exercise-1-5-10-minutes-find-your-hpc",
+    "title": "",
+    "section": "Exercise 1 (5-10 Minutes): Find Your HPC",
+    "text": "Exercise 1 (5-10 Minutes): Find Your HPC\n\n\n\nInstitutional\n\n\nDoes your university or research institute run its own cluster? Check your IT or research computing website.\n\n\n\n\nRegional / Consortium\n\n\nRegional alliances may offer shared resources: e.g. de.NBI / NFDI (Germany), SNIC (Sweden), PRACE / EuroHPC (Europe).\n\n\n\n\nNational\n\n\nMany countries have national HPC centres open to researchers: e.g. ARCHER2 (UK), NCI (Australia), ACCESS (USA), KISTI (South Korea).\n\n\n\n\nTask 1: Search for HPC resources you might have access to. Note down what you find and how easy it seems to get access.\n\n\nTask 2: With your neighbours, discuss what did you each find and how different are access routes across your institutions."
+  },
+  {
+    "objectID": "index.html#exercise-2-15-20-minutes-connecting-and-uploading-12",
+    "href": "index.html#exercise-2-15-20-minutes-connecting-and-uploading-12",
+    "title": "",
+    "section": "Exercise 2 (15-20 Minutes): Connecting and Uploading (1/2)",
+    "text": "Exercise 2 (15-20 Minutes): Connecting and Uploading (1/2)\n\n\nTask 1: Log in and explore\n\nBefore login: download your private key (📝)\nmacOS: open Terminal  |  Windows: open PowerShell / MobaXterm\n\nssh -i &lt;local/path/to/keyfile&gt; \\\n&lt;username&gt;@lcluster&lt;nodeID📝&gt;.hrz.tu-darmstadt.de\npwd && ls -lh          # Where are you?\ndf -h ~                # Home quota\nmodule avail           # Available software\nmodule load python/3.11\nmodule list\n\nWhat is your home directory path?\nHow much quota do you have in your /home?\n\nTask 2: Copy script\nbash ../copy_files_1.sh\n\nTask 3: Get the provided pres_debate_obama_romney.mp4\nOption 1: Download video file (📝)\nUpload from your local machine (either scp or rsync):\nscp -i &lt;local/path/to/key&gt; \\\n  pres_debate_obama_romney.mp4 \\\n  &lt;username&gt;@lcluster&lt;nodeID📝&gt;.hrz.tu-darmstadt.de:~/\nrsync -avz \\\n  -e \"ssh -i &lt;local/path/to/keyfile&gt;\" \\\n  pres_debate_obama_romney.mp4 \\\n  &lt;username&gt;@lcluster&lt;nodeID📝&gt;.hrz.tu-darmstadt.de:~/\nVerify on the cluster:\nls -lh ~/pres_debate_obama_romney.mp4\nOption 2: Copy directly from HPC\ncp ../pres_debate_obama_romney.mp4 ."
+  },
+  {
+    "objectID": "index.html#exercise-2-15-20-minutes-running-scripts-22",
+    "href": "index.html#exercise-2-15-20-minutes-running-scripts-22",
+    "title": "",
+    "section": "Exercise 2 (15-20 Minutes): Running Scripts (2/2)",
+    "text": "Exercise 2 (15-20 Minutes): Running Scripts (2/2)\nTask 4: Write a plain bash script\nIntegrate the provided transcription.py:\nimport os\nimport whisperx\nfrom whisperx.diarize import DiarizationPipeline\nfrom tqdm import tqdm\nimport torch\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\n# ...\nCreate transcription.sh (using nano transcription.sh), a plain bash script that:\n\nStarts with #!/bin/bash | 2. Runs: python transcription.py\n\n\nRun it with bash transcription.sh -&gt; What happens?"
+  },
+  {
+    "objectID": "index.html#exercise-3-20-25-minutes-cpu-vs.-gpu-and-submitting-slurm-jobs",
+    "href": "index.html#exercise-3-20-25-minutes-cpu-vs.-gpu-and-submitting-slurm-jobs",
+    "title": "",
+    "section": "Exercise 3 (20-25 Minutes): CPU vs. GPU and Submitting SLURM Jobs",
+    "text": "Exercise 3 (20-25 Minutes): CPU vs. GPU and Submitting SLURM Jobs\n\n\nTask 1: Copy script\nbash ../copy_files_2.sh\nTask 2: Submit the CPU job first\nTake run_transcription.sh and submit a job:\nsbatch run_transcription.sh\n\nNote the job ID\nWatch it start with squeue\nCheck details with scontrol show job &lt;job_id&gt;\nJob is running? If so, look for job logs in your home folder and open them\n\n\nTask 3: Cancel the CPU job\nAfter ~3 minutes, check the log and then cancel:\ntail whisperx_transcription.&lt;jobid&gt;.out\nscancel &lt;jobid&gt; # Would take much more longer to finish\nTask 4: Submit the GPU job\nCreate a (renamed) copy of run_transcription.sh:\ncp run_transcription.sh run_transcription_gpu.sh # Copy\nnano run_transcription_gpu.sh # Terminal text editor\nSame script, but:\n\n\nAdd #SBATCH --gres=gpu:1\nSet export DEVICE=cuda instead of export DEVICE=cpu\n\n\n\nSubmit: sbatch run_transcription_gpu.sh"
+  },
+  {
+    "objectID": "index.html#exercise-4-10-minutes-monitoring-comparing-cpu-vs.-gpu",
+    "href": "index.html#exercise-4-10-minutes-monitoring-comparing-cpu-vs.-gpu",
+    "title": "",
+    "section": "Exercise 4 (10 minutes): Monitoring & Comparing CPU vs. GPU",
+    "text": "Exercise 4 (10 minutes): Monitoring & Comparing CPU vs. GPU\n\n\nTask 1 — Watch the GPU job run\n# Live queue (refreshes every 5s)\nwatch -n 5 squeue --me\n\n# Which node is the GPU job on?\nscontrol show job &lt;gpu_jobid&gt; | grep \" NodeList\"\n\n# Follow the GPU output as it streams in\ntail -f logs/transcribe_gpu_&lt;jobid&gt;.out\n\nDoes the GPU job start immediately or wait in queue?\nHow quickly do transcript lines appear?\n\nTask 2 — Read the partial CPU log\nThe CPU job was cancelled mid-run. What did it manage to produce?\n# Partial output before cancellation\ncat logs/transcribe_cpu_&lt;jobid&gt;.out\n\n# Error log (should be empty — it was cancelled, not crashed)\ncat logs/transcribe_cpu_&lt;jobid&gt;.err\n\nHow many seconds of audio had it processed before you cancelled?\nHow long had it been running?\n\n\nTask 3 — Compare with sacct\nOnce the GPU job finishes:\nsacct -j &lt;cpu_jobid&gt;,&lt;gpu_jobid&gt; \\\n  --format=JobName,Partition,State,Elapsed,MaxRSS\nFill in this table from your results:\n\n\n\n\nCPU\nGPU\n\n\n\n\nState\nCANCELLED\nCOMPLETED\n\n\nElapsed\n\n\n\n\nMaxRSS\n\n\n\n\n\n\nThe CPU job was cancelled after ~3 min having processed only a fraction of the audio. The GPU job finished the whole file — how long did it take? Extrapolate: how long would the CPU job have needed in total?\n\nTask 4 — Download the transcript\n# From your local machine\nscp &lt;username&gt;@cluster:~/results/transcript_gpu.txt .\nOpen it — does large-v2 produce clean output?"
+  },
+  {
+    "objectID": "index.html#exercise-4-15-20-minutes-monitoring-job-arrays",
+    "href": "index.html#exercise-4-15-20-minutes-monitoring-job-arrays",
+    "title": "",
+    "section": "Exercise 4 (15-20 minutes): Monitoring & Job Arrays",
+    "text": "Exercise 4 (15-20 minutes): Monitoring & Job Arrays\n\n\nTask 1: Copy scripts\nbash ../copy_files_3.sh\nTake a look at run_transcription_array.sh and transcription_array.py. What has changed?\nTask 2: Adapt bash and run the array\nWhat is still missing in the array bash file? Add the neccessary SBATCH parameter for an array of three videos. Then:\nsbatch run_transcription_array.sh\n\nTask 3: Monitor the array jobs\nWatch all three tasks appear in the queue:\nwatch -n 5 squeue\nYou should see multiple jobs. Once finished, check that all three results were produced:\nls results/\nUse sacct to compare runtimes across the three tasks:\nsacct -j &lt;array_jobid&gt; \\\n  --format=JobID,State,Elapsed,MaxRSS\n\n\nTask 4: Download the results\nscp -r -i &lt;local/path/to/key&gt; \\\n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/results/ ."
+  },
+  {
+    "objectID": "index.html#introducing-workflow-management-to-computational-social-science",
+    "href": "index.html#introducing-workflow-management-to-computational-social-science",
+    "title": "",
+    "section": "Introducing Workflow Management to Computational Social Science",
+    "text": "Introducing Workflow Management to Computational Social Science\n\n\nIncremental builds: only re-run rules whose inputs changed or failed\nAutomatic parallelism: independent rules run concurrently\nSLURM integration: each rule becomes a separate SLURM job via --executor slurm\nReproducibility: the Snakefile is the documentation of your pipeline\nError recovery: resume from the last successful rule with --rerun-incomplete\nPortability: the same Snakefile runs locally or on any HPC cluster"
+  },
+  {
+    "objectID": "index.html#example-rules-and-dependencies",
+    "href": "index.html#example-rules-and-dependencies",
+    "title": "",
+    "section": "Example: Rules and Dependencies",
+    "text": "Example: Rules and Dependencies\n\n\nrule fix_metadata:\n    \"\"\"Re-mux video to fix container metadata.\"\"\"\n    input:  rules.download_video.output\n    output: \"fixed_videos/{parliament}/{filename}\"\n    shell:\n        \"ffmpeg -y -i {input} -c copy \"\n        \"-map 0:v -map 0:a {output}\"\n\nrule partition_video:\n    \"\"\"Split into overlapping audio windows.\"\"\"\n    input:  rules.fix_metadata.output\n    output: directory(\"partitioned/{parliament}/\"\n                      \"{filename}/parts\")\n    params:\n        segment_length = config[\"partition_duration\"],\n        step           = config[\"partition_step\"]\n    script: \"scripts/rolling_partition.py\"\n\nrule identify_speeches:\n    \"\"\"Diarize all partitions (GPU, batch per video).\"\"\"\n    input:\n        parts   = rules.partition_video.output,\n        walltime = rules \\\n            .store_walltime_identify_speeches_txt.output\n    output:\n        rttm = directory(\"partitioned/{parliament}/\"\n                         \"{filename}/speeches/rttm\")\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    script: \"scripts/identify_speeches_batch.py\"\n\n\n\nRules can be very different:\n\na one-liner shell command (ffmpeg, rsync, …) or a full Python/R script\nrequesting no resources at all, or dynamically computed GPU time\nrunning locally or as a dedicated SLURM job on the cluster\n…"
+  },
+  {
+    "objectID": "index.html#workflow-management-systems-for-reproduciblity-and-scale",
+    "href": "index.html#workflow-management-systems-for-reproduciblity-and-scale",
+    "title": "",
+    "section": "Workflow Management Systems for Reproduciblity and Scale",
+    "text": "Workflow Management Systems for Reproduciblity and Scale\n\nIncremental builds: only re-run rules whose inputs changed or failed\nAutomatic parallelism: independent rules run concurrently\nSLURM integration: each rule becomes a separate SLURM job via --executor slurm\nReproducibility: the Snakefile is the documentation of your pipeline\nError recovery: resume from the last successful rule with --rerun-incomplete\nPortability: the same Snakefile runs locally or on any HPC cluster"
+  },
+  {
+    "objectID": "index.html#live-demo-our-project-on-the-cluster",
+    "href": "index.html#live-demo-our-project-on-the-cluster",
+    "title": "",
+    "section": "Live Demo: Our Project on the Cluster",
+    "text": "Live Demo: Our Project on the Cluster\n\n~30,000 hours of parliamentary video · multi-feature extraction pipeline · Lichtenberg HPC\n\n\n\nWhat you’ll see\n\nActive and pending jobs in squeue\nThe Snakemake code across thousands of segments\nHow progress and output are stored and logged\n\n\nThe scale\n\n~30,000 hours of video across 17 German parliaments\nRules for transcription, pitch, faces, headpose, sentiment, populism,…\nEach segment processed independently\nOne snakemake command orchestrates it all"
+  },
+  {
+    "objectID": "index.html#snakemake-for-reproducibility-and-scale",
+    "href": "index.html#snakemake-for-reproducibility-and-scale",
+    "title": "",
+    "section": "Snakemake for Reproducibility and Scale",
+    "text": "Snakemake for Reproducibility and Scale\nSnakemake is a Python-based workflow manager. Each rule declares what it needs (input) and what it produces (output). Snakemake figures out the order and parallelism automatically.\n\n\nrule generate_audio_feature_transcription:\n    \"\"\"Word-level transcript + speaker diarization.\"\"\"\n    input:\n        video = \"speeches/{parliament}/{filename}/videos/{base}_{segment}.mp4\"\n    output:\n        json  = \"speeches/{parliament}/{filename}/features/{base}_{segment}_transcription.json\"\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"audio_env\"\n    script: \"scripts/generate_audio_feature_transcription.py\"\n\nrule generate_text_feature_sentiment:\n    \"\"\"Sentence-level sentiment (german-sentiment-bert).\"\"\"\n    input:\n        transcription = rules \\\n            .generate_audio_feature_transcription.output.json\n    output:\n        json = \"speeches/{parliament}/{filename}/features/{base}_{segment}_sentiment.json\"\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"text_env\"\n    script: \"scripts/generate_text_feature_sentiment.py\"\n\nWhy rules beat shell scripts:\n\nEach rule is self-documenting: inputs and outputs are explicit\nSnakemake tracks what’s done: re-runs only failed or outdated steps\nresources map directly to SLURM flags via a profile\nconda: pins the exact software environment per rule"
+  },
+  {
+    "objectID": "index.html#one-video-you-will-work-with",
+    "href": "index.html#one-video-you-will-work-with",
+    "title": "",
+    "section": "One Video You Will Work With",
+    "text": "One Video You Will Work With\n\n pres_debate_obama_romney.mp4"
+  },
+  {
+    "objectID": "index.html#other-ways-to-connect-to-the-cluster",
+    "href": "index.html#other-ways-to-connect-to-the-cluster",
+    "title": "",
+    "section": "Other Ways to Connect to the Cluster",
+    "text": "Other Ways to Connect to the Cluster\n\n\nVS Code Remote-SSH (recommended)\nConnect directly from VS Code and edit files, run terminals, or browse the filesystem as if it were local:\n\nInstall the Remote - SSH extension\nCmd+Shift+P -&gt; Remote-SSH: Connect to Host\nEnter ssh -i &lt;path/to/key&gt; &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de\n\nYou get syntax highlighting, file explorer, and an integrated terminal.\n\nJupyterLab / RStudio Server\nSome clusters offer browser-based interfaces via an Open OnDemand portal.\n\n\nConnecting Claude to the cluster\nIt is technically possible to point Claude (via Claude Code) at your cluster over SSH. This lets it read files, run commands, and edit code directly on the HPC system.\n\n⚠️ Do not do this on a shared cluster: An AI agent with shell access can submit jobs, delete files, and consume shared resources. This violates cluster etiquette and likely your institution’s usage policy. Use Claude locally and copy results manually."
+  },
+  {
+    "objectID": "index.html#common-failure-modes-and-fixes",
+    "href": "index.html#common-failure-modes-and-fixes",
+    "title": "",
+    "section": "Common Failure Modes and Fixes",
+    "text": "Common Failure Modes and Fixes\n\n\nJob killed: OUT_OF_MEMORY\n# Check how much memory was used\nsacct -j 123456 --format=MaxRSS\n\n# Fix: increase --mem in job script\n#SBATCH --mem=64G   # was 32G\nJob killed: TIMEOUT\n# Fix: increase --time\n#SBATCH --time=08:00:00\n\n# Or: checkpoint your work\n# Save intermediate results so\n# you can restart from last point\n\nJob stuck PENDING\n# Why is it waiting?\nsqueue -o \"%i %j %r\"\n# Common reasons:\n#  Priority    — in queue, just waiting\n#  Resources   — asked for too much\n#  QOSMaxJobsPerUser — hit job limit\nScript errors\n# Check the output/error logs\ncat logs/job_123456.out\ncat logs/job_123456.err\n\n# Tail live output\ntail -f logs/job_123456.out"
+  },
+  {
+    "objectID": "index.html#live-demo-productive-project-on-the-cluster",
+    "href": "index.html#live-demo-productive-project-on-the-cluster",
+    "title": "",
+    "section": "Live Demo: Productive Project on the Cluster",
+    "text": "Live Demo: Productive Project on the Cluster\n\n~30,000 hours of parliamentary video · multimodal feature extraction pipeline · Lichtenberg HPC\n\n\n\nWhat you’ll see\n\nActive and pending jobs in squeue\nThe Snakemake code across thousands of segments\nHow progress and output are stored and logged\n\n\nThe scale\n\n~30,000 hours (20TB) of video across 17 German parliaments\nRules for transcription, pitch, faces, headpose, sentiment, populism,…\nEach segment processed independently\nOne snakemake command orchestrates it all"
+  },
+  {
+    "objectID": "index.html#exercise-1-10-minutes-find-your-hpc",
+    "href": "index.html#exercise-1-10-minutes-find-your-hpc",
+    "title": "",
+    "section": "Exercise 1 (10 Minutes): Find Your HPC",
+    "text": "Exercise 1 (10 Minutes): Find Your HPC\n\n\n\nInstitutional\n\n\nDoes your university or research institute run its own cluster? Check your IT or research computing website.\n\n\n\n\nRegional / Consortium\n\n\nRegional alliances may offer shared resources: e.g. de.NBI / NFDI (Germany), SNIC (Sweden), PRACE / EuroHPC (Europe).\n\n\n\n\nNational\n\n\nMany countries have national HPC centres open to researchers: e.g. ARCHER2 (UK), NCI (Australia), ACCESS (USA), KISTI (South Korea).\n\n\n\n\nTask 1: Search for HPC resources you might have access to. Note down what you find and how easy it seems to get access.\n\n\nTask 2: With your neighbours, discuss what did you each find and how different are access routes across your institutions."
+  },
+  {
+    "objectID": "index.html#section-5",
+    "href": "index.html#section-5",
+    "title": "",
+    "section": "",
+    "text": "Coffee Break\n\n\nBack in 15 minutes\n\n\nDid you know?"
+  },
+  {
+    "objectID": "index.html#node-types-and-when-to-use-them",
+    "href": "index.html#node-types-and-when-to-use-them",
+    "title": "",
+    "section": "Node Types and When to Use Them",
+    "text": "Node Types and When to Use Them\n\n\n\n\n\n\n\n\nNode Type\nTypical Resources\nBest For\n\n\n\n\nStandard compute\n32–128 cores, 256 GB RAM\nParallel R/Python jobs, NLP preprocessing\n\n\nHigh-memory\n32–64 cores, 1–4 TB RAM\nVery large datasets loaded into RAM\n\n\nGPU\n4–8 GPUs (A100/H100), 40–80 GB VRAM each\nModel training, inference at scale\n\n\nLogin / head\nshared, limited\nFile editing, job submission only\n\n\n\n\nNever run heavy computation on the login node: You share these resources it with all other users."
+  },
+  {
+    "objectID": "index.html#exercise-4-15-20-minutes-monitoring-and-job-arrays",
+    "href": "index.html#exercise-4-15-20-minutes-monitoring-and-job-arrays",
+    "title": "",
+    "section": "Exercise 4 (15-20 minutes): Monitoring and Job Arrays",
+    "text": "Exercise 4 (15-20 minutes): Monitoring and Job Arrays\n\n\nTask 1: Copy scripts\nbash ../copy_files_3.sh\nTake a look at run_transcription_array.sh and transcription_array.py. What has changed?\nTask 2: Adapt bash and run the array\nWhat is still missing in the array bash file? Add the neccessary SBATCH parameter for an array of three videos. Then:\nsbatch run_transcription_array.sh\n\nTask 3: Monitor the array jobs\nWatch all three tasks appear in the queue:\nwatch -n 5 squeue\nYou should see multiple jobs. Once finished, check that all three results were produced:\nls results/\nUse sacct to compare runtimes across the three tasks:\nsacct -j &lt;array_jobid&gt; \\\n  --format=JobID,State,Elapsed,MaxRSS\n\n\nTask 4: Download the results\nscp -r -i &lt;local/path/to/key&gt; \\\n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/results/ ."
+  },
+  {
+    "objectID": "index.html#learning-path-and-resources",
+    "href": "index.html#learning-path-and-resources",
+    "title": "",
+    "section": "Learning Path and Resources",
+    "text": "Learning Path and Resources\n\n\nNext steps\n\nGet access to your institution’s cluster (IT/research computing helpdesk)\nProfile one of your existing scripts on HPC\nIncrementally migrate a real project\n\nEssential reads\n\nSLURM documentation\nThe Carpentries: HPC Intro\nSnakemake docs\n\n\nReference card\n# Connect\nssh user@cluster\n\n# Submit job\nsbatch myjob.sh\n\n# Check queue\nsqueue --me\n\n# Cancel job\nscancel &lt;jobid&gt;\n\n# Job stats\nsacct -j &lt;jobid&gt;\n\n# Load module\nmodule load R/4.3.1\n\n# Sync files\nrsync -avz project/ cluster:~/project/"
+  },
+  {
+    "objectID": "index.html#new-slide",
+    "href": "index.html#new-slide",
+    "title": "",
+    "section": "NEW SLIDE",
+    "text": "NEW SLIDE"
+  },
+  {
+    "objectID": "index.html#a-framework-for-replication-ready-css-pipelines",
+    "href": "index.html#a-framework-for-replication-ready-css-pipelines",
+    "title": "",
+    "section": "A Framework for Replication-Ready CSS Pipelines",
+    "text": "A Framework for Replication-Ready CSS Pipelines\n\n\n\nAdapted from Mölder et al. (2021). Analytical Documentation is a CSS-specific extension."
+  },
+  {
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "",
+    "section": "",
+    "text": "COMPTEXT 2026 Workshop\n\n\nFrom Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing\n\n\n\n\n\n Workshop Materials on GitHub:   \n\n\n\n\n\nAndreas Kuepfer (TU Darmstadt)\n🦋 ankuepfer.bsky.social 🌐 andreaskuepfer.github.io ✉ andreas.kuepfer@tu-darmstadt.de"
+  },
+  {
+    "objectID": "index.html#exercise-2-one-video-you-will-work-with",
+    "href": "index.html#exercise-2-one-video-you-will-work-with",
+    "title": "",
+    "section": "Exercise 2: One Video You Will Work With",
+    "text": "Exercise 2: One Video You Will Work With\n\n pres_debate_obama_romney.mp4"
+  },
+  {
+    "objectID": "index.html#complex-data-and-methods-in-computational-social-science",
+    "href": "index.html#complex-data-and-methods-in-computational-social-science",
+    "title": "",
+    "section": "Complex Data and Methods in Computational Social Science",
+    "text": "Complex Data and Methods in Computational Social Science\n\n\n\n\nNatural Language Processing\n\n\nText classification · Topic modelling · LLM annotation\n\n\n\n\nComputer Vision & Audio\n\n\nImage classification · ASR · Speaker diarisation\n\n\n\n\nNetwork Analysis\n\n\nGraph processing · Community detection · Diffusion\n\n\n\n\nCausal Inference\n\n\nBootstrapping · Simulation · Large-scale matching\n\n\n\n\nAgent-Based Modelling\n\n\nLarge population simulations · Sensitivity analyses\n\n\n\n\nRelevant to All\n\n\nHyperparameter tuning · Cross-validation · Monte Carlo\n\n\n\n\n\n\n\n\nHow can we analyze rich, complex data and apply computationally demanding methods at scale?\n\n\n\n\nHigh-Performance Computing\n\n\n\n\n\nLichtenberg II · TU Darmstadt\n\n\n\n\n\n\n\nWhat You Will Take Away\n\n\nConceptual understanding\n\nWhy desktop computing hits a wall\nCPU vs. GPU: what they’re good for\nWhat an HPC cluster actually looks like\n\n\nPractical skills\n\nConnect to a remote cluster via SSH\nNavigate Linux filesystems\nWrite, submit, and monitor batch jobs (SLURM)\n\n\nResearch workflow thinking\n\nStructure reproducible pipelines\nUnderstand resource trade-offs\nKnow when (and when not) to use HPC\n\n\n\nNo prior HPC experience needed: Basic familiarity with R or Python and the terminal is helpful but not required.\n\n\n\n\nWorkshop at a Glance\n\n\n\n\n\n\n\n\n\n\nBlock\nTopic\n\n\n\n\n\nBlock 1\nWhy HPC? Motivation and big picture\n💬 Explore/Discussion\n\n\nBlock 2\nHPC architecture: nodes, cores, memory\n\n\n\nBlock 3\nConnecting and navigating an HPC cluster\n✏️ Hands-on Exercise\n\n\nBreak\n\n\n\n\nBlock 4\nJob schedulers: writing and submitting jobs\n✏️ Hands-on Exercise\n\n\nBlock 5\nMonitoring, debugging and best practices\n✏️ Hands-on Exercise\n\n\nBlock 6\nWorkflow managers and outlook\n🎬 Live Demo\n\n\n\n\n\n  \n\nWorkshop Materialgithub.com/andreaskuepfer/css-introduction-hpc\n\n\n\n\n\nBlock 1: Why HPC?\n\nDesktop limits · CPU vs. GPU · When HPC is (and isn’t) worth it\n\n\n\nThe Desktop Computing Wall\n\n\nYou’ve hit the wall when…\n\nYour script has been running for 3 days and you need results tomorrow\nLoading the full dataset exhausts your RAM\nTraining 100 model variants would take days sequentially\nYour laptop fan sounds afraid\n\n\nThe typical research laptop: 8-16 GB RAM · 8-16 CPU cores · no GPU · shared with your browser, RStudio, Zoom, and Spotify\n\n\nCommon CSS bottlenecks\n\n\n\nTask\nBottleneck\n\n\n\n\nLarge corpus NLP\nRAM + CPU\n\n\nTransformer fine-tuning\nGPU memory\n\n\nImage + text fusion (CLIP-style)\nGPU memory\n\n\nAudio / video transcription at scale\nCPU + GPU\n\n\nWeb scraping + parsing\nI/O + CPU\n\n\n\n\n\n\n\nWhat Is High-Performance Computing?\n\n\nHPC = many computers working together, managed as a shared infrastructure\n\nCluster: a collection of nodes connected by a fast network\nNode: one individual computer (server) in the cluster\nJob: a unit of computation you submit for execution\nScheduler: the software that allocates resources and queues jobs\n\n\nThink of HPC like a printing service: you submit a job, it gets queued, a machine picks it up, and you collect the result, but you don’t sit at the printer.\n\n\n╔══════════════════════╗\n║   Login / Head Node  ║  ← you SSH here\n╠══════════════════════╣\n║   Job Scheduler      ║  ← SLURM\n╠══════════════════════╣\n║  Compute  Compute    ║\n║  Node 1   Node 2     ║\n║  Node 3   Node 4 ... ║\n╠══════════════════════╣\n║   Shared Storage     ║\n╚══════════════════════╝\n\n\n\n\n\nCPU vs. GPU: The Core Distinction\n\n\nCPU — Central Processing Unit\n\nA few powerful cores (4–128)\nExcellent at sequential, complex tasks\nBest for: data wrangling, statistical models\n\n\nGPU — Graphics Processing Unit\n\nThousands of small cores\nExcellent at massively parallel tasks (same operation on many values)\nOriginally designed for graphics rendering\nBest for: deep learning, transformer models, large matrix operations\n\n\n\nUse CPU for: lm(), tidytext, web scraping, simulation, most basic ML in scikit-learn\n\n\nUse GPU for: BERT fine-tuning, image classification, large language models, torch/tensorflow training\n\n\n\n\nWhen to Use HPC in CSS Research\n\n\nGood candidates for HPC\n\nProcessing millions of documents (corpora, social media archives, audiovisual data)\nFine-tuning or running large language models (BERT, GPT-class)\nBootstrapping / permutation tests with many iterations\nGrid search over model hyperparameters\nAgent-based simulations at scale\nLarge network analysis (graphs with millions of nodes)\n\n\nMight not need HPC\n\nAnalysis fits in laptop RAM (&lt; ~8 GB data)\nSingle model run completes in &lt; 4 hour\nHighly interactive / exploratory analysis\nOutput depends on human review at each step\n\n\nRule of thumb: If you wish you could run your script 10× faster or with 10× more data HPC is worth exploring.\n\n\n\n\n\nExercise 1 (5-10 Minutes): Find Your HPC\n\n\n\nInstitutional\n\n\nDoes your university or research institute run its own cluster? Check your IT or research computing website.\n\n\n\n\nRegional / Consortium\n\n\nRegional alliances may offer shared resources: e.g. de.NBI / NFDI (Germany), SNIC (Sweden), PRACE / EuroHPC (Europe).\n\n\n\n\nNational\n\n\nMany countries have national HPC centres open to researchers: e.g. ARCHER2 (UK), NCI (Australia), ACCESS (USA), KISTI (South Korea).\n\n\n\n\nTask 1: Search for HPC resources you might have access to. Note down what you find and how easy it seems to get access.\n\n\nTask 2: With your neighbours, discuss what did you each find and how different are access routes across your institutions.\n\n\n\n\n\n\n\n\n\nmenti.com/al4phv55giz5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmenti.com/al4phv55giz5\n\n\n\n\n\n\nBlock 2: HPC Architecture\n\nNodes, cores and memory · Storage tiers · Software modules and environments\n\n\n\nThis Is What It Looks Like in Practice\n\n\nLogged in into TU Darmstadt’s Lichtenberg cluster: jobs running, pending, and a Snakemake workflow directory\n\n\n\nAnatomy of an HPC Cluster\n                    You (SSH)\n                        │\n                ┌───────▼────────┐\n                │  Login Node    │  — where you land, write code, submit jobs\n                │  (head node)   │    DO NOT run heavy computation here\n                └───────┬────────┘\n          ┌─────────────┼────────────┐\n          │             │            │\n  ┌───────▼──────┐  ┌───▼──────┐  ┌──▼───────┐\n  │ Compute Node │  │ GPU Node │  │ Fat Node │\n  │ 32cores/128GB│  │ 8× A100  │  │ 2TB RAM  │\n  └──────────────┘  └──────────┘  └──────────┘\n          │             │             │\n          └─────────────┼─────────────┘\n                ┌───────▼────────┐\n                │  Shared Storage│  — /home, /scratch, /project\n                │  (e.g., NFS)   │\n                └────────────────┘\n\n\n\n\nNode Types and When to Use Them\n\n\n\n\n\n\n\n\nNode Type\nTypical Resources\nBest For\n\n\n\n\nStandard compute\n32–128 cores, 256 GB RAM\nParallel R/Python jobs, NLP preprocessing\n\n\nHigh-memory\n32–64 cores, 1–4 TB RAM\nVery large datasets loaded into RAM\n\n\nGPU\n4–8 GPUs (A100/H100), 40–80 GB VRAM each\nModel training, inference at scale\n\n\nLogin / head\nshared, limited\nFile editing, job submission only\n\n\n\n\nNever run heavy computation on the login node: You share these resources it with all other users.\n\n\n\n\nStorage on HPC Systems\n\n\nMost clusters have multiple storage tiers:\n\n\n\n\n\n\n\n\nPath\nPurpose\nNotes\n\n\n\n\n/home/&lt;username&gt;\nPersonal files, scripts\nSmall quota (20-50 GB), backed up\n\n\n/scratch/&lt;username&gt;\nTemporary job I/O\nLarge (10-20 TB), not backed up, purged regularly\n\n\n/project/&lt;groupname&gt;\nShared team data\nLarger quota (1-5 TB), longer retention\n\n\n\n\nBest practices\n\nStore scripts and results → /home\nWrite job output → /scratch\nKeep large raw data → /project or /scratch\nCopy results off the cluster after jobs finish\nNever rely on /scratch long-term\n\n\nScratch files are not backuped and often auto-deleted after 30-90 days.\n\n\n\n\n\nSoftware on HPC: Environment Modules\nHPC clusters use a module system to manage software versions:\n# See what software is available\nmodule avail\n\n# Load a specific module\nmodule load R/4.3.1\nmodule load python/3.11\nmodule load cuda/12.1\n\n# See what you have loaded\nmodule list\n\n# Unload/reset\nmodule unload R/4.3.1\nmodule purge\n\nModules are optional: You can install and manage your own software (e.g. via Conda or pip) without ever loading a module. In practice, modules are mainly useful for system-level dependencies like CUDA drivers or MPI that are hard to install yourself.\n\n\n\n\nConda and Virtual Environments\nFor Python (and increasingly R), the package managers Conda or venv are preferred for reproducibility:\n# Create a project environment\nconda create -n css-project python=3.11\n\n# Activate it\nconda activate css-project\n\n# Install packages\nconda install -c conda-forge transformers torch pandas\n\n# or: create from envrionment file\nconda env create -f environment.yml\n\n# (Optional) Export for reproducibility\nconda env export &gt; environment.yml\n\n\n\nBlock 3: Connecting and Navigating\n\nSSH · Linux essentials · File transfer\n\n\n\nConnecting via SSH\nSSH (Secure Shell) is how you talk to a remote HPC cluster:\n# Basic connection (sometimes with 2FA)\nssh username@lcluster15.hrz.tu-darmstadt.de\n\n# With a specific identity file (SSH key)\nssh -i ~/.ssh/id_ed25519 &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de\n\n\nWhere to open SSH:\n\nmacOS: open Terminal (built-in, no install needed)\nWindows: open PowerShell or Command Prompt (sometimes MobaXterm) (OpenSSH module is built into Windows 11, same commands as Mac)\n\nNormal first time setup:\n\nGenerate a key pair: ssh-keygen -t ed25519\nCopy public key to cluster: ssh-copy-id username@cluster\nOptionally add to ~/.ssh/config for a shorter login command\n\n\n~/.ssh/config shortcut:\nHost lichtenberg\n    HostName lcluster15.hrz.tu-darmstadt.de\n    User &lt;username&gt;\n    IdentityFile ~/.ssh/id_ed25519\nThen just: ssh lichtenberg\n\nWindows note: key files live in C:\\Users\\&lt;User&gt;\\.ssh\\, use the same path syntax in config. No extra software is needed.\n\n\n\n\n\nEssential Linux Commands\n\n\nNavigation\npwd          # Where am I?\nls -lh       # List files (human-readable)\ncd /scratch  # Change directory\ncd ~         # Go home\n\nmkdir results       # Create directory\ncp file1 file2      # Copy\nmv file1 dir/       # Move / rename\nrm file1            # Delete (no undo!)\nrm -r dir/          # Delete directory (no undo!)\n\nViewing and editing files\ncat file.txt         # Print file\nless file.txt        # Page through file (q to quit)\nhead -n 20 file.txt  # First 20 lines\ntail -n 20 file.txt  # Last 20 lines\nnano script.R        # Simple text editor\n\nnano: navigate with arrow keys · search with Ctrl+W · exit with Ctrl+X (confirm save with Y)\n\nPermissions and disk\nchmod +x script.sh   # Make executable\ndu -sh *             # Disk use per item\ndf -h                # Free disk space\n\n\n\n\nTransferring Files\n\n\nscp: secure copy (simple)\n# Upload file to cluster\nscp data.csv &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/data/\n# Download result from cluster\nscp &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/results/out.csv .\n# Upload entire folder\nscp -r project/ &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/\n\n\nrsync: smarter sync (only transfers what changed)\n# Upload, skip unchanged files\nrsync -avz project/ &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/project/\n# Download results folder\nrsync -avz &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/results/ ./results/\n# Dry run (see what would happen)\nrsync -avzn project/ &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de:~/project/\n\n\nFileZilla: alternative with user interface\n\nA free, cross-platform SFTP client: drag and drop files between your local device and the cluster.\n\n\n\n\n\n\nKeeping Sessions Alive: tmux\nSSH connections drop. Use tmux to keep work running:\n# Start a named session\ntmux new -s mywork\n\n# Detach from session (keeps running!)\nCtrl+b  then  d\n\n# Re-attach later\ntmux attach -t mywork\n\n# List active sessions\ntmux ls\n\n# Kill session\ntmux kill-session -t mywork\n\nWorkflow: SSH into cluster &gt; start tmux session &gt; do work &gt; detach &gt; close laptop &gt; reconnect anytime &gt; re-attach\n\n\n\n\nExercise 2: One Video You Will Work With\n\n pres_debate_obama_romney.mp4\n\n\n\n\nExercise 2 (15-20 Minutes): Connecting and Uploading (1/2)\n\n\nTask 1: Log in and explore\n\nBefore login: download your private key (📝)\nmacOS: open Terminal  |  Windows: open PowerShell / MobaXterm\n\nssh -i &lt;local/path/to/keyfile&gt; \\\n&lt;username&gt;@lcluster&lt;nodeID📝&gt;.hrz.tu-darmstadt.de\npwd && ls -lh          # Where are you?\ndf -h ~                # Home quota\nmodule avail           # Available software\nmodule load python/3.11\nmodule list\n\nWhat is your home directory path?\nHow much quota do you have in your /home?\n\nTask 2: Copy script\nbash ../copy_files_1.sh\n\nTask 3: Get the provided pres_debate_obama_romney.mp4\nOption 1: Download video file (📝)\nUpload from your local machine (either scp or rsync):\nscp -i &lt;local/path/to/key&gt; \\\n  pres_debate_obama_romney.mp4 \\\n  &lt;username&gt;@lcluster&lt;nodeID📝&gt;.hrz.tu-darmstadt.de:~/\nrsync -avz \\\n  -e \"ssh -i &lt;local/path/to/keyfile&gt;\" \\\n  pres_debate_obama_romney.mp4 \\\n  &lt;username&gt;@lcluster&lt;nodeID📝&gt;.hrz.tu-darmstadt.de:~/\nVerify on the cluster:\nls -lh ~/pres_debate_obama_romney.mp4\nOption 2: Copy directly from HPC\ncp ../pres_debate_obama_romney.mp4 .\n\n\n\n\nExercise 2 (15-20 Minutes): Running Scripts (2/2)\nTask 4: Write a plain bash script\nIntegrate the provided transcription.py:\nimport os\nimport whisperx\nfrom whisperx.diarize import DiarizationPipeline\nfrom tqdm import tqdm\nimport torch\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\n# ...\nCreate transcription.sh (using nano transcription.sh), a plain bash script that:\n\nStarts with #!/bin/bash | 2. Runs: python transcription.py\n\n\nRun it with bash transcription.sh -&gt; What happens?\n\n\n\n\n\n\n\nCoffee Break\n\n\nBack in 15 minutes\n\n\nDid you know?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlock 4: Job Schedulers and SLURM\n\nWriting job scripts · Key parameters · Submitting and monitoring\n\n\n\nWhat Is a Job Scheduler?\n\n\nA job scheduler (also called a workload manager) is the traffic controller of an HPC cluster:\n\nAccepts job submissions from many users\nDecides when and where to run each job based on requested resources and priority\nMonitors jobs, handles failures, writes output logs\nEnsures fair sharing of cluster resources\n\nThe most common scheduler: SLURM (Simple Linux Utility for Resource Management)\n\nUser A submits job (4 cores, 1h)\nUser B submits job (32 cores, 8h)\nUser C submits job (8 cores, 2h)\n         │\n         ▼\n    ┌─────────┐\n    │  SLURM  │  Queue and schedule\n    └─────────┘\n         │\n    ┌────┴──────────────────────────────┐\n    │ Node 1          Node 2            │\n    │ (User A, User C)(User B)          │\n    └───────────────────────────────────┘\n\n\n\n\n\nAnatomy of a SLURM Job Script (Example)\n#!/bin/bash\n#SBATCH --job-name=sentiment_analysis     # Job name (shows in queue)\n#SBATCH --output=logs/job_%j.out          # Standard output (%j = job ID)\n#SBATCH --error=logs/job_%j.err           # Standard error\n#SBATCH --time=02:00:00                   # Wall time limit (HH:MM:SS)\n#SBATCH --nodes=1                         # Number of nodes\n#SBATCH --ntasks=1                        # Number of tasks (processes)\n#SBATCH --cpus-per-task=8                 # CPU cores per task\n#SBATCH --mem=32G                         # Memory per node\n#SBATCH --partition=standard              # Which partition/queue\n\n# Setup\nmodule load R/4.3.1\n\n# Run\nRscript analysis/sentiment_analysis.R \\\n  --input  data/corpus.rds \\\n  --output results/sentiment_scores.csv\n\n\n\nKey SLURM Parameters Explained\n\n\n\n\n\n\n\n\n#SBATCH flag\nWhat it controls\nExample\n\n\n\n\n--time\nMaximum run time. Job is killed if exceeded.\n--time=04:30:00\n\n\n--mem\nRAM for the whole job. Request more than needed.\n--mem=64G\n\n\n--cpus-per-task\nCPU cores. Match to your parallelism plan.\n--cpus-per-task=16\n\n\n--partition\nQueue with specific hardware/limits.\n--partition=gpu\n\n\n--gres\nGeneric resources, e.g. GPUs.\n--gres=gpu:1\n\n\n--array\nRun same script with different inputs.\n--array=1-100\n\n\n--mail-type\nEmail notifications.\n--mail-type=END,FAIL,ALL\n\n\n…\n…\n…\n\n\n\n\nAlways request slightly more resources than you think you need (10–20% headroom). Jobs are killed hard when they exceed limits.\n\n\n\n\nYour First SLURM Workflow\n\n\n1. Python script (see transcription.py)\nimport whisperx, os\n\nvideo_file = \"pres_debate_obama_romney.mp4\"\ndevice = os.environ.get(\"DEVICE\", \"cpu\")\n# ...\n\n# Transcribe\nmodel = whisperx.load_model(\"large-v2\", device, ...)\nresult = model.transcribe(audio, batch_size=32)\n\n# Align and diarize\n# ...\n\n2. Job script (run_transcription.sh, you’ll get this file)\n#!/bin/bash\n#SBATCH --job-name=whisperx_transcription\n#SBATCH --account=kurs00100\n#SBATCH --partition=kurs00100\n#SBATCH --reservation=kurs00100\n#SBATCH --time=0-00:05:00\n#SBATCH --nodes=1\n# ...\n\nconda activate /home/kurse/kurs00100/env_whisperx\n\npython transcription.py\n\n\n3. Submit\nsbatch run_transcription.sh\n\n\n\n\n\n\n\n\n\nExercise 3 (20-25 Minutes): CPU vs. GPU and Submitting SLURM Jobs\n\n\nTask 1: Copy script\nbash ../copy_files_2.sh\nTask 2: Submit the CPU job first\nTake run_transcription.sh and submit a job:\nsbatch run_transcription.sh\n\nNote the job ID\nWatch it start with squeue\nCheck details with scontrol show job &lt;job_id&gt;\nJob is running? If so, look for job logs in your home folder and open them\n\n\nTask 3: Cancel the CPU job\nAfter ~3 minutes, check the log and then cancel:\ntail whisperx_transcription.&lt;jobid&gt;.out\nscancel &lt;jobid&gt; # Would take much more longer to finish\nTask 4: Submit the GPU job\nCreate a (renamed) copy of run_transcription.sh:\ncp run_transcription.sh run_transcription_gpu.sh # Copy\nnano run_transcription_gpu.sh # Terminal text editor\nSame script, but:\n\n\nAdd #SBATCH --gres=gpu:1\nSet export DEVICE=cuda instead of export DEVICE=cpu\n\n\n\nSubmit: sbatch run_transcription_gpu.sh\n\n\n\n\n\nBlock 5: Monitoring, Debugging and Best Practices\n\nChecking job status · Common failure modes · Cluster etiquette · Job arrays\n\n\n\nMonitoring Your Jobs\n# Show your jobs in the queue\nsqueue\n\n# Detailed info about a specific job\nscontrol show job 123456\n\n# Job accounting (after it finishes)\nsacct -j 123456 --format=JobID,State,Elapsed,MaxRSS,MaxVMSize\n\n# Cancel a job\nscancel 123456\n\n# Cancel all your jobs\nscancel --me\nReading squeue output:\n\n\n\n\n\n\n\n\n\n\n\n\n\nJOBID\nPARTITION\nNAME\nUSER\nST\nTIME\nNODES\nNODELIST\n\n\n\n\n123456\nstandard\nmultimodal_video\ncomptext\nR\n0:45\n1\nnode042\n\n\n123457\nstandard\nemotion_cls\ncomptext\nPD\n0:00\n1\n(Priority)\n\n\n\nR = Running · PD = Pending · CG = Completing · F = Failed\n\n\n\nCommon Failure Modes and Fixes\n\n\nJob killed: OUT_OF_MEMORY\n# Check how much memory was used\nsacct -j 123456 --format=MaxRSS\n\n# Fix: increase --mem in job script\n#SBATCH --mem=64G   # was 32G\nJob killed: TIMEOUT\n# Fix: increase --time\n#SBATCH --time=08:00:00\n\n# Or: checkpoint your work\n# Save intermediate results so\n# you can restart from last point\n\nJob stuck PENDING\n# Why is it waiting?\nsqueue -o \"%i %j %r\"\n# Common reasons:\n#  Priority    — in queue, just waiting\n#  Resources   — asked for too much\n#  QOSMaxJobsPerUser — hit job limit\nScript errors\n# Check the output/error logs\ncat logs/job_123456.out\ncat logs/job_123456.err\n\n# Tail live output\ntail -f logs/job_123456.out\n\n\n\n\nJob Arrays: Run Many Jobs at Once\nJob arrays let you submit one script that scales to many inputs:\n#!/bin/bash\n#SBATCH --job-name=whisperx_transcription\n#SBATCH --array=1-20           # &lt;-- one task per input\n#SBATCH --account=kurs00100\n#SBATCH --partition=kurs00100\n#SBATCH --reservation=kurs00100\n#SBATCH --time=0-00:05:00\n# ...\n\nsource /home/kurse/kurs00100/miniforge3/etc/profile.d/conda.sh\nconda activate /home/kurse/kurs00100/env_whisperx\n\npython transcription.py \\\n  --config configs/config_${SLURM_ARRAY_TASK_ID}.yml\n\nUse case: Run transcription for each of 20 videos. Pre-generate 20 config files, submit one array job.\n\n\n\nExercise 4 (15-20 minutes): Monitoring and Job Arrays\n\n\nTask 1: Copy scripts\nbash ../copy_files_3.sh\nTake a look at run_transcription_array.sh and transcription_array.py. What has changed?\nTask 2: Adapt bash and run the array\nWhat is still missing in the array bash file? Add the neccessary SBATCH parameter for an array of three videos. Then:\nsbatch run_transcription_array.sh\n\nTask 3: Monitor the array jobs\nWatch all three tasks appear in the queue:\nwatch -n 5 squeue\nYou should see multiple jobs. Once finished, check that all three results were produced:\nls results/\nUse sacct to compare runtimes across the three tasks:\nsacct -j &lt;array_jobid&gt; \\\n  --format=JobID,State,Elapsed,MaxRSS\n\n\nTask 4: Download the results\nscp -r -i &lt;local/path/to/key&gt; \\\n&lt;username&gt;@lcluster&lt;nodeID&gt;.hrz.tu-darmstadt.de:~/results/ .\n\n\n\n\nOther Ways to Connect to the Cluster\n\n\nVS Code Remote-SSH (recommended)\nConnect directly from VS Code and edit files, run terminals, or browse the filesystem as if it were local:\n\nInstall the Remote - SSH extension\nCmd+Shift+P -&gt; Remote-SSH: Connect to Host\nEnter ssh -i &lt;path/to/key&gt; &lt;username&gt;@lcluster15.hrz.tu-darmstadt.de\n\nYou get syntax highlighting, file explorer, and an integrated terminal.\n\nJupyterLab / RStudio Server\nSome clusters offer browser-based interfaces via an Open OnDemand portal.\n\n\nConnecting Claude to the cluster\nIt is technically possible to point Claude (via Claude Code) at your cluster over SSH. This lets it read files, run commands, and edit code directly on the HPC system.\n\n⚠️ Do not do this on a shared cluster: An AI agent with shell access can submit jobs, delete files, and consume shared resources. This violates cluster etiquette and likely your institution’s usage policy. Use Claude locally and copy results manually.\n\n\n\n\n\nBest Practices for HPC Jobs\n\n\nResource requests\n\nStart with a small test run\nRequest 10–20% more than measured\nUse sacct to profile real usage\nPrefer many short jobs over few huge ones\n\nCode hygiene\n\nSet seeds for reproducibility\nSave intermediate results (checkpoints)\nFor productive jobs: Don’t use hardcode paths; use config files instead\nLog start time, end time, key parameters\n\n\nCluster etiquette\n\nDon’t compute on the login node\nDon’t request 10× what you need\nClean up /scratch after jobs finish\nTest locally on small data first\nRead the cluster documentation\n\n\n\n\n\nBlock 6: Workflow Managers and Outlook\n\nThe pipeline problem · Snakemake rules and DAGs · SLURM integration · Next steps\n\n\n\nThe Pipeline Problem\n\nHow to download, cut, track speakers, transcribe, extract gaze, extract pitch, … of more than 30,000 hours of video recordings of speeches?\n\n\n\n\nPotential issues:\n\nEach step depends on the last\nAny step can fail\nSteps can run in parallel\nYou need to scale to hundreds of files\n\npreprocess.sh → tokenise.sh → embed.sh → analyse.sh\n     │                                        │\n     └── fail: restart manually? ─────────────┘\n     └── which outputs are up to date?\n     └── 100 files × 4 steps = 400 jobs?\n\nWhat you actually want:\n\nDeclare what depends on what\nRe-run only what changed or failed\nParallelise independent steps automatically\nHave a single command to run the whole pipeline\n\n\n\n\n\n\nA Framework for Replication-Ready CSS Pipelines\n\n\n\nAdapted from Mölder et al. (2021). Analytical Documentation is a CSS-specific extension.\n\n\n\n\n\nIntroducing Workflow Management to Computational Social Science\n\n\nIncremental builds: only re-run rules whose inputs changed or failed\nAutomatic parallelism: independent rules run concurrently\nSLURM integration: each rule becomes a separate SLURM job via --executor slurm\nReproducibility: the Snakefile is the documentation of your pipeline\nError recovery: resume from the last successful rule with --rerun-incomplete\nPortability: the same Snakefile runs locally or on any HPC cluster\n\n\n\n\n\n\n\n\nSnakemake for Reproducibility and Scale\nSnakemake is a Python-based workflow manager. Each rule declares what it needs (input) and what it produces (output). Snakemake figures out the order and parallelism automatically.\n\n\nrule generate_audio_feature_transcription:\n    \"\"\"Word-level transcript + speaker diarization.\"\"\"\n    input:\n        video = \"speeches/{parliament}/{filename}/videos/{base}_{segment}.mp4\"\n    output:\n        json  = \"speeches/{parliament}/{filename}/features/{base}_{segment}_transcription.json\"\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"audio_env\"\n    script: \"scripts/generate_audio_feature_transcription.py\"\n\nrule generate_text_feature_sentiment:\n    \"\"\"Sentence-level sentiment (german-sentiment-bert).\"\"\"\n    input:\n        transcription = rules \\\n            .generate_audio_feature_transcription.output.json\n    output:\n        json = \"speeches/{parliament}/{filename}/features/{base}_{segment}_sentiment.json\"\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"text_env\"\n    script: \"scripts/generate_text_feature_sentiment.py\"\n\nWhy rules beat shell scripts:\n\nEach rule is self-documenting: inputs and outputs are explicit\nSnakemake tracks what’s done: re-runs only failed or outdated steps\nresources map directly to SLURM flags via a profile\nconda: pins the exact software environment per rule\n\n\n\n\n\nExample: DAG of an Actual Project\n\n\n\n\n+ −\n\n\n\n\n\nSnakemake + SLURM: The Full Picture\n\n\nSLURM profile (~/.config/snakemake/slurm/config.yaml):\nexecutor: slurm\njobs: 64 # max concurrent SLURM jobs\nlatency-wait: 120\nrerun-incomplete: True\nuse-conda: True\n\ndefault-resources:\n  slurm_account: \"my-project\"\n  slurm_partition: \"gpu-a100\"\n  mem_mb: 65536\n  runtime: 10 # fallback wall time (minutes)\n  cpus_per_task: 16\n  slurm_extra: \"--gres=gpu:1\"\n\nresources:\n  gpu_job: 32\n\nPer-rule resource overrides:\nrule generate_audio_feature_transcription:\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1          # one GPU slot from the pool\n    conda:  \"audio_env\"\n    script: \"scripts/generate_audio_feature_transcription.py\"\n\nrule generate_text_feature_populism:\n    resources:\n        runtime = lambda wc, input: int(\n                    open(str(input.walltime)).read()),\n        gpu_job = 1\n    conda:  \"text_env\"\n    script: \"scripts/generate_text_feature_populism.py\"\n\n\nSubmit:\nsnakemake -n                    # dry run\nsnakemake --profile profile/    # run on cluster\nsnakemake --profile profile/ \\\n          --rerun-incomplete     # resume after failure\n\n\n\n\nLive Demo: Productive Project on the Cluster\n\n~30,000 hours of parliamentary video · multimodal feature extraction pipeline · Lichtenberg HPC\n\n\n\nWhat you’ll see\n\nActive and pending jobs in squeue\nThe Snakemake code across thousands of segments\nHow progress and output are stored and logged\n\n\nThe scale\n\n~30,000 hours (20TB) of video across 17 German parliaments\nRules for transcription, pitch, faces, headpose, sentiment, populism,…\nEach segment processed independently\nOne snakemake command orchestrates it all\n\n\n\n\n\nWorkshop Summary\n\n\nYou now know how to…\n\nExplain why CSS research outgrows desktops\nDistinguish CPU vs. GPU workloads\nDescribe the anatomy of an HPC cluster\nConnect to a remote cluster via SSH\nNavigate a Linux filesystem\nWrite a SLURM job script\nSubmit, monitor, and cancel jobs\nUse job arrays for parallel batch runs\nStructure a project for HPC workflows\nUnderstand what workflow managers solve\n\n\n\nThe big idea\nHPC is infrastructure: The same R and Python code you write today can scale to cluster size with relatively small changes.\n\n\nQuestions?\nThis is the space for immediate questions!\n\n\n\n\n\n\n\nCOMPTEXT 2026 Workshop\n\n\nFrom Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing\n\n\n\n\n\n Workshop Materials on GitHub:   \n\n\n\n\n\nAndreas Kuepfer (TU Darmstadt)\n🦋 ankuepfer.bsky.social 🌐 andreaskuepfer.github.io ✉ andreas.kuepfer@tu-darmstadt.de"
+  },
+  {
+    "objectID": "index.html#complex-methods-in-computational-social-science-to-address-this-data",
+    "href": "index.html#complex-methods-in-computational-social-science-to-address-this-data",
+    "title": "",
+    "section": "Complex Methods in Computational Social Science to Address this Data",
+    "text": "Complex Methods in Computational Social Science to Address this Data\n\n\n\n\nNatural Language Processing\n\n\nText classification · Topic modelling · LLM annotation\n\n\n\n\nComputer Vision & Audio\n\n\nImage classification · ASR · Speaker diarisation\n\n\n\n\nNetwork Analysis\n\n\nGraph processing · Community detection · Diffusion\n\n\n\n\nCausal Inference\n\n\nBootstrapping · Simulation · Large-scale matching\n\n\n\n\nAgent-Based Modelling\n\n\nLarge population simulations · Sensitivity analyses\n\n\n\n\nRelevant to All\n\n\nHyperparameter tuning · Cross-validation · Monte Carlo"
+  }
+]

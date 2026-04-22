@@ -1,0 +1,27 @@
+project:
+  type: website
+
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    history: true
+    hash: true
+    center: false
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: true
+    code-overflow: scroll
+    fig-align: center
+    footer: "From Desktop to Cluster | COMPTEXT Workshop 2026"
+    logo: ""
+    controls: true
+    controls-layout: bottom-right
+    preview-links: false
+    chalkboard: false
+    multiplex: false
+    width: 1280
+    height: 720
