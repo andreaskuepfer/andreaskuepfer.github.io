@@ -508,6 +508,32 @@ Workshop Material<br>github.com/andreaskuepfer/<br>css-introduction-hpc
 </table>
 </div></div>
 </section>
+<section id="cpu-vs.-gpu-the-core-distinction" class="slide level2">
+<h2>CPU vs.&nbsp;GPU: The Core Distinction</h2>
+<div class="columns">
+<div class="column fragment" data-fragment-index="1" style="width:50%;">
+<h3 id="cpu-central-processing-unit">CPU — Central Processing Unit</h3>
+<ul>
+<li>A <strong>few powerful cores</strong> (4–128)</li>
+<li>Excellent at <strong>sequential</strong>, complex tasks</li>
+<li>Best for: data wrangling, statistical models</li>
+</ul>
+</div><div class="column fragment" data-fragment-index="3" style="width:50%;">
+<h3 id="gpu-graphics-processing-unit">GPU — Graphics Processing Unit</h3>
+<ul>
+<li><strong>Thousands of small cores</strong></li>
+<li>Excellent at <strong>massively parallel</strong> tasks (same operation on many values)</li>
+<li>Originally designed for graphics rendering</li>
+<li>Best for: deep learning, transformer models, large matrix operations</li>
+</ul>
+</div></div>
+<div class="box-blue fragment current-visible" style="position: absolute; bottom: 1.5em; left: 2.5em; right: 2.5em; font-size: 1.1em; padding: 1em 1.5em;" data-fragment-index="2">
+<p><strong>Use CPU for:</strong> <code>lm()</code>, <code>tidytext</code>, web scraping, simulation, most basic ML in scikit-learn</p>
+</div>
+<div class="box-blue fragment" style="position: absolute; bottom: 1.5em; left: 2.5em; right: 2.5em; font-size: 1.1em; padding: 1em 1.5em;" data-fragment-index="4">
+<p><strong>Use GPU for:</strong> BERT fine-tuning, image classification, large language models, torch/tensorflow training</p>
+</div>
+</section>
 <section id="what-is-high-performance-computing" class="slide level2">
 <h2>What Is High-Performance Computing?</h2>
 <div class="columns">
@@ -536,32 +562,6 @@ Workshop Material<br>github.com/andreaskuepfer/<br>css-introduction-hpc
 ╚══════════════════════╝
 </pre>
 </div></div>
-</section>
-<section id="cpu-vs.-gpu-the-core-distinction" class="slide level2">
-<h2>CPU vs.&nbsp;GPU: The Core Distinction</h2>
-<div class="columns">
-<div class="column fragment" data-fragment-index="1" style="width:50%;">
-<h3 id="cpu-central-processing-unit">CPU — Central Processing Unit</h3>
-<ul>
-<li>A <strong>few powerful cores</strong> (4–128)</li>
-<li>Excellent at <strong>sequential</strong>, complex tasks</li>
-<li>Best for: data wrangling, statistical models</li>
-</ul>
-</div><div class="column fragment" data-fragment-index="3" style="width:50%;">
-<h3 id="gpu-graphics-processing-unit">GPU — Graphics Processing Unit</h3>
-<ul>
-<li><strong>Thousands of small cores</strong></li>
-<li>Excellent at <strong>massively parallel</strong> tasks (same operation on many values)</li>
-<li>Originally designed for graphics rendering</li>
-<li>Best for: deep learning, transformer models, large matrix operations</li>
-</ul>
-</div></div>
-<div class="box-blue fragment current-visible" style="position: absolute; bottom: 1.5em; left: 2.5em; right: 2.5em; font-size: 1.1em; padding: 1em 1.5em;" data-fragment-index="2">
-<p><strong>Use CPU for:</strong> <code>lm()</code>, <code>tidytext</code>, web scraping, simulation, most basic ML in scikit-learn</p>
-</div>
-<div class="box-blue fragment" style="position: absolute; bottom: 1.5em; left: 2.5em; right: 2.5em; font-size: 1.1em; padding: 1em 1.5em;" data-fragment-index="4">
-<p><strong>Use GPU for:</strong> BERT fine-tuning, image classification, large language models, torch/tensorflow training</p>
-</div>
 </section>
 <section id="when-to-use-hpc-in-css-research" class="slide level2">
 <h2>When to Use HPC in CSS Research</h2>
