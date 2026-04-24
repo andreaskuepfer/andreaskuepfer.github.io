@@ -32,7 +32,7 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="HKS_VIDEO_files/libs/revealjs/dist/theme/quarto-f10dcd80f92f3ed4665477b854bc3323.css">
+  <link rel="stylesheet" href="HKS_VIDEO_files/libs/revealjs/dist/theme/quarto-7450550b0857887cabbfdb2049f05f56.css">
   <link href="HKS_VIDEO_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="HKS_VIDEO_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="HKS_VIDEO_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -193,18 +193,16 @@ Tyler Simko
 </section>
 <section id="challenges-and-opportunities" class="slide level2">
 <h2>Challenges and Opportunities</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="fragment">
+<div style="display:flex;gap:2em;align-items:flex-start;margin-top:0.5em;">
+<div class="fragment" style="flex:0 0 50%;">
 <h4 id="subnational-policymaking-is-hard-to-study">Subnational Policymaking is Hard to Study</h4>
 <ul>
 <li>Data from subnational meetings is often not standardised</li>
-<li>no uniform reporting standard for meeting records, roll call votes, etc.</li>
+<li>No uniform reporting standard for meeting records, roll call votes, etc.</li>
 <li>Fortunately, full archives of video recordings of meetings are widely available on the institutions’ websites or YouTube</li>
 </ul>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="fragment">
+<div class="fragment" style="flex:1;">
 <h4 id="useful-variation-in-subnational-meetings">Useful Variation in Subnational Meetings</h4>
 <ul>
 <li>Distributed within a country (easy to correlate with regional factors)</li>
@@ -212,67 +210,62 @@ Tyler Simko
 <li>Many different actors (e.g., citizens during public comments or appellants in state supreme court meetings)</li>
 </ul>
 </div>
-</div></div>
+</div>
 </section>
 <section id="our-study" class="slide level2">
 <h2>Our Study</h2>
 <p>What kinds of data can be extracted from political meetings videos, and how can these data be substantively used in political science research?</p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:35%;">
+<div class="fragment" style="display:flex;gap:2em;align-items:center;margin-top:0.5em;">
+<div style="flex:0 0 35%;">
 <ul>
 <li>Transcriptions</li>
 <li>Speaker diarization and gender classification</li>
 <li>Segment identification</li>
 </ul>
-</div><div class="column" style="width:65%;">
-<p><img data-src="figures/pipeline_illustration.png" style="height:90.0%"></p>
-</div></div>
+</div>
+<div style="flex:1;display:flex;align-items:center;justify-content:center;">
+<p><img src="figures/pipeline_illustration.png" style="max-height:350px;max-width:100%;"></p>
+</div>
 </div>
 </section>
 <section id="our-cases" class="slide level2">
 <h2>Our Cases</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-
-  <div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc;">
-    <div style="font-weight: 700; color: #1a1a2e; font-size: 1.05em; margin-bottom: 0.4em;">US School Board Meetings</div>
-    <ul style="margin: 0; padding-left: 1.2em;">
-      <li>1,000+ hours of video (YouTube)</li>
-      <li>30 School Boards (564 meetings)</li>
-      <li>Focus on variation in board gender composition</li>
-    </ul>
+<div style="display:flex;gap:2em;align-items:center;margin-top:0.5em;">
+  <div style="flex:0 0 40%;">
+    <div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc;">
+      <div style="font-weight: 700; color: #1a1a2e; font-size: 1.05em; margin-bottom: 0.4em;">US School Board Meetings</div>
+      <ul style="margin: 0; padding-left: 1.2em;">
+        <li>1,000+ hours of video (YouTube)</li>
+        <li>30 School Boards (564 meetings)</li>
+        <li>Focus on variation in board gender composition</li>
+      </ul>
+    </div>
   </div>
-
-</div><div class="column" style="width:60%;">
-<div style="display: flex; align-items: center; height: 100%;">
-<p><img src="figures/video_sb_compare.png" style="max-width: 100%; height: auto;"></p>
-</div>
-</div><div class="fragment">
-<div class="columns">
-<div class="column" style="width:40%;">
-
-  <div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc; margin-top:1em">
-    <div style="font-weight: 700; color: #1a1a2e; font-size: 1.05em; margin-bottom: 0.4em;">US State Supreme Court Arguments</div>
-    <ul style="margin: 0; padding-left: 1.2em;">
-      <li>1,500+ hours of video/audio (Court websites)</li>
-      <li>5 State Supreme Courts</li>
-      <li>Data spanning 1996–2025</li>
-    </ul>
+  <div style="flex:1;display:flex;align-items:center;">
+    <img src="figures/video_sb_compare.png" style="max-width:100%;height:auto;">
   </div>
+</div>
 
-</div><div class="column" style="width:60%;">
-<div style="display: flex; align-items: center; height: 100%;">
-<p><img src="figures/videos_panel_b.png" style="max-width: 100%; height: auto;"></p>
-</div>
-</div></div>
-</div>
+<div class="fragment" style="display:flex;gap:2em;align-items:center;margin-top:0.8em;">
+  <div style="flex:0 0 40%;">
+    <div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc;">
+      <div style="font-weight: 700; color: #1a1a2e; font-size: 1.05em; margin-bottom: 0.4em;">US State Supreme Court Arguments</div>
+      <ul style="margin: 0; padding-left: 1.2em;">
+        <li>1,500+ hours of video/audio (Court websites)</li>
+        <li>5 State Supreme Courts</li>
+        <li>Data spanning 1996–2025</li>
+      </ul>
+    </div>
+  </div>
+  <div style="flex:1;display:flex;align-items:center;">
+    <img src="figures/videos_panel_b.png" style="max-width:100%;height:auto;">
+  </div>
 </div>
 </section>
 <section id="the-relevance-of-subnational-meetings" class="slide level2">
 <h2>The Relevance of Subnational Meetings</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<div style="display:flex;gap:2em;align-items:flex-start;margin-top:0.5em;">
+<div style="flex:0 0 50%;">
 <p><strong>US School Boards</strong></p>
 <ul>
 <li>Oversee and develop curriculum of schools</li>
@@ -280,8 +273,8 @@ Tyler Simko
 <li>Approve capital projects</li>
 <li>Negotiations for union contracts</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="fragment">
+</div>
+<div class="fragment" style="flex:1;">
 <p><strong>US State Supreme Courts</strong></p>
 <ul>
 <li>Ultimate authority over state constitutional interpretation</li>
@@ -289,7 +282,7 @@ Tyler Simko
 <li>Decide high-stakes election and redistricting cases</li>
 </ul>
 </div>
-</div></div>
+</div>
 </section>
 <section id="section-1" class="slide level2 center" data-background-color="#1a1a2e">
 <h2></h2>
@@ -389,7 +382,7 @@ Tyler Simko
 </tr>
 </tbody>
 </table>
-<p>95.74% of predicted speaker changes accurate (DER: 3.38% (State Supreme Courts), 3.79% (School Boards))</p>
+<p>95.74% of predicted speaker changes accurate (DER: 3.79% (School Boards), 3.38% (State Supreme Courts))</p>
 </div>
 </section>
 <section id="what-are-gendered-shares-of-speech" class="slide level2">
@@ -397,22 +390,16 @@ Tyler Simko
 <p>Challenge: Because of lacking meta information, we often do not know about gendered dynamics in local political meetings.</p>
 <p>Our Approach: A fine-tuned <em>wav2vec</em> model assigns gender labels to audio segments (1h of video = 10 seconds).</p>
 <div class="fragment">
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em; margin-top: 0.8em;">
-  <div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc;">
-    <div style="font-weight: 700; color: #1a1a2e; margin-bottom: 0.3em;">Validation</div>
-    250 randomly selected segments validated against manual visual coding: 98.37% correctly classified.
-  </div>
-<div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc;">
-  <div style="font-weight: 700; color: #1a1a2e; margin-bottom: 0.3em;">Measurement note</div>
-  We infer <em>perceived</em> gender from vocal cues using a binary classifier. This reflects how speakers are heard (but not their self-identified gender) and cannot capture non-binary identities.
-</div>
+<div style="border-left: 3px solid #2a7ab5; padding: 0.6em 0.9em; background: #f5f8fc; margin-top: 0.8em;">
+  <div style="font-weight: 700; color: #1a1a2e; margin-bottom: 0.3em;">Validation</div>
+  Random sample of segments validated against manual visual coding: 98.37% correctly classified.
 </div>
 </div>
 </section>
 <section id="what-agenda-items-were-discussed-and-for-how-long" class="slide level2">
 <h2>What Agenda Items Were Discussed and for How Long?</h2>
 <p>Challenge: Even though some institutions publish an agenda, we don’t know what is actually discussed during particular agenda items.</p>
-<p>Our Approach: Open-weight LLM <em>LLaMA 3.1 (8B)</em> generates agenda items and aligns them with start/end timestamps.</p>
+<p>Our Approach: Open-weight LLM <em>LLaMA 3.1 (8B)</em> generates agenda items and aligns them with start/end timestamps (1h of video = 7 seconds).</p>
 <table class="caption-top" style="font-size: 0.65em; border-collapse: collapse; width: 100%; margin-top: 0.6em;">
 <thead>
 <tr class="header">
@@ -502,43 +489,35 @@ Tyler Simko
 <li>DV: Share of speech by women; Predictor: proportion of female board members (quadratic relationship expected)</li>
 <li>Separate estimates for female vs.&nbsp;male superintendents</li>
 </ul>
-<div class="fragment" style="text-align: center;">
-<p><img data-src="figures/application_speechshare_superf.png" style="height:13em"> <img data-src="figures/application_speechshare_superm.png" style="height:13em"></p>
-</div>
 </section>
 <section id="application-key-findings" class="slide level2">
 <h2>Application: Key Findings</h2>
-<div class="fragment">
-<div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.9em; background: #f5f8fc; margin-bottom: 0.7em;">
-  <strong>Non-linear "critical mass" effect</strong><br>
-  Women's speech share increases sharply once female board membership exceeds ~50%.
-</div>
+<div style="text-align: center;">
+<p><img data-src="figures/application_speechshare_superf.png" style="height:14em"> <img data-src="figures/application_speechshare_superm.png" style="height:14em"></p>
 </div>
 <div class="fragment">
-<div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.9em; background: #f5f8fc; margin-bottom: 0.7em;">
-  <strong>Superintendent gender matters</strong><br>
-  Boards with a female superintendent show substantially higher women's speech share at every level of board composition.
-</div>
-</div>
-<div class="fragment">
-<div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.9em; background: #f5f8fc; margin-bottom: 0.7em;">
-  <strong>Staff and clerks explain the floor</strong><br>
-  Even in heavily male-dominated boards, women's speech share stays ~50% — reflecting administrative staff, clerks, and report authors, who are disproportionately women.
-</div>
-</div>
-<div class="fragment" style="font-size: 0.85em; color: #555; margin-top: 0.4em;">
-<p><em>Contrast with Karpowitz &amp; Mendelberg (2014): our pipeline captures all speakers in the room, not just elected board members.</em></p>
+<ul>
+<li>Non-linear “critical mass” effect: Women’s speech share increases sharply once female board membership exceeds ~50%</li>
+<li>Staff and clerks explain the floor: Even in heavily male-dominated boards, women’s speech share stays ~50% which reflects administrative staff, clerks, and report authors, who are disproportionately women</li>
+</ul>
 </div>
 </section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
 <ul>
 <li>Subnational multimodal political communication remains limited by data access and processing challenges</li>
-<li>Our open-source pipeline transforms raw subnational political meeting into transcripts, diarized speech, gender labels, and segment timestamps (~3 min/hour on a single GPU)</li>
-<li>Applicable on a wide range of political settings</li>
-<li>Validated on 1,000+ hrs of school board meetings (30 boards) and 1,500+ hrs of state supreme court arguments (5 states, 1996–2025)</li>
-<li>Application: non-linear critical mass effect; superintendent gender matters; staff composition shapes women’s speaking time at scale</li>
+<li>Open-source pipeline creates transcripts, diarized speech, gender labels, and segment timestamps from video data</li>
+<li>Dataset: 2,500+ hours of diverse video data (validated on various dimensions)</li>
+<li>Application: non-linear critical mass effect and staff composition shapes women’s speaking time</li>
 </ul>
+<div class="fragment">
+<p><strong>Limitations</strong></p>
+<ul>
+<li>Gender classifier captures <em>perceived</em> gender from vocal cues but not self-identified gender, binary only</li>
+<li>GPU resources required; disparities in access across institutions remain</li>
+<li>Scene detection unreliable for this type of video</li>
+</ul>
+</div>
 </section>
 <section id="section-3" class="slide level2 center" data-background-color="#1a1a2e">
 <h2></h2>
