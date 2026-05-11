@@ -30,9 +30,14 @@ $presentation-heading-font-weight: 600;
   font-size: 1.3em;
   background-color: #1a1a2e;
   color: #e8f0f8 !important;
-  padding: 0.25em 0.5em;
-  margin-bottom: 0.6em;
+  padding: 0.35em 2em;
+  margin-top: -0.5em;
+  margin-left: -2em;
+  margin-right: -2em;
+  margin-bottom: 0.8em;
   border-bottom: none;
+  width: calc(100% + 4em);
+  box-sizing: border-box;
 }
 
 /* Tighter bullet spacing */
@@ -117,6 +122,11 @@ $presentation-heading-font-weight: 600;
 #title-slide .quarto-title-author-name,
 #title-slide .quarto-title-affiliation {
   text-align: left;
+}
+
+/* Fragment fade-in */
+.reveal .fragment {
+  transition: opacity 0.3s ease;
 }
 
 /* Fragment fade-in */

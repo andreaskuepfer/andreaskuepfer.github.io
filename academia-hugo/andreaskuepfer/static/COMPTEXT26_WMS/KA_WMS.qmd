@@ -5,14 +5,14 @@ author:
     affiliation: TU Darmstadt
   - name: Christian Arnold
     affiliation: University of Birmingham
-subtitle: "<br>8th Annual COMPTEXT Conference (April 23-25, 2026) | University of Birmingham, UK"
+subtitle: "<br>ParliView Workshop (May 12, 2026) | University College Dublin, Ireland"
 format:
   revealjs:
     theme: [default, custom.scss]
     slide-number: true
     progress: true
     logo: ""
-    footer: "Introducing Workflow Management to CSS | 8th Annual COMPTEXT Conference (April 23-25, 2026) | April 25, 2026"
+    footer: "Introducing Workflow Management to CSS | ParliView Workshop | May 12, 2026"
     transition: fade
     background-transition: fade
     highlight-style: github
@@ -29,7 +29,7 @@ execute:
 ::: {.columns}
 ::: {.column width="50%"}
 
-![](figures/benoit_AJPS.png){hight=90%}
+![](figures/benoit_AJPS.png){height=10%}
 *(Benoit et al., 2026)*
 :::
 ::: {.column width="50%"}
@@ -44,20 +44,20 @@ execute:
 
 ---
 
-## The Replication Crisis is an Infrastructure Crisis
+## CSS Pipelines Have Outgrown Their Infrastructure
 
 CSS pipelines have grown:
 
 - Large-n corpora: text, audio, image, video
 - Multi-step processing chains involving different models and environments
-- Workloads exceeding a single machine
+- Workloads often exceeding a single machine
 
 ::: {.fragment}
-But replication infrastructure has not kept pace: mostly still a collection of standalone scripts run by hand.
+But infrastructure has not kept pace: mostly still a collection of standalone scripts run by hand.
 :::
 ---
 
-## Six Infrastructure Issues in Current Practice
+## Six Infrastructure Issues in Current Practice (Adapted from *Mölder et al. (2021)*)
 
 ```{=html}
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em; font-size: 1em;">
@@ -83,7 +83,7 @@ But replication infrastructure has not kept pace: mostly still a collection of s
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
     <div style="font-weight: 700; color: #1a1a2e;">Readability</div>
     <div style="margin-top: 0.15em;">Scripts written for one-time use</div>
-    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Replication is nominal; reuse is impossible</div>
+    <div style="margin-top: 0.2em; color: #888; font-size: .9em;">→ Replication is nominal; reuse often challening</div>
   </div>
 
   <div style="border-left: 3px solid #2a7ab5; padding: 0.5em 0.8em; background: #f5f8fc;">
@@ -109,150 +109,177 @@ But replication infrastructure has not kept pace: mostly still a collection of s
 <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
   <div style="font-size:2.8em;font-weight:700;">Workflow Management Systems</div>
   <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
-  <div style="font-size:1.5em;color:#aac4e0;">A structural solution to an infrastructure problem</div>
+  <div style="font-size:1.5em;color:#aac4e0;">A systematic solution to an infrastructure problem</div>
 </div>
 ```
 
 ---
 
-## Workflow Management Systems (WMS) Offer a Structural Solution
-
-::: {style="margin-bottom: 1.5em;"}
-A WMS represents a pipeline as an explicit **DAG**: each step declares its **inputs** and **outputs** while the system enforces order, detects stale outputs, and manages environments automatically.
-:::
-
-::: {.fragment .columns}
-::: {.column width="40%"}
-**Why Snakemake?**
-
-- Python-based DSL (low barrier for CSS researchers)
-- Fastest end-to-end execution among WMS benchmarks *(Larsonneur et al., 2018)*
-- 75% of public Snakemake repos have less than 23 rules *(Pohl et al., 2024)*
-:::
-
-::: {.fragment .column width="60%"}
-```{.python code-line-numbers="1-22"}
-    ...
-        json=SPEECHES / "{parliament}" / "{filename}" / "features" /
-          "{base}_{segment}_depth.json",
-    script: "scripts/generate_video_feature_depth.py"
-
-rule generate_video_feature_faces:
-    input:
-        video=SPEECHES / "{parliament}" / "{filename}" / "videos" /
-          "{base}_{segment}.mp4",
-        depth_json=SPEECHES / "{parliament}" / "{filename}" / "features" /
-          "{base}_{segment}_depth.json",
-    output:
-        json=SPEECHES / "{parliament}" / "{filename}" / "features" /
-          "{base}_{segment}_faces.json",
-    script: "scripts/generate_video_feature_faces.py"
-
-rule generate_video_feature_headpose:
-    input:
-        faces_json=SPEECHES / "{parliament}" / "{filename}" / "features" /
-          "{base}_{segment}_faces.json",
-    ...
-```
-
-:::
-:::
-
----
-
-## Framework: From Six Properties to Full Replication<br>(Adapted from *Mölder et al. (2021)*)
+## Framework: From Six Properties to Full Replication
 
 ::: {style="text-align: center;"}
 ![](figures/fig2.png){width=100% .nostretch}
 :::
 
+
 ---
 
-## {background-color="#1a1a2e" .center}
+## Workflow Management Systems (WMS) Offer a Systematic Solution
+
+::: {style="margin-bottom: 1.5em;"}
+A WMS represents a pipeline as a **dependency graph**: each step declares its **inputs** and **outputs** while the system enforces order, detects stale outputs, and manages environments automatically.
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=1 style="position: absolute; left: 0; right: 0; text-align: center; background: white; z-index: 5; padding: 0.5em;"}
+![](figures/benoit_AJPS.png){width=40%}
+
+*(Benoit et al., 2026)*
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=2 style="position: absolute; left: 0; right: 0; text-align: center; background: white; z-index: 5; padding: 0.5em;"}
+![](figures/benoit_AJPS_zoom.png){width=75%}
+
+*(Benoit et al., 2026)*
+:::
+
+::: {.fragment .columns fragment-index=3}
+::: {.column width="50%"}
+**Snakemake as a WMS**
+
+- Fastest end-to-end execution among WMS benchmarks *(Larsonneur et al., 2018)*
+- 75% of public Snakemake repos have less than 23 rules *(Pohl et al., 2024)*
+- Hundreds of citations annually in STEM; social sciences account for just >1% *(Mölder et al., 2021)*
+:::
+
+::: {.fragment .column width="45%" fragment-index=4}
+```{.python}
+rule summarize_texts:
+    input:
+        text    = "data/{speech}.txt"
+    output:
+        summary = "output/{speech}_summary.txt"
+    script:
+        "scripts/summarize.py"
+
+rule scale_zeroshot:
+    input:
+        summary = "output/{speech}_summary.txt"
+    output:
+        scores  = "output/{speech}_scale_zeroshot.json"
+    script:
+        "scripts/scale_zeroshot.py"
+
+rule scale_fewshot:
+    input:
+        summary    = "output/{speech}_summary.txt",
+        benchmarks = "data/benchmark_examples.json"
+    output:
+        scores     = "output/{speech}_scale_fewshot.json"
+    script:
+        "scripts/scale_fewshot.py"
+```
+
+:::
+:::
+
+---
+
+## WMS Pays Off Regardless of Where You Run
 
 ```{=html}
-<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:white;gap:0.8em;">
-  <div style="font-size:2.8em;font-weight:700;">How WMS Addresses the Six Issues</div>
-  <div style="width:50px;height:3px;background:#2a7ab5;border-radius:2px;"></div>
-  <div style="font-size:1.5em;color:#aac4e0;">Reproducibility | Adaptability | Transparency</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.4em; font-size: 0.9em; margin-top: 0.5em;">
+
+  <div class="fragment" data-fragment-index="1">
+    <div style="font-weight: 700; color: #1a1a2e; font-size: 1em; margin-bottom: 0.6em; display: flex; align-items: center; gap: 0.4em;">
+      Working locally
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.5em;">
+
+      <div style="border-left: 3px solid #2a7ab5; padding: 0.4em 0.8em; background: #f5f8fc;">
+        <div style="font-weight: 600;">Isolated environments per rule</div>
+        <div style="color: #555; font-size: .9em;">No more conflicting packages across Python, R, and model inference steps</div>
+      </div>
+
+      <div style="border-left: 3px solid #2a7ab5; padding: 0.4em 0.8em; background: #f5f8fc;">
+        <div style="font-weight: 600;">Shareable by design</div>
+        <div style="color: #555; font-size: .9em;">A collaborator clones the repo, runs one command, and gets the same result</div>
+      </div>
+
+      <div style="border-left: 3px solid #2a7ab5; padding: 0.4em 0.8em; background: #f5f8fc;">
+        <div style="font-weight: 600;">Audit trail without effort</div>
+        <div style="color: #555; font-size: .9em;">Every run is logged; reviewers can trace any output to its inputs</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fragment" data-fragment-index="2">
+    <div style="font-weight: 700; color: #1a1a2e; font-size: 1em; margin-bottom: 0.6em; display: flex; align-items: center; gap: 0.4em;">
+      Working on a cluster
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.5em;">
+
+      <div style="border-left: 3px solid #2a7ab5; padding: 0.4em 0.8em; background: #f5f8fc;">
+        <div style="font-weight: 600;">Zero porting overhead</div>
+        <div style="color: #555; font-size: .9em;">The same workflow runs on different clusters with a single profile flag</div>
+      </div>
+
+      <div style="border-left: 3px solid #2a7ab5; padding: 0.4em 0.8em; background: #f5f8fc;">
+        <div style="font-weight: 600;">Automatic job submission</div>
+        <div style="color: #555; font-size: .9em;">WMS submit and monitor many jobs in parallel; you don't manage the queue</div>
+      </div>
+
+      <div style="border-left: 3px solid #2a7ab5; padding: 0.4em 0.8em; background: #f5f8fc;">
+        <div style="font-weight: 600;">Fault tolerance</div>
+        <div style="color: #555; font-size: .9em;">Failed jobs rerun automatically; completed jobs are never recomputed</div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 ```
 
----
-
-## Reproducibility: Automation & Portability in Practice
-
-::: {.columns}
-::: {.fragment .column width="50%"}
-**Automation**
-
-- Snakemake infers the full DAG from rule definitions
-- Execution order is enforced by the software, not the researcher's memory
-- A change to any upstream step invalidates stale downstream outputs (automatic rerun)
-:::
-::: {.fragment .column width="50%"}
-**Portability**
-
-- `conda:` directive pins the exact software environment per rule
-- `singularity:/apptainer:` enables full container support
-- Hardcoded paths replaced by Snakemake's wildcard system
-:::
-:::
-
-::: {.fragment style="margin-top: 1em; font-size: 30px"}
-::: {.callout-warning}
-## The two most common causes of replication failure *(Eubank 2016)*
-Wrong execution order & Environment/version inconsistency
-:::
-
-Snakemake resolves both issues structurally, not through researcher discipline. Without additional documentation effort, a Snakemake project automatically satisfies the REP framework *(Stodden et al., 2016)*.
-:::
 
 ---
 
-## Adaptability: Scale Without Porting
+## Do you need a WMS? A Checklist for Social Scientists
 
-Without accessible scaling infrastructure, studies are designed to fit a laptop. In turn, this removes the incentive to invest in scaling infrastructure.
+```{=html}
+<div style="display: grid; grid-template-columns: 2fr; gap: 1.2em; font-size: 0.84em;">
 
-With Snakemake, the same workflow definition runs on different environments with a single config change:
+  <div>
+    <div style="display: flex; flex-direction: column; gap: 0.45em;">
 
-- A local laptop
-- A SLURM/PBS HPC cluster
-- Google Cloud
-- AWS, Azure
+      <div class="fragment" data-fragment-index="1" style="display: flex; align-items: flex-start; gap: 0.5em; padding: 0.4em 0.7em; background: #f5f8fc; border-radius: 4px;">
+        <div><span style="font-weight: 600;">More than one script?</span><br><span style="color: #555;">Your pipeline has steps that must run in order</span></div>
+      </div>
 
-::: {.fragment style="font-size: 30px; margin-top: 1em"}
+      <div class="fragment" data-fragment-index="2" style="display: flex; align-items: flex-start; gap: 0.5em; padding: 0.4em 0.7em; background: #f5f8fc; border-radius: 4px;">
+        <div><span style="font-weight: 600;">Do you re-run selectively?</span><br><span style="color: #555;">You mentally track which outputs are outdated</span></div>
+      </div>
 
-| Without WMS | With WMS |
-|---|---|
-| Prototype locally, manually port to HPC | Same file, one config |
-| Ad-hoc Virtual Machine deployment | Portable, parallelised, reproducible |
-| Studies limited by laptop RAM | Much more resources due to HPC portability |
+      <div class="fragment" data-fragment-index="3" style="display: flex; align-items: flex-start; gap: 0.5em; padding: 0.4em 0.7em; background: #f5f8fc; border-radius: 4px;">
+        <div><span style="font-weight: 600;">Does processing take hours?</span><br><span style="color: #555;">A crash means starting over or patching by hand</span></div>
+      </div>
 
-:::
+      <div class="fragment" data-fragment-index="4" style="display: flex; align-items: flex-start; gap: 0.5em; padding: 0.4em 0.7em; background: #f5f8fc; border-radius: 4px;">
+        <div><span style="font-weight: 600;">Working with collaborators?</span><br><span style="color: #555;">Others need to run and understand your code on a different machine</span></div>
+      </div>
 
----
+      <div class="fragment" data-fragment-index="5" style="display: flex; align-items: flex-start; gap: 0.5em; padding: 0.4em 0.7em; background: #f5f8fc; border-radius: 4px;">
+        <div><span style="font-weight: 600;">Considering HPC or cloud?</span><br><span style="color: #555;">Your data exceeds what a laptop can handle</span></div>
+      </div>
 
-## Transparency: Documentation Without Effort
+      <div class="fragment" data-fragment-index="6" style="display: flex; align-items: flex-start; gap: 0.5em; padding: 0.4em 0.7em; background: #f5f8fc; border-radius: 4px;">
+        <div><span style="font-weight: 600;">Submitting to a journal?</span><br><span style="color: #555;">A third party needs to verify your results</span></div>
+      </div>
 
-::: {.columns}
-::: {.column width="50%"}
-**Technical Documentation** (automatic)
+    </div>
+  </div>
 
-- Every rule execution is logged: timestamps, input files, output files, software versions, exit codes
-- LLM pipelines: model version, temperature, system prompt, and prompt template are encoded in workflow definition or pinned environment files
-- No separate README can fall out of sync with a workflow file *that is the workflow*
-
-:::
-::: {.fragment .column width="50%"}
-**Analytical Documentation** (structured)
-
-- `config.yaml` provides a machine-readable location for all analytical parameters
-- Model specifications, sample restrictions, exclusion criteria, operationalisation choices, robustness variants
-- Each parameter = a named, versioned, version-controlled entry
-- Running an alternative specification = changing one config value; both remain auditable
-:::
-:::
+</div>
+```
 
 ---
 
@@ -286,7 +313,7 @@ With Snakemake, the same workflow definition runs on different environments with
 :::
 :::
 ::: {.fragment .column width="55%"}
-![](figures/fig4.png){width=80% fig-alt="Rule-level DAG of the Snakemake pipeline showing ingest, segment, feature extraction (audio: transcription, pitch, speaker embedding; video: depth, faces, headpose; text: sentiment, populism), and upload stages"}
+![](figures/fig4.png){width=80% fig-alt="Rule-level dependency graph of the Snakemake pipeline showing ingest, segment, feature extraction (audio: transcription, pitch, speaker embedding; video: depth, faces, headpose; text: sentiment, populism), and upload stages"}
 :::
 :::
 
@@ -302,9 +329,10 @@ Does populist rhetoric emerge organically in unscripted speech, or is it prepare
 
 Gaze direction reveals delivery mode: looking at notes = scripted; looking at audience = more *spontaneous*.
 
-::: {.fragment}
-
+::: {.fragment style="margin-top: 1.5em;"}
+::: {style="margin-bottom: -.8em;"}
 **Key findings**
+:::
 
 - **Mainstream parties**: *spontaneous* → more populist language
 - **Far-Right AfD reverses**: scripted → more populist language (populism is a deliberate strategy)
@@ -321,15 +349,18 @@ Gaze direction reveals delivery mode: looking at notes = scripted; looking at au
 
 WMS are an implicit implementation of the replication framework the discipline has long dicussed:
 
+::: {.fragment}
 - **Automation** removes human error and undocumented execution order
 - **Scalability** breaks the infrastructural constraint that keeps CSS artificially smaller
 - **Portability** reduces environment inconsistency across machines and over time
 - **Readability** makes pipelines comprehensible enough to be reviewed, verified, and built upon
 - **Technical Documentation** creates a provenance record automatically
 - **Analytical Documentation** makes the garden of forking paths visible and auditable
+:::
 
+::: {.fragment}
 Together, they fulfil what *King (1995)* demanded: sufficient information for a third party to understand, evaluate, and extend the work.
-
+:::
 ---
 
 ## {.center background-color="#1a1a2e"}
@@ -353,13 +384,13 @@ Together, they fulfil what *King (1995)* demanded: sufficient information for a 
       <div style="font-weight: 600; font-size: 1.05em;">Christian Arnold</div>
       <div style="color: #aac4e0; margin-top: 0.2em;">University of Birmingham</div>
       <div style="margin-top: 1em; font-size: 0.85em; color: #cce0f5; font-family: monospace;">c.arnold.2@bham.ac.uk</div>
-      <div style="margin-top: 0.5em; font-size: 0.85em; color: #cce0f5; font-family: monospace;">chrisguarnold.github.io/</div>
+      <div style="margin-top: 0.5em; font-size: 0.85em; color: #cce0f5; font-family: monospace;">chrisguarnold.github.io</div>
       <div style="margin-top: 0.5em; font-size: 0.85em; color: #cce0f5; font-family: monospace;">chrisguarnold.bsky.social</div>
     </div>
   </div>
 
   <div style="margin-top: 0.6em; font-size: 0.78em; color: #7aa8cc; letter-spacing: 0.05em; text-transform: uppercase;">
-    8th Annual COMPTEXT Conference | April 23–25, 2026 | University of Birmingham, UK
+    ParliView Workshop | May 12, 2026 | University College Dublin, Ireland
   </div>
 
 </div>
