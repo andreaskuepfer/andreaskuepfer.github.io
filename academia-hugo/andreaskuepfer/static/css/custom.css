@@ -60,9 +60,12 @@
 /* ------------------------------------------------
    Section headings — refined underline
    ------------------------------------------------ */
-.section-heading h1 {
+.section-heading h1,
+.wg-blank .col-12 > h1 {
   font-size: 1.5rem;
   letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section-heading h1::before,
@@ -70,12 +73,14 @@
   display: none;
 }
 
-.section-heading h1 {
+.section-heading h1,
+.wg-blank .col-12 > h1 {
   position: relative;
   padding-bottom: 12px;
 }
 
-.section-heading h1::after {
+.section-heading h1::after,
+.wg-blank .col-12 > h1::after {
   display: block;
   content: '';
   position: absolute;
