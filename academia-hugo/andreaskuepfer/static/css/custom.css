@@ -1,0 +1,162 @@
+/* ================================================
+   Custom styles for andreaskuepfer.github.io
+   ================================================ */
+
+/* ------------------------------------------------
+   Section spacing
+   ------------------------------------------------ */
+.home-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.home-section:first-of-type {
+  padding-top: 60px;
+}
+
+/* ------------------------------------------------
+   Scroll-triggered fade-in for sections
+   ------------------------------------------------ */
+.home-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+}
+
+.home-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------------------------------------------------
+   Navigation refinements
+   ------------------------------------------------ */
+.navbar {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7ed0e0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ------------------------------------------------
+   Section headings — refined underline
+   ------------------------------------------------ */
+.section-heading h1 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+  display: none;
+}
+
+.section-heading h1 {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.section-heading h1::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 3px;
+  background: #2c5f6f;
+  border-radius: 2px;
+}
+
+/* ------------------------------------------------
+   News / hero section items
+   ------------------------------------------------ */
+.wg-hero p strong:first-child,
+.wg-hero p > strong {
+  color: #2c5f6f;
+  font-weight: 700;
+}
+
+.wg-hero p {
+  padding: 10px 14px;
+  border-left: 3px solid transparent;
+  margin-bottom: 0.6rem;
+  border-radius: 0 4px 4px 0;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.wg-hero p:hover {
+  border-left-color: #2c5f6f;
+  background-color: rgba(44, 95, 111, 0.05);
+}
+
+/* ------------------------------------------------
+   Publication cards — subtle lift on hover
+   ------------------------------------------------ */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(44, 95, 111, 0.15);
+}
+
+/* ------------------------------------------------
+   Links — smooth colour transition
+   ------------------------------------------------ */
+a {
+  transition: color 0.2s ease;
+}
+
+/* ------------------------------------------------
+   About section — photo border accent
+   ------------------------------------------------ */
+.portrait-title h2 {
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+  color: #2c5f6f;
+}
+
+img.portrait {
+  border: 4px solid #fff;
+  box-shadow: 0 6px 24px rgba(26, 56, 69, 0.18);
+  transition: box-shadow 0.3s ease;
+}
+
+img.portrait:hover {
+  box-shadow: 0 10px 32px rgba(26, 56, 69, 0.28);
+}
+
+/* ------------------------------------------------
+   Contact section links
+   ------------------------------------------------ */
+.wg-contact ul li a {
+  position: relative;
+  display: inline-block;
+}
+

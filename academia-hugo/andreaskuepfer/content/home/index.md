@@ -2,5 +2,5 @@
 # Homepage
 type = "widget_page"
 headless = true  # Homepage is headless, other widget pages are not.
-keywords = ["Andreas Kupfer", "Andreas Küpfer", "Andreas Kuepfer"]
+keywords = ["Andreas Kupfer", "Andreas Kuepfer", "Andreas Kuepfer"]
 +++

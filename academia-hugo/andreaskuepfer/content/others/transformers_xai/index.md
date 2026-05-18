@@ -16,7 +16,7 @@ publishDate: "2023-03-28T00:00:00Z"
 publication_types: ["8"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Küpfer and Cosima Meyer. (2023). &quot;BERT and Explainable AI.&quot; <i>Blog of the MZES Social Science Data Lab</i>. 1(1).*"
+publication: "*Andreas Kuepfer and Cosima Meyer. (2023). &quot;BERT and Explainable AI.&quot; <i>Blog of the MZES Social Science Data Lab</i>. 1(1).*"
 publication_short: ""
 
 abstract: "Natural language processing (NLP) is a fascinating field. Popular NLP techniques for understanding (written) human language include next-sentence predictions, translations, text classifications, or sentiment analysis. Such techniques already permeate our everyday lives: What would the world be without services such as Google Translate, DeepL, or the recently released ChatGPT? While common bag-of-words approaches can often be a valuable approach for NLP, Google’s release of BERT in 2018 revolutionized the possibilities in NLP. This Methods Bites Tutorial introduces the logic of large language models (LLM) with a special emphasis on BERT. It provides an applied use case from the social sciences, walks readers through explainable artificial intelligence (AI), and explains how we can leverage explainable AI to explain predictions of our models."

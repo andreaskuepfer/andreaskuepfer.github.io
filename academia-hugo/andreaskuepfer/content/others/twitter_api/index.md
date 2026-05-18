@@ -15,13 +15,13 @@ publishDate: "2022-06-02T00:00:00Z"
 publication_types: ["8"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Küpfer. (2022). &quot;Collection, Management, and Analysis of Twitter Data.&quot; <i>Blog of the MZES Social Science Data Lab</i>. 1(1).*"
+publication: "*Andreas Kuepfer. (2022). &quot;Collection, Management, and Analysis of Twitter Data.&quot; <i>Blog of the MZES Social Science Data Lab</i>. 1(1).*"
 publication_short: ""
 
-abstract: As a highly relevant platform for political and social online interactions, researchers increasingly analyze Twitter data. As of 01/2021, Twitter renewed its API, which now includes access to the full history of tweets for academic usage. In this Methods Bites Tutorial, Andreas Küpfer (Technical University of Darmstadt & MZES) presents a walkthrough of the collection, management, and analysis of Twitter data.
+abstract: As a highly relevant platform for political and social online interactions, researchers increasingly analyze Twitter data. As of 01/2021, Twitter renewed its API, which now includes access to the full history of tweets for academic usage. In this Methods Bites Tutorial, Andreas Kuepfer (Technical University of Darmstadt & MZES) presents a walkthrough of the collection, management, and analysis of Twitter data.
 
 # Summary. An optional shortened abstract.
-summary: As a highly relevant platform for political and social online interactions, researchers increasingly analyze Twitter data. As of 01/2021, Twitter renewed its API, which now includes access to the full history of tweets for academic usage. In this Methods Bites Tutorial, Andreas Küpfer (Technical University of Darmstadt & MZES) presents a walkthrough of the collection, management, and analysis of Twitter data.
+summary: As a highly relevant platform for political and social online interactions, researchers increasingly analyze Twitter data. As of 01/2021, Twitter renewed its API, which now includes access to the full history of tweets for academic usage. In this Methods Bites Tutorial, Andreas Kuepfer (Technical University of Darmstadt & MZES) presents a walkthrough of the collection, management, and analysis of Twitter data.
 
 tags:
 - Twitter API Academic Track

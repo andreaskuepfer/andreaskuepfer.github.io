@@ -28,7 +28,7 @@ summary:
 
 tags:
 
-featured: true
+featured: false
 
 # links:
 # - name: ""

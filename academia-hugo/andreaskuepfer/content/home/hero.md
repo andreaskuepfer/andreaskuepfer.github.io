@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 11  # Order that this section will appear.
 
 title = "Academia"
-keywords = ["Andreas Kupfer", "Andreas Küpfer", "Andreas Kuepfer"]
+keywords = ["Andreas Kupfer", "Andreas Kuepfer", "Andreas Kuepfer"]
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = ""
@@ -41,15 +41,10 @@ hero_media = ""
 +++
 
 <div class="col-12 section-heading text-center">
-<h1>
-Latest News
-</h1>
+<h1>Latest News</h1>
 </div>
-<!--
-<form>
-  <div style="width: 60%;display: inline-block; box-sizing: border-box;">
--->
-<div style="word-wrap: break-word; width: 80%; padding-left: 1em;">
+
+<div style="word-wrap: break-word; width: 80%; margin: 0 auto;">
 
 **04/2026** &mdash; I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://chrisguarnold.github.io/).
 
@@ -67,7 +62,7 @@ Latest News
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
-<div style="word-wrap: break-word; width: 80%; padding-left: 1em;"> 
+<div style="word-wrap: break-word; width: 80%; margin: 0 auto;"> 
 
 **07/2025** &mdash; Our study at the EJPR, [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) (w/  [Elias Koch](https://elias-koch.com/)) was featured at the [European Public Policy Blog of the LSE European Institute](https://blogs.lse.ac.uk/europpblog/2025/07/16/when-do-politicians-engage-in-discourse-and-when-do-they-avoid-it/).
 

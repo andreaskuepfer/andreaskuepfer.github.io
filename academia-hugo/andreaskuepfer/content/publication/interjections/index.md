@@ -18,7 +18,7 @@ publishDate: "2025-09-11T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Küpfer, Jochen Müller and Christian Stecker, n.d. &quot;The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Andreas Kuepfer, Jochen Müller and Christian Stecker, n.d. &quot;The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
 # Summary. An optional shortened abstract.
@@ -29,7 +29,7 @@ tags:
 - Parliamentary Speeches
 - text-as-data
 - Applause
-featured: true
+featured: false
 
 # links:
 # - name: ""

@@ -16,7 +16,7 @@ publishDate: "2023-03-13T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Christian Arnold and Andreas Küpfer, n.d. &quot;Structuring Quantitative Image Analysis with Metric Depth&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Christian Arnold and Andreas Kuepfer, n.d. &quot;Structuring Quantitative Image Analysis with Metric Depth&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
 abstract: ""
@@ -28,7 +28,7 @@ tags:
 - images
 - political communication
 - object prominence
-featured: true
+featured: false
 
 # links:
 # - name: ""

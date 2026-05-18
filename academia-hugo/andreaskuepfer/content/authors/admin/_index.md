@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Andreas Küpfer
+name: Andreas Kuepfer
 
 avatar_image: "user-full-2.jpg"
 # Username (this should match the folder name)
@@ -54,7 +54,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
+  link: '/contact/'
 - icon: bluesky
   icon_pack: fab
   link: https://bsky.app/profile/ankuepfer.bsky.social

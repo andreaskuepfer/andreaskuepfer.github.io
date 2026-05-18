@@ -34,7 +34,7 @@ tags:
 - gender
 - representation
 - public meetings
-featured: true
+featured: false
 
 # links:
 # - name: ""
