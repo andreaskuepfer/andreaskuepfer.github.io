@@ -61,6 +61,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=0vFsJu0AAAAJ&hl=en
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/andreas-kuepfer/
 - icon: github
   icon_pack: fab
   link: https://github.com/andreaskuepfer
