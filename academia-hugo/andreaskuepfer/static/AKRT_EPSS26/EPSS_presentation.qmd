@@ -33,6 +33,7 @@ format:
     transition: none
     background-transition: none
     embed-resources: true
+    pdf-separate-fragments: true
     html-math-method: katex
 ---
 

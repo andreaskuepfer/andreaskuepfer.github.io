@@ -31,6 +31,7 @@ format:
     height: 720
     margin: 0.08
     embed-resources: true
+    pdf-separate-fragments: true
 ---
 
 ## What Unites the Projects
