@@ -1,0 +1,317 @@
+---
+title: "Discussant Remarks"
+subtitle: ""
+author:
+  - name: Andreas Kuepfer
+    affiliation: TU Darmstadt
+date: "2026-06-18"
+include-in-header:
+  - text: |
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var el = document.querySelector('#title-slide .date');
+        if (el) el.textContent = 'Annual Meeting of the European Political Science Society · 18–20 June 2026 · Belfast, UK';
+      });
+      </script>
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    transition: slide
+    background-transition: fade
+    fig-align: center
+    center: false
+    incremental: false
+    footer: "Kuepfer (discussant) | EPSS Annual Meeting · Belfast, UK · June 2026"
+    controls: true
+    controls-layout: bottom-right
+    width: 1280
+    height: 720
+    margin: 0.08
+    embed-resources: true
+---
+
+## What Unites the Projects
+
+::: {.columns}
+::: {.column width="50%"}
+**Paper 1**
+
+Nalewajko & Spirig
+
+*Of Polish Heroism and Victimhood: How Wikipedia Captures Collective Memory*
+:::
+::: {.column width="50%"}
+**Paper 2**
+
+Gruber, Hertweck & Sältzer
+
+*Ghostcounting: A Bayesian Approach to Estimating Protester Counts and Media-Level Bias*
+:::
+:::
+
+&nbsp;
+
+::: {.fragment}
+> Both papers try to recover a **latent, contested truth** (what really happened, or what a group really believes happened) from **biased, multi-source text records**, and both treat that bias as a parameter to be modeled, not noise to be averaged away.
+:::
+
+---
+
+## Paper 1: Of Polish Heroism and Victimhood {data-auto-animate=true}
+
+::: {style="text-align:center; margin-top:2em;"}
+**Of Polish Heroism and Victimhood: How Wikipedia Captures Collective Memory**
+
+Nalewajko & Spirig
+:::
+
+---
+
+## The Paper in One Slide
+
+**Question:** Can we measure the *substantive content* of collective memory at scale, across time, and across language communities?
+
+&nbsp;
+
+::: {.columns}
+::: {.column width="50%"}
+**Approach**
+
+- Collective memory = group <-> role associations
+- Pre-defined roles (e.g., victim or hero) and groups (e.g., Poles or Jews)
+- Locate groups/roles in semantic space using Wikipedia revision histories + embeddings + LLMs
+
+:::
+::: {.column width="50%" .fragment}
+**Test case**
+
+- Polish Wikipedia, WWII/Holocaust category
+- Two-stage LLM entity classification -> group
+- Supervised classification: victim sub-type by group, 2001–present
+:::
+:::
+
+&nbsp;
+
+::: {.fragment}
+> Finding: Polish WWII memory on Wikipedia centers ethnic Poles as victims/heroes, Germans as perpetrators (stable for ~20 years).
+:::
+
+---
+
+## Why This Is a Great Idea
+
+::: {.columns}
+::: {.column width="55%"}
+**Contribution**
+
+- A scalable, repeatable measure of collective memory content
+- Survey/textbook/interview approaches don't travel across time or language
+- Validates against a case the qualitative literature has already settled (Polish "hero/victim" narrative)
+:::
+::: {.column width="45%" .fragment}
+**What convinces me**
+
+- Conceptual framework (role-to-group allocation) is portable to *any* contested past
+- Wikipedia's dual role (record **and** influence) is the right rationale
+- Built-in cross-language, cross-time comparison is "for free" once the pipeline exists
+:::
+:::
+
+---
+
+## Comment 1: Who Gets to Write Memory? {data-auto-animate=true}
+
+::: {style="font-size:0.95em;"}
+The paper treats edits as a window onto the "average member's beliefs." But editors are not a random draw from the language community, and not every proposed edit survives.
+:::
+
+- **Who edits?** Wikipedia editors are disproportionately male, technically literate, and skew toward specific demographics (Mandiberg 2020). Does this matter more for *contested* memory topics than for, say, math articles?
+- **What gets accepted?** A framework built on *final article content* implicitly already filters through reverts, talk-page disputes, and admin moderation
+- Idea: use **edit acceptance/reversion rates** by group-role content as a second outcome — not just the steady-state text, but *which claims survive contestation*
+
+---
+
+## Comment 2: Different Use Cases {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+Polish WWII memory is a best-case scenario: a topic with strong elite *and* popular consensus, mostly settled before Wikipedia existed.
+:::
+
+- The paper needs at least one case to show the method detects *change*, not just stability
+- Natural candidates with ongoing memory construction over the past years:
+  - **Russia's invasion of Ukraine**: "liberation" vs. "invasion" framing, contested while being written
+  - **Gaza war**:  competing victim/perpetrator framings across language editions, high edit intensity, frequent protection
+- These cases let you show the method's two failure/success modes side by side: consensus narrative (Poland) vs. live narrative war (Ukraine/Gaza)
+
+---
+
+## Comment 3: How Does Memory Actually Change? {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+The paper's headline result is stability. But the framework's real payoff is detecting *change*, and the data already contain signals of this the paper doesn't yet use.
+:::
+
+- **Removals/replacements**, not just additions, are where narrative contestation happens — a sentence reassigning "bystander" to "perpetrator" is a bigger signal than a new article being created
+- **Editing rights have changed differentially across language editions**: e.g., [pl.wikipedia.org/wiki/Kampania_wrześniowa](https://pl.wikipedia.org/wiki/Kampania_wrze%C5%9Bniowa) (Polish, Invasion of Poland) is currently unprotected, while the equivalent English-language article is protected
+  - This is itself a measurable, comparable institutional fact about how contested a memory is per language community
+- Idea: build a companion measure from protection-level history + revert rates as a metric of contestation, alongside the semantic-distance measure
+
+---
+
+## Comment 4: Cross-National & Cross-Editor Comparison {data-auto-animate=true}
+
+::: {.columns}
+::: {.column width="50%"}
+**Across language editions**
+
+Compare role-group associations for the *same* WWII event across Polish, German, English, Russian Wikipedia
+
+:::
+::: {.column width="50%" .fragment}
+**Across editors**
+
+- Do editors who write the Polish WWII article also edit the German-language WWII article?
+- If yes: are they importing/translating the same narrative, or producing divergent ones depending on audience?
+- Editor-level overlap data would let you test whether collective memory is "exported" by bilingual editors or genuinely emerges independently per language community
+:::
+:::
+
+---
+
+## Comment 5: Wikipedia's Gatekeeper Role Is Changing {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+The paper's "Wikipedia shapes reality" link (people read Wikipedia to learn from the past) is becoming less obviously true.
+:::
+
+- LLM chatbots increasingly mediate "what people know about the past" and they are trained on, and often cite, Wikipedia, but also other corpora
+- Grokpedia and similar LLM-generated encyclopedic sources are explicitly positioned as Wikipedia alternatives/competitors, and already surface as cited sources in commercial LLM outputs
+- If Wikipedia's downstream influence is declining or being filtered through an LLM layer, the paper's second causal link (Wikipedia -> public belief) needs updating
+- Idea: a short discussion of how this measurement strategy would need to adapt if "collective memory" increasingly forms via LLM-mediated answers rather than direct Wikipedia reading
+
+---
+
+## Further Ideas
+
+- **Bots and non-human edits:** a sizeable share of Wikipedia edits are bot-driven (formatting, link fixes, vandalism reversion) and should be filtered before treating edit counts as proxies for "community belief"
+- **Validate the LLM classification step itself**
+- **Event-study validation:** use known memory-politics shocks (2018 Polish Memory Law, Jedwabne/Gross debate, 2015 PiS election) as natural experiments — does the group-role embedding move detectably around these dates? This would be strong external validation beyond matching the qualitative literature in levels
+- **Reader-side, not just editor-side, validation:** pair pageview spikes with the group-role measure to ask whether *exposure* to a given narrative tracks survey-based collective memory measures
+
+---
+
+## Paper 2: Ghostcounting {data-auto-animate=true}
+
+::: {style="text-align:center; margin-top:2em;"}
+**Ghostcounting: A Bayesian Approach to Estimating Protester Counts and Media-Level Bias**
+
+Gruber, Hertweck & Sältzer
+:::
+
+---
+
+## The Paper in One Slide
+
+**Question:** Can we recover the *true* size of a protest and each outlet's reporting bias simultaneously, from disagreeing news sources alone?
+
+&nbsp;
+
+::: {.columns}
+::: {.column width="50%"}
+**Pipeline**
+
+- 74 German RSS feeds -> filtered for protest keywords -> full text via custom scrapers
+- Local LLM classifies each article into structured event labels
+- Articles grouped into events by date, location, keywords
+- Public dashboard with all variables (not full text)
+:::
+::: {.column width="50%" .fragment}
+**Bayesian model**
+
+- Each protest has a latent true size $z_i$; each source reports $y_{i,s}$ with source-specific bias $\beta_s$ and variance $\sigma_s^2$
+- Iterative (EM-like) estimation of source credibility $\theta_s$ and event size
+- Extension: ideological skew $\gamma_{s,k}$ — left/right-leaning over/under-reporting
+- Validated on simulated data with known ground truth
+:::
+:::
+
+---
+
+## Why This Is a Great Idea
+
+::: {.columns}
+::: {.column width="55%"}
+**Contribution**
+
+- First (to my knowledge) fully automated, near-real-time, open protest database for Germany
+- Reframes "messy disagreeing sources" as the *signal*, not noise — media bias becomes an estimated parameter, not an assumption
+- Local LLM classification means no API costs, no rate limits, fully reproducible
+:::
+::: {.column width="45%" .fragment}
+**What convinces me**
+
+- The simulation shows ideological skew is identifiable *without* feeding the model ideology labels
+- Modular pipeline (RSS -> scrape -> classify -> group -> estimate) is reusable for other event types, not just protests
+- Public dashboard + open repo lowers the barrier for replication and reuse
+:::
+:::
+
+---
+
+## Comment 1: Historical Depth and Visual Evidence {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+The pipeline is built to run forward from today. Two extensions would make it useful for studying the past, not just the present.
+:::
+
+- **Historical backfill:** RSS feeds only capture protests from when the pipeline started running. Is there a plan to backfill using newspaper archives, Wayback Machine snapshots, or existing text corpora, so the database has retrospective value (e.g., to study Fridays for Future from its 2018 start)?
+- **Photographic evidence:** Crowd size disputes are often fought over *photos*, not just text (aerial shots, crowd density estimates from images). Does the pipeline currently use or plan to use images embedded in articles as an independent signal (a fifth "source" alongside police/organizer/media text counts)
+
+---
+
+## Comment 2: Entity Matching and Data Access {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+Two related questions about what's identified inside an event and what's accessible outside the dashboard.
+:::
+
+- **Entity matching:** Are organizations, movements, and recurring protest groups (e.g., "Fridays for Future," "Letzte Generation") matched/linked across articles and across time, or treated as free text per event? Entity-level linking would let you track a *movement's* trajectory, not just isolated events
+- **Rehydration of Content**
+
+---
+
+## Comment 3: Where Did the Number Come From? {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+The Bayesian model currently treats "source" as the outlet. But the outlet is often just relaying someone else's count.
+:::
+
+- Many crowd-size figures in news text are themselves attributed to **police estimates, organizer claims, or wire services (e.g., DPA)**, but the outlet didn't generate the number
+- Idea: prompt the (already-deployed) LLM classifier to additionally extract **attribution** ("according to police," "organizers said," no source given) as a structured field
+
+---
+
+## Comment 4: Validation Against Ground Truth {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+The simulation study is a clean proof that the model is identifiable. A next step would be to show it works on *real* protests.
+:::
+
+- Benchmark estimated $\hat{z}_i$ and event coverage against a smaller existing, independently coded protest event dataset
+- Even without ground-truth crowd counts, comparing event detection (did the pipeline catch the same protests a hand-coded dataset did?) would validate Steps 1–2 of the pipeline independently from the Bayesian model in Steps 3–4
+
+---
+
+## Comment 5: Source Bias Is Not Fixed Over Time {data-auto-animate=true}
+
+::: {style="font-size:0.92em;"}
+The model estimates one $\beta_s$ and one $\gamma_{s,k}$ per source, pooling across the entire observation window. However, editorial stance might change over time.
+:::
+
+- Why it matters here specifically: ownership changes (e.g., a regional paper acquired by a larger publisher) or editor-in-chief turnover can shift how an outlet reports crowd sizes
+- Risk of the static model: if bias actually drifts, a single pooled $\hat\beta_s$ is a time-average that can mask the outlet behaving very differently over time
+- Idea: a rolling-window or state-space extension — $\beta_{s,t} = \beta_{s,t-1} + \eta_{s,t}$ — would let $\theta_s$ (credibility) and $\tilde\gamma_s$ (ideological skew) themselves become *time series* ("is outlet X biased?" -> "when did outlet X become biased, and by how much?")
