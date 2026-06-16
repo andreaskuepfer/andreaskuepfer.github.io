@@ -34,6 +34,7 @@ format:
     width: 1280
     height: 720
     margin: 0.08
+    embed-resources: true
 ---
 
 ## The Question and the Existing Answer
@@ -43,7 +44,7 @@ format:
 &nbsp;
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 **Valentim & Widmann (2023)**
 
 - AfD entry into German state parliaments
