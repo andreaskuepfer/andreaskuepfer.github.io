@@ -147,7 +147,7 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 ::: {style="font-size:0.82em; margin-top:0.2em; margin-bottom:0.4em;"}
 49,662 speeches in ~15,000 hours of video:
 
-| Parliament | Period | AfD from |
+| Parliament | Period | AfD entered parliament in |
 |:---|:---:|:---:|
 | Hesse | 2013–2025 | 2018 |
 | Saxony-Anhalt | 2021–2025 | 2016 |
