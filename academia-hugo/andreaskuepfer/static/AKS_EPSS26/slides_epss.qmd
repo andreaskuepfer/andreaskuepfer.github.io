@@ -79,8 +79,8 @@ format:
 
 Parliamentary debate is *ordered*: speeches respond to prior speeches within agenda items.
 
-- What happens immediately following an AfD speech?
-- **Expected**: anger ↑, positive language ↓; even if the aggregate is positive
+- What happens immediately following a far-right speech?
+- **Expected**: anger ↑, positive emotional language ↓; even if the aggregate is positive
 :::
 ::: {.column width="2%"}
 :::
