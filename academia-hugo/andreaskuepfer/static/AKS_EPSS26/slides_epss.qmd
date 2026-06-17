@@ -191,26 +191,7 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 
 ---
 
-## Modality- and Emotion-Specific Transmission {data-auto-animate=true}
-
-```{=html}
-<div style="position:relative; text-align:center;">
-  <img src="figures/fig_h5_coef_sent_slide.png"
-       style="width:82%; max-height:610px; object-fit:contain; display:inline-block;">
-  <div class="fragment fade-in-then-out" data-fragment-index="1"
-       style="position:absolute; top:57%; left:18%; width:65%; height:16%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-  <div class="fragment" data-fragment-index="2"
-       style="position:absolute; top:12%; left:19%; width:38%; height:45%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-</div>
-```
-
----
-
-## Modality- and Emotion-Specific Transmission {data-auto-animate=true data-visibility="uncounted"}
+## Modality- and Emotion-Specific Transmission
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -306,3 +287,26 @@ Three dimensions:
 ::: {style="text-align:center;"}
 ![](figures/fig_h5_discrete_sent_slide.png){width="80%" style="max-height:520px; object-fit:contain;"}
 :::
+
+---
+
+## Modality-Specific Transmission (H3) {data-visibility="uncounted"}
+
+::: {style="text-align:center; font-size:0.85em; margin-bottom:0.3em;"}
+**H3**: Vocally intense far right → pitch elevation (Audio); negative far-right text → more anger in text (Text)
+:::
+
+```{=html}
+<div style="position:relative; text-align:center;">
+  <img src="figures/fig_h5_coef_sent_slide.png"
+       style="width:82%; max-height:510px; object-fit:contain; display:inline-block;">
+  <div class="fragment fade-in-then-out" data-fragment-index="1"
+       style="position:absolute; top:57%; left:18%; width:65%; height:16%;
+              border:3px solid #2a7ab5; border-radius:4px;
+              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
+  <div class="fragment" data-fragment-index="2"
+       style="position:absolute; top:12%; left:19%; width:38%; height:45%;
+              border:3px solid #2a7ab5; border-radius:4px;
+              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
+</div>
+```
