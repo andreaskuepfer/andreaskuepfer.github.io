@@ -28,7 +28,7 @@ format:
     fig-align: center
     center: false
     incremental: false
-    footer: "Arnold, Kuepfer, Stecker | EPSS Annual Meeting · Belfast, UK · June 2026"
+    footer: "Arnold, Kuepfer, Stecker | EPSS Annual Meeting · Belfast, UK · 18 June 2026"
     controls: true
     controls-layout: bottom-right
     width: 1280
@@ -40,7 +40,10 @@ format:
 
 ## The Question and the Existing Answer
 
+
+::: {style="text-align:center;"}
 **Does far-right parliamentary success make democratic debate more negative?**
+:::
 
 &nbsp;
 
@@ -67,7 +70,7 @@ format:
 ## What the Average Misses
 
 ::: {.columns}
-::: {.column width="49%"}
+::: {.column width="49%" .fragment}
 ```{=html}
 <div style="border-left:4px solid #2a7ab5; background:#f0f5fb; padding:0.4em 0.8em; margin-bottom:0.7em;">
 <strong>The Sequential Dimension</strong>
@@ -76,8 +79,8 @@ format:
 
 Parliamentary debate is *ordered*: speeches respond to prior speeches within agenda items.
 
-- What happens **immediately following** an AfD speech?
-- Expected: anger ↑, positive language ↓; even if the aggregate is positive
+- What happens immediately following an AfD speech?
+- **Expected**: anger ↑, positive language ↓; even if the aggregate is positive
 :::
 ::: {.column width="2%"}
 :::
@@ -90,9 +93,9 @@ Parliamentary debate is *ordered*: speeches respond to prior speeches within age
 
 Speech is not only text: legislators communicate through pitch, head movement, and gestures.
 
-- Do responses become **vocally and visually activated**?
+- Do responses become vocally and visually activated?
 - Are these channels coupled, or do they move independently?
-- Expected: text follows text, pitch follows pitch, visuals follow visuals
+- **Expected**: text follows text, pitch follows pitch, visuals follow visuals
 :::
 :::
 
@@ -142,6 +145,7 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 **Case Selection**
 
 ::: {style="font-size:0.82em; margin-top:0.2em; margin-bottom:0.4em;"}
+49,662 speeches in ~15,000 hours of video:
 
 | Parliament | Period | AfD from |
 |:---|:---:|:---:|
@@ -151,29 +155,13 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 | Baden-Württemberg | 2011–2025 | 2016 |
 | Bundestag | 2017–2025 | 2017 |
 
-49,662 speeches · 7,615 AfD speeches · ~15,000 hours of video
 :::
 :::
 ---
 
-## Measurement Framework
+## Average Distancing
 
-Three dimensions:
-
-- **Text** (8 discrete emotions: anger, fear, disgust, sadness; joy, hope, enthusiasm, pride)
-- **Audio** (pitch F0 mean)
-- **Visual** (head movement, audience interaction, hand gestures)
-
-::: {.fragment}
-::: {style="text-align:center; margin-top:0.4em;"}
-![](figures/fig_modal_matrix_slide.png){width="88%" style="max-height:390px; object-fit:contain;"}
-:::
-:::
----
-
-## Result 1: Average Distancing
-
-**H1:** Average semantic distancing: non-AfD parties respond to AfD presence with more positive language (replication)
+**H1:** Non-AfD parties respond to AfD presence with more positive language (replication)
 
 ::: {style="text-align:center; margin-top:0.4em;"}
 ![](figures/fig_emotion_overview_slide.png){width="72%" style="max-height:450px; object-fit:contain;"}
@@ -181,10 +169,10 @@ Three dimensions:
 
 ---
 
-## Result 2: Average vs. Sequential {data-auto-animate=true}
+## Average vs. Sequential Mirroring {data-auto-animate=true}
 
 
-**H2:** Sequential mirroring: speeches <em>after</em> AfD interventions contain more anger and less positive language (descriptive)
+**H2:** Speeches <em>after</em> AfD interventions contain more anger and less positive language (descriptive)
 
 ::: {style="text-align:center;"}
 ![](figures/fig_desc_before_after_slide.png){width="80%"}
@@ -192,37 +180,27 @@ Three dimensions:
 
 ---
 
-## Result 2: Average vs. Sequential {data-auto-animate=true data-visibility="uncounted"}
+## Average vs. Sequential Mirroring {data-auto-animate=true data-visibility="uncounted"}
 
 
-**H2**: Sequential mirroring: speeches <em>after</em> AfD interventions contain more anger and less positive language (modelled)
+**H2**: Speeches <em>after</em> AfD interventions contain more anger and less positive language (modelled)
 
 ::: {style="text-align:center;"}
-![](figures/fig_fd_h1_h2_sent_slide.png){width="96%" style="max-height:560px; object-fit:contain;"}
-:::
-
-::: {style="text-align:center; margin-top:0.2em;"}
-Visual activation also rises (head movement, audience interaction); pitch is clearer once AfD vocal intensity is modelled directly →
+![](figures/fig_fd_h1_h2_sent_slide_text.png){width="96%" style="max-height:560px; object-fit:contain;"}
 :::
 
 ---
 
-## Result 3: Modality-Specific Transmission
-
-::: {style="text-align: center; margin-bottom: 0.4em;"}
-**H3**: Vocally intense far right → pitch elevation (Audio); negative emotions far right → more anger in text (Text)
-:::
+## Modality- and Emotion-Specific Transmission {data-auto-animate=true}
 
 ```{=html}
 <div style="position:relative; text-align:center;">
   <img src="figures/fig_h5_coef_sent_slide.png"
-       style="width:82%; max-height:550px; object-fit:contain; display:inline-block;">
-  <!-- Fragment 1: Audio/Pitch row (horizontal band) -->
+       style="width:82%; max-height:610px; object-fit:contain; display:inline-block;">
   <div class="fragment fade-in-then-out" data-fragment-index="1"
        style="position:absolute; top:57%; left:18%; width:65%; height:16%;
               border:3px solid #2a7ab5; border-radius:4px;
               background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-  <!-- Fragment 2: Negative emotions, Text reaction (left portion) -->
   <div class="fragment" data-fragment-index="2"
        style="position:absolute; top:12%; left:19%; width:38%; height:45%;
               border:3px solid #2a7ab5; border-radius:4px;
@@ -232,30 +210,22 @@ Visual activation also rises (head movement, audience interaction); pitch is cle
 
 ---
 
-## Result 4: Emotion-Specific Coupling
+## Modality- and Emotion-Specific Transmission {data-auto-animate=true data-visibility="uncounted"}
 
-::: {style="text-align:center; margin-bottom:0.3em;"}
-**H4a** Increased far right anger → pitch elevation; **H4b** Positive (negative) emotions transmit positive (negative) responses
+::: {.columns}
+::: {.column width="50%"}
+**H3: Modality-specific transmission**
+
+- Vocal far-right intensity → pitch elevation
+- Negative far-right text → more negative emotions in text
 :::
+::: {.column width="50%" .fragment}
+**H4a/b: Emotion-specific coupling**
 
-```{=html}
-<div style="position:relative; text-align:center;">
-  <img src="figures/fig_h5_discrete_sent_slide.png"
-       style="width:80%; max-height:550px; object-fit:contain; display:inline-block;">
-  <div class="fragment fade-in-then-out" data-fragment-index="1"
-       style="position:absolute; top:57%; left:10%; width:81%; height:16%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-  <div class="fragment fade-in-then-out" data-fragment-index="2"
-       style="position:absolute; top:8%; left:10%; width:45%; height:25%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-  <div class="fragment" data-fragment-index="3"
-       style="position:absolute; top:34%; left:54%; width:35%; height:23%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-</div>
-```
+- Far-right anger → pitch elevation (H4a)
+- Negative → negative; positive → positive (H4b)
+:::
+:::
 
 ---
 
@@ -267,16 +237,16 @@ Visual activation also rises (head movement, audience interaction); pitch is cle
 **Findings**
 
 ::: {.fragment}
-**1. Level-dependence:** Average distancing and sequential mirroring coexist; they operate at different levels of analysis
+**1. Level-dependent:** Average distancing and sequential mirroring coexist; they operate at different levels of analysis
 :::
 ::: {.fragment}
-**2. Modality-specificity:** Vocal activation follows vocal; text follows text; not a uniform contagion process
+**2. Modality-specific:** Vocal activation follows vocal; text follows text (mirrored)
 :::
 ::: {.fragment}
-**3. Emotion-specificity:** Anger is the discrete emotion most tightly coupled with pitch elevation
+**3. Emotion-specific:** Anger is the discrete emotion most tightly coupled with pitch elevation
 :::
 ::: {.fragment}
-→ Far-right presence creates **repeated, localised episodes** of emotion- and modality-specifc mirroring: locally intense, hard to detect in aggregate
+→ Far-right presence creates repeated, localised episodes of emotion- and modality-specifc mirroring
 :::
 :::
 
@@ -291,7 +261,7 @@ Visual activation also rises (head movement, audience interaction); pitch is cle
 **Expand visual layer:** hand gestures not yet in models; next iteration incorporates the complete measurement matrix
 :::
 ::: {.fragment}
-**Causal identification:** DiD using the pre-AfD-entry period as control; shifts in the post-AfD window vs. baseline behaviour before AfD entered parliament
+**Causal identification:** DiD using the pre-AfD-entry period as control; shifts in the post-AfD window vs. baseline behaviour
 :::
 :::
 :::
@@ -302,11 +272,37 @@ Visual activation also rises (head movement, audience interaction); pitch is cle
 
 <b>Far-Right Speeches and Emotional Contagion in Parliament: Sequential and Multimodal Evidence from Germany</b>
 
-Christian Arnold · Andreas Kuepfer · Christian Stecker<br><br>
+Christian Arnold · <b>Andreas Kuepfer</b> · Christian Stecker<br><br>
 
 <b>Contact:</b><br>
 andreaskuepfer.github.io<br>
 andreas.kuepfer@tu-darmstadt.de<br>
 ankuepfer@bsky.social<br>
 
+:::
+
+---
+
+## Measurement Framework {data-visibility="uncounted"}
+
+Three dimensions:
+
+- **Text** (8 discrete emotions: anger, fear, disgust, sadness; joy, hope, enthusiasm, pride)
+- **Audio** (vocal pitch)
+- **Visual** (head movement, audience interaction, hand gestures)
+
+::: {style="text-align:center; margin-top:0.4em;"}
+![](figures/fig_modal_matrix_slide.png){width="88%" style="max-height:390px; object-fit:contain;"}
+:::
+
+---
+
+## Emotion-Specific Coupling {data-visibility="uncounted"}
+
+::: {style="text-align:center; margin-bottom:0.3em;"}
+**H4a** Increased far right anger → pitch elevation; **H4b** Negative (positive) emotions transmit Negative (positive) responses
+:::
+
+::: {style="text-align:center;"}
+![](figures/fig_h5_discrete_sent_slide.png){width="80%" style="max-height:520px; object-fit:contain;"}
 :::
