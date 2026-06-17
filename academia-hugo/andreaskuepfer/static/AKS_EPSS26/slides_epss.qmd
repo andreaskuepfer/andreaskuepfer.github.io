@@ -149,9 +149,9 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 
 | Parliament | Period | AfD from |
 |:---|:---:|:---:|
-| Hesse | 2013–2025 | 2019 |
-| Saxony-Anhalt | 2021–2025 | 2021 |
-| Saxony | 2019–2025 | 2019 |
+| Hesse | 2013–2025 | 2018 |
+| Saxony-Anhalt | 2021–2025 | 2016 |
+| Saxony | 2019–2025 | 2014 |
 | Baden-Württemberg | 2011–2025 | 2016 |
 | Bundestag | 2017–2025 | 2017 |
 
