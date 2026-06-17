@@ -169,18 +169,7 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 
 ---
 
-## Average vs. Sequential Mirroring {data-auto-animate=true}
-
-
-**H2:** Speeches <em>after</em> AfD interventions contain more anger and less positive language (descriptive)
-
-::: {style="text-align:center;"}
-![](figures/fig_desc_before_after_slide.png){width="80%"}
-:::
-
----
-
-## Average vs. Sequential Mirroring {data-auto-animate=true data-visibility="uncounted"}
+## Average vs. Sequential Mirroring
 
 
 **H2**: Speeches <em>after</em> AfD interventions contain more anger and less positive language (modelled)
@@ -191,7 +180,26 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 
 ---
 
-## Modality- and Emotion-Specific Transmission
+## Modality- and Emotion-Specific Transmission {data-auto-animate=true}
+
+```{=html}
+<div style="position:relative; text-align:center;">
+  <img src="figures/fig_h5_coef_sent_slide.png"
+       style="width:82%; max-height:610px; object-fit:contain; display:inline-block;">
+  <div class="fragment fade-in-then-out" data-fragment-index="1"
+       style="position:absolute; top:57%; left:18%; width:65%; height:16%;
+              border:3px solid #2a7ab5; border-radius:4px;
+              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
+  <div class="fragment" data-fragment-index="2"
+       style="position:absolute; top:12%; left:19%; width:38%; height:45%;
+              border:3px solid #2a7ab5; border-radius:4px;
+              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
+</div>
+```
+
+---
+
+## Modality- and Emotion-Specific Transmission {data-auto-animate=true data-visibility="uncounted"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -290,23 +298,10 @@ Three dimensions:
 
 ---
 
-## Modality-Specific Transmission (H3) {data-visibility="uncounted"}
+## Average vs. Sequential Mirroring (descriptive) {data-visibility="uncounted"}
 
-::: {style="text-align:center; font-size:0.85em; margin-bottom:0.3em;"}
-**H3**: Vocally intense far right → pitch elevation (Audio); negative far-right text → more anger in text (Text)
+**H2:** Speeches <em>after</em> AfD interventions contain more anger and less positive language
+
+::: {style="text-align:center;"}
+![](figures/fig_desc_before_after_slide.png){width="80%"}
 :::
-
-```{=html}
-<div style="position:relative; text-align:center;">
-  <img src="figures/fig_h5_coef_sent_slide.png"
-       style="width:82%; max-height:510px; object-fit:contain; display:inline-block;">
-  <div class="fragment fade-in-then-out" data-fragment-index="1"
-       style="position:absolute; top:57%; left:18%; width:65%; height:16%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-  <div class="fragment" data-fragment-index="2"
-       style="position:absolute; top:12%; left:19%; width:38%; height:45%;
-              border:3px solid #2a7ab5; border-radius:4px;
-              background:rgba(42,122,181,0.08); pointer-events:none;"></div>
-</div>
-```
