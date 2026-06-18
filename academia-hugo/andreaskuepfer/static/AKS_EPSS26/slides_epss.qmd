@@ -205,13 +205,13 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 ::: {.column width="50%"}
 **H3: Modality-specific transmission**
 
-- Vocal far-right intensity → pitch elevation
-- Negative far-right text → more negative emotions in text
+- Vocal far-right intensity → pitch elevation in mainstream audio
+- Negative emotions in far-right text → more negative emotions in mainstream text
 :::
 ::: {.column width="50%" .fragment}
 **H4a/b: Emotion-specific coupling**
 
-- Far-right anger → pitch elevation (H4a)
+- Far-right anger → pitch elevation in mainstream audio (H4a)
 - Negative → negative; positive → positive (H4b)
 :::
 :::
