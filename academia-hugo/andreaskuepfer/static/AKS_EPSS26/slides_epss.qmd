@@ -172,7 +172,7 @@ Speech is not only text: legislators communicate through pitch, head movement, a
 ## Average vs. Sequential Mirroring
 
 
-**H2**: Speeches <em>after</em> AfD interventions contain more anger and less positive language (modelled)
+**H2**: Speeches <em>after</em> AfD interventions contain more anger and less positive language
 
 ::: {style="text-align:center;"}
 ![](figures/fig_fd_h1_h2_sent_slide_text.png){width="96%" style="max-height:560px; object-fit:contain;"}
