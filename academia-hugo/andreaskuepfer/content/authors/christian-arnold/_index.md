@@ -1,4 +1,4 @@
 ---
 name: Christian Arnold
-website: http://chrisguarnold.github.io/
+website: http://christianarnold.org/
 ---

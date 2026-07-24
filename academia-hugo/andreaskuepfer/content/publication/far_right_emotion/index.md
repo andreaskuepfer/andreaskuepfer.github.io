@@ -1,14 +1,14 @@
 ---
-title: "A Pipeline for Extracting Data from Videos of Complex Events (Under Review)"
+title: "Far-Right Speeches and Emotional Contagion in Parliament: Sequential and Multimodal Evidence from Germany"
 authors:
-- Mirya Holman
+- Christian Arnold
 - admin
-- Tyler Simko
-date: "2025-05-01T00:00:00Z"
+- Christian Stecker
+date: "2026-07-17T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-05-01T00:00:00Z"
+publishDate: "2026-07-17T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -30,16 +30,17 @@ tags:
 - text
 - video
 - audio
-- local politics
-- gender
-- representation
-- public meetings
+- populism
+- far-right parties
+- emotion
+- parliamentary speeches
+- Germany
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://doi.org/10.31235/osf.io/nxjr6_v3
+url_pdf: https://doi.org/10.31235/osf.io/5v6ez_v1
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''

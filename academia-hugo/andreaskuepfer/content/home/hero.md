@@ -46,7 +46,9 @@ hero_media = ""
 
 <div style="word-wrap: break-word; width: 80%; margin: 0 auto;">
 
-**04/2026** &mdash; I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://chrisguarnold.github.io/).
+**07/2026** &mdash; We uploaded our new working paper with [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/), "Far-Right Speeches and Emotional Contagion in Parliament: Sequential and Multimodal Evidence from Germany", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/5v6ez_v1)!
+
+**04/2026** &mdash; I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://christianarnold.org/).
 
 **01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
 
