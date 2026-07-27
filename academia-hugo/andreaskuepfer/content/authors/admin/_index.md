@@ -15,15 +15,13 @@ authors:
 superuser: true
 
 # Role/position
-role: ""
+role: "Computational Political Scientist"
 
 # Organizations/Affiliations
-organizations:
-- name: ""
-  url: ""
+organizations: []
 
 # Short bio (displayed in user profile at end of posts)
-bio: "I'm a Postdoctoral Researcher at the Institute for Political Science of the Technical University of Darmstadt, holding a Ph.D. in Political Science from the University of Mannheim. I work at the intersection of Data Science and Political Science. Before my PhD studies, I graduated from the University of Mannheim with a Master degree in Data Science. My research focuses on (multimodal) political communication, combining computational with traditional methods to address substantive questions on party competition and political behaviour. My work has been published in <i>European Journal of Political Research, Political Analysis, and Political Science Research and Methods, among others. During my Ph.D., I have conducted research visits at the Mannheim Centre for European Social Research (MZES, University of Mannheim) and the Centre for AI in Government (CAIG, University of Birmingham)."
+bio: "I'm a Postdoctoral Researcher at the Institute for Political Science, Technical University of Darmstadt. I hold a Ph.D. in Political Science and an M.Sc. in Data Science, both from the University of Mannheim, and work at the intersection of the two fields. My research focuses on (multimodal) political communication, combining computational and traditional methods to study party competition and political behaviour. My work has been published in <i>European Journal of Political Research</i>, <i>Political Analysis</i>, and <i>Political Science Research and Methods</i>, among others. During my Ph.D., I conducted research visits at the <i>Mannheim Centre for European Social Research</i> (MZES, University of Mannheim) and the <i>Centre for AI in Government</i> (CAIG, University of Birmingham)."
 
 # Should the user's education and interests be displayed?
 display_education: true
@@ -78,6 +76,6 @@ email: ""
 #- Visitors
 ---
 
-Welcome! I'm a Postdoctoral Researcher at the Institute for Political Science of the <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>, holding a Ph.D. in Political Science from the University of Mannheim. I work at the intersection of Data Science and Political Science. Before my Ph.D. studies, I graduated from the University of Mannheim with a Master degree in Data Science. My research focuses on (multimodal) political communication, combining computational with traditional methods to address substantive questions on party competition and political behaviour. My work has been published in <i>European Journal of Political Research</i>, <i>Political Analysis</i>, and <i>Political Science Research and Methods</i>, among others. During my Ph.D., I have conducted research visits at the <i>Mannheim Centre for European Social Research</i> (MZES, University of Mannheim) and the <i>Centre for AI in Government</i> (CAIG, University of Birmingham).
+Welcome! I'm a Postdoctoral Researcher at the Institute for Political Science, <a href="https://www.politikwissenschaft.tu-darmstadt.de/institut/personen_pw/kuepfer_andreas/andreas_kuepfer_inhalt.en.jsp" target="_blank">Technical University of Darmstadt</a>. I hold a Ph.D. in Political Science and an M.Sc. in Data Science, both from the University of Mannheim, and work at the intersection of the two fields. My research focuses on (multimodal) political communication, combining computational and traditional methods to study party competition and political behaviour. My work has been published in <i>European Journal of Political Research</i>, <i>Political Analysis</i>, and <i>Political Science Research and Methods</i>, among others. During my Ph.D., I conducted research visits at the <i>Mannheim Centre for European Social Research</i> (MZES, University of Mannheim) and the <i>Centre for AI in Government</i> (CAIG, University of Birmingham).
 
 I'm happy to connect with you either via [Bluesky](https://bsky.app/profile/ankuepfer.bsky.social) or by [email](mailto:andreas.kuepfer@tu-darmstadt.de).

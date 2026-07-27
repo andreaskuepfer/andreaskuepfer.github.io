@@ -54,17 +54,19 @@ hero_media = ""
 
 **01/2026** &mdash; I'm on a research visit at the Centre for AI and Government (University of Birmingham) until 10/2026!
 
-**11/2025** &mdash; We uploaded our working paper with [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/), "A Pipeline for Extracting Data from Videos of Complex Political Events", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/nxjr6_v1)!
+**12/2025** &mdash; My talk on my research on gaze and confrontation in parliamentary debates was featured by the Hertie School Data Science Lab: ["How Eye Contact Reflects Confrontation in Parliament: Insights from Andreas Küpfer's Research"](https://www.hertie-school.org/en/datasciencelab/news/detail/content/how-eye-contact-reflects-confrontation-in-parliament-insights-from-andreas-kuepfers-research).
 
-**10/2025** &mdash; Our recent article at [WEP](https://doi.org/10.1080/01402382.2025.2549149) was featured in the German newspaper [Frankfurter Allgemeine Sonntagszeitung](https://www.faz.net/aktuell/politik/inland/studie-wer-applaudiert-im-bundestag-wem-accg-110714837.html).
-
-**09/2025** &mdash; New article published at West European Politics! [The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments](https://doi.org/10.1080/01402382.2025.2549149) (w/  [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) studies how applause during parliamentary debates reflects different aspects of party competition.
+**11/2025** &mdash; We uploaded our working paper with [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/), "A Pipeline for Extracting Data from Videos of Complex Political Events", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/nxjr6_v3)!
 </div>
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
  
 <div style="word-wrap: break-word; width: 80%; margin: 0 auto;"> 
+
+**10/2025** &mdash; Our recent article at [WEP](https://doi.org/10.1080/01402382.2025.2549149) was featured in the German newspaper [Frankfurter Allgemeine Sonntagszeitung](https://www.faz.net/aktuell/politik/inland/studie-wer-applaudiert-im-bundestag-wem-accg-110714837.html).
+
+**09/2025** &mdash; New article published at West European Politics! [The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments](https://doi.org/10.1080/01402382.2025.2549149) (w/  [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) studies how applause during parliamentary debates reflects different aspects of party competition.
 
 **07/2025** &mdash; Our study at the EJPR, [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) (w/  [Elias Koch](https://elias-koch.com/)) was featured at the [European Public Policy Blog of the LSE European Institute](https://blogs.lse.ac.uk/europpblog/2025/07/16/when-do-politicians-engage-in-discourse-and-when-do-they-avoid-it/).
 

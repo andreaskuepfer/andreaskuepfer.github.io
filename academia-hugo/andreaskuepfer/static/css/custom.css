@@ -158,10 +158,223 @@ img.portrait:hover {
 }
 
 /* ------------------------------------------------
-   Contact section links
+   Contact widget
    ------------------------------------------------ */
+.wg-contact .contact-widget {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wg-contact form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(26, 56, 69, 0.1);
+  padding: 32px;
+}
+
+.wg-contact .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px !important;
+  padding: 12px 16px;
+  height: auto;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wg-contact .form-control:focus {
+  border-color: #2c5f6f;
+  box-shadow: 0 0 0 3px rgba(126, 208, 224, 0.4);
+}
+
+.wg-contact .form-group {
+  margin-bottom: 18px;
+}
+
+.wg-contact button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px !important;
+  padding: 10px 24px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-color: #2c5f6f;
+  color: #2c5f6f;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.wg-contact button[type="submit"]:hover {
+  background-color: #2c5f6f;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(26, 56, 69, 0.2);
+}
+
+.wg-contact .fa-ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.wg-contact .fa-ul > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 8px;
+  margin-left: 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.wg-contact .fa-ul > li:last-child {
+  border-bottom: none;
+}
+
+.wg-contact .fa-ul .fa-li {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  background: rgba(44, 95, 111, 0.08);
+  color: #2c5f6f;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 .wg-contact ul li a {
   position: relative;
   display: inline-block;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.wg-contact .fa-ul > li:hover .fa-li {
+  background: #2c5f6f;
+  color: #fff;
+}
+
+.wg-contact .fa-ul > li:hover a {
+  color: #2c5f6f;
+}
+
+#map {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(26, 56, 69, 0.1);
+  margin-top: 12px;
+}
+
+/* ------------------------------------------------
+   About section — decorative backdrop
+   ------------------------------------------------ */
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -180px;
+  right: -160px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(126, 208, 224, 0.22), rgba(44, 95, 111, 0.05) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#about .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ------------------------------------------------
+   About section — asymmetric photo treatment
+   ------------------------------------------------ */
+.wg-about #profile {
+  position: relative;
+}
+
+.wg-about #profile::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-58%) rotate(-4deg);
+  width: 92%;
+  padding-top: 92%;
+  background: linear-gradient(135deg, #2c5f6f, #7ed0e0);
+  border-radius: 18px;
+  z-index: 0;
+}
+
+.wg-about #profile img {
+  position: relative;
+  z-index: 1;
+  border-radius: 14px;
+  transform: rotate(-2deg);
+  box-shadow: 0 16px 40px rgba(26, 56, 69, 0.22);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.wg-about #profile:hover img {
+  transform: rotate(0deg);
+  box-shadow: 0 20px 48px rgba(26, 56, 69, 0.3);
+}
+
+@media (max-width: 767px) {
+  .wg-about #profile::before {
+    display: none;
+  }
+  .wg-about #profile img {
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------
+   About section — role/affiliation kicker
+   ------------------------------------------------ */
+.portrait-title h3 {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #2c5f6f !important;
+}
+
+.portrait-title h3 a {
+  color: inherit;
+  border-bottom: 1px solid rgba(44, 95, 111, 0.35);
+}
+
+/* ------------------------------------------------
+   About section — staggered entrance
+   ------------------------------------------------ */
+.wg-about .col-lg-5,
+.wg-about .col-lg-7 {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.wg-about .col-lg-5 {
+  transform: translateX(-24px);
+}
+
+.wg-about .col-lg-7 {
+  transform: translateX(24px);
+  transition-delay: 0.12s;
+}
+
+.home-section.is-visible.wg-about .col-lg-5,
+.home-section.is-visible.wg-about .col-lg-7 {
+  opacity: 1;
+  transform: translateX(0);
 }
 
