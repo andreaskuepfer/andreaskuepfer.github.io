@@ -46,6 +46,8 @@ hero_media = ""
 
 <div style="word-wrap: break-word; width: 80%; margin: 0 auto;">
 
+**09/2026** &mdash; Our DFG-funded project VideoParl (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) now has its own website: [videoparl.github.io](https://videoparl.github.io/). The project draws on more than 30,000 hours of video from all 16 German state parliaments and the Bundestag (2005&ndash;2023), covering over 100,000 speeches, to study political communication beyond words alone.
+
 **08/2026** &mdash; With [Christian Arnold](http://christianarnold.org/), I registered a pre-analysis plan for an eye-tracking experiment asking whether computer-vision algorithms actually flag what human eyes notice in political images, using precise fixation-level data as ground truth. Preregistration [here](https://osf.io/bxpgd/).
 
 **07/2026** &mdash; We uploaded our new working paper with [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/), "Far-Right Speeches and Emotional Contagion in Parliament: Sequential and Multimodal Evidence from Germany", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/5v6ez_v1)!
@@ -55,10 +57,6 @@ hero_media = ""
 **01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
 
 **01/2026** &mdash; I'm on a research visit at the Centre for AI and Government (University of Birmingham) until 10/2026!
-
-**12/2025** &mdash; My talk on my research on gaze and confrontation in parliamentary debates was featured by the Hertie School Data Science Lab: ["How Eye Contact Reflects Confrontation in Parliament: Insights from Andreas Küpfer's Research"](https://www.hertie-school.org/en/datasciencelab/news/detail/content/how-eye-contact-reflects-confrontation-in-parliament-insights-from-andreas-kuepfers-research).
-
-**11/2025** &mdash; We uploaded our working paper with [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/), "A Pipeline for Extracting Data from Videos of Complex Political Events", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/nxjr6_v3)!
 </div>
 <!--
 <details>
