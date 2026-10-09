@@ -1,5 +1,5 @@
 ---
-title: "A Pipeline for Extracting Data from Videos of Complex Events (Under Review)"
+title: "A Pipeline for Extracting Data from Videos of Complex Subnational Politics (R&R)"
 authors:
 - Mirya Holman
 - admin
@@ -15,6 +15,7 @@ publishDate: "2025-05-01T00:00:00Z"
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
 publication_types: ["3"]
+wp_rank: 1
 
 # Publication name and optional abbreviated publication name.
 publication: ""
@@ -39,7 +40,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://doi.org/10.31235/osf.io/nxjr6_v3
+url_pdf: https://doi.org/10.31235/osf.io/nxjr6_v4
 # url_code: 'https://github.com/SocialScienceDataLab/twitter-api-bert-method/tree/main/code'
 # url_dataset: ''
 # url_poster: ''

@@ -43,7 +43,7 @@
 {{ $count := len $query }}
 
 {{/* Sort */}}
-{{ $sort_by := "Date" }}
+{{ $sort_by := $st.Params.content.sort_by | default "Date" }}
 {{ $query = sort $query $sort_by $items_sort }}
 
 {{/* Offset and Limit */}}

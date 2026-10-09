@@ -1,5 +1,5 @@
 ---
-title: "Structuring Quantitative Image Analysis with Object Prominence (Under Review)"
+title: "Structuring Quantitative Image Analysis with Object Prominence (R&R)"
 authors:
 - Christian Arnold
 - admin
@@ -14,6 +14,7 @@ publishDate: "2023-03-13T00:00:00Z"
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
 publication_types: ["3"]
+wp_rank: 2
 
 # Publication name and optional abbreviated publication name.
 publication: "*Christian Arnold and Andreas Kuepfer, n.d. &quot;Structuring Quantitative Image Analysis with Metric Depth&quot; <i>Manuscript in preparation</i>.*"

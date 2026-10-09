@@ -27,7 +27,6 @@ bio: "I'm a Postdoctoral Researcher at the Institute for Political Science, Tech
 display_education: true
 
 interests:
-- Party Competition
 - Political Behaviour
 - Political Communication
 - Multimodal Data (Text, Video, Audio)

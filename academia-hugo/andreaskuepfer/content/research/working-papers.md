@@ -11,7 +11,9 @@ subtitle = ""
   page_type = "publication"
   count = 0
   offset = 0
-  order = "desc"
+  # Sort by the `wp_rank` front matter of each paper (R&R, then Under Review, then the rest)
+  sort_by = "Params.wp_rank"
+  order = "asc"
 
   [content.filters]
     tag = ""

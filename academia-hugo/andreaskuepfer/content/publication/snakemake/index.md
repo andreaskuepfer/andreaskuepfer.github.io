@@ -14,6 +14,7 @@ publishDate: "2025-06-01T00:00:00Z"
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
 publication_types: ["3"]
+wp_rank: 9
 
 # Publication name and optional abbreviated publication name.
 publication: ""

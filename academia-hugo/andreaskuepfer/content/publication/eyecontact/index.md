@@ -1,5 +1,5 @@
 ---
-title: "Gaze and Power: Opposition Status, Gender, and the Far Right (Under Review)"
+title: "Eye Contact and Power: Gender, Seniority, and Public Attention in Parliament (Under Review)"
 authors:
 - admin
 date: "2025-07-01T00:00:00Z"
@@ -13,6 +13,7 @@ publishDate: "2025-07-01T00:00:00Z"
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
 publication_types: ["3"]
+wp_rank: 3
 
 # Publication name and optional abbreviated publication name.
 publication: ""
