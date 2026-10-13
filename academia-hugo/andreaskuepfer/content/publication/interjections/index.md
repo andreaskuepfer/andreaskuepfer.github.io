@@ -4,12 +4,12 @@ authors:
 - admin
 - Jochen Müller
 - Christian Stecker
-date: "2025-09-11T00:00:00Z"
+date: "2026-01-01T00:00:00Z"
 doi: ""
-journal: "West European Politics (2025)"
+journal: "West European Politics (2026)"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-09-11T00:00:00Z"
+publishDate: "2026-01-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -18,7 +18,7 @@ publishDate: "2025-09-11T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Andreas Kuepfer, Jochen Müller and Christian Stecker, n.d. &quot;The sound of party competition: how applause reflects unity, disagreement, and the electoral cycle in parliaments&quot; <i>Manuscript in preparation</i>.*"
+publication: "*Kuepfer, Andreas, Jochen Müller, and Christian Stecker. 2026. “The Sound of Party Competition: How Applause Reflects Unity, Disagreement, and the Electoral Cycle in Parliaments.” West European Politics 49 (7): 1797–1823. doi: 10.1080/01402382.2025.2549149.*"
 publication_short: 
 
 # Summary. An optional shortened abstract.

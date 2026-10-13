@@ -46,7 +46,7 @@ hero_media = ""
 
 <div style="word-wrap: break-word; width: 80%; margin: 0 auto;">
 
-**11/2026** &mdash; On 25 November, I'll give an invited talk at the [Politics and Internet Working Group (PING)](https://kmunger.github.io/ping.html) at the European University Institute in Florence.
+**11/2026** &mdash; On 25 November, I'll give a talk at the [Politics and Internet Working Group (PING)](https://kmunger.github.io/ping.html) at the European University Institute in Florence.
 
 **09/2026** &mdash; Our DFG-funded project VideoParl (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) now has its own website: [videoparl.github.io](https://videoparl.github.io/). The project draws on more than 30,000 hours of video from all 16 German state parliaments and the Bundestag (2005&ndash;2023), covering over 100,000 speeches, to study political communication beyond words alone.
 
