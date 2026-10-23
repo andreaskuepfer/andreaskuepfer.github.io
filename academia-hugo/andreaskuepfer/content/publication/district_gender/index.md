@@ -1,5 +1,5 @@
 ---
-title: "A Pipeline for Extracting Data from Videos of Complex Subnational Politics (R&R)"
+title: "A Pipeline for Extracting Data from Videos of Complex Subnational Politics (R&R at Political Analysis)"
 authors:
 - Mirya Holman
 - admin

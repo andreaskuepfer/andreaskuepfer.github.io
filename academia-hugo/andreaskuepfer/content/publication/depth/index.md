@@ -1,5 +1,5 @@
 ---
-title: "Structuring Quantitative Image Analysis with Object Prominence (R&R)"
+title: "Structuring Quantitative Image Analysis with Object Prominence (R&R at Political Analysis)"
 authors:
 - Christian Arnold
 - admin

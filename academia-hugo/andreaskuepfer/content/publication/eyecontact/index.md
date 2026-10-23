@@ -1,5 +1,5 @@
 ---
-title: "Eye Contact and Power: Gender, Seniority, and Public Attention in Parliament (Under Review)"
+title: "Eye Contact and Power: Gender, Seniority, and Public Attention in Parliament (R&R at The Journal of Politics)"
 authors:
 - admin
 date: "2025-07-01T00:00:00Z"
