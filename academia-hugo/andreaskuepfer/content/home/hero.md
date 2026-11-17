@@ -99,7 +99,7 @@ hero_media = ""
 
 **05/2024** &mdash; [Christian Arnold](http://christianarnold.org/) and I have a new working paper: Structuring Quantitative Image Analysis with Metric Depth. We're presenting it at the upcoming 6th Annual COMPTEXT Conference (May 2-4, 2024) in Amsterdam.
 
-**02/2024** &mdash; My paper, [Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies](https://andreaskuepfer.github.io/papers/PA_Kuepfer_Twitter_Replication.pdf) has been accepted at Political Analysis.
+**02/2024** &mdash; My paper, [Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies](https://andreas-kuepfer.com/papers/PA_Kuepfer_Twitter_Replication.pdf) has been accepted at Political Analysis.
 
 **02/2024** &mdash; I am excited to dive deeper into the analysis of multimodal political communication as part of a research stay in February/March 2024 at University of Birmingham (School of Government/AI in Government) hosted by [Slava Jankin](https://sjankin.com/)
 
@@ -113,7 +113,7 @@ hero_media = ""
 
 **10/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Making the Most of Multimodal Data at the [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
 
-**07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreaskuepfer.github.io/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods
+**07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreas-kuepfer.com/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods
 
 **07/2023** &mdash; I am presenting our paper about multimodal alignment as well as joint work analyzing What we can and cannot learn from responses to legislative speeches (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) at the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
@@ -131,11 +131,11 @@ hero_media = ""
 
 **10/2022** &mdash; Fall 2022 Semester: Teaching Introduction to Quantitative Methods in R (Postgraduate seminar) at TU Darmstadt
 
-**10/2022** &mdash; Presenting joint work with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/) about [applause and interjections pattern in the German Bundestag](https://andreaskuepfer.github.io/publication/interjections/) at the DVPW meeting for comparative parliamentarism research in Bremen
+**10/2022** &mdash; Presenting joint work with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/) about [applause and interjections pattern in the German Bundestag](https://andreas-kuepfer.com/publication/interjections/) at the DVPW meeting for comparative parliamentarism research in Bremen
 
 **06/2022** &mdash; Presenting joint work with [Denis Cohen](https://denis-cohen.github.io/) about estimating legislator-level issue salience and issue positions from political text @ PolMeth Europe 2022 in Hamburg as well as at EPSA 2022 in Prague
 
-**05/2022** &mdash; MZES SSDL blog post and input talk about the [Collection, Management, and Analysis of Twitter Data](https://andreaskuepfer.github.io/publication/twitter_api/)
+**05/2022** &mdash; MZES SSDL blog post and input talk about the [Collection, Management, and Analysis of Twitter Data](https://andreas-kuepfer.com/publication/twitter_api/)
 
 **05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) at Technical University of Darmstadt and co-supervised by [Christian Arnold](http://christianarnold.org/) at Cardiff University
 
