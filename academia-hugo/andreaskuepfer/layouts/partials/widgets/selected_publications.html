@@ -1,6 +1,5 @@
-{{/* "Selected Publications" on the landing page: papers with `featured: true`, in the Research page design. */}}
+{{/* "Selected Publications" on the landing page: papers with `featured: true`, in the Research page design, without theme labels. */}}
 {{ $st := .page }}
-{{ $themes := site.Data.research_themes.themes }}
 {{ $selected := where (where site.RegularPages "Section" "publication") "Params.featured" true }}
 {{ $selected = sort $selected "Date" "desc" }}
 
@@ -11,7 +10,7 @@
     <h2 id="rx-selected">{{ $st.Title }}</h2>
     <ol class="rx-list">
       {{ range $selected }}
-        {{ partial "research_item.html" (dict "page" . "themes" $themes "published" true) }}
+        {{ partial "research_item.html" (dict "page" . "themes" slice "published" true) }}
       {{ end }}
     </ol>
   </section>

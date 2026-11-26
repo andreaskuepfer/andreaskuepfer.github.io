@@ -53,7 +53,10 @@
     <p class="rx-authors">
       {{- range $i, $a := $p.Params.authors -}}
         {{- if $i }}, {{ end -}}
-        {{- if eq $a "admin" -}}<strong>Andreas Kuepfer</strong>{{- else -}}{{ $a }}{{- end -}}
+        {{- $url := index site.Data.coauthors $a -}}
+        {{- if eq $a "admin" -}}<strong>Andreas Kuepfer</strong>
+        {{- else if $url -}}<a href="{{ $url }}" target="_blank" rel="noopener">{{ $a }}</a>
+        {{- else -}}{{ $a }}{{- end -}}
       {{- end -}}
     </p>
 

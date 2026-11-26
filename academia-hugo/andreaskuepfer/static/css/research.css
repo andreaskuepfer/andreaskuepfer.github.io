@@ -155,6 +155,8 @@
 .rx .rx-item h3 a { color: inherit; text-decoration: none; background: linear-gradient(var(--rx-accent), var(--rx-accent)) 0 100% / 0 1px no-repeat; transition: background-size .3s ease; }
 .rx .rx-item h3 a:hover { color: var(--rx-accent); background-size: 100% 1px; }
 .rx-authors { font-size: 0.84rem; line-height: 1.45; color: var(--rx-muted); margin: 0; }
+.rx-authors a { color: inherit; border-bottom: 1px solid rgba(44, 95, 111, 0.3); }
+.rx-authors a:hover { color: var(--rx-accent); border-bottom-color: var(--rx-accent); text-decoration: none; }
 .rx-authors strong { color: var(--rx-text); font-weight: 600; }
 .rx-venue { font-style: italic; font-size: 0.84rem; line-height: 1.4; color: var(--rx-accent); margin: 0; }
 

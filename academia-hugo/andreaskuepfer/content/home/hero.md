@@ -42,13 +42,13 @@ hero_media = ""
 
 **11/2026** &mdash; On 25 November, I'll give a talk at the [Politics and Internet Working Group (PING)](https://kmunger.github.io/ping.html) at the European University Institute in Florence.
 
-**09/2026** &mdash; Our DFG-funded project VideoParl (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) now has its own website: [videoparl.github.io](https://videoparl.github.io/). The project draws on more than 30,000 hours of video from all 16 German state parliaments and the Bundestag (2005&ndash;2023), covering over 100,000 speeches, to study political communication beyond words alone.
+**09/2026** &mdash; Our DFG-funded project VideoParl (w/ [Christian Arnold](https://chrisguarnold.github.io/) and [Christian Stecker](https://chrstecker.de/)) now has its own website: [videoparl.github.io](https://videoparl.github.io/). The project draws on more than 30,000 hours of video from all 16 German state parliaments and the Bundestag (2005&ndash;2023), covering over 100,000 speeches, to study political communication beyond words alone.
 
-**08/2026** &mdash; With [Christian Arnold](http://christianarnold.org/), I registered a pre-analysis plan for an eye-tracking experiment asking whether computer-vision algorithms actually flag what human eyes notice in political images, using precise fixation-level data as ground truth. Preregistration [here](https://osf.io/bxpgd/).
+**08/2026** &mdash; With [Christian Arnold](https://chrisguarnold.github.io/), I registered a pre-analysis plan for an eye-tracking experiment asking whether computer-vision algorithms actually flag what human eyes notice in political images, using precise fixation-level data as ground truth. Preregistration [here](https://osf.io/bxpgd/).
 
-**07/2026** &mdash; We uploaded our new working paper with [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/), "Far-Right Speeches and Emotional Contagion in Parliament: Sequential and Multimodal Evidence from Germany", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/5v6ez_v1)!
+**07/2026** &mdash; We uploaded our new working paper with [Christian Arnold](https://chrisguarnold.github.io/) and [Christian Stecker](https://chrstecker.de/), "Far-Right Speeches and Emotional Contagion in Parliament: Sequential and Multimodal Evidence from Germany", to OSF. Please find it [here](https://doi.org/10.31235/osf.io/5v6ez_v1)!
 
-**04/2026** &mdash; I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](http://christianarnold.org/).
+**04/2026** &mdash; I'll offer a workshop titled "From Desktop to Cluster: Scaling Computational Social Science with High-Performance Computing" for participants of the 8th COMPTEXT conference in April. Additionally, I'll present our working paper on "A Pipeline for Extracting Data from Videos of Complex Subnational Politics" (w/ [Mirya Holman](https://sites.google.com/view/miryaholman) and [Tyler Simko](https://tylersimko.com/)) as well as a working paper on "A Framework for Efficiently Annotating Audiovisual Legislative Debate" with [Christian Arnold](https://chrisguarnold.github.io/).
 
 **01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
 
@@ -70,28 +70,28 @@ hero_media = ""
 
 **04/2025** &mdash; Our paper (w/ [Elias Koch](https://elias-koch.com/)), [The Politics of Seeking and Avoiding Discourse in Parliament](https://doi.org/10.1111/1475-6765.70013) is out as EarlyView at the *European Journal of Political Research* (EJPR).
 
-**12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
+**12/2024** &mdash; Kick-off for our DFG project! With multimodal machine learning, we (w/ [Christian Arnold](https://chrisguarnold.github.io/) and [Christian Stecker](https://chrstecker.de/)) study 15,000h of German parliamentary speeches. Stay tuned for how MPs handle populism, how facial expressions send coalition signals and dynamics of salience.
 
-**10/2024** &mdash; My six-month research stay at the [Mannheim Centre for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/d7/de/profiles/andreas-kuepfer) (Data and Methods Unit) started. I presented our project on object prominence for image-as-data (w/ [Christian Arnold](http://christianarnold.org/)), and I'll co-teach a course on Machine Learning for Social Scientists for PhD Students.
+**10/2024** &mdash; My six-month research stay at the [Mannheim Centre for European Social Research (MZES)](https://www.mzes.uni-mannheim.de/d7/de/profiles/andreas-kuepfer) (Data and Methods Unit) started. I presented our project on object prominence for image-as-data (w/ [Christian Arnold](https://chrisguarnold.github.io/)), and I'll co-teach a course on Machine Learning for Social Scientists for PhD Students.
 
-**09/2024** &mdash; Find the preprint of our working paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2409.00216).
+**09/2024** &mdash; Find the preprint of our working paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](https://chrisguarnold.github.io/)) on [arXiv](https://arxiv.org/abs/2409.00216).
 
 **02/2025** &mdash; Our paper (w/ [Elias Koch](https://elias-koch.com/)), *The Politics of Seeking and Avoiding Discourse in Parliament* has been accepted at the *European Journal of Political Research*.
 
-**09/2024** &mdash; We're presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 120th APSA in Philadelphia (September 5-8).
+**09/2024** &mdash; We're presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](https://chrisguarnold.github.io/)) at the 120th APSA in Philadelphia (September 5-8).
 
-**08/2024** &mdash; Our project with  [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/) has been accepted by the German Research Foundation (DFG)! For the next three years, we’re studying non-verbal political communication, using aligned multimodal speech data (text/audio/video) to explore MPs' communication in legislative debates beyond words alone.
+**08/2024** &mdash; Our project with  [Christian Arnold](https://chrisguarnold.github.io/) and [Christian Stecker](https://chrstecker.de/) has been accepted by the German Research Foundation (DFG)! For the next three years, we’re studying non-verbal political communication, using aligned multimodal speech data (text/audio/video) to explore MPs' communication in legislative debates beyond words alone.
 
-**07/2024** &mdash; I am presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](http://christianarnold.org/)) at the 14th Annual Conference of the European Political Science Association in Cologne (July 4-6).
+**07/2024** &mdash; I am presenting our paper Structuring Quantitative Image Analysis with Object Prominence (w/ [Christian Arnold](https://chrisguarnold.github.io/)) at the 14th Annual Conference of the European Political Science Association in Cologne (July 4-6).
 
 
 **06/2024** &mdash; I am attending the [Video Research Institute](https://cla.purdue.edu/communication/ccse/video-research-institute/) at Purdue University (June 24-29) (hosted by [Bryce Dietrich](http://www.brycejdietrich.com/index.html)).
 
-**05/2024** &mdash; Find the preprint of our working paper How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) on [arXiv](https://arxiv.org/abs/2405.08454).
+**05/2024** &mdash; Find the preprint of our working paper How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](https://chrisguarnold.github.io/)) on [arXiv](https://arxiv.org/abs/2405.08454).
 
-**05/2024** &mdash; On May 8th at 3pm CET, I'm presenting our paper on How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](http://christianarnold.org/)) at the [Text-as-Data Reading Group](http://tada.cool/) Spring 2024 Speaker Series.
+**05/2024** &mdash; On May 8th at 3pm CET, I'm presenting our paper on How Alignment Helps Make the Most of Multimodal Data (w/ [Christian Arnold](https://chrisguarnold.github.io/)) at the [Text-as-Data Reading Group](http://tada.cool/) Spring 2024 Speaker Series.
 
-**05/2024** &mdash; [Christian Arnold](http://christianarnold.org/) and I have a new working paper: Structuring Quantitative Image Analysis with Metric Depth. We're presenting it at the upcoming 6th Annual COMPTEXT Conference (May 2-4, 2024) in Amsterdam.
+**05/2024** &mdash; [Christian Arnold](https://chrisguarnold.github.io/) and I have a new working paper: Structuring Quantitative Image Analysis with Metric Depth. We're presenting it at the upcoming 6th Annual COMPTEXT Conference (May 2-4, 2024) in Amsterdam.
 
 **02/2024** &mdash; My paper, [Non-random Tweet Mortality and Data Access Restrictions: Compromising the Replication of Sensitive Twitter Studies](https://andreas-kuepfer.com/papers/PA_Kuepfer_Twitter_Replication.pdf) has been accepted at Political Analysis.
 
@@ -103,11 +103,11 @@ hero_media = ""
 
 **11/2023** &mdash; Our working group received an [Athene Award for excellent teaching](https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_429184.de.jsp) at the TU Darmstadt. We collect and distribute some of these methods at our [MethodPark](https://sites.google.com/view/methodpark)
 
-**11/2023** &mdash; At the [Annual Conference of the International Association for the Study of German Politics](https://www.iasgp.org/cfp-iasgp-2023-annual-conference-shocks-to-the-german-system-german-politics-in-2023/) in Mannheim I will present our Multimodal Paper with [Christian Arnold](http://christianarnold.org/)
+**11/2023** &mdash; At the [Annual Conference of the International Association for the Study of German Politics](https://www.iasgp.org/cfp-iasgp-2023-annual-conference-shocks-to-the-german-system-german-politics-in-2023/) in Mannheim I will present our Multimodal Paper with [Christian Arnold](https://chrisguarnold.github.io/)
 
-**10/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Making the Most of Multimodal Data at the [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
+**10/2023** &mdash; [Christian Arnold](https://chrisguarnold.github.io/) is presenting our paper about Making the Most of Multimodal Data at the [2023 PSAI Annual Conference](https://www.qub.ac.uk/sites/psai2023-qub/) in Belfast
 
-**07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreas-kuepfer.com/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](http://christianarnold.org/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods
+**07/2023** &mdash; Our paper, [The Role of Hyperparameters in Machine Learning Models and How to Tune Them](https://andreas-kuepfer.com/papers/PSRM___Using_Machine_Learning-11.pdf), a joint work with [Christian Arnold](https://chrisguarnold.github.io/), [Luka Biedebach](https://sleeprevolution.eu/en/luka-biedebach/), and [Marcel Neunhoeffer](https://www.marcel-neunhoeffer.com/), has been accepted by Political Science Research and Methods
 
 **07/2023** &mdash; I am presenting our paper about multimodal alignment as well as joint work analyzing What we can and cannot learn from responses to legislative speeches (with [Jochen Müller](https://ipk.uni-greifswald.de/politikwissenschaft/professor-dr-jochen-mueller/) and [Christian Stecker](https://chrstecker.de/)) at the [8th Conference of the Standing Group on Parliaments](https://ecpr.eu/Events/224) in Vienna
 
@@ -115,7 +115,7 @@ hero_media = ""
 
 **05/2023** &mdash; I am presenting my paper Non-random Tweet Mortality and Data Access Restrictions: Implications for the Study of Sensitive Topics on Twitter at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
-**05/2023** &mdash; [Christian Arnold](http://christianarnold.org/) is presenting our paper about Making the Most of Multimodal Data at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
+**05/2023** &mdash; [Christian Arnold](https://chrisguarnold.github.io/) is presenting our paper about Making the Most of Multimodal Data at [COMPTEXT 2023](https://www.comptextconference.org/) in Glasgow
 
 **04/2023** &mdash; Spring 2023 Semester: Teaching Quantitative Text Analysis in R (Postgraduate seminar) at TU Darmstadt
 
@@ -131,7 +131,7 @@ hero_media = ""
 
 **05/2022** &mdash; MZES SSDL blog post and input talk about the [Collection, Management, and Analysis of Twitter Data](https://andreas-kuepfer.com/publication/twitter_api/)
 
-**05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) at Technical University of Darmstadt and co-supervised by [Christian Arnold](http://christianarnold.org/) at Cardiff University
+**05/2022** &mdash; First day as a Research Associate and PhD Student at the department of [Christian Stecker](https://chrstecker.de/) at Technical University of Darmstadt and co-supervised by [Christian Arnold](https://chrisguarnold.github.io/) at Cardiff University
 
 
 </div>
