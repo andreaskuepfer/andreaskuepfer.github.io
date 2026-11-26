@@ -1,0 +1,18 @@
+{{/* "Latest News" in the Research page design. Write each item in content/home/hero.md as:
+     **MM/YYYY** &mdash; Text
+     Keep the newest item at the top: only the first five are shown. */}}
+{{ $st := .page }}
+{{ $news := replaceRE `<p><strong>(\d{2}/\d{4})</strong>\s*(?:—|&mdash;)\s*` `<p><span class="rx-news-date">${1}</span> ` (string $st.Content) }}
+
+<link rel="stylesheet" href="{{ "css/research.css" | relURL }}?v={{ now.Unix }}">
+
+<div class="rx rx-home">
+  <section class="rx-section" aria-labelledby="rx-news">
+    <h2 id="rx-news">{{ $st.Title }}</h2>
+    <div class="rx-news">
+      {{ range findRE `(?s)<p><span class="rx-news-date">.*?</p>` $news 5 }}
+        {{ . | safeHTML }}
+      {{ end }}
+    </div>
+  </section>
+</div>

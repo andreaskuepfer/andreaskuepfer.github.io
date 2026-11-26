@@ -1,0 +1,192 @@
+/* Research page (layouts/widget_page/research.html). All rules are scoped to .rx
+   Type: one serif for the whole site, set as --site-serif in custom.css. */
+.rx {
+  --rx-ink: #172a33;
+  --rx-band: #223a46;
+  --rx-text: #24343c;
+  --rx-muted: #5d6f78;
+  --rx-line: #dde4e7;
+  --rx-accent: #2c5f6f;
+  --rx-parliament: #3f9db3;
+  --rx-multimodal: #e0a031;
+  --rx-methods: #c9607f;
+  --rx-serif: var(--site-serif);
+  color: var(--rx-text);
+}
+
+.rx-wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+.rx-dot {
+  display: inline-block;
+  width: 0.6em; height: 0.6em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  flex: none;
+}
+.rx-parliament { background: var(--rx-parliament); }
+.rx-multimodal { background: var(--rx-multimodal); }
+.rx-methods    { background: var(--rx-methods); }
+
+/* ---------- hero ---------- */
+.rx-hero { background: var(--rx-band); color: #eef4f6; padding: 64px 0 52px; }
+.rx-hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.rx .rx-hero h1 {
+  font-family: var(--rx-serif);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0 0 20px;
+  text-wrap: balance;
+}
+.rx-hero p { color: #bfd0d7; font-size: 1rem; line-height: 1.65; max-width: 30em; margin-bottom: 26px; }
+
+.rx-legend { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.rx-filter {
+  display: inline-flex; align-items: center;
+  background: transparent;
+  color: #eef4f6;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: background-color .2s, border-color .2s;
+}
+.rx-filter:hover { border-color: rgba(255,255,255,0.6); }
+.rx-filter[aria-pressed="true"] { background: #fff; border-color: #fff; color: var(--rx-ink); }
+.rx-count { margin-left: 0.6em; opacity: 0.6; font-variant-numeric: tabular-nums; }
+
+/* ---------- seating chart ---------- */
+.rx-chamber { margin: 0; text-align: center; }
+.rx-chamber[hidden] { display: none; }
+.rx-chamber svg { width: 100%; height: auto; overflow: visible; }
+.rx-seat { cursor: pointer; outline: none; }
+.rx-seat circle.rx-mark { stroke-width: 3; transition: r .18s ease, opacity .25s; }
+.rx-seat[data-theme-key="parliament"] { color: var(--rx-parliament); }
+.rx-seat[data-theme-key="multimodal"] { color: var(--rx-multimodal); }
+.rx-seat[data-theme-key="methods"]    { color: var(--rx-methods); }
+.rx-seat .rx-mark { stroke: currentColor; fill: currentColor; }
+.rx-seat:hover .rx-mark, .rx-seat:focus-visible .rx-mark { r: 19; }
+.rx-seat:focus-visible .rx-hit { stroke: #fff; stroke-width: 1.5; stroke-dasharray: 3 3; }
+.rx-seat.rx-dim .rx-mark { opacity: 0.2; }
+.rx-head, .rx-pupil { transition: transform .45s cubic-bezier(.3,.7,.3,1); }
+.rx-following .rx-head, .rx-following .rx-pupil { transition-duration: .12s; }
+.rx-shoulders { fill: #7f9ca8; }
+.rx-face { fill: #e6eef1; }
+.rx-eye { fill: #fff; stroke: #223a46; stroke-width: 1.5; }
+.rx-pupil { fill: #172a33; }
+.rx-podium { fill: #4d6b79; }
+.rx-lip { fill: #9fb6bf; }
+.rx-cone { opacity: 0; pointer-events: none; fill-opacity: 0.2; transition: opacity .45s ease; }
+.rx-cone[data-theme-key="parliament"] { fill: var(--rx-parliament); }
+.rx-cone[data-theme-key="multimodal"] { fill: var(--rx-multimodal); }
+.rx-cone[data-theme-key="methods"]    { fill: var(--rx-methods); }
+
+.rx-chamber figcaption { margin-top: 14px; }
+.rx-caption {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 3.2em;
+  font-style: italic; font-size: 0.92rem; line-height: 1.35;
+  color: #eef4f6;
+}
+
+/* ---------- lists ---------- */
+.rx-section { padding-top: 48px; }
+.rx-section:last-child { padding-bottom: 40px; }
+.rx-section.rx-empty { display: none; }
+.rx .rx-section h2 {
+  font-family: var(--rx-serif);
+  font-weight: 500;
+  font-size: 1.9rem;
+  color: var(--rx-ink);
+  margin: 0 0 6px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--rx-ink);
+}
+.rx-list { list-style: none; padding: 0; margin: 0; }
+
+/* "Selected Publications" on the landing page */
+.rx-home { max-width: 1032px; margin: 0 auto; }
+.rx-home .rx-section { padding: 0; }
+
+/* Teaching and CV */
+.rx-page > p { margin: 20px 0 0; font-size: 0.95rem; line-height: 1.7; }
+.rx .rx-page h2 { margin-top: 44px; }
+.rx-page ul { list-style: none; padding: 0; margin: 0; }
+.rx-page li { position: relative; padding: 13px 0 13px 200px; font-size: 0.92rem; line-height: 1.6; border-bottom: 1px solid var(--rx-line); }
+.rx-term { position: absolute; left: 0; top: 13px; font-weight: 600; font-size: 0.92rem; color: var(--rx-accent); font-variant-numeric: tabular-nums; }
+#cv .rx-home { max-width: 680px; }
+#cv .rx-page { margin-top: 22px; }
+
+/* "Latest News" on the landing page: dates sit in the margin like publication years */
+.rx-news { overflow-wrap: break-word; }
+.rx .rx-news p { position: relative; margin: 0; padding: 14px 0 14px 154px; font-size: 0.92rem; line-height: 1.6; border-bottom: 1px solid var(--rx-line); }
+.rx-news-date { position: absolute; left: 0; top: 11px; font-weight: 600; font-size: 1.45rem; line-height: 1.15; color: var(--rx-accent); font-variant-numeric: tabular-nums; }
+
+.rx-item {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  column-gap: 24px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--rx-line);
+  scroll-margin-top: 90px;
+}
+.rx-item[data-published="false"] { grid-template-columns: minmax(0, 1fr); }
+.rx-item[hidden] { display: none; }
+.rx-item.rx-flash { animation: rx-flash 1.8s ease-out; }
+@keyframes rx-flash {
+  0%, 35% { background: #e7f2f5; box-shadow: -16px 0 0 #e7f2f5, 16px 0 0 #e7f2f5; }
+  100%    { background: transparent; box-shadow: -16px 0 0 transparent, 16px 0 0 transparent; }
+}
+
+.rx-year { font-weight: 600; font-size: 1.45rem; color: var(--rx-accent); line-height: 1.15; font-variant-numeric: tabular-nums; }
+.rx .rx-item h3 {
+  font-family: var(--rx-serif);
+  font-weight: 500;
+  font-size: 1.22rem;
+  line-height: 1.25;
+  margin: 0 0 3px;
+  color: var(--rx-ink);
+  text-wrap: pretty;
+}
+.rx .rx-item h3 a { color: inherit; text-decoration: none; background: linear-gradient(var(--rx-accent), var(--rx-accent)) 0 100% / 0 1px no-repeat; transition: background-size .3s ease; }
+.rx .rx-item h3 a:hover { color: var(--rx-accent); background-size: 100% 1px; }
+.rx-authors { font-size: 0.84rem; line-height: 1.45; color: var(--rx-muted); margin: 0; }
+.rx-authors strong { color: var(--rx-text); font-weight: 600; }
+.rx-venue { font-style: italic; font-size: 0.84rem; line-height: 1.4; color: var(--rx-accent); margin: 0; }
+
+.rx-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; margin-top: 5px; line-height: 1.4; }
+.rx-theme { display: inline-flex; align-items: center; font-size: 0.76rem; color: var(--rx-muted); }
+.rx-actions { display: inline-flex; flex-wrap: wrap; gap: 16px; }
+.rx-actions a, .rx-actions button {
+  font-size: 0.78rem; font-weight: 600;
+  color: var(--rx-accent);
+  background: none; border: 0; padding: 0;
+  border-bottom: 1px solid rgba(44,95,111,0.3);
+  cursor: pointer;
+  line-height: 1.5;
+}
+.rx-actions a:hover, .rx-actions button:hover { color: var(--rx-ink); border-bottom-color: var(--rx-ink); text-decoration: none; }
+.rx-abstract { margin-top: 10px; font-size: 0.9rem; line-height: 1.7; max-width: 44em; border-left: 2px solid var(--rx-accent); padding-left: 16px; }
+.rx-abstract p:last-child { margin-bottom: 0; }
+
+.rx button:focus-visible, .rx a:focus-visible { outline: 2px solid var(--rx-parliament); outline-offset: 3px; }
+
+@media (max-width: 860px) {
+  .rx-hero { padding: 40px 0 36px; }
+  .rx-hero-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .rx-chamber { max-width: 440px; margin: 0 auto; width: 100%; }
+  .rx-item { grid-template-columns: minmax(0, 1fr); row-gap: 3px; }
+  .rx .rx-news p { padding-left: 0; }
+  .rx-news-date { position: static; display: block; }
+  .rx-page li { padding-left: 0; }
+  .rx-term { position: static; display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rx * { transition: none !important; animation: none !important; }
+  .rx-item.rx-flash { background: #e7f2f5; }
+}

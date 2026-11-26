@@ -344,3 +344,112 @@ img.portrait {
   transform: translateX(0);
 }
 
+/* ------------------------------------------------
+   About section — serif headings, matching the Research design
+   ------------------------------------------------ */
+.wg-about .portrait-title h2,
+.wg-about .col-md-7 > h3,
+.wg-about .col-md-5 > h3 {
+  font-family: var(--site-serif);
+  font-weight: 500;
+  letter-spacing: normal;
+  color: #172a33;
+}
+.wg-about .portrait-title h2 { font-size: 2.2rem; }
+
+/* ------------------------------------------------
+   Contact — matching the Research design
+   ------------------------------------------------ */
+.wg-contact .contact-widget { max-width: 1062px; }
+.wg-contact .section-heading.text-center { text-align: left !important; }
+.wg-contact .section-heading h1 {
+  display: block;
+  font-family: var(--site-serif);
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  text-align: left;
+  color: #172a33;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #172a33;
+}
+.wg-contact .section-heading h1::after { display: none; }
+.wg-contact form { box-shadow: none; border: 1px solid #dde4e7; border-radius: 4px; }
+.wg-contact .form-control { border-radius: 4px !important; }
+.wg-contact button[type="submit"] { border-radius: 4px !important; }
+.wg-contact button[type="submit"]:hover { transform: none; box-shadow: none; }
+.wg-contact .fa-ul > li { border-bottom-color: #dde4e7; }
+#map { box-shadow: none; border: 1px solid #dde4e7; border-radius: 4px; }
+
+
+/* ------------------------------------------------
+   Navigation bar — matching the Research design
+   ------------------------------------------------ */
+#navbar-main {
+  background-color: #223a46 !important; /* same as the Research header band */
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#navbar-main .container { max-width: 1080px; padding-left: 24px; padding-right: 24px; }
+
+#navbar-main .navbar-brand {
+  font-family: var(--site-serif);
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+#navbar-main .navbar-nav .nav-link {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #bfd0d7;
+}
+#navbar-main .navbar-nav .nav-link:hover,
+#navbar-main .navbar-nav .nav-link.active { color: #fff !important; font-weight: 400; }
+#navbar-main .nav-link::after { bottom: -1px; background-color: #3f9db3; }
+
+@media (min-width: 992px) {
+  #navbar-main .navbar-nav .nav-link { margin-left: 22px; padding-left: 0; padding-right: 0; }
+}
+
+/* Open menu on phones and tablets */
+@media (max-width: 991.98px) {
+  #navbar-main .navbar-collapse { background-color: #223a46 !important; border: 0; }
+  #navbar-main .navbar-nav .nav-link { display: inline-block; }
+}
+
+/* ------------------------------------------------
+   Base font size: about 8% below the theme's 14px / 18px.
+   Phones keep the theme size so small text stays readable.
+   ------------------------------------------------ */
+@media screen and (min-width: 37.5em) {
+  html { font-size: 13px; }
+}
+@media screen and (min-width: 58em) {
+  html { font-size: 16.5px; }
+}
+
+/* ------------------------------------------------
+   Landing page — tighter gaps between sections (theme default here was 80px)
+   ------------------------------------------------ */
+#about.home-section { padding-top: 40px; padding-bottom: 24px; }
+#hero.home-section,
+#featured.home-section { padding-top: 40px; padding-bottom: 40px; }
+
+/* ------------------------------------------------
+   Typeface — one serif everywhere (code blocks, icons, the map and the CV PDF keep their own)
+   ------------------------------------------------ */
+:root { --site-serif: "STIX Two Text", Cambria, "Times New Roman", serif; }
+
+body,
+h1, h2, h3, h4, h5, h6,
+.navbar, .navbar-brand, .navbar-nav .nav-link,
+.portrait-title h2, .portrait-title h3,
+input, textarea, select, button, .btn,
+figcaption, .rx-caption,
+.cc-window,
+.search-results, #search-box input {
+  font-family: var(--site-serif) !important;
+}

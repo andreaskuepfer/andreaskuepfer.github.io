@@ -1,10 +1,10 @@
 +++
-widget = "blank"
+widget = "rx_page"
 headless = true
 active = true
 weight = 10
 
-title = ""
+title = "CV"
 subtitle = ""
 
 [design]

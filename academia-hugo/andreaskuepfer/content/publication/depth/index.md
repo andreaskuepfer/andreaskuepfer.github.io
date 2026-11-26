@@ -13,6 +13,7 @@ publishDate: "2023-03-13T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
+research_theme: "multimodal"
 publication_types: ["3"]
 wp_rank: 2
 
@@ -20,7 +21,7 @@ wp_rank: 2
 publication: "*Christian Arnold and Andreas Kuepfer, n.d. &quot;Structuring Quantitative Image Analysis with Metric Depth&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
-abstract: ""
+abstract: "When photographers or media professionals compose an image, they make deliberate choices about what to foreground and what to background, shaping how viewers interpret visual content. Yet most quantitative approaches to image analysis overlook this structure and treat detected objects as equally important. We introduce a framework for measuring object prominence – the relative salience of objects in an image – as a means to make computational image analysis attentive to the compositional emphasis a curator has built into an image. Drawing on research in cognitive psychology and computer vision, we outline three approaches for estimating object prominence: size and centeredness, inferred depth, and saliency maps. Validating that curator-composed prominence measurably shifts human visual attention in a pre-registered eye-tracking study, we illustrate this framework's benefits in two further applications. First, we demonstrate how weighting features in line with their prominence can enhance the unsupervised ideological scaling of U.S. newspaper images. Second, we examine gendered visual prominence in U.S. presidential campaign ads from 2016 and 2020, showing that Republican candidates depict women less prominently than their Democratic counterparts. Our framework lets researchers analyze image data at scale while remaining attentive to its communicative structure and intent."
 
 # Summary. An optional shortened abstract.
 summary: 

@@ -1,5 +1,5 @@
 +++
-widget = "featured"
+widget = "selected_publications"
 headless = true
 active = true
 weight = 40

@@ -1,0 +1,13 @@
+{{/* A text page (Teaching, CV) in the Research page design.
+     List items that start with a term, e.g. "- Fall 2024: Title", show the term in the margin. */}}
+{{ $st := .page }}
+{{ $body := replaceRE `<li>((?:Spring|Summer|Fall|Winter) [^:<]+):\s*` `<li><span class="rx-term">${1}</span> ` (string $st.Content) }}
+
+<link rel="stylesheet" href="{{ "css/research.css" | relURL }}?v={{ now.Unix }}">
+
+<div class="rx rx-home">
+  <section class="rx-section">
+    <h2>{{ $st.Title }}</h2>
+    <div class="rx-page">{{ $body | safeHTML }}</div>
+  </section>
+</div>

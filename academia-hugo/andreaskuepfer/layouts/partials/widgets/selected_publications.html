@@ -1,0 +1,20 @@
+{{/* "Selected Publications" on the landing page: papers with `featured: true`, in the Research page design. */}}
+{{ $st := .page }}
+{{ $themes := site.Data.research_themes.themes }}
+{{ $selected := where (where site.RegularPages "Section" "publication") "Params.featured" true }}
+{{ $selected = sort $selected "Date" "desc" }}
+
+<link rel="stylesheet" href="{{ "css/research.css" | relURL }}?v={{ now.Unix }}">
+
+<div class="rx rx-home">
+  <section class="rx-section" aria-labelledby="rx-selected">
+    <h2 id="rx-selected">{{ $st.Title }}</h2>
+    <ol class="rx-list">
+      {{ range $selected }}
+        {{ partial "research_item.html" (dict "page" . "themes" $themes "published" true) }}
+      {{ end }}
+    </ol>
+  </section>
+</div>
+
+<script src="{{ "js/research.js" | relURL }}?v={{ now.Unix }}" defer></script>

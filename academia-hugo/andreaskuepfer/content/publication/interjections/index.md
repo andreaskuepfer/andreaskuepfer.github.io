@@ -15,6 +15,7 @@ publishDate: "2026-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
+research_theme: "parliament"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
@@ -22,6 +23,7 @@ publication: "*Kuepfer, Andreas, Jochen Müller, and Christian Stecker. 2026. �
 publication_short: 
 
 # Summary. An optional shortened abstract.
+abstract: "This article studies how applause reflects the dynamics of party competition during parliamentary debates. While legislative scholars often emphasise the selection of speakers and content of debates, spontaneous reactions from fellow MPs remain understudied. Analysing 750,000 instances of applause in the debates of the German Bundestag (1976–2020), it was found that applause patterns, although largely spontaneous and immediate by nature, systematically reflect incentives from party competition such as signalling party and coalition unity, ideological (dis)agreement, and ostracising specific parties. Applause also indicates issue emphasis, especially near elections. The findings suggest that applause can serve as a nuanced and abundant indicator in the study of party competition, complementing more static measures derived from manifestos and expert judgements. By analysing applause patterns over four decades, this study opens new avenues to explore nonverbal reactions as markers of party competition in other parliaments."
 summary: 
 
 tags:

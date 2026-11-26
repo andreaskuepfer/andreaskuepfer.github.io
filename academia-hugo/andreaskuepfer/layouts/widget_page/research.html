@@ -1,0 +1,73 @@
+{{- define "main" -}}
+{{/*
+  Custom layout for /research/.
+  Everything is generated from the index.md files in content/publication:
+  - publication_types "2" = Published, "3" = Working paper
+  - research_theme = "parliament" | "multimodal" | "methods"
+  - wp_rank orders the working papers
+  - a trailing "(R&R at X)" or "(Under Review)" in the title becomes the status label
+*/}}
+{{ $themes := site.Data.research_themes.themes }}
+
+{{ $all := where site.RegularPages "Section" "publication" }}
+{{ $published := where $all "Params.publication_types" "intersect" (slice "2") }}
+{{ $published = sort $published "Date" "desc" }}
+{{ $working := where $all "Params.publication_types" "intersect" (slice "3") }}
+{{ $working = sort $working "Params.wp_rank" "asc" }}
+
+<link rel="stylesheet" href="{{ "css/research.css" | relURL }}?v={{ now.Unix }}">
+
+<div class="rx">
+
+  <header class="rx-hero">
+    <div class="rx-wrap rx-hero-grid">
+      <div class="rx-hero-text">
+        <h1>Who gets to be seen and heard in politics?</h1>
+        <p>I study how politicians communicate and behave, building reproducible pipelines for large-scale multimodal data from video, audio, and text.</p>
+        <ul class="rx-legend">
+          {{ range $themes }}
+          <li>
+            <button type="button" class="rx-filter" data-theme-key="{{ .key }}" aria-pressed="false">
+              <span class="rx-dot rx-{{ .key }}"></span>{{ .label }}
+              <span class="rx-count">{{ len (where $all "Params.research_theme" .key) }}</span>
+            </button>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <figure class="rx-chamber" hidden>
+        <svg viewBox="0 0 440 250" role="group" aria-label="One seat per paper, grouped by research theme, around a speaker"></svg>
+        <figcaption>
+          <span class="rx-caption" aria-live="polite">Pick a seat, find a paper.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <div class="rx-wrap">
+
+    <section class="rx-section" aria-labelledby="rx-published">
+      <h2 id="rx-published">Published</h2>
+      <ol class="rx-list">
+        {{ range $published }}
+          {{ partial "research_item.html" (dict "page" . "themes" $themes "published" true) }}
+        {{ end }}
+      </ol>
+    </section>
+
+    <section class="rx-section" aria-labelledby="rx-working">
+      <h2 id="rx-working">Working papers</h2>
+      <ol class="rx-list">
+        {{ range $working }}
+          {{ partial "research_item.html" (dict "page" . "themes" $themes "published" false) }}
+        {{ end }}
+      </ol>
+    </section>
+
+  </div>
+
+</div>
+
+<script src="{{ "js/research.js" | relURL }}?v={{ now.Unix }}" defer></script>
+{{- end -}}

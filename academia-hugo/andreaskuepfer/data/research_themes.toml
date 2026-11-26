@@ -1,0 +1,13 @@
+# Research themes used on the Research page and in "Selected Publications".
+# A paper picks one via `research_theme` in its front matter.
+[[themes]]
+key = "parliament"
+label = "Parliaments & political behaviour"
+
+[[themes]]
+key = "multimodal"
+label = "Multimodal & visual data"
+
+[[themes]]
+key = "methods"
+label = "Open & reproducible methods"

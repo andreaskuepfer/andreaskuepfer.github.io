@@ -1,0 +1,83 @@
+{{ $p := .page }}
+{{ $published := .published }}
+
+{{/* Split "Title (R&R at X)" into title + status + venue */}}
+{{ $title := $p.Title }}
+{{ $status := "" }}
+{{ $venue := "" }}
+{{ $suffix := findRE `\s*\((R&R|Under [Rr]eview)[^)]*\)\s*$` $title }}
+{{ with $suffix }}
+  {{ $raw := index . 0 }}
+  {{ $title = strings.TrimSuffix $raw $title }}
+  {{ $inner := trim $raw " ()" }}
+  {{ $parts := split $inner " at " }}
+  {{ $status = index $parts 0 }}
+  {{ if gt (len $parts) 1 }}{{ $venue = index $parts 1 }}{{ end }}
+{{ end }}
+
+{{/* Published papers: "Journal (Year)" */}}
+{{ $year := $p.Date.Format "2006" }}
+{{ with $p.Params.journal }}
+  {{ $y := findRE `\(\d{4}\)\s*$` . }}
+  {{ with $y }}{{ $year = trim (index . 0) " ()" }}{{ end }}
+  {{ $venue = replaceRE `\s*\(\d{4}\)\s*$` "" . }}
+{{ end }}
+
+{{ if not $published }}
+  {{ if eq $status "R&R" }}
+    {{ $venue = cond (ne $venue "") (printf "R&R at %s" $venue) "R&R" }}
+  {{ else if $status }}
+    {{ $venue = "Under review" }}
+  {{ else }}
+    {{ $venue = "In progress" }}
+  {{ end }}
+{{ end }}
+
+{{ $href := $p.Params.external_url | default $p.Params.url_pdf }}
+{{ $key := $p.Params.research_theme }}
+{{ $slug := path.Base (strings.TrimSuffix "/" $p.RelPermalink) }}
+
+<li class="rx-item" id="paper-{{ $slug }}"
+    data-theme-key="{{ $key }}" data-published="{{ $published }}" data-title="{{ $title }}">
+
+  {{ if $published }}
+  <div class="rx-margin"><span class="rx-year">{{ $year }}</span></div>
+  {{ end }}
+
+  <div class="rx-body">
+    <h3>
+      {{ with $href }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $title }}</a>
+      {{ else }}{{ $title }}{{ end }}
+    </h3>
+
+    <p class="rx-authors">
+      {{- range $i, $a := $p.Params.authors -}}
+        {{- if $i }}, {{ end -}}
+        {{- if eq $a "admin" -}}<strong>Andreas Kuepfer</strong>{{- else -}}{{ $a }}{{- end -}}
+      {{- end -}}
+    </p>
+
+    {{ with $venue }}<p class="rx-venue">{{ . }}</p>{{ end }}
+
+    <div class="rx-meta">
+      {{ range .themes }}{{ if eq .key $key }}
+        <span class="rx-theme"><span class="rx-dot rx-{{ .key }}"></span>{{ .label }}</span>
+      {{ end }}{{ end }}
+
+      <span class="rx-actions">
+        {{ if $published }}
+          {{ with $href }}<a href="{{ . }}" target="_blank" rel="noopener">Article</a>{{ end }}
+        {{ else }}
+          {{ with $p.Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">Preprint</a>{{ end }}
+        {{ end }}
+        {{ with $p.Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener">Code &amp; data</a>{{ end }}
+        {{ with $p.Resources.GetMatch "cite.bib" }}<button type="button" class="js-cite-modal" data-filename="{{ .RelPermalink }}">Cite</button>{{ end }}
+        {{ if $p.Params.abstract }}<button type="button" class="rx-abstract-toggle" aria-expanded="false" aria-controls="abstract-{{ $slug }}">Abstract</button>{{ end }}
+      </span>
+    </div>
+
+    {{ with $p.Params.abstract }}
+    <div class="rx-abstract" id="abstract-{{ $slug }}" hidden>{{ . | markdownify }}</div>
+    {{ end }}
+  </div>
+</li>

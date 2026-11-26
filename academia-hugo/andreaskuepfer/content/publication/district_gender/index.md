@@ -14,6 +14,7 @@ publishDate: "2025-05-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
+research_theme: "multimodal"
 publication_types: ["3"]
 wp_rank: 1
 
@@ -21,7 +22,7 @@ wp_rank: 1
 publication: ""
 publication_short: 
 
-abstract: ""
+abstract: "Political scientists now regularly use audio, video, and text data to investigate questions about deliberation, representation, and emotion. However, existing research using multimodal data focuses largely on highly professionalized settings with readily available preprocessed data. Although the availability of data from less standardized environments such as campaign events, court hearings, and local government meetings has increased, using recordings of these events for research poses common measurement challenges, including creating transcripts, identifying speakers, and idiosyncratic production styles. In this paper, we present a streamlined and tested pipeline that uses open source tools to automatically transform raw recordings into data formats needed for political science research. The outputs of our pipeline can then be used for a wide range of substantive analyses. We validate our approach through an examination of thousands of hours of local government meetings and state supreme court hearings, showing how we can accurately segment audio, identify speakers, transcribe speech, and detect gender across varying structures and audio/video quality. The flexible open-source pipeline is publicly available and supports both local machines and computing clusters. As an application, we examine participation by gender in over 1,000 hours of school board meeting videos and US state supreme court hearings."
 
 # Summary. An optional shortened abstract.
 summary: 

@@ -13,6 +13,7 @@ publishDate: "2023-03-12T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Blog Post
+research_theme: "multimodal"
 publication_types: ["3"]
 wp_rank: 4
 
@@ -20,7 +21,7 @@ wp_rank: 4
 publication: "*Christian Arnold and Andreas Kuepfer, n.d. &quot;How Alignment Helps Make the Most of Multimodal Data&quot; <i>Manuscript in preparation</i>.*"
 publication_short: 
 
-abstract: "When studying political communication, combining the information from text, audio, and video signals promises to reflect the richness of human communication more comprehensively than confining it to individual modalities alone. However, when modeling such multimodal data, its heterogeneity, connectedness, and interaction are challenging to address. We argue that aligning the respective modalities can be an essential step in entirely using the potential of multimodal data because it informs the model with human understanding. Exploring aligned modalities unlocks promising analytical leverage. First, it allows us to make the most of information in the data, which inter alia opens the door to better quality predictions. Second, it is possible to answer research questions that span multiple modalities with cross-modal queries. Finally, alignment addresses concerns about model interpretability. We illustrate the utility of this approach by analyzing how German MPs address members of the far-right AfD in their speeches, and predicting the tone of video advertising in the context of the 2020 US presidential race. Our paper offers important insights to all keen to analyze multimodal data effectively."
+abstract: "Political scientists increasingly analyze multimodal data. However, the effective analysis of such data requires aligning information across different modalities. In our paper, we demonstrate the significance of such alignment. Informed by a systematic review of 2,703 papers, we find that political scientists typically do not align their multimodal data. Introducing a decision tree that guides alignment choices, our framework highlights alignment's untapped potential and provides concrete advice in research design and modeling decisions. We illustrate alignment's analytical value through two applications: predicting tonality in U.S. presidential campaign ads and cross-modal querying of German parliamentary speeches to examine responses to the far-right AfD."
 
 # Summary. An optional shortened abstract.
 summary: 

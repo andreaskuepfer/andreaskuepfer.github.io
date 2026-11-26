@@ -1,11 +1,11 @@
 +++
 # Hero widget.
-widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "news"  # layouts/partials/widgets/news.html; see https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 11  # Order that this section will appear.
 
-title = "Academia"
+title = "Latest News"
 keywords = ["Andreas Kupfer", "Andreas Kuepfer", "Andreas Kuepfer"]
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
@@ -40,12 +40,6 @@ hero_media = ""
 
 +++
 
-<div class="col-12 section-heading text-center">
-<h1>Latest News</h1>
-</div>
-
-<div style="word-wrap: break-word; width: 80%; margin: 0 auto;">
-
 **11/2026** &mdash; On 25 November, I'll give a talk at the [Politics and Internet Working Group (PING)](https://kmunger.github.io/ping.html) at the European University Institute in Florence.
 
 **09/2026** &mdash; Our DFG-funded project VideoParl (w/ [Christian Arnold](http://christianarnold.org/) and [Christian Stecker](https://chrstecker.de/)) now has its own website: [videoparl.github.io](https://videoparl.github.io/). The project draws on more than 30,000 hours of video from all 16 German state parliaments and the Bundestag (2005&ndash;2023), covering over 100,000 speeches, to study political communication beyond words alone.
@@ -59,7 +53,7 @@ hero_media = ""
 **01/2026** &mdash; I successfully [defended my PhD](https://bsky.app/profile/ankuepfer.bsky.social/post/3mcfeczph6s27) at the University of Mannheim.
 
 **01/2026** &mdash; I'm on a research visit at the Centre for AI and Government (University of Birmingham) until 10/2026!
-</div>
+
 <!--
 <details>
  <summary><h4 style="display: inline;">News Archive</h4></summary>
